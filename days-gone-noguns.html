@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Days Gone No Guns Controls</title>
+  <link rel="stylesheet" href="./styles.css?v=20260527b" />
+  <link rel="stylesheet" href="./styles/days-gone-noguns.css?v=20260605a" />
+</head>
+<body class="nogunsPage">
+  <main class="nogunsShell" aria-label="Days Gone No Guns stream controls">
+    <section class="nogunsPanel">
+      <div class="nogunsHeader">
+        <div>
+          <h1 class="nogunsTitle">Days Gone &mdash; No Guns Speedrun</h1>
+          <div class="nogunsSubtitle">0 Gun Kills Challenge</div>
+        </div>
+        <div class="nogunsBadge">Main Game</div>
+      </div>
+
+      <div id="challengeTimer" class="nogunsTimer">00:00:00</div>
+      <div class="nogunsDeathReadout">Deaths: <span id="challengeDeaths">0</span></div>
+
+      <div class="nogunsControls">
+        <button id="challengeStartPauseBtn" class="nogunsControlButton" type="button">Start</button>
+        <button id="challengeResetTimerBtn" class="nogunsControlButton" type="button">Reset Timer</button>
+        <button id="challengeResetRunBtn" class="nogunsControlButton danger" type="button">Reset Run</button>
+      </div>
+
+      <div class="nogunsControls secondaryControls">
+        <button id="challengeDeathMinusBtn" class="nogunsControlButton" type="button">Death -1</button>
+        <button id="challengeDeathPlusBtn" class="nogunsControlButton" type="button">Death +1</button>
+        <button id="challengeDeathResetBtn" class="nogunsControlButton" type="button">Reset Deaths</button>
+      </div>
+
+      <div class="nogunsLinks">
+        <a id="challengeOverlayLink" class="btn" href="./days-gone-noguns-overlay.html">Open OBS Overlay</a>
+        <a class="btn" href="./index.html?gameId=days-gone">Back to Router</a>
+      </div>
+
+      <div class="nogunsHelp">
+        <div class="nogunsShortcutRow"><span>Start or pause timer</span><kbd>Space</kbd></div>
+        <div class="nogunsShortcutRow"><span>Reset timer</span><kbd>R</kbd></div>
+        <div class="nogunsShortcutRow"><span>Add death</span><kbd>D</kbd></div>
+        <div class="nogunsShortcutRow"><span>Remove death</span><kbd>Shift+D</kbd></div>
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="./js/days-gone-noguns.js?v=20260605a"></script>
+</body>
+</html>

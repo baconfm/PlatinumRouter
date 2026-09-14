@@ -1,0 +1,24 @@
+node_modules/
+.reference/
+*.log
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+
+# Generated outputs, except data loaded by the run comparison dashboard.
+outputs/*
+!outputs/training/
+outputs/training/*
+!outputs/training/days-gone/
+outputs/training/days-gone/*
+!outputs/training/days-gone/center-objective-crossmatch/
+!outputs/training/days-gone/jamcar-buffered-whole-run-60fps/
+!outputs/training/days-gone/priority-realtime-full-run/
+outputs/training/days-gone/center-objective-crossmatch/*
+!outputs/training/days-gone/center-objective-crossmatch/reviewed-result.json
+outputs/training/days-gone/jamcar-buffered-whole-run-60fps/*
+!outputs/training/days-gone/jamcar-buffered-whole-run-60fps/result.json
+outputs/training/days-gone/priority-realtime-full-run/*
+!outputs/training/days-gone/priority-realtime-full-run/result.json

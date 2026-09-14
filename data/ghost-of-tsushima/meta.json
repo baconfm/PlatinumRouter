@@ -1,0 +1,118 @@
+{
+  "id": "ghost-of-tsushima",
+  "title": "Ghost of Tsushima",
+  "overlayTitle": "Ghost of Tsushima",
+  "subtitle": "Select a route variant for the controller, overlay, and editors.",
+  "defaultDifficulty": "Lethal",
+  "supportsDirge": true,
+  "defaultRouteId": "fresh-start-platinum",
+  "routes": [
+    {
+      "id": "original-combined",
+      "title": "Original Combined Route",
+      "shortTitle": "Original Combined",
+      "badgeLabel": "Combined",
+      "overlayTitle": "Ghost of Tsushima Original Combined",
+      "subtitle": "Legacy combined route: New Game pushes the 48% target, then New Game+ finishes the platinum cleanup.",
+      "difficulty": "Lethal",
+      "appendDifficultyToTitle": false,
+      "data": {
+        "defaultSplits": "routes/original-combined/default-splits.json",
+        "phases": "routes/original-combined/phases.json",
+        "quotas": "routes/original-combined/quotas.json"
+      }
+    },
+    {
+      "id": "fresh-start-platinum",
+      "title": "Fresh Start to Platinum",
+      "shortTitle": "Fresh Start",
+      "badgeLabel": "Fresh Start",
+      "overlayTitle": "Ghost of Tsushima Fresh Start Plat",
+      "subtitle": "Completed-run backed single-playthrough fresh start route covering Act 1, Act 2, Act 3, and final platinum cleanup.",
+      "difficulty": "Lethal",
+      "appendDifficultyToTitle": false
+    },
+    {
+      "id": "ng-story-then-ng-plus",
+      "title": "NG Story -> NG+ Platinum",
+      "shortTitle": "Story -> NG+",
+      "badgeLabel": "Story -> NG+",
+      "overlayTitle": "Ghost of Tsushima Story to NG+ Plat",
+      "subtitle": "Mission-only New Game story shell first, then a second-playthrough New Game+ route that carries the full platinum board.",
+      "difficulty": "Lethal",
+      "appendDifficultyToTitle": false,
+      "overallCounterKeys": [
+        "inari",
+        "hotsprings",
+        "bamboo",
+        "haiku",
+        "shrines",
+        "lighthouses",
+        "records",
+        "artifacts",
+        "crickets",
+        "hiddenaltars",
+        "monochrome",
+        "cooper",
+        "sidetales",
+        "duels",
+        "territories",
+        "mythictales"
+      ],
+      "data": {
+        "defaultSplits": "routes/ng-story-then-ng-plus/default-splits.json",
+        "phases": "routes/ng-story-then-ng-plus/phases.json",
+        "quotas": "routes/ng-story-then-ng-plus/quotas.json"
+      }
+    },
+    {
+      "id": "pure-ng-plus-practice",
+      "title": "Pure NG+ Practice",
+      "shortTitle": "Pure NG+",
+      "badgeLabel": "Pure NG+",
+      "overlayTitle": "Ghost of Tsushima Pure NG+ Practice",
+      "subtitle": "Practice-only NG+ objective route. Trophies are not tracked; weapons are assumed unlocked and the timer starts from 07:00:00.",
+      "difficulty": "Lethal",
+      "appendDifficultyToTitle": false,
+      "defaultTimerElapsedMs": 25200000,
+      "overallCounterKeys": [
+        "inari",
+        "hotsprings",
+        "bamboo",
+        "haiku",
+        "shrines",
+        "lighthouses",
+        "records",
+        "artifacts",
+        "crickets",
+        "hiddenaltars",
+        "monochrome",
+        "cooper",
+        "sidetales",
+        "duels",
+        "territories",
+        "mythictales"
+      ],
+      "hiddenCounters": {
+        "overlay": [
+          "trophies"
+        ],
+        "focus": [
+          "trophies"
+        ],
+        "quota": [
+          "trophies"
+        ],
+        "totals": [
+          "trophies"
+        ]
+      },
+      "data": {
+        "counters": "routes/pure-ng-plus-practice/counters.json",
+        "defaultSplits": "routes/pure-ng-plus-practice/default-splits.json",
+        "phases": "routes/pure-ng-plus-practice/phases.json",
+        "quotas": "routes/pure-ng-plus-practice/quotas.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,570 @@
+.phaseEditorPage .app {
+  padding: 12px;
+}
+
+.phasePageTop {
+  gap: 20px;
+  padding-bottom: 14px;
+}
+
+.phasePageTop .title {
+  max-width: 760px;
+}
+
+.phasePageTop .subtitle {
+  max-width: 780px;
+  margin-top: 8px;
+}
+
+.phaseCommandPanel {
+  display: grid;
+  gap: 14px;
+}
+
+.phaseCommandBar {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.phaseCommandCopy {
+  max-width: 760px;
+}
+
+.phaseCommandActions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.phaseNavBar {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 2px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.phaseNavLinks {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.phaseWorkspace {
+  display: grid;
+  grid-template-columns: 320px minmax(0, 1fr);
+  gap: 14px;
+  align-items: start;
+  margin-top: 14px;
+}
+
+.phaseSidebarPanel,
+.phaseInspectorPanel {
+  padding: 14px;
+}
+
+.phaseSidebarShell {
+  display: grid;
+  gap: 14px;
+}
+
+.phaseSidebarHeader {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.phaseSidebarHeaderActions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.phaseSidebarSearchField > span,
+.phaseSection .field > span {
+  font-size: 11px;
+  line-height: 1;
+  opacity: 0.86;
+  margin-bottom: 5px;
+  letter-spacing: 0.02em;
+}
+
+.phaseSidebarSearchField input {
+  min-height: 38px;
+}
+
+.phaseSidebarList {
+  display: grid;
+  gap: 10px;
+}
+
+.phaseSidebarEmpty,
+.phaseInspectorEmpty,
+.phaseEmptyState {
+  padding: 18px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px dashed rgba(255, 255, 255, 0.1);
+}
+
+.phaseSidebarEmpty .subtitle,
+.phaseInspectorEmpty .subtitle {
+  margin-top: 6px;
+}
+
+.phaseListCard {
+  appearance: none;
+  width: 100%;
+  display: grid;
+  gap: 10px;
+  padding: 14px;
+  border-radius: 18px;
+  border: 1px solid rgba(120, 160, 255, 0.16);
+  background:
+    linear-gradient(180deg, rgba(15, 28, 57, 0.96) 0%, rgba(8, 17, 35, 0.96) 100%);
+  color: var(--text);
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 120ms ease, transform 120ms ease, background 120ms ease;
+}
+
+.phaseListCard:hover {
+  border-color: rgba(120, 160, 255, 0.3);
+}
+
+.phaseListCard:active {
+  transform: translateY(1px);
+}
+
+.phaseListCard.is-active {
+  border-color: rgba(119, 168, 255, 0.44);
+  background:
+    linear-gradient(180deg, rgba(22, 41, 84, 0.96) 0%, rgba(10, 22, 46, 0.98) 100%);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22);
+}
+
+.phaseListCardTop {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.phaseListLabel {
+  font-size: 15px;
+  line-height: 1.15;
+  font-weight: 900;
+}
+
+.phaseListId,
+.phaseInspectorId {
+  margin-top: 4px;
+  color: var(--text-muted);
+  font-size: 12px;
+  line-height: 1.2;
+  font-family: var(--font-mono);
+}
+
+.phaseListChevron {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 28px;
+  padding: 0 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: var(--text-soft);
+  font-size: 11px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.phaseListMetrics,
+.phaseStatsRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.phaseMetaPill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 30px;
+  padding: 0 11px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: var(--text-soft);
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.phaseMetaPill.tone-accent {
+  background: rgba(119, 168, 255, 0.08);
+  border-color: rgba(119, 168, 255, 0.18);
+}
+
+.phaseMetaPillValue {
+  color: var(--text);
+}
+
+.phaseListPreview {
+  color: var(--text-soft);
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.phaseListCoverage,
+.phaseInspectorSummary {
+  color: var(--text-muted);
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.phaseInspectorShell {
+  display: grid;
+  gap: 14px;
+}
+
+.phaseValidationList {
+  display: grid;
+  gap: 8px;
+}
+
+.phaseValidationItem {
+  padding: 10px 12px;
+  border-radius: 14px;
+  background: rgba(255, 200, 106, 0.08);
+  border: 1px solid rgba(255, 200, 106, 0.16);
+  color: var(--text-soft);
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.phaseInspectorHeader {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.phaseInspectorName {
+  margin-top: 3px;
+  font-size: 24px;
+  line-height: 1.02;
+  font-weight: 900;
+}
+
+.phaseInspectorHeaderActions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.phaseSection {
+  display: grid;
+  gap: 14px;
+  padding: 14px;
+  border-radius: 20px;
+  background:
+    linear-gradient(180deg, rgba(10, 19, 38, 0.92) 0%, rgba(7, 15, 31, 0.96) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.phaseSectionHeader {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.phaseSectionActions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.phaseBasicsGrid,
+.phaseNoteGrid {
+  gap: 12px 14px;
+}
+
+.phaseFullField {
+  grid-column: 1 / -1;
+}
+
+.phaseSection input,
+.phaseSection textarea {
+  min-height: 38px;
+}
+
+.phaseSection textarea {
+  min-height: 88px;
+  line-height: 1.42;
+}
+
+.phaseObjectiveChipList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.phaseCompletedEarlierBlock {
+  display: grid;
+  gap: 10px;
+  padding-top: 4px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.phaseObjectiveChip {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 36px;
+  padding: 0 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.045);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.phaseObjectiveChipList-muted {
+  opacity: 0.74;
+}
+
+.phaseObjectiveChip-muted {
+  background: rgba(255, 255, 255, 0.025);
+  border-color: rgba(255, 255, 255, 0.06);
+}
+
+.phaseObjectiveChipLabel {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 800;
+  color: var(--text);
+}
+
+.phaseInlineIconWrap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  flex: 0 0 16px;
+}
+
+.phaseInlineIcon {
+  width: 13px;
+  height: 13px;
+  display: block;
+}
+
+.phaseInlineIcon.objectiveIconEmoji {
+  width: auto;
+  height: auto;
+  font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", "Twemoji Mozilla", emoji, sans-serif;
+  font-size: 14px;
+  line-height: 1;
+  font-variant-emoji: emoji;
+}
+
+.phaseObjectiveChip-muted .phaseObjectiveChipLabel {
+  color: var(--text-soft);
+}
+
+.phaseObjectiveChipRemove {
+  appearance: none;
+  width: 22px;
+  height: 22px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text-soft);
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.phaseObjectiveChip-muted .phaseObjectiveChipRemove {
+  border-color: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.phaseObjectiveChipRemove:hover {
+  border-color: rgba(255, 255, 255, 0.18);
+}
+
+.phasePicker {
+  display: grid;
+  gap: 10px;
+  padding: 12px;
+  border-radius: 16px;
+  background: rgba(3, 9, 20, 0.46);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.phasePickerSearch {
+  min-height: 36px;
+}
+
+.phasePickerOptions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.phasePickerOption {
+  appearance: none;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(20, 38, 79, 0.8);
+  color: var(--text);
+  min-height: 30px;
+  padding: 0 10px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.phasePickerOption:hover {
+  border-color: rgba(120, 160, 255, 0.26);
+}
+
+.phasePickerEmpty {
+  color: var(--text-soft);
+  font-size: 12px;
+}
+
+.phaseQuotaSlateList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.phaseQuotaSlate {
+  flex: 1 1 300px;
+  max-width: 380px;
+  display: grid;
+  grid-template-columns: 42px minmax(0, 1fr) 42px;
+  align-items: stretch;
+  border-radius: 18px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.phaseQuotaBody {
+  min-width: 0;
+  display: grid;
+  gap: 4px;
+  padding: 9px 10px;
+  background: rgba(255, 255, 255, 0.02);
+  border-left: 1px solid rgba(255, 255, 255, 0.08);
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.phaseQuotaTopLine {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  align-items: center;
+}
+
+.phaseQuotaLabel {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--text);
+}
+
+.phaseQuotaContext {
+  font-size: 12px;
+  color: var(--text-soft);
+  line-height: 1.35;
+}
+
+.phaseQuotaEdge {
+  min-width: 42px;
+  min-height: 62px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: rgba(20, 38, 79, 0.78);
+  font-size: 18px;
+  line-height: 1;
+}
+
+.phaseQuotaEdge:hover {
+  background: rgba(29, 55, 110, 0.9);
+}
+
+.phaseQuotaEdge-left {
+  border-top-left-radius: 18px;
+  border-bottom-left-radius: 18px;
+}
+
+.phaseQuotaEdge-right {
+  border-top-right-radius: 18px;
+  border-bottom-right-radius: 18px;
+}
+
+.phaseQuotaInput {
+  width: 56px;
+  min-height: 30px;
+  padding: 4px 6px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 800;
+  border-radius: 999px;
+}
+
+@media (max-width: 1024px) {
+  .phaseWorkspace {
+    grid-template-columns: 1fr;
+  }
+
+  .phaseSidebarPanel {
+    order: 1;
+  }
+
+  .phaseInspectorPanel {
+    order: 2;
+  }
+}
+
+@media (max-width: 760px) {
+  .phaseEditorPage .app {
+    padding: 8px;
+  }
+
+  .phaseCommandActions,
+  .phaseNavBar,
+  .phaseSectionHeader,
+  .phaseInspectorHeader {
+    align-items: stretch;
+  }
+
+  .phaseQuotaSlate {
+    max-width: none;
+  }
+}

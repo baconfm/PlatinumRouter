@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Split Editor</title>
+  <script>
+    (() => {
+      try {
+        const valid = new Set(["classic", "earth"]);
+        const query = new URLSearchParams(window.location.search).get("theme");
+        const stored = localStorage.getItem("platinum-router-theme");
+        const theme = valid.has(query) ? query : (valid.has(stored) ? stored : "classic");
+        document.documentElement.dataset.theme = theme;
+      } catch {
+        document.documentElement.dataset.theme = "classic";
+      }
+    })();
+  </script>
+  <link rel="stylesheet" href="./styles/base.css?v=20260511a" />
+  <link rel="stylesheet" href="./styles/layout.css?v=20260511a" />
+  <link rel="stylesheet" href="./styles/components.css?v=20260511a" />
+  <link rel="stylesheet" href="./styles/split-editor.css?v=20260724c" />
+</head>
+<body class="splitEditorPage">
+  <div class="app">
+    <div class="top splitPageTop">
+      <div>
+        <div class="eyebrow">Route Editing</div>
+        <div class="title">Split Editor</div>
+        <div id="pageSubtitle" class="subtitle">Edit split names, notes, phase assignments, and auto-progress values.</div>
+      </div>
+
+      <div class="topMeta">
+        <label class="gamePickerField">
+          <span class="eyebrow">Game</span>
+          <select id="gamePicker" class="gamePickerSelect" aria-label="Select game"></select>
+        </label>
+        <label class="gamePickerField" id="routePickerField" hidden>
+          <span class="eyebrow">Route</span>
+          <select id="routePicker" class="gamePickerSelect" aria-label="Select route"></select>
+        </label>
+        <div class="badge">Splits</div>
+      </div>
+    </div>
+
+    <div class="panel splitCommandPanel">
+      <div class="splitCommandBar">
+        <div class="splitCommandCopy">
+          <div class="eyebrow">Workflow</div>
+          <div id="splitEditorNotesText" class="subtitle">
+            These splits should drive current split, queue, phase visibility, and auto-progress.
+          </div>
+        </div>
+
+        <div class="splitCommandActions">
+          <button id="addSplitEditorBtn" class="btn">Add Split</button>
+          <button id="downloadSplitBackupBtn" class="btn">Download Split Backup</button>
+          <button id="copySplitBackupBtn" class="btn">Copy Split Backup</button>
+          <button id="resetSplitEditorBtn" class="btn">Reset</button>
+          <button id="saveSplitEditorBtn" class="btn primary">Save to Database</button>
+          <span id="splitSaveStatus" class="splitSaveStatus" aria-live="polite"></span>
+        </div>
+      </div>
+
+      <div class="splitNavBar">
+        <div>
+          <div class="eyebrow">Navigation</div>
+          <div class="subtitle">Jump between controller, overlay, and route tools.</div>
+        </div>
+
+        <div class="splitNavLinks">
+          <a href="./index.html" class="btn">Controller</a>
+          <a href="./overlay.html" class="btn">Overlay</a>
+          <a href="./minoverlay.html" class="btn">Mini Overlay</a>
+          <a href="./run-comparison.html" class="btn">Run Comparison</a>
+          <a href="./phases.html" class="btn">Phase Editor</a>
+          <a href="./game-editor.html" class="btn">Game Editor</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel splitFilterPanel">
+      <div class="splitFilterBar">
+        <label class="field splitFilterField">
+          <span>Search</span>
+          <input id="splitSearchInput" type="search" placeholder="Find a split by name or note" />
+        </label>
+
+        <label class="field splitFilterField">
+          <span>Phase Filter</span>
+          <select id="splitPhaseFilter" aria-label="Filter splits by phase">
+            <option value="">All phases</option>
+          </select>
+        </label>
+
+        <div class="splitFilterStats">
+          <div id="splitFilterResultPill" class="pill">0/0 shown</div>
+          <div id="splitFilterSummaryPill" class="pill">0 phases</div>
+        </div>
+
+        <div class="splitFilterActions">
+          <button id="expandAllAutoBtn" class="btn">Expand Splits</button>
+          <button id="collapseAllAutoBtn" class="btn">Collapse Splits</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel splitWorkspacePanel">
+      <div id="splitEditorGrid" class="editorGrid"></div>
+    </div>
+  </div>
+
+  <script type="module" src="./js/theme-init.js?v=20260511a"></script>
+  <script type="module" src="./js/splits-page.js?v=20260724d"></script>
+</body>
+</html>

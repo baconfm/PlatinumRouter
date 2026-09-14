@@ -1,0 +1,166 @@
+.eyebrow {
+  color: var(--text-muted);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.title {
+  font-size: 26px;
+  line-height: 1.04;
+  font-weight: 900;
+  margin-top: 2px;
+}
+
+.subtitle {
+  color: var(--text-soft);
+  font-size: 13px;
+  line-height: 1.35;
+}
+
+.mid {
+  font-size: 16px;
+  line-height: 1.15;
+  font-weight: 800;
+}
+
+.topMeta {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.gamePickerField {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 220px;
+}
+
+.gamePickerSelect {
+  min-width: 220px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 38px;
+  padding: 0 14px;
+  border-radius: 999px;
+  background: var(--surface-badge);
+  border: 1px solid var(--border);
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 28px;
+  padding: 0 10px;
+  border-radius: 999px;
+  background: var(--surface-pill);
+  border: 1px solid var(--border-soft);
+  color: var(--text-soft);
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.card,
+.editorCard {
+  border-radius: var(--radius-lg);
+  background:
+    linear-gradient(180deg, var(--surface-card-top) 0%, var(--surface-card-bottom) 100%);
+  border: 1px solid var(--border-soft);
+}
+
+.card {
+  padding: 14px;
+}
+
+.editorCard {
+  padding: 14px;
+}
+
+.btn {
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-height: 34px;
+  padding: 0 13px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--surface-button);
+  color: var(--text);
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 800;
+  transition: transform 120ms ease, border-color 120ms ease, filter 120ms ease, background 120ms ease;
+}
+
+.btn:hover {
+  border-color: var(--border-strong);
+  filter: brightness(1.05);
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+.btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.52;
+  filter: none;
+  transform: none;
+}
+
+.btn.primary {
+  background: var(--green);
+  color: #04110a;
+  border-color: rgba(57, 217, 138, 0.4);
+}
+
+.btn.danger {
+  background: #7e1c35;
+  border-color: rgba(255, 95, 125, 0.3);
+  color: #fff0f4;
+}
+
+.btn.full {
+  width: 100%;
+}
+
+.codeBlock {
+  padding: 12px;
+  border-radius: 14px;
+  background: var(--surface-code);
+  border: 1px solid var(--border-soft);
+  color: #d7e6ff;
+  font-size: 12px;
+  line-height: 1.45;
+  overflow: auto;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: rgba(183, 200, 232, 0.4);
+}
+
+@media (max-width: 900px) {
+  .topMeta {
+    justify-content: flex-start;
+  }
+
+  .gamePickerField,
+  .gamePickerSelect {
+    width: 100%;
+    min-width: 0;
+  }
+}

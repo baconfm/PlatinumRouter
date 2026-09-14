@@ -1,0 +1,164 @@
+:root {
+  --bg-page: #06100a;
+  --bg-page-2: #0b1b10;
+  --bg-panel: #0a160d;
+  --bg-panel-2: #102316;
+  --bg-card: #071109;
+  --bg-card-2: #0d1d12;
+  --bg-input: #040b06;
+  --bg-input-strong: #020603;
+
+  --border-soft: rgba(126, 185, 136, 0.14);
+  --border: rgba(126, 185, 136, 0.22);
+  --border-strong: rgba(163, 218, 147, 0.36);
+
+  --text: #f3f8ed;
+  --text-soft: rgba(243, 248, 237, 0.86);
+  --text-muted: rgba(200, 218, 190, 0.68);
+
+  --accent: #9fc46f;
+  --accent-soft: rgba(159, 196, 111, 0.16);
+  --green: #60e29a;
+  --green-strong: #92f1bd;
+  --red: #ff5f7d;
+  --red-strong: #e84b69;
+  --gold: #f0c86a;
+
+  --shadow-1: 0 8px 18px rgba(0, 0, 0, 0.22);
+  --shadow-2: 0 12px 30px rgba(0, 0, 0, 0.28);
+
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 18px;
+  --radius-xl: 24px;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+
+  --font-ui: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+
+  --surface-panel-top: rgba(15, 31, 18, 0.92);
+  --surface-panel-bottom: rgba(8, 18, 10, 0.96);
+  --surface-card-top: rgba(10, 22, 13, 0.98);
+  --surface-card-bottom: rgba(6, 14, 8, 0.98);
+  --surface-badge: #17331f;
+  --surface-pill: #183422;
+  --surface-button: #1b3a25;
+  --surface-code: #020603;
+}
+
+:root[data-theme="earth"] {
+  --bg-page: #11170f;
+  --bg-page-2: #182317;
+  --bg-panel: #131b10;
+  --bg-panel-2: #182114;
+  --bg-card: #10170d;
+  --bg-card-2: #151d11;
+  --bg-input: #0b1208;
+  --bg-input-strong: #080d06;
+
+  --border-soft: rgba(167, 186, 134, 0.14);
+  --border: rgba(167, 186, 134, 0.22);
+  --border-strong: rgba(212, 193, 132, 0.34);
+
+  --text: #f7f1e6;
+  --text-soft: rgba(247, 241, 230, 0.86);
+  --text-muted: rgba(215, 209, 186, 0.68);
+
+  --accent: #b7ca7b;
+  --accent-soft: rgba(183, 202, 123, 0.16);
+  --green: #56d38d;
+  --green-strong: #79e5a8;
+  --red: #ef7b8c;
+  --red-strong: #e56478;
+  --gold: #d9b46c;
+
+  --surface-panel-top: rgba(28, 35, 22, 0.92);
+  --surface-panel-bottom: rgba(16, 22, 14, 0.96);
+  --surface-card-top: rgba(22, 29, 18, 0.98);
+  --surface-card-bottom: rgba(12, 17, 10, 0.98);
+  --surface-badge: #27351f;
+  --surface-pill: #24311d;
+  --surface-button: #2a3823;
+  --surface-code: #090d07;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  background:
+    linear-gradient(180deg, var(--bg-page-2) 0%, var(--bg-page) 22%, #030704 100%);
+  color: var(--text);
+  font-family: var(--font-ui);
+}
+
+:root[data-theme="earth"] body {
+  background:
+    linear-gradient(180deg, var(--bg-page-2) 0%, var(--bg-page) 22%, #080c07 100%);
+}
+
+body {
+  line-height: 1.4;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  min-height: 38px;
+  color: var(--text);
+  background: var(--bg-input);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-md);
+  padding: 9px 11px;
+  outline: none;
+  transition: border-color 120ms ease, box-shadow 120ms ease, background 120ms ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--border-strong);
+  box-shadow: 0 0 0 3px rgba(96, 226, 154, 0.08);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 88px;
+}
+
+pre {
+  margin: 0;
+  font-family: var(--font-mono);
+}
+
+details > summary {
+  list-style: none;
+}
+
+details > summary::-webkit-details-marker {
+  display: none;
+}

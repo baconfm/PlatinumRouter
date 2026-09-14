@@ -1,0 +1,166 @@
+{
+  "trophies": {
+    "label": "Platinum-Critical Trophies",
+    "shortLabel": "Trophies",
+    "queueLabel": "Trophies",
+    "icon": "trophy",
+    "accent": "#f6c453",
+    "description": "Base platinum trophy progress while locked to Grounded. Excludes No Return and Permadeath 100%.",
+    "requirement": "26 base platinum-critical trophies including the platinum pop. Dig Two Graves is route proof, not counted toward base platinum.",
+    "max": 26
+  },
+  "routecollectibles": {
+    "label": "Route Collectibles + Gear",
+    "shortLabel": "Route",
+    "queueLabel": "Route",
+    "icon": "route",
+    "accent": "#38bdf8",
+    "description": "Combined PT1 chapter-route count: artifacts, journals, cards, coins, safes, manuals, workbenches, and key weapon/gear pickups.",
+    "requirement": "Collect all 287 planned checklist items on Grounded with no easy chapter-select cleanup.",
+    "max": 287
+  },
+  "artifacts": {
+    "label": "Artifacts",
+    "shortLabel": "Artifacts",
+    "queueLabel": "Artifacts",
+    "icon": "intel",
+    "accent": "#a78bfa",
+    "description": "Artifacts required for Archivist with journals.",
+    "requirement": "Collect every artifact during the Grounded-locked route.",
+    "max": 127
+  },
+  "journals": {
+    "label": "Journal Entries",
+    "shortLabel": "Journals",
+    "queueLabel": "Journals",
+    "icon": "journal",
+    "accent": "#c084fc",
+    "description": "Journal entries required for Archivist with artifacts.",
+    "requirement": "Collect every journal entry during the Grounded-locked route.",
+    "max": 20
+  },
+  "cards": {
+    "label": "Trading Cards",
+    "shortLabel": "Cards",
+    "queueLabel": "Cards",
+    "icon": "card",
+    "accent": "#f472b6",
+    "description": "Ellie trading cards for Master Set.",
+    "requirement": "Collect all 48 cards on Grounded.",
+    "max": 48
+  },
+  "coins": {
+    "label": "Coins",
+    "shortLabel": "Coins",
+    "queueLabel": "Coins",
+    "icon": "coin",
+    "accent": "#fbbf24",
+    "description": "Abby coins for Numismatist.",
+    "requirement": "Collect all 32 coins on Grounded.",
+    "max": 32
+  },
+  "safes": {
+    "label": "Safes",
+    "shortLabel": "Safes",
+    "queueLabel": "Safes",
+    "icon": "safe",
+    "accent": "#fb923c",
+    "description": "All safes for Safecracker.",
+    "requirement": "Open all safes while locked to Grounded.",
+    "max": 14
+  },
+  "manuals": {
+    "label": "Training Manuals",
+    "shortLabel": "Manuals",
+    "queueLabel": "Manuals",
+    "icon": "book",
+    "accent": "#22c55e",
+    "description": "Manual pickups that unlock upgrade branches.",
+    "requirement": "Collect all manuals without relying on easy cleanup.",
+    "max": 8
+  },
+  "workbenches": {
+    "label": "Workbenches",
+    "shortLabel": "Benches",
+    "queueLabel": "Benches",
+    "icon": "workbench",
+    "accent": "#06b6d4",
+    "description": "Workbench visits for Prepared for the Worst and weapon upgrade routing.",
+    "requirement": "Find all 25 workbenches on Grounded.",
+    "max": 25
+  },
+  "gear": {
+    "label": "Weapons / Key Gear",
+    "shortLabel": "Gear",
+    "queueLabel": "Gear",
+    "icon": "weapon",
+    "accent": "#ef4444",
+    "description": "Weapons and key gear pickups that unlock trophy-critical routes and upgrade paths.",
+    "requirement": "Collect every planned weapon/key gear pickup in the chapter route.",
+    "max": 13
+  },
+  "ellieparts": {
+    "label": "Ellie Parts",
+    "shortLabel": "E Parts",
+    "queueLabel": "E Parts",
+    "icon": "parts",
+    "accent": "#60a5fa",
+    "description": "Ellie weapon part economy. Separate from Abby.",
+    "requirement": "Need 970 Ellie parts for all Ellie weapon upgrades; Grounded NG has 574, leaving 396 for Grounded NG+.",
+    "max": 970
+  },
+  "elliesupps": {
+    "label": "Ellie Supplements",
+    "shortLabel": "E Supps",
+    "queueLabel": "E Supps",
+    "icon": "supplement",
+    "accent": "#34d399",
+    "description": "Ellie supplement economy. Separate from Abby.",
+    "requirement": "Need 950 Ellie supplements for all Ellie player upgrades; Grounded NG has 518, leaving 432 for Grounded NG+.",
+    "max": 950
+  },
+  "abbyparts": {
+    "label": "Abby Parts",
+    "shortLabel": "A Parts",
+    "queueLabel": "A Parts",
+    "icon": "parts",
+    "accent": "#f97316",
+    "description": "Abby weapon part economy. Separate from Ellie.",
+    "requirement": "Need 950 Abby parts for all Abby weapon upgrades; Grounded NG has 591, leaving 359 for Grounded NG+.",
+    "max": 950
+  },
+  "abbysupps": {
+    "label": "Abby Supplements",
+    "shortLabel": "A Supps",
+    "queueLabel": "A Supps",
+    "icon": "supplement",
+    "accent": "#84cc16",
+    "description": "Abby supplement economy. Separate from Ellie.",
+    "requirement": "Need 950 Abby supplements for all Abby player upgrades; Grounded NG has 500, leaving 450 for Grounded NG+.",
+    "max": 950
+  },
+  "ngplusverify": {
+    "label": "NG+ Loot Checks",
+    "shortLabel": "NG+ Checks",
+    "queueLabel": "Verify",
+    "icon": "checkpoint",
+    "accent": "#e879f9",
+    "description": "Manual verification checkpoints for whether Grounded NG+ loot matches the PT1 route closely enough.",
+    "requirement": "Mark chapter-level NG+ resource checks until the route is proven.",
+    "max": 46
+  },
+  "deaths": {
+    "label": "Deaths",
+    "shortLabel": "Deaths",
+    "queueLabel": "Deaths",
+    "overlayLabel": "Deaths",
+    "icon": "death",
+    "accent": "#ef4444",
+    "description": "Optional run death counter.",
+    "requirement": "Turn on in Settings when this run should show deaths.",
+    "max": 999,
+    "displayMode": "count",
+    "nonProgress": true,
+    "paceWeight": 0
+  }
+}

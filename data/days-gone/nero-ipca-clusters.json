@@ -1,0 +1,193 @@
+{
+  "schemaVersion": 1,
+  "description": "Route clusters where one IPCA Tech pickup can be collected with a NERO checkpoint or research site, its injector, and nearby NERO Intel.",
+  "sources": [
+    "https://steamcommunity.com/sharedfiles/filedetails/?id=2908757116",
+    "https://www.powerpyx.com/days-gone-all-nero-intel-locations/",
+    "https://www.powerpyx.com/days-gone-all-nero-checkpoint-locations/"
+  ],
+  "clusters": [
+    {
+      "ipcaIndex": 1,
+      "region": "Cascade",
+      "siteType": "checkpoint",
+      "siteName": "Little Bear Lake NERO Checkpoint",
+      "bodyHint": "Inside the main NERO bunker.",
+      "neroIntel": [
+        { "id": "nerointel-29", "title": "Mobile Medical Unit Recording - 0820", "proximity": "inside checkpoint" }
+      ]
+    },
+    {
+      "ipcaIndex": 2,
+      "region": "Cascade",
+      "siteType": "checkpoint",
+      "siteName": "Old Pioneer Cemetery NERO Checkpoint",
+      "bodyHint": "Inside the tent next to the checkpoint building.",
+      "neroIntel": [
+        { "id": "nerointel-17", "title": "Mobile Medical Unit Recording - 1111", "proximity": "inside checkpoint" }
+      ]
+    },
+    {
+      "ipcaIndex": 3,
+      "region": "Belknap",
+      "siteType": "checkpoint",
+      "siteName": "Iron Butte Pass NERO Checkpoint",
+      "bodyHint": "Inside the white trailer next to the Ripper gate.",
+      "neroIntel": [
+        { "id": "nerointel-22", "title": "Mobile Medical Unit Recording - 1788", "proximity": "inside checkpoint" }
+      ]
+    },
+    {
+      "ipcaIndex": 4,
+      "region": "Cascade",
+      "siteType": "checkpoint",
+      "siteName": "Horse Lake NERO Checkpoint",
+      "bodyHint": "Behind the sandbagged ledge.",
+      "neroIntel": [
+        { "id": "nerointel-16", "title": "Field Recording - 1260", "proximity": "inside checkpoint" },
+        { "id": "nerointel-47", "title": "Inspector Field Note - 1376", "proximity": "outside checkpoint, on the front of a truck at the NERO dig site" }
+      ]
+    },
+    {
+      "ipcaIndex": 5,
+      "region": "Belknap",
+      "siteType": "checkpoint",
+      "siteName": "Marion Forks Tunnel NERO Checkpoint",
+      "bodyHint": "Beside the two portable toilets in front of the tunnel.",
+      "neroIntel": [
+        { "id": "nerointel-15", "title": "Mobile Medical Unit Recording - 0980", "proximity": "inside checkpoint" }
+      ]
+    },
+    {
+      "ipcaIndex": 6,
+      "region": "Cascade",
+      "siteType": "research",
+      "siteName": "Southern Cascade Crashed NERO Chopper Research Site",
+      "bodyHint": "Bike-jump site; beside the crashed helicopter.",
+      "neroIntel": [
+        { "id": "nerointel-10", "title": "Flight Data Recording - 2097", "proximity": "beside injector at research site" }
+      ]
+    },
+    {
+      "ipcaIndex": 7,
+      "region": "Crater Lake",
+      "siteType": "research",
+      "siteName": "Crater Lake Island Crash Site",
+      "bodyHint": "Bike-jump island; beside the downed helicopter.",
+      "neroIntel": [
+        { "id": "nerointel-07", "title": "Flight Data Recording - 1787", "proximity": "beside injector at research site" }
+      ]
+    },
+    {
+      "ipcaIndex": 8,
+      "region": "Lost Lake",
+      "siteType": "research",
+      "siteName": "Lost Lake NERO Research Site",
+      "bodyHint": "Bike-jump site; on a white tarp beside the green tent.",
+      "neroIntel": [
+        { "id": "nerointel-05", "title": "Flight Data Recording - 2044", "proximity": "beside injector at research site" }
+      ]
+    },
+    {
+      "ipcaIndex": 9,
+      "region": "Iron Butte",
+      "siteType": "research",
+      "siteName": "Iron Butte NERO Research Site",
+      "bodyHint": "Bike-jump site; inside the tented area carved into the stone.",
+      "neroIntel": [
+        { "id": "nerointel-13", "title": "Nero Site Order - TS-03-900SQM", "proximity": "beside injector at research site" }
+      ]
+    },
+    {
+      "ipcaIndex": 10,
+      "region": "Highway 97",
+      "siteType": "checkpoint",
+      "siteName": "Pillette Bridge NERO Checkpoint",
+      "bodyHint": "Climb the ledge right of the outpost; body is on the small bridge.",
+      "neroIntel": [
+        { "id": "nerointel-38", "title": "Mobile Medical Unit Recording - 1685", "proximity": "inside checkpoint" }
+      ]
+    },
+    {
+      "ipcaIndex": 11,
+      "region": "Highway 97",
+      "siteType": "checkpoint",
+      "siteName": "Chemult Community College NERO Checkpoint",
+      "bodyHint": "Inside a white warehouse south of the main checkpoint buildings.",
+      "neroIntel": [
+        { "id": "nerointel-20", "title": "Mobile Medical Unit Recording - 0805", "proximity": "inside checkpoint" }
+      ]
+    },
+    {
+      "ipcaIndex": 12,
+      "region": "Crater Lake",
+      "siteType": "checkpoint",
+      "siteName": "Volcanic Legacy Scenic Byway NERO Checkpoint",
+      "bodyHint": "At the end of the storm drain tunnel.",
+      "neroIntel": [
+        { "id": "nerointel-27", "title": "Mobile Medical Unit Recording - 1682", "proximity": "inside checkpoint" }
+      ]
+    },
+    {
+      "ipcaIndex": 13,
+      "region": "Lost Lake",
+      "siteType": "checkpoint",
+      "siteName": "Santiam Tunnel NERO Checkpoint",
+      "bodyHint": "Climb through the fence opening and up to the ledge above.",
+      "neroIntel": [
+        { "id": "nerointel-18", "title": "Mobile Medical Unit Recording - 1231", "proximity": "inside checkpoint" }
+      ]
+    },
+    {
+      "ipcaIndex": 14,
+      "region": "Lost Lake",
+      "siteType": "checkpoint",
+      "siteName": "Old Sawmill NERO Checkpoint",
+      "bodyHint": "In the pond outside the fenced checkpoint area.",
+      "neroIntel": [
+        { "id": "nerointel-19", "title": "Mobile Medical Unit Recording - 1301", "proximity": "inside checkpoint" }
+      ]
+    },
+    {
+      "ipcaIndex": 15,
+      "region": "Belknap",
+      "siteType": "research",
+      "siteName": "Hot Springs NERO Helicopter Crash Research Site",
+      "bodyHint": "Bike-jump site west of Hot Springs; mutilated corpse near the log shelter.",
+      "neroIntel": [
+        { "id": "nerointel-09", "title": "Flight Data Recording - 2041", "proximity": "beside injector at research site" }
+      ]
+    },
+    {
+      "ipcaIndex": 16,
+      "region": "Iron Butte",
+      "siteType": "checkpoint",
+      "siteName": "Rogue Tunnel NERO Checkpoint",
+      "bodyHint": "Inside the tent marked RIP.",
+      "neroIntel": [
+        { "id": "nerointel-14", "title": "Mobile Medical Site Order - TS-27-760GDQ", "proximity": "inside checkpoint" }
+      ]
+    },
+    {
+      "ipcaIndex": 17,
+      "region": "Crater Lake",
+      "siteType": "checkpoint",
+      "siteName": "Spruce Lake NERO Checkpoint",
+      "bodyHint": "On the hill above the outpost, concealed in foliage.",
+      "neroIntel": [
+        { "id": "nerointel-51", "title": "Mobile Medical Unit Recording - 1683", "proximity": "inside checkpoint" }
+      ],
+      "nearbyActivities": ["Spruce Lake Ambush Camp"]
+    },
+    {
+      "ipcaIndex": 18,
+      "region": "Highway 97",
+      "siteType": "research",
+      "siteName": "Highway 97 Island NERO Research Site",
+      "bodyHint": "Bike-jump to the first island, swim to the second, then search beside the burned area.",
+      "neroIntel": [
+        { "id": "nerointel-08", "title": "Flight Data Recording - 1377", "proximity": "beside injector at research site" }
+      ]
+    }
+  ]
+}

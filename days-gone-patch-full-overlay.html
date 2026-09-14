@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Days Gone Patch Full Overlay</title>
+  <script>
+    (() => {
+      try {
+        const valid = new Set(["classic", "earth"]);
+        const query = new URLSearchParams(window.location.search).get("theme");
+        const stored = localStorage.getItem("platinum-router-theme");
+        const theme = valid.has(query) ? query : (valid.has(stored) ? stored : "classic");
+        document.documentElement.dataset.theme = theme;
+        document.documentElement.dataset.overlayMode = "patch-full";
+      } catch {
+        document.documentElement.dataset.theme = "classic";
+        document.documentElement.dataset.overlayMode = "patch-full";
+      }
+    })();
+  </script>
+  <link rel="stylesheet" href="./overlay.css?v=20260712e" />
+</head>
+<body class="patchFullOverlayPage">
+  <div class="overlayShell patchFullOverlayShell">
+    <div class="overlayBar patchFullOverlayBar">
+      <div class="chipsWrap overlaySide overlaySide-left" id="itemsLeft">
+        <div class="empty">Waiting for controller...</div>
+      </div>
+      <div class="overlayCore" aria-label="Core run status">
+        <div class="metaChip progressChip" id="progressChip">0%</div>
+        <div class="timerChip" id="timer">00:00:00</div>
+        <div class="counterChip coreTrophyChip" id="trophyChip" hidden></div>
+      </div>
+      <div class="chipsWrap overlaySide overlaySide-right" id="itemsRight"></div>
+    </div>
+
+    <div class="debugDock">
+      <div class="debugRow">
+        <button id="debugToggle" class="debugBtn">Debug</button>
+        <button id="debugClear" class="debugBtn">Clear</button>
+        <button id="debugCopy" class="debugBtn">Copy</button>
+      </div>
+
+      <div id="debugPanel" class="debugPanel">
+        <div class="debugSection">
+          <div class="eyebrow">Status</div>
+          <div id="debugStatus"></div>
+        </div>
+
+        <div class="debugSection">
+          <div class="eyebrow">Theme</div>
+          <select id="overlayThemePicker" data-theme-picker aria-label="Select overlay theme"></select>
+        </div>
+
+        <div class="debugSection">
+          <div class="eyebrow">Logs</div>
+          <div id="debugBody" class="debugBody"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="./js/theme-init.js?v=20260511a"></script>
+  <script type="module">
+    import { createDebugger } from "./js/debug.js";
+    import { loadGameData } from "./js/data-loader.js?v=20260712f";
+    import {
+      buildInitialState,
+      computePaceText,
+      formatMs
+    } from "./js/controller-core.js?v=20260712h";
+    import { resolvePageContext } from "./js/game-context.js?v=20260527a";
+    import { getObjectiveIconMarkup } from "./js/objective-icons.js?v=20260712c";
+    import {
+      FALLBACK_GAME_ID,
+      readStoredGameId,
+      readStoredRouteId
+    } from "./js/game-session.js";
+    import { readStoredState } from "./js/storage.js";
+
+    const debug = createDebugger({ name: "overlay" });
+    const params = new URLSearchParams(window.location.search);
+    const debugEnabled = params.get("debug") === "1";
+    const forceRouteSplits =
+      params.get("routeFile") === "1" ||
+      params.get("freshSplits") === "1" ||
+      params.get("splitSource") === "route-file";
+    const routeDataRefreshMs = Math.max(
+      0,
+      Number(params.get("dataRefreshMs") || params.get("dataRefresh") || (forceRouteSplits ? 2000 : 0))
+    );
+
+    document.body.classList.toggle("debugEnabled", debugEnabled);
+
+    let currentGameId = FALLBACK_GAME_ID;
+    let currentRouteId = "";
+    let cache = {
+      key: null,
+      gameData: null,
+      loadedAt: 0
+    };
+
+    function escapeHtml(value) {
+      return String(value ?? "")
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll("\"", "&quot;")
+        .replaceAll("'", "&#039;");
+    }
+
+    async function getGameData(gameId, routeId = "") {
+      const cacheKey = `${gameId}:${routeId || "default"}`;
+
+      const cacheIsFresh =
+        cache.key === cacheKey &&
+        cache.gameData &&
+        (!routeDataRefreshMs || Date.now() - Number(cache.loadedAt || 0) < routeDataRefreshMs);
+
+      if (cacheIsFresh) {
+        return cache.gameData;
+      }
+
+      const gameData = await loadGameData(gameId, routeId);
+      cache = { key: cacheKey, gameData, loadedAt: Date.now() };
+      return gameData;
+    }
+
+    function applyRouteFileSplitMode(rawState = {}) {
+      if (!forceRouteSplits) return rawState;
+
+      return {
+        ...rawState,
+        splits: {
+          ...(rawState?.splits || {}),
+          items: [],
+          useSavedItems: false,
+          source: "route-file"
+        }
+      };
+    }
+
+    function getVisibleCounterKeys(activePhase, counters) {
+      if (Array.isArray(activePhase?.visibleCounters) && activePhase.visibleCounters.length > 0) {
+        return activePhase.visibleCounters;
+      }
+
+      if (Array.isArray(activePhase?.objectives) && activePhase.objectives.length > 0) {
+        return activePhase.objectives;
+      }
+
+      if (Array.isArray(activePhase?.visible) && activePhase.visible.length > 0) {
+        return activePhase.visible;
+      }
+
+      return Object.keys(counters || {});
+    }
+
+    function computePercent(defs, counters, overallCounterKeys = []) {
+      const keys =
+        Array.isArray(overallCounterKeys) && overallCounterKeys.length > 0
+          ? overallCounterKeys
+          : Object.keys(defs || {});
+
+      let total = 0;
+      let done = 0;
+
+      keys.forEach((key) => {
+        if (key === "deaths" || defs?.[key]?.nonProgress) return;
+
+        const max = Number(defs?.[key]?.max || 0);
+        const value = Number(counters?.[key]?.value || 0);
+
+        total += max;
+        done += Math.min(value, max);
+      });
+
+      return total > 0 ? Math.floor((done / total) * 100) : 0;
+    }
+
+    function getCurrentSegmentMs(state) {
+      const completed = Array.isArray(state?.splits?.completed) ? state.splits.completed : [];
+      const previous = completed[completed.length - 1];
+      const previousElapsed = Number(previous?.cumulativeMs || 0);
+      return Math.max(0, Number(state?.timer?.elapsed || 0) - previousElapsed);
+    }
+
+    function hexToRgb(hex) {
+      const raw = String(hex || "").trim().replace("#", "");
+      const normalized =
+        raw.length === 3
+          ? raw
+              .split("")
+              .map((char) => char + char)
+              .join("")
+          : raw;
+
+      if (!/^[0-9a-fA-F]{6}$/.test(normalized)) {
+        return null;
+      }
+
+      const value = Number.parseInt(normalized, 16);
+      return {
+        r: (value >> 16) & 255,
+        g: (value >> 8) & 255,
+        b: value & 255
+      };
+    }
+
+    function withAlpha(hex, alpha, fallback = `rgba(119, 168, 255, ${alpha})`) {
+      const rgb = hexToRgb(hex);
+      if (!rgb) return fallback;
+      return `rgba(${rgb.r}, ${rgb.g}, ${rgb.b}, ${alpha})`;
+    }
+
+    function getToneStyles(def = {}) {
+      const accent = def?.accent || "#77a8ff";
+      return [
+        `--accent:${accent}`,
+        `--accent-soft:${withAlpha(accent, 0.14)}`,
+        `--accent-mid:${withAlpha(accent, 0.24)}`,
+        `--accent-strong:${withAlpha(accent, 0.42)}`
+      ].join(";");
+    }
+
+    function getCounterTitle(def, fallback) {
+      return def?.requirement || def?.description || fallback;
+    }
+
+    function getOverlayChipLabel(def, fallback) {
+      return def?.overlayLabel || def?.shortLabel || def?.queueLabel || fallback;
+    }
+
+    function buildQuotaMarkup(phaseId, quotas, counters, defs) {
+      const entries = Object.entries(quotas?.[phaseId] || {}).filter(([, target]) => Number(target || 0) > 0);
+      if (!entries.length) return "";
+
+      return entries
+        .map(([key, target]) => {
+          const def = defs?.[key] || {};
+          const current = Number(counters?.[key]?.value || 0);
+          const goal = Number(target || 0);
+          const done = goal > 0 && current >= goal;
+          const label = getOverlayChipLabel(def, def.label || key);
+          const valueText = `${Math.min(current, goal)}/${goal}`;
+          const title = getCounterTitle(def, label);
+
+          return `
+            <div class="quotaChip ${done ? "quotaChip-complete" : ""}" style="${getToneStyles(def)}" title="${escapeHtml(title)}">
+              <span class="chipIconBadge">${getObjectiveIconMarkup(def?.icon, label, "chipIconSvg")}</span>
+              <span class="quotaMeta">
+                <span class="quotaLabel">${escapeHtml(label)}</span>
+                <span class="quotaValue">${escapeHtml(valueText)}</span>
+              </span>
+            </div>
+          `;
+        })
+        .join("");
+    }
+
+    function buildCounterChip(def, label, valueText, active = false, key = "") {
+      const title = getCounterTitle(def, label);
+      const keyAttr = key ? ` data-counter-key="${escapeHtml(key)}"` : "";
+
+      return `
+        <div class="counterChip ${active ? "activePhaseChip" : ""}"${keyAttr} style="${getToneStyles(def)}" title="${escapeHtml(title)}">
+          <span class="chipIconBadge">${getObjectiveIconMarkup(def?.icon, label, "chipIconSvg")}</span>
+          <span class="chipMeta">
+            <span class="chipLabel">${escapeHtml(label)}</span>
+            <span class="chipValue">${escapeHtml(valueText)}</span>
+          </span>
+        </div>
+      `;
+    }
+
+    function setErrorState(message) {
+      const currentSplitChip = document.getElementById("currentSplitChip");
+      const itemsLeft = document.getElementById("itemsLeft");
+      const itemsRight = document.getElementById("itemsRight");
+      const quotaWrap = document.getElementById("quotaWrap");
+
+      if (currentSplitChip) {
+        currentSplitChip.textContent = message;
+      }
+
+      if (itemsLeft) {
+        itemsLeft.innerHTML = `<div class="empty">${message}</div>`;
+      }
+
+      if (itemsRight) {
+        itemsRight.innerHTML = "";
+      }
+
+      if (quotaWrap) {
+        quotaWrap.hidden = true;
+        quotaWrap.innerHTML = "";
+      }
+    }
+
+    function phaseHasDirge(activePhase) {
+      const keys = [
+        ...(Array.isArray(activePhase?.visibleCounters) ? activePhase.visibleCounters : []),
+        ...(Array.isArray(activePhase?.objectives) ? activePhase.objectives : []),
+        ...(Array.isArray(activePhase?.visible) ? activePhase.visible : [])
+      ];
+
+      return keys.includes("dirge");
+    }
+
+    function buildDirgeCounterChip(active = false) {
+      return buildCounterChip({
+        icon: "song",
+        accent: "#f0c86a",
+        requirement: "Dirge of the Fallen"
+      }, "Dirge", "0/1", active);
+    }
+
+    function isDeathCounterEnabled(state, defs) {
+      return !!defs?.deaths && !!state?.settings?.showDeathCounter;
+    }
+
+    function renderTrophyChip(defs, counters) {
+      const trophyChip = document.getElementById("trophyChip");
+      const trophyDef = defs?.trophies;
+
+      if (!trophyChip) return;
+
+      if (!trophyDef || Number(trophyDef?.max || 0) <= 0) {
+        trophyChip.hidden = true;
+        trophyChip.innerHTML = "";
+        trophyChip.removeAttribute("style");
+        return;
+      }
+
+      const label = getOverlayChipLabel(trophyDef, trophyDef.label || "Trophies");
+      const value = Number(counters?.trophies?.value || 0);
+      const max = Number(trophyDef?.max || 0);
+
+      trophyChip.hidden = false;
+      trophyChip.setAttribute("style", getToneStyles(trophyDef));
+      trophyChip.title = getCounterTitle(trophyDef, label);
+      trophyChip.innerHTML = `
+        <span class="chipIconBadge">${getObjectiveIconMarkup(trophyDef?.icon, label, "chipIconSvg")}</span>
+        <span class="chipMeta">
+          <span class="chipLabel">${escapeHtml(label)}</span>
+          <span class="chipValue">${escapeHtml(`${Math.min(value, max)}/${max}`)}</span>
+        </span>
+      `;
+    }
+
+    function buildCollectiblesChip(counters, meta) {
+      const keys = Array.isArray(meta?.collectibleCounterKeys) ? meta.collectibleCounterKeys : [];
+      const total = Number(meta?.collectibleTotal || 0);
+
+      if (!keys.length || total <= 0) {
+        return "";
+      }
+
+      const value = keys.reduce((sum, key) => {
+        return sum + Number(counters?.[key]?.value || 0);
+      }, 0);
+
+      return buildCounterChip({
+        icon: "route",
+        accent: "#f6c453",
+        requirement:
+          meta?.collectibleDescription ||
+          "Combined progress across the collectible categories tracked for this route."
+      }, meta?.collectibleShortLabel || "Collect", `${Math.min(value, total)}/${total}`, true, "collectibles");
+    }
+
+    function balanceTwoRowBank(fragments) {
+      if (!Array.isArray(fragments) || fragments.length <= 2 || fragments.length % 2 === 0) {
+        return fragments;
+      }
+
+      return [
+        ...fragments.slice(0, -1),
+        buildCounterSpacer(),
+        fragments[fragments.length - 1]
+      ];
+    }
+
+    function buildCounterSpacer() {
+      return `<span class="counterChip counterChipSpacer" aria-hidden="true"></span>`;
+    }
+
+    function arrangeRightBank(fragments) {
+      if (Array.isArray(fragments) && fragments.length === 3) {
+        return [
+          buildCounterSpacer(),
+          fragments[0],
+          buildCounterSpacer(),
+          fragments[1],
+          buildCounterSpacer(),
+          fragments[2]
+        ];
+      }
+
+      if (!Array.isArray(fragments) || fragments.length !== 4) {
+        return balanceTwoRowBank(fragments);
+      }
+
+      const hordeIndex = fragments.findIndex((fragment) => fragment.includes('data-counter-key="hordes"'));
+      const horde = hordeIndex >= 0 ? fragments[hordeIndex] : null;
+      const others = hordeIndex >= 0
+        ? fragments.filter((_, index) => index !== hordeIndex)
+        : fragments.slice();
+
+      const top = others.shift();
+      const bottom = horde ? [...others, horde] : others;
+
+      return [
+        top,
+        bottom[0],
+        buildCounterSpacer(),
+        bottom[1],
+        buildCounterSpacer(),
+        bottom[2]
+      ].filter(Boolean);
+    }
+
+    function takeChipByKey(fragments, key) {
+      const index = fragments.findIndex((fragment) => fragment.includes(`data-counter-key="${key}"`));
+      return index >= 0 ? fragments.splice(index, 1)[0] : null;
+    }
+
+    function arrangeLeftBank(fragments) {
+      if (!Array.isArray(fragments)) return [];
+
+      const working = [...fragments].reverse();
+      const jobs = takeChipByKey(working, "encampmentjobs");
+      if (!jobs || working.length !== 4) {
+        return balanceTwoRowBank(jobs ? [...working, jobs] : working);
+      }
+
+      const horde = takeChipByKey(working, "hordes");
+      const nero = takeChipByKey(working, "nerosites");
+      const ipca = takeChipByKey(working, "ipca");
+      const collectibles = takeChipByKey(working, "collectibles");
+
+      return [
+        buildCounterSpacer(),
+        nero || working.shift(),
+        collectibles || working.shift(),
+        horde || working.shift(),
+        ipca || working.shift(),
+        jobs
+      ].filter(Boolean);
+    }
+
+    async function render() {
+      try {
+        const selectedGameId = readStoredGameId() || currentGameId;
+        const selectedRouteId = readStoredRouteId(selectedGameId) || currentRouteId || "";
+        const rawState = applyRouteFileSplitMode(readStoredState(selectedGameId, selectedRouteId));
+        const gameId = rawState?.gameId || selectedGameId;
+        const routeId = rawState?.routeId || selectedRouteId || "";
+        const gameData = await getGameData(gameId, routeId);
+        const state = buildInitialState(rawState, gameData, gameId, routeId);
+
+        currentGameId = gameId;
+        currentRouteId = routeId;
+
+        const defs = gameData?.counters || {};
+        const phases = gameData?.phases || {};
+        const quotas = gameData?.quotas || {};
+        const counters = state?.counters || {};
+        const currentSplit = state?.splits?.items?.[state?.splits?.currentIndex] || null;
+        const activePhaseId = state?.phase || "legacy_all";
+        const activePhase = phases?.[activePhaseId] || null;
+        const supportsDirge = !!gameData?.meta?.supportsDirge;
+        const hiddenOverlayKeys = new Set(
+          Array.isArray(gameData?.meta?.hiddenCounters?.overlay)
+            ? gameData.meta.hiddenCounters.overlay
+            : []
+        );
+        if (!isDeathCounterEnabled(state, defs)) {
+          hiddenOverlayKeys.add("deaths");
+        }
+        const visible = getVisibleCounterKeys(activePhase, counters);
+        const visibleSet = new Set(visible);
+        const elapsed = Number(state?.timer?.elapsed || 0);
+        const running = !!state?.timer?.running;
+        const percent = computePercent(defs, counters, gameData?.meta?.overallCounterKeys || []);
+        const segmentMs = getCurrentSegmentMs(state);
+        const paceText = computePaceText(state, gameData);
+        const primaryKey = visible.find((key) => defs?.[key]?.accent) || Object.keys(defs)[0];
+        const phaseAccent = defs?.[primaryKey]?.accent || "#77a8ff";
+
+        document.body.dataset.game = gameId;
+        document.body.dataset.phase = activePhaseId;
+        document.documentElement.style.setProperty("--phase-accent", phaseAccent);
+        document.documentElement.style.setProperty("--phase-accent-soft", withAlpha(phaseAccent, 0.2));
+        document.documentElement.style.setProperty("--phase-accent-strong", withAlpha(phaseAccent, 0.42));
+
+        document.title = gameData?.meta?.overlayTitle || gameData?.meta?.title || "Overlay";
+
+        const overlayTitleText = document.getElementById("overlayTitleText");
+        if (overlayTitleText) {
+          overlayTitleText.textContent = gameData?.meta?.overlayTitle || gameData?.meta?.title || "Overlay";
+        }
+
+        const timerEl = document.getElementById("timer");
+        if (timerEl) {
+          timerEl.textContent = formatMs(elapsed);
+          timerEl.classList.toggle("running", running);
+        }
+
+        const progressChip = document.getElementById("progressChip");
+        if (progressChip) {
+          progressChip.textContent = `${percent}%`;
+          progressChip.title = `${percent}% overall`;
+        }
+
+        renderTrophyChip(defs, counters);
+
+        const paceChip = document.getElementById("paceChip");
+        if (paceChip) {
+          paceChip.textContent = paceText;
+        }
+
+        const segmentChip = document.getElementById("segmentChip");
+        if (segmentChip) {
+          segmentChip.textContent = `Segment ${formatMs(segmentMs)}`;
+        }
+
+        const currentSplitChip = document.getElementById("currentSplitChip");
+        if (currentSplitChip) {
+          currentSplitChip.textContent = currentSplit?.label || "Run complete";
+          currentSplitChip.title = currentSplit?.note || activePhase?.objectiveNote || "";
+        }
+
+        const phaseNoteText = document.getElementById("phaseNoteText");
+        if (phaseNoteText) {
+          phaseNoteText.textContent =
+            currentSplit?.note ||
+            activePhase?.objectiveNote ||
+            activePhase?.description ||
+            activePhase?.note ||
+            "No active objective note.";
+        }
+
+        const phaseChip = document.getElementById("phaseChip");
+        if (phaseChip) {
+          phaseChip.textContent = activePhase?.label || activePhaseId || "Legacy All";
+          phaseChip.title =
+            activePhase?.objectiveNote ||
+            activePhase?.description ||
+            activePhase?.note ||
+            "";
+        }
+
+        const visibleOrder = new Map(visible.map((key, index) => [key, index]));
+        const orderedKeys = [
+          ...visible.filter((key) => defs?.[key]),
+          ...Object.keys(defs)
+            .filter((key) => !visibleOrder.has(key))
+            .sort((a, b) => {
+              const aRemaining = Number(defs?.[a]?.max || 0) - Number(counters?.[a]?.value || 0);
+              const bRemaining = Number(defs?.[b]?.max || 0) - Number(counters?.[b]?.value || 0);
+              return bRemaining - aRemaining;
+            })
+        ];
+
+        const fragments = orderedKeys
+          .map((key) => {
+            if (key === "trophies" && defs?.trophies) {
+              return null;
+            }
+
+            if (hiddenOverlayKeys.has(key)) {
+              return null;
+            }
+
+            const def = defs?.[key] || {};
+            const value = Number(counters?.[key]?.value || 0);
+            const max = Number(def?.max || 0);
+
+            if (max > 0 && value >= max) {
+              return null;
+            }
+
+            const label = getOverlayChipLabel(def, def.label || key);
+            const valueText = def?.displayMode === "count" || def?.nonProgress
+              ? String(value)
+              : `${value}/${max}`;
+            return buildCounterChip(def, label, valueText, visibleSet.has(key) || key === "deaths", key);
+          })
+          .filter(Boolean);
+
+        const collectiblesChip = buildCollectiblesChip(counters, gameData?.meta || {});
+        if (collectiblesChip) {
+          fragments.unshift(collectiblesChip);
+        }
+
+        if (supportsDirge && !state?.misc?.dirgeDone && !hiddenOverlayKeys.has("dirge")) {
+          fragments.push(buildDirgeCounterChip(phaseHasDirge(activePhase)));
+        }
+
+        const itemsLeft = document.getElementById("itemsLeft");
+        const itemsRight = document.getElementById("itemsRight");
+        if (itemsLeft && itemsRight) {
+          const leftFragments = [];
+          const rightFragments = [];
+
+          const extraGoesRight = fragments.length % 2 === 1;
+          fragments.forEach((fragment, index) => {
+            const goesLeft = extraGoesRight ? index % 2 === 1 : index % 2 === 0;
+            if (goesLeft) {
+              leftFragments.push(fragment);
+            } else {
+              rightFragments.push(fragment);
+            }
+          });
+
+          const jobsOnRight = takeChipByKey(rightFragments, "encampmentjobs");
+          if (jobsOnRight) {
+            leftFragments.push(jobsOnRight);
+          }
+
+          itemsLeft.innerHTML = arrangeLeftBank(leftFragments).join("");
+          itemsRight.innerHTML = arrangeRightBank(rightFragments).join("");
+        }
+
+        const counterSummaryChip = document.getElementById("counterSummaryChip");
+        if (counterSummaryChip) {
+          counterSummaryChip.textContent = `${visible.length} active`;
+        }
+
+        debug.setStatus("gameId", gameId);
+        debug.setStatus("routeId", routeId || "");
+        debug.setStatus("phase", activePhase?.label || activePhaseId);
+        debug.setStatus("split", currentSplit?.label || "Run complete");
+        debug.setStatus("percent", `${percent}%`);
+        debug.setStatus("pace", paceText);
+        debug.setStatus("segment", formatMs(segmentMs));
+        debug.setStatus("visibleCounters", visible.join(", "));
+        debug.setStatus("splitSource", state?.splits?.useSavedItems ? "imported/local" : "route-file");
+        debug.setStatus("routeDataRefreshMs", routeDataRefreshMs || "page-load");
+      } catch (error) {
+        setErrorState("Overlay failed to load data.");
+        debug.error("Overlay render failed", {
+          message: error.message,
+          stack: error.stack
+        });
+      }
+    }
+
+    window.addEventListener("storage", () => {
+      render();
+    });
+
+    setInterval(render, 500);
+
+    const pageContext = await resolvePageContext();
+    currentGameId = pageContext.gameId;
+    currentRouteId = pageContext.routeId;
+    render();
+
+    const panel = document.getElementById("debugPanel");
+
+    document.getElementById("debugToggle").onclick = () => {
+      panel.classList.toggle("open");
+    };
+
+    document.getElementById("debugClear").onclick = () => {
+      debug.clear();
+    };
+
+    document.getElementById("debugCopy").onclick = async () => {
+      await navigator.clipboard.writeText(
+        JSON.stringify(readStoredState(currentGameId, currentRouteId), null, 2)
+      );
+    };
+  </script>
+</body>
+</html>

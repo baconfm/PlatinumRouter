@@ -1,0 +1,652 @@
+{
+  "splits": [
+    {
+      "id": "prologue",
+      "label": "Prologue",
+      "note": "Story shell only. Expected story trophy: Gathering Storm.",
+      "phaseId": "any_act1",
+      "isPhaseStart": true,
+      "auto": {
+        "trophies": 1
+      }
+    },
+    {
+      "id": "the-warriors-code",
+      "label": "The Warrior's Code",
+      "note": "Story shell only. Expected story trophy: Point of No Return.",
+      "phaseId": "",
+      "isPhaseStart": false,
+      "auto": {
+        "trophies": 1
+      }
+    },
+    {
+      "id": "the-tale-of-sensei-ishikawa",
+      "label": "The Tale of Sensei Ishikawa",
+      "note": "Story shell only. Mission push, no cleanup detours.",
+      "phaseId": "",
+      "isPhaseStart": false,
+      "auto": {}
+    },
+    {
+      "id": "the-tale-of-lady-masako",
+      "label": "The Tale of Lady Masako",
+      "note": "Story shell only. Mission push, no cleanup detours.",
+      "phaseId": "",
+      "isPhaseStart": false,
+      "auto": {}
+    },
+    {
+      "id": "blood-on-the-grass",
+      "label": "Blood on the Grass",
+      "note": "Story shell only. Mission push, no cleanup detours.",
+      "phaseId": "",
+      "isPhaseStart": false,
+      "auto": {}
+    },
+    {
+      "id": "the-broken-blacksmith",
+      "label": "The Broken Blacksmith",
+      "note": "Story shell only. Mission push, no cleanup detours.",
+      "phaseId": "",
+      "isPhaseStart": false,
+      "auto": {}
+    },
+    {
+      "id": "hammer-and-forge",
+      "label": "Hammer and Forge",
+      "note": "Story shell only. Expected story trophy: Stoking the Flame.",
+      "phaseId": "",
+      "isPhaseStart": false,
+      "auto": {
+        "trophies": 1
+      }
+    },
+    {
+      "id": "the-tale-of-ryuzo",
+      "label": "The Tale of Ryuzo",
+      "note": "Story shell only. Expected story trophy: Company of Wolves.",
+      "phaseId": "",
+      "isPhaseStart": false,
+      "auto": {
+        "trophies": 1
+      }
+    },
+    {
+      "id": "the-iron-hook",
+      "label": "The Iron Hook",
+      "note": "Story shell only. Mission push, no cleanup detours.",
+      "phaseId": "",
+      "isPhaseStart": false,
+      "auto": {}
+    },
+    {
+      "id": "shadow-of-the-samurai",
+      "label": "Shadow of the Samurai",
+      "note": "Story shell only. Expected story trophy: Family Reunion.",
+      "phaseId": "",
+      "isPhaseStart": false,
+      "auto": {
+        "trophies": 1
+      }
+    },
+    {
+      "id": "a-new-horizon",
+      "label": "A New Horizon",
+      "note": "Story shell only. Enter Toyotama and keep the first playthrough clean.",
+      "phaseId": "any_act2",
+      "isPhaseStart": true,
+      "auto": {}
+    },
+    {
+      "id": "a-message-in-fire",
+      "label": "A Message in Fire",
+      "note": "Story shell only. Mission push, no cleanup detours.",
+      "phaseId": "",
+      "isPhaseStart": false,
+      "auto": {}
+    },
+    {
+      "id": "the-walls-of-yarikawa",
+      "label": "The Walls of Yarikawa",
+      "note": "Story shell only. Yarikawa arc, no collectible work.",
+      "phaseId": "",
+      "isPhaseStart": false,
+      "auto": {}
+    },
+    {
+      "id": "the-coward-of-yarikawa",
+      "label": "The Coward of Yarikawa",
+      "note": "Story shell only. Mission push, no cleanup detours.",
+      "phaseId": "",
+      "isPhaseStart": false,
+      "auto": {}
+    },
+    {
+      "id": "ghosts-from-the-past",
+      "label": "Ghosts from the Past",
+      "note": "Story shell only. Expected story trophy: Birthright.",
+      "phaseId": "",
+      "isPhaseStart": false,
+      "auto": {
+        "trophies": 1
+      }
+    },
+    {
+      "id": "the-ghost-of-yarikawa",
+      "label": "The Ghost of Yarikawa",
+      "note": "Story shell only. Expected story trophies: Leader of the People and The Ghost.",
+      "phaseId": "",
+      "isPhaseStart": false,
+      "auto": {
+        "trophies": 2
+      }
+    },
+    {
+      "id": "a-reckoning-in-blood",
+      "label": "A Reckoning in Blood",
+      "note": "Story shell only. Mission push, no cleanup detours.",
+      "phaseId": "",
+      "isPhaseStart": false,
+      "auto": {}
+    },
+    {
+      "id": "the-fate-of-tsushima",
+      "label": "The Fate of Tsushima",
+      "note": "Story shell only. Mission push, no cleanup detours.",
+      "phaseId": "",
+      "isPhaseStart": false,
+      "auto": {}
+    },
+    {
+      "id": "from-the-darkness",
+      "label": "From the Darkness",
+      "note": "Story shell only. Expected story trophy: Dying Embers.",
+      "phaseId": "",
+      "isPhaseStart": false,
+      "auto": {
+        "trophies": 1
+      }
+    },
+    {
+      "id": "honor-and-ash",
+      "label": "Honor and Ash",
+      "note": "Story shell only. Enter Kamiagata and keep the run pointed at the ending.",
+      "phaseId": "any_act3",
+      "isPhaseStart": true,
+      "auto": {}
+    },
+    {
+      "id": "wolves-at-the-gates",
+      "label": "Wolves at the Gates",
+      "note": "Story shell only. Expected story trophy: The Exiled Alliance.",
+      "phaseId": "",
+      "isPhaseStart": false,
+      "auto": {
+        "trophies": 1
+      }
+    },
+    {
+      "id": "a-gathering-storm",
+      "label": "A Gathering Storm",
+      "note": "Story shell only. Mission push, no cleanup detours.",
+      "phaseId": "",
+      "isPhaseStart": false,
+      "auto": {}
+    },
+    {
+      "id": "heart-of-the-jito",
+      "label": "Heart of the Jito",
+      "note": "Story shell only. Mission push, no cleanup detours.",
+      "phaseId": "",
+      "isPhaseStart": false,
+      "auto": {}
+    },
+    {
+      "id": "eternal-blue-sky",
+      "label": "Eternal Blue Sky",
+      "note": "Story shell only. Expected story trophy: Sovereign End.",
+      "phaseId": "",
+      "isPhaseStart": false,
+      "auto": {
+        "trophies": 1
+      }
+    },
+    {
+      "id": "the-tale-of-lord-shimura",
+      "label": "The Tale of Lord Shimura",
+      "note": "Story shell only. Expected story trophy: Mono No Aware.",
+      "phaseId": "",
+      "isPhaseStart": false,
+      "auto": {
+        "trophies": 1
+      }
+    },
+    {
+      "id": "ngp-prologue-and-golden-temple-board",
+      "label": "NG+ Prologue and Golden Temple Board",
+      "note": "Start the real platinum work here. Re-do Photo Mode, pick up the early altar/record/artifact line, and get Golden Temple routing online.",
+      "phaseId": "ngp_act1",
+      "isPhaseStart": true,
+      "auto": {
+        "inari": 2,
+        "hotsprings": 2,
+        "bamboo": 1,
+        "haiku": 1,
+        "shrines": 1,
+        "hiddenaltars": 2,
+        "records": 2,
+        "artifacts": 1,
+        "sidetales": 2,
+        "territories": 1
+      }
+    },
+    {
+      "id": "ngp-hiyoshi-ariake-sweep",
+      "label": "NG+ Hiyoshi / Ariake Sweep",
+      "note": "Fox, haiku, spring, and Hiyoshi lane. Start the lighthouse line while Act 1 is still compact.",
+      "phaseId": "",
+      "isPhaseStart": false,
+      "auto": {
+        "inari": 3,
+        "hotsprings": 1,
+        "bamboo": 1,
+        "haiku": 1,
+        "shrines": 1,
+        "hiddenaltars": 2,
+        "records": 1,
+        "crickets": 1,
+        "sidetales": 2,
+        "lighthouses": 1
+      }
+    },
+    {
+      "id": "ngp-ishikawa-route-board",
+      "label": "NG+ Ishikawa Route Board",
+      "note": "Bow route, Hiyoshi records, shrine, and altar stack while pushing Ishikawa availability.",
+      "phaseId": "",
+      "isPhaseStart": false,
+      "auto": {
+        "inari": 2,
+        "hotsprings": 2,
+        "bamboo": 1,
+        "haiku": 1,
+        "shrines": 1,
+        "hiddenaltars": 2,
+        "records": 3,
+        "sidetales": 2
+      }
+    },
+    {
+      "id": "ngp-masako-golden-forest",
+      "label": "NG+ Masako / Golden Forest",
+      "note": "Golden Forest fox chain, Masako progression, and the mid-Izuhara cleanup pass.",
+      "phaseId": "",
+      "isPhaseStart": false,
+      "auto": {
+        "inari": 4,
+        "hiddenaltars": 2,
+        "records": 1,
+        "crickets": 1,
+        "sidetales": 3,
+        "territories": 1
+      }
+    },
+    {
+      "id": "ngp-ryuzo-komatsu-board",
+      "label": "NG+ Ryuzo / Komatsu Board",
+      "note": "Komatsu routing, cricket finish, artifact line, and the second lighthouse push.",
+      "phaseId": "",
+      "isPhaseStart": false,
+      "auto": {
+        "inari": 3,
+        "hotsprings": 1,
+        "bamboo": 1,
+        "haiku": 2,
+        "hiddenaltars": 1,
+        "records": 2,
+        "artifacts": 2,
+        "crickets": 2,
+        "sidetales": 3,
+        "lighthouses": 1,
+        "territories": 1
+      }
+    },
+    {
+      "id": "ngp-heavenly-strike-arrow-peak",
+      "label": "NG+ Heavenly Strike / Arrow Peak",
+      "note": "Mythic handoff, Arrow Peak/PB shrine work, and duel setup before the north side closes.",
+      "phaseId": "",
+      "isPhaseStart": false,
+      "auto": {
+        "inari": 3,
+        "hotsprings": 1,
+        "haiku": 1,
+        "shrines": 2,
+        "mythictales": 1,
+        "duels": 1,
+        "sidetales": 2
+      }
+    },
+    {
+      "id": "ngp-izuhara-mythic-and-duels",
+      "label": "NG+ Izuhara Mythic and Duels",
+      "note": "Finish the Act 1 mythic chain, clean the duel board, and remove the loose unlock clutter.",
+      "phaseId": "",
+      "isPhaseStart": false,
+      "auto": {
+        "inari": 2,
+        "bamboo": 1,
+        "haiku": 1,
+        "shrines": 1,
+        "mythictales": 2,
+        "duels": 3,
+        "sidetales": 1,
+        "territories": 1
+      }
+    },
+    {
+      "id": "ngp-izuhara-tales-and-territory-sweep",
+      "label": "NG+ Izuhara Tales and Territory Sweep",
+      "note": "Front-load the Act 1 tale board and planned liberation work before Castle Kaneda.",
+      "phaseId": "",
+      "isPhaseStart": false,
+      "auto": {
+        "inari": 2,
+        "hotsprings": 1,
+        "bamboo": 1,
+        "haiku": 1,
+        "shrines": 1,
+        "lighthouses": 1,
+        "records": 1,
+        "artifacts": 1,
+        "hiddenaltars": 1,
+        "sidetales": 2,
+        "duels": 2,
+        "territories": 4
+      }
+    },
+    {
+      "id": "ngp-castle-kaneda-exit",
+      "label": "NG+ Castle Kaneda Exit",
+      "note": "Close Izuhara clean. Use spare encounters here for any early combat-misc trophy practice still missing.",
+      "phaseId": "",
+      "isPhaseStart": false,
+      "auto": {
+        "inari": 1,
+        "hotsprings": 1,
+        "crickets": 1,
+        "monochrome": 1,
+        "sidetales": 1
+      }
+    },
+    {
+      "id": "ngp-akashima-arrival-umugi-cove",
+      "label": "NG+ Akashima Arrival / Umugi Cove",
+      "note": "Open Toyotama, tag the Umugi line, and start folding side tales into the story spine again.",
+      "phaseId": "ngp_act2",
+      "isPhaseStart": true,
+      "auto": {
+        "inari": 2,
+        "hotsprings": 1,
+        "bamboo": 1,
+        "haiku": 1,
+        "shrines": 1,
+        "records": 1,
+        "artifacts": 1,
+        "sidetales": 3,
+        "duels": 1,
+        "territories": 1
+      }
+    },
+    {
+      "id": "ngp-yarikawa-story-spine",
+      "label": "NG+ Yarikawa Story Spine",
+      "note": "Walls/Coward/Yarikawa route with the nearby cleanup that does not break pace.",
+      "phaseId": "",
+      "isPhaseStart": false,
+      "auto": {
+        "inari": 2,
+        "hotsprings": 1,
+        "bamboo": 1,
+        "shrines": 1,
+        "records": 1,
+        "artifacts": 1,
+        "sidetales": 3,
+        "duels": 1,
+        "territories": 2
+      }
+    },
+    {
+      "id": "ngp-sakai-armor-omi-loop",
+      "label": "NG+ Sakai Armor / Omi Loop",
+      "note": "Family route, Omi loop, and the first Toyotama mythic cluster.",
+      "phaseId": "",
+      "isPhaseStart": false,
+      "auto": {
+        "inari": 3,
+        "hotsprings": 1,
+        "bamboo": 1,
+        "haiku": 1,
+        "shrines": 1,
+        "records": 1,
+        "artifacts": 2,
+        "sidetales": 4,
+        "duels": 1,
+        "territories": 2,
+        "mythictales": 1
+      }
+    },
+    {
+      "id": "ngp-toyotama-coast-sweep",
+      "label": "NG+ Toyotama Coast Sweep",
+      "note": "Coastline sweep for lighthouse pressure, collectibles, and easy tale pickups.",
+      "phaseId": "",
+      "isPhaseStart": false,
+      "auto": {
+        "inari": 2,
+        "hotsprings": 1,
+        "bamboo": 1,
+        "haiku": 1,
+        "lighthouses": 1,
+        "records": 1,
+        "artifacts": 1,
+        "sidetales": 3,
+        "duels": 2,
+        "territories": 4
+      }
+    },
+    {
+      "id": "ngp-monk-and-tale-board",
+      "label": "NG+ Monk and Tale Board",
+      "note": "Norio side of the island, monk chain setup, and dense Toyotama tale value.",
+      "phaseId": "",
+      "isPhaseStart": false,
+      "auto": {
+        "inari": 2,
+        "hotsprings": 1,
+        "haiku": 1,
+        "shrines": 1,
+        "records": 1,
+        "artifacts": 1,
+        "sidetales": 5,
+        "duels": 2,
+        "territories": 3,
+        "mythictales": 1
+      }
+    },
+    {
+      "id": "ngp-six-blades-duel-board",
+      "label": "NG+ Six Blades / Duel Board",
+      "note": "Use the Kojiro board to cash out the duel count while it is all in one window.",
+      "phaseId": "",
+      "isPhaseStart": false,
+      "auto": {
+        "inari": 1,
+        "bamboo": 1,
+        "artifacts": 1,
+        "sidetales": 2,
+        "duels": 4,
+        "territories": 2,
+        "mythictales": 1
+      }
+    },
+    {
+      "id": "ngp-toyotama-camp-sweep",
+      "label": "NG+ Toyotama Camp Sweep",
+      "note": "Liberation-heavy stretch. Good place to mop Perfect Parry, terror arrow, and fall-damage trophy cleanup if needed.",
+      "phaseId": "",
+      "isPhaseStart": false,
+      "auto": {
+        "inari": 2,
+        "hotsprings": 1,
+        "bamboo": 1,
+        "haiku": 1,
+        "shrines": 1,
+        "lighthouses": 1,
+        "records": 1,
+        "artifacts": 1,
+        "sidetales": 3,
+        "duels": 1,
+        "territories": 7
+      }
+    },
+    {
+      "id": "ngp-castle-shimura-exit",
+      "label": "NG+ Castle Shimura Exit",
+      "note": "Close Toyotama with the second dye merchant and any short spillover tale work.",
+      "phaseId": "",
+      "isPhaseStart": false,
+      "auto": {
+        "inari": 1,
+        "monochrome": 1,
+        "sidetales": 2,
+        "territories": 3
+      }
+    },
+    {
+      "id": "ngp-kamiagata-entry-jogaku-board",
+      "label": "NG+ Kamiagata Entry / Jogaku Board",
+      "note": "Open the north, take the first lighthouse, and set the final side-tale board in motion.",
+      "phaseId": "ngp_act3",
+      "isPhaseStart": true,
+      "auto": {
+        "inari": 2,
+        "hotsprings": 1,
+        "bamboo": 1,
+        "haiku": 1,
+        "shrines": 1,
+        "lighthouses": 1,
+        "records": 1,
+        "artifacts": 1,
+        "sidetales": 3,
+        "duels": 1,
+        "territories": 2
+      }
+    },
+    {
+      "id": "ngp-north-sweep-lighthouse-chain",
+      "label": "NG+ North Sweep / Lighthouse Chain",
+      "note": "Cold north sweep for lighthouse pressure, tale pickups, and route-safe camp clear.",
+      "phaseId": "",
+      "isPhaseStart": false,
+      "auto": {
+        "inari": 2,
+        "bamboo": 1,
+        "haiku": 1,
+        "shrines": 1,
+        "lighthouses": 1,
+        "records": 1,
+        "artifacts": 1,
+        "sidetales": 2,
+        "duels": 1,
+        "territories": 3
+      }
+    },
+    {
+      "id": "ngp-frosted-collectibles-and-tales",
+      "label": "NG+ Frosted Collectibles and Tales",
+      "note": "Use the frozen region to finish the clean collectible lines and the next block of tales.",
+      "phaseId": "",
+      "isPhaseStart": false,
+      "auto": {
+        "inari": 2,
+        "hotsprings": 1,
+        "haiku": 1,
+        "shrines": 1,
+        "records": 1,
+        "artifacts": 2,
+        "sidetales": 3,
+        "duels": 1,
+        "territories": 3
+      }
+    },
+    {
+      "id": "ngp-final-mythic-vanity-cooper",
+      "label": "NG+ Final Mythic / Vanity / Cooper",
+      "note": "Cash out the last mythic, sword kit/gift cleanup, and the full Cooper Clan costume set.",
+      "phaseId": "",
+      "isPhaseStart": false,
+      "auto": {
+        "inari": 1,
+        "haiku": 1,
+        "artifacts": 1,
+        "mythictales": 1,
+        "sidetales": 2,
+        "duels": 1,
+        "cooper": 3,
+        "territories": 1
+      }
+    },
+    {
+      "id": "ngp-kamiagata-territory-sweep",
+      "label": "NG+ Kamiagata Territory Sweep",
+      "note": "Heavy liberation block. This is the best late spot to finish any lingering combat-misc trophy work.",
+      "phaseId": "",
+      "isPhaseStart": false,
+      "auto": {
+        "inari": 2,
+        "hotsprings": 1,
+        "bamboo": 1,
+        "haiku": 1,
+        "shrines": 1,
+        "lighthouses": 1,
+        "artifacts": 1,
+        "sidetales": 3,
+        "duels": 1,
+        "territories": 8
+      }
+    },
+    {
+      "id": "ngp-khan-route",
+      "label": "NG+ Khan Route",
+      "note": "Push the final story backbone while keeping the north cleanup board honest.",
+      "phaseId": "",
+      "isPhaseStart": false,
+      "auto": {
+        "inari": 2,
+        "bamboo": 1,
+        "records": 1,
+        "artifacts": 1,
+        "sidetales": 2,
+        "duels": 1,
+        "territories": 4
+      }
+    },
+    {
+      "id": "ngp-lord-shimura-platinum-mop-up",
+      "label": "NG+ Lord Shimura / Platinum Mop-Up",
+      "note": "The route should only leave small spillover here. If anything survives, it should be end-state cleanup, not a region-sized chore.",
+      "phaseId": "",
+      "isPhaseStart": false,
+      "auto": {
+        "inari": 1,
+        "haiku": 1,
+        "artifacts": 1,
+        "sidetales": 3,
+        "duels": 1,
+        "territories": 3
+      }
+    }
+  ]
+}

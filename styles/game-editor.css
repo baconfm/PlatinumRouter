@@ -1,0 +1,132 @@
+.gameEditorPage .app {
+  padding: 12px;
+}
+
+.gamePageTop {
+  gap: 20px;
+  padding-bottom: 14px;
+}
+
+.gamePageTop .title {
+  max-width: 760px;
+}
+
+.gamePageTop .subtitle {
+  max-width: 780px;
+  margin-top: 8px;
+}
+
+.gameCommandPanel {
+  display: grid;
+  gap: 14px;
+}
+
+.gameCommandBar {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.gameCommandCopy {
+  max-width: 760px;
+}
+
+.gameNavLinks,
+.gameSummaryStats,
+.gameCounterPreview {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.gameActionGroups {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.gameActionGroup {
+  display: grid;
+  gap: 8px;
+  padding: 12px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.gameActionRow {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.gameSummaryPanel {
+  display: grid;
+  gap: 14px;
+}
+
+.gameCounterPreview {
+  align-items: center;
+}
+
+.gameCounterPreviewChip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 32px;
+  padding: 0 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: var(--text);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.gameCounterPreviewIcon {
+  width: 22px;
+  height: 22px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--gold);
+  font-size: 12px;
+}
+
+.gameCounterPreviewChip .subtitle {
+  color: var(--text-muted);
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.gameOutputHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.gameBuilderPanel .editorCard {
+  background:
+    linear-gradient(180deg, rgba(10, 19, 38, 0.98) 0%, rgba(7, 15, 31, 0.98) 100%);
+}
+
+.gameOutputGrid .editorCard {
+  min-height: 180px;
+}
+
+@media (max-width: 760px) {
+  .gameEditorPage .app {
+    padding: 8px;
+  }
+
+  .gameActionGroups {
+    grid-template-columns: 1fr;
+  }
+}

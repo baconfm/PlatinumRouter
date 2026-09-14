@@ -1,0 +1,6036 @@
+{
+  "splits": [
+    {
+      "id": "cascade-he-can-t-be-far",
+      "label": "He Can't Be Far",
+      "note": "Story Missions · Cascade",
+      "phaseId": "cascade",
+      "isPhaseStart": true,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-he-can-t-be-far",
+          "type": "completion",
+          "label": "He Can't Be Far",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-he-can-t-be-far"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "cascade-we-ll-make-it-quick",
+      "label": "We'll Make It Quick",
+      "note": "Story Missions · Cascade",
+      "phaseId": "cascade",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-we-ll-make-it-quick",
+          "type": "completion",
+          "label": "We'll Make It Quick",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-we-ll-make-it-quick"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "cascade-i-say-we-head-north",
+      "label": "I Say We Head North",
+      "note": "Story Missions · Cascade",
+      "phaseId": "cascade",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-i-say-we-head-north",
+          "type": "completion",
+          "label": "I Say We Head North",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-i-say-we-head-north"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "cascade-bad-way-to-go",
+      "label": "Bad Way to Go",
+      "note": "Story Missions · Cascade",
+      "phaseId": "cascade",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-bad-way-to-go",
+          "type": "completion",
+          "label": "Bad Way to Go",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-bad-way-to-go"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "cascade-you-got-a-death-wish",
+      "label": "You Got a Death Wish",
+      "note": "Story Missions · Cascade",
+      "phaseId": "cascade",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-you-got-a-death-wish",
+          "type": "completion",
+          "label": "You Got a Death Wish",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-you-got-a-death-wish"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "cascade-drifters-on-the-mountain",
+      "label": "Drifters on the Mountain",
+      "note": "Story Missions · Cascade",
+      "phaseId": "cascade",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-drifters-on-the-mountain",
+          "type": "completion",
+          "label": "Drifters on the Mountain",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-drifters-on-the-mountain"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "cascade-bugged-the-hell-out",
+      "label": "Bugged the Hell Out",
+      "note": "Story Missions · Cascade",
+      "phaseId": "cascade",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-bugged-the-hell-out",
+          "type": "completion",
+          "label": "Bugged the Hell Out",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-bugged-the-hell-out"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "cascade-sounded-like-engines",
+      "label": "Sounded Like Engines",
+      "note": "Story Missions · Cascade",
+      "phaseId": "cascade",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-sounded-like-engines",
+          "type": "completion",
+          "label": "Sounded Like Engines",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-sounded-like-engines"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "cascade-smoke-on-the-mountain",
+      "label": "Smoke on the Mountain",
+      "note": "Story Missions · Cascade",
+      "phaseId": "cascade",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-smoke-on-the-mountain",
+          "type": "completion",
+          "label": "Smoke on the Mountain",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-smoke-on-the-mountain"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "cascade-out-of-nowhere",
+      "label": "Out of Nowhere",
+      "note": "Story Missions · Cascade",
+      "phaseId": "cascade",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-out-of-nowhere",
+          "type": "completion",
+          "label": "Out of Nowhere",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-out-of-nowhere"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "cascade-they-re-not-sleeping",
+      "label": "They're Not Sleeping",
+      "note": "Story Missions · Cascade",
+      "phaseId": "cascade",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-they-re-not-sleeping",
+          "type": "completion",
+          "label": "They're Not Sleeping",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-they-re-not-sleeping"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "cascade-it-s-a-rifle-not-a-gun",
+      "label": "It's a Rifle, Not a Gun",
+      "note": "Story Missions · Cascade",
+      "phaseId": "cascade",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-it-s-a-rifle-not-a-gun",
+          "type": "completion",
+          "label": "It's a Rifle, Not a Gun",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-it-s-a-rifle-not-a-gun"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "cascade-we-re-getting-low-on-meat",
+      "label": "We're Getting Low on Meat",
+      "note": "Story Missions · Cascade",
+      "phaseId": "cascade",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-we-re-getting-low-on-meat",
+          "type": "completion",
+          "label": "We're Getting Low on Meat",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-we-re-getting-low-on-meat"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "cascade-making-contact",
+      "label": "Making Contact",
+      "note": "Story Missions · Cascade",
+      "phaseId": "cascade",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-making-contact",
+          "type": "completion",
+          "label": "Making Contact",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-making-contact"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "cascade-i-ve-pulled-weeds-before",
+      "label": "I've Pulled Weeds Before",
+      "note": "Story Missions · Cascade",
+      "phaseId": "cascade",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-i-ve-pulled-weeds-before",
+          "type": "completion",
+          "label": "I've Pulled Weeds Before",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-i-ve-pulled-weeds-before"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "cascade-give-me-a-couple-days",
+      "label": "Give Me a Couple Days",
+      "note": "Story Missions · Cascade",
+      "phaseId": "cascade",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-give-me-a-couple-days",
+          "type": "completion",
+          "label": "Give Me a Couple Days",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-give-me-a-couple-days"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "cascade-no-one-saw-it-coming",
+      "label": "No One Saw It Coming",
+      "note": "Story Missions · Cascade",
+      "phaseId": "cascade",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-no-one-saw-it-coming",
+          "type": "completion",
+          "label": "No One Saw It Coming",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-no-one-saw-it-coming"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "cascade-it-couldn-t-be-that-easy",
+      "label": "It Couldn't Be That Easy",
+      "note": "Story Missions · Cascade",
+      "phaseId": "cascade",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-it-couldn-t-be-that-easy",
+          "type": "completion",
+          "label": "It Couldn't Be That Easy",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-it-couldn-t-be-that-easy"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "cascade-they-don-t-like-visitors",
+      "label": "They Don't Like Visitors",
+      "note": "Story Missions · Cascade",
+      "phaseId": "cascade",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-they-don-t-like-visitors",
+          "type": "completion",
+          "label": "They Don't Like Visitors",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-they-don-t-like-visitors"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "cascade-that-s-when-i-knew",
+      "label": "That's When I Knew",
+      "note": "Story Missions · Cascade",
+      "phaseId": "cascade",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-that-s-when-i-knew",
+          "type": "completion",
+          "label": "That's When I Knew",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-that-s-when-i-knew"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "cascade-it-s-a-long-story",
+      "label": "It's a Long Story",
+      "note": "Story Missions · Cascade",
+      "phaseId": "cascade",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-it-s-a-long-story",
+          "type": "completion",
+          "label": "It's a Long Story",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-it-s-a-long-story"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "cascade-riding-the-open-road",
+      "label": "Riding the Open Road",
+      "note": "Story Missions · Cascade",
+      "phaseId": "cascade",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-riding-the-open-road",
+          "type": "completion",
+          "label": "Riding the Open Road",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-riding-the-open-road"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "cascade-drugged-outta-his-mind",
+      "label": "Drugged Outta His Mind",
+      "note": "Camp Jobs · Cascade",
+      "phaseId": "cascade",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-encampmentjobs-drugged-outta-his-mind",
+          "type": "completion",
+          "label": "Drugged Outta His Mind",
+          "counterKey": "encampmentjobs",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-encampmentjobs-drugged-outta-his-mind"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "cascade-hear-about-a-ripper-camp",
+      "label": "Hear About a Ripper Camp?",
+      "note": "Camp Jobs · Cascade",
+      "phaseId": "cascade",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-encampmentjobs-hear-about-a-ripper-camp",
+          "type": "completion",
+          "label": "Hear About a Ripper Camp?",
+          "counterKey": "encampmentjobs",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-encampmentjobs-hear-about-a-ripper-camp"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "cascade-he-never-came-back",
+      "label": "He Never Came Back",
+      "note": "Camp Jobs · Cascade",
+      "phaseId": "cascade",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-encampmentjobs-he-never-came-back",
+          "type": "completion",
+          "label": "He Never Came Back",
+          "counterKey": "encampmentjobs",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-encampmentjobs-he-never-came-back"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "cascade-hard-to-miss",
+      "label": "Hard to Miss",
+      "note": "Camp Jobs · Cascade",
+      "phaseId": "cascade",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-encampmentjobs-hard-to-miss",
+          "type": "completion",
+          "label": "Hard to Miss",
+          "counterKey": "encampmentjobs",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-encampmentjobs-hard-to-miss"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "cascade-here-s-a-little-chaos",
+      "label": "Here's a Little Chaos",
+      "note": "Camp Jobs · Cascade",
+      "phaseId": "cascade",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-encampmentjobs-here-s-a-little-chaos",
+          "type": "completion",
+          "label": "Here's a Little Chaos",
+          "counterKey": "encampmentjobs",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-encampmentjobs-here-s-a-little-chaos"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "cascade-nose-down-they-feed-ya",
+      "label": "Nose Down, They Feed Ya",
+      "note": "Camp Jobs · Cascade",
+      "phaseId": "cascade",
+      "isPhaseStart": false,
+      "auto": {
+        "storymissions": 1
+      },
+      "ocrGoals": [
+        {
+          "id": "completion-encampmentjobs-nose-down-they-feed-ya",
+          "type": "completion",
+          "label": "Nose Down, They Feed Ya",
+          "counterKey": "encampmentjobs",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-encampmentjobs-nose-down-they-feed-ya"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "cascade-horse-lake-nero-checkpoint",
+      "label": "Horse Lake NERO Checkpoint",
+      "note": "NERO Checkpoints · Cascade",
+      "phaseId": "cascade",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-nerosites-horse-lake-nero-checkpoint",
+          "type": "completion",
+          "label": "Horse Lake NERO Checkpoint",
+          "counterKey": "nerosites",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-nerosites-horse-lake-nero-checkpoint"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "cascade-little-bear-lake-nero-checkpoint",
+      "label": "Little Bear Lake NERO Checkpoint",
+      "note": "NERO Checkpoints · Cascade",
+      "phaseId": "cascade",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-nerosites-little-bear-lake-nero-checkpoint",
+          "type": "completion",
+          "label": "Little Bear Lake NERO Checkpoint",
+          "counterKey": "nerosites",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-nerosites-little-bear-lake-nero-checkpoint"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "cascade-old-pioneer-cemetery-nero-checkpoint",
+      "label": "Old Pioneer Cemetery NERO Checkpoint",
+      "note": "NERO Checkpoints · Cascade",
+      "phaseId": "cascade",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-nerosites-old-pioneer-cemetery-nero-checkpoint",
+          "type": "completion",
+          "label": "Old Pioneer Cemetery NERO Checkpoint",
+          "counterKey": "nerosites",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-nerosites-old-pioneer-cemetery-nero-checkpoint"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "cascade-cascade-radio-tower-ambush-camp",
+      "label": "Cascade Radio Tower Ambush Camp",
+      "note": "Ambush Camps · Cascade",
+      "phaseId": "cascade",
+      "isPhaseStart": false,
+      "auto": {
+        "storymissions": 1
+      },
+      "ocrGoals": [
+        {
+          "id": "completion-ambushcamps-cascade-radio-tower-ambush-camp",
+          "type": "completion",
+          "label": "Cascade Radio Tower Ambush Camp",
+          "counterKey": "ambushcamps",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-ambushcamps-cascade-radio-tower-ambush-camp"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "cascade-jefferson-rail-tunnel-ambush-camp",
+      "label": "Jefferson Rail Tunnel Ambush Camp",
+      "note": "Ambush Camps · Cascade",
+      "phaseId": "cascade",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-ambushcamps-jefferson-rail-tunnel-ambush-camp",
+          "type": "completion",
+          "label": "Jefferson Rail Tunnel Ambush Camp",
+          "counterKey": "ambushcamps",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-ambushcamps-jefferson-rail-tunnel-ambush-camp"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "cascade-horse-creek-ambush-camp",
+      "label": "Horse Creek Ambush Camp",
+      "note": "Ambush Camps · Cascade",
+      "phaseId": "cascade",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-ambushcamps-horse-creek-ambush-camp",
+          "type": "completion",
+          "label": "Horse Creek Ambush Camp",
+          "counterKey": "ambushcamps",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-ambushcamps-horse-creek-ambush-camp"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "cascade-logging-camp-infestation",
+      "label": "Logging Camp Infestation",
+      "note": "Infestation Zones · Cascade",
+      "phaseId": "cascade",
+      "isPhaseStart": false,
+      "auto": {
+        "storymissions": 1
+      },
+      "ocrGoals": [
+        {
+          "id": "completion-infestations-logging-camp-infestation",
+          "type": "completion",
+          "label": "Logging Camp Infestation",
+          "counterKey": "infestations",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-infestations-logging-camp-infestation"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "cascade-pioneer-cemetery-infestation",
+      "label": "Pioneer Cemetery Infestation",
+      "note": "Infestation Zones · Cascade",
+      "phaseId": "cascade",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-infestations-pioneer-cemetery-infestation",
+          "type": "completion",
+          "label": "Pioneer Cemetery Infestation",
+          "counterKey": "infestations",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-infestations-pioneer-cemetery-infestation"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "cascade-horse-lake-horde",
+      "label": "Horse Lake Horde",
+      "note": "Hordes · Cascade",
+      "phaseId": "cascade",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-hordes-horse-lake-horde",
+          "type": "completion",
+          "label": "Horse Lake Horde",
+          "counterKey": "hordes",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-hordes-horse-lake-horde"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "cascade-o-leary-mountain-horde",
+      "label": "O'Leary Mountain Horde",
+      "note": "Hordes · Cascade",
+      "phaseId": "cascade",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-hordes-o-leary-mountain-horde",
+          "type": "completion",
+          "label": "O'Leary Mountain Horde",
+          "counterKey": "hordes",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-hordes-o-leary-mountain-horde"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "cascade-little-bear-lake-horde",
+      "label": "Little Bear Lake Horde",
+      "note": "Hordes · Cascade",
+      "phaseId": "cascade",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-hordes-little-bear-lake-horde",
+          "type": "completion",
+          "label": "Little Bear Lake Horde",
+          "counterKey": "hordes",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-hordes-little-bear-lake-horde"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "cascade-cascade-highway-horde",
+      "label": "Cascade Highway Horde",
+      "note": "Hordes · Cascade",
+      "phaseId": "cascade",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-hordes-cascade-highway-horde",
+          "type": "completion",
+          "label": "Cascade Highway Horde",
+          "counterKey": "hordes",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-hordes-cascade-highway-horde"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "cascade-death-train-horde",
+      "label": "Death Train Horde",
+      "note": "Hordes · Cascade",
+      "phaseId": "cascade",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-hordes-death-train-horde",
+          "type": "completion",
+          "label": "Death Train Horde",
+          "counterKey": "hordes",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-hordes-death-train-horde"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "cascade-proxy-falls-horde",
+      "label": "Proxy Falls Horde",
+      "note": "Hordes · Cascade",
+      "phaseId": "cascade",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-hordes-proxy-falls-horde",
+          "type": "completion",
+          "label": "Proxy Falls Horde",
+          "counterKey": "hordes",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-hordes-proxy-falls-horde"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "cascade-white-king-mine-horde",
+      "label": "White King Mine Horde",
+      "note": "Hordes · Cascade",
+      "phaseId": "cascade",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-hordes-white-king-mine-horde",
+          "type": "completion",
+          "label": "White King Mine Horde",
+          "counterKey": "hordes",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-hordes-white-king-mine-horde"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "cascade-grotto-caves-horde",
+      "label": "Grotto Caves Horde",
+      "note": "Hordes · Cascade",
+      "phaseId": "cascade",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-hordes-grotto-caves-horde",
+          "type": "completion",
+          "label": "Grotto Caves Horde",
+          "counterKey": "hordes",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-hordes-grotto-caves-horde"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "belknap-price-on-your-head",
+      "label": "Price on Your Head",
+      "note": "Story Missions · Belknap",
+      "phaseId": "belknap",
+      "isPhaseStart": true,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-price-on-your-head",
+          "type": "completion",
+          "label": "Price on Your Head",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-price-on-your-head"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "belknap-what-did-you-do",
+      "label": "What Did You Do?",
+      "note": "Story Missions · Belknap",
+      "phaseId": "belknap",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-what-did-you-do",
+          "type": "completion",
+          "label": "What Did You Do?",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-what-did-you-do"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "belknap-searching-for-something",
+      "label": "Searching for Something",
+      "note": "Story Missions · Belknap",
+      "phaseId": "belknap",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-searching-for-something",
+          "type": "completion",
+          "label": "Searching for Something",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-searching-for-something"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "belknap-what-s-a-nice-girl",
+      "label": "What's a Nice Girl",
+      "note": "Story Missions · Belknap",
+      "phaseId": "belknap",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-what-s-a-nice-girl",
+          "type": "completion",
+          "label": "What's a Nice Girl",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-what-s-a-nice-girl"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "belknap-it-s-not-safe-here",
+      "label": "It's Not Safe Here",
+      "note": "Story Missions · Belknap",
+      "phaseId": "belknap",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-it-s-not-safe-here",
+          "type": "completion",
+          "label": "It's Not Safe Here",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-it-s-not-safe-here"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "belknap-lots-of-sick-people",
+      "label": "Lots of Sick People",
+      "note": "Story Missions · Belknap",
+      "phaseId": "belknap",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-lots-of-sick-people",
+          "type": "completion",
+          "label": "Lots of Sick People",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-lots-of-sick-people"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "belknap-it-was-on-me",
+      "label": "It Was on Me",
+      "note": "Story Missions · Belknap",
+      "phaseId": "belknap",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-it-was-on-me",
+          "type": "completion",
+          "label": "It Was on Me",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-it-was-on-me"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "belknap-they-won-t-let-me-leave",
+      "label": "They Won't Let Me Leave",
+      "note": "Story Missions · Belknap",
+      "phaseId": "belknap",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-they-won-t-let-me-leave",
+          "type": "completion",
+          "label": "They Won't Let Me Leave",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-they-won-t-let-me-leave"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "belknap-i-brought-you-something",
+      "label": "I Brought You Something",
+      "note": "Story Missions · Belknap",
+      "phaseId": "belknap",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-i-brought-you-something",
+          "type": "completion",
+          "label": "I Brought You Something",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-i-brought-you-something"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "belknap-what-have-they-done",
+      "label": "What Have They Done",
+      "note": "Story Missions · Belknap",
+      "phaseId": "belknap",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-what-have-they-done",
+          "type": "completion",
+          "label": "What Have They Done",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-what-have-they-done"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "belknap-no-beginning-and-no-end",
+      "label": "No Beginning and No End",
+      "note": "Story Missions · Belknap",
+      "phaseId": "belknap",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-no-beginning-and-no-end",
+          "type": "completion",
+          "label": "No Beginning and No End",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-no-beginning-and-no-end"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "belknap-nice-and-bloody",
+      "label": "Nice and Bloody",
+      "note": "Camp Jobs · Belknap",
+      "phaseId": "belknap",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-encampmentjobs-nice-and-bloody",
+          "type": "completion",
+          "label": "Nice and Bloody",
+          "counterKey": "encampmentjobs",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-encampmentjobs-nice-and-bloody"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "belknap-the-rest-of-our-drugs",
+      "label": "The Rest of Our Drugs",
+      "note": "Camp Jobs · Belknap",
+      "phaseId": "belknap",
+      "isPhaseStart": false,
+      "auto": {
+        "storymissions": 1
+      },
+      "ocrGoals": [
+        {
+          "id": "completion-encampmentjobs-the-rest-of-our-drugs",
+          "type": "completion",
+          "label": "The Rest of Our Drugs",
+          "counterKey": "encampmentjobs",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-encampmentjobs-the-rest-of-our-drugs"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "belknap-everyone-has-to-work",
+      "label": "Everyone Has to Work",
+      "note": "Camp Jobs · Belknap",
+      "phaseId": "belknap",
+      "isPhaseStart": false,
+      "auto": {
+        "storymissions": 1
+      },
+      "ocrGoals": [
+        {
+          "id": "completion-encampmentjobs-everyone-has-to-work",
+          "type": "completion",
+          "label": "Everyone Has to Work",
+          "counterKey": "encampmentjobs",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-encampmentjobs-everyone-has-to-work"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "belknap-a-score-to-settle",
+      "label": "A Score to Settle",
+      "note": "Camp Jobs · Belknap",
+      "phaseId": "belknap",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-encampmentjobs-a-score-to-settle",
+          "type": "completion",
+          "label": "A Score to Settle",
+          "counterKey": "encampmentjobs",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-encampmentjobs-a-score-to-settle"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "belknap-coming-into-town",
+      "label": "Coming Into Town",
+      "note": "Camp Jobs · Belknap",
+      "phaseId": "belknap",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-encampmentjobs-coming-into-town",
+          "type": "completion",
+          "label": "Coming Into Town",
+          "counterKey": "encampmentjobs",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-encampmentjobs-coming-into-town"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "belknap-i-ll-double-it",
+      "label": "I'll Double It",
+      "note": "Camp Jobs · Belknap",
+      "phaseId": "belknap",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-encampmentjobs-i-ll-double-it",
+          "type": "completion",
+          "label": "I'll Double It",
+          "counterKey": "encampmentjobs",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-encampmentjobs-i-ll-double-it"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "belknap-rippers-rest-in-hell",
+      "label": "Rippers, Rest in Hell",
+      "note": "Camp Jobs · Belknap",
+      "phaseId": "belknap",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-encampmentjobs-rippers-rest-in-hell",
+          "type": "completion",
+          "label": "Rippers, Rest in Hell",
+          "counterKey": "encampmentjobs",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-encampmentjobs-rippers-rest-in-hell"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "belknap-part-of-the-family",
+      "label": "Part of the Family",
+      "note": "Camp Jobs · Belknap",
+      "phaseId": "belknap",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-encampmentjobs-part-of-the-family",
+          "type": "completion",
+          "label": "Part of the Family",
+          "counterKey": "encampmentjobs",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-encampmentjobs-part-of-the-family"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "belknap-marion-forks-tunnel-nero-checkpoint",
+      "label": "Marion Forks Tunnel NERO Checkpoint",
+      "note": "NERO Checkpoints · Belknap",
+      "phaseId": "belknap",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-nerosites-marion-forks-tunnel-nero-checkpoint",
+          "type": "completion",
+          "label": "Marion Forks Tunnel NERO Checkpoint",
+          "counterKey": "nerosites",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-nerosites-marion-forks-tunnel-nero-checkpoint"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "belknap-black-crater-ambush-camp",
+      "label": "Black Crater Ambush Camp",
+      "note": "Ambush Camps · Belknap",
+      "phaseId": "belknap",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-ambushcamps-black-crater-ambush-camp",
+          "type": "completion",
+          "label": "Black Crater Ambush Camp",
+          "counterKey": "ambushcamps",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-ambushcamps-black-crater-ambush-camp"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "belknap-belknap-caves-ambush-camp",
+      "label": "Belknap Caves Ambush Camp",
+      "note": "Ambush Camps · Belknap",
+      "phaseId": "belknap",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-ambushcamps-belknap-caves-ambush-camp",
+          "type": "completion",
+          "label": "Belknap Caves Ambush Camp",
+          "counterKey": "ambushcamps",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-ambushcamps-belknap-caves-ambush-camp"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "belknap-bear-creek-hot-springs-ambush-camp",
+      "label": "Bear Creek Hot Springs Ambush Camp",
+      "note": "Ambush Camps · Belknap",
+      "phaseId": "belknap",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-ambushcamps-bear-creek-hot-springs-ambush-camp",
+          "type": "completion",
+          "label": "Bear Creek Hot Springs Ambush Camp",
+          "counterKey": "ambushcamps",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-ambushcamps-bear-creek-hot-springs-ambush-camp"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "belknap-crazy-willie-s-infestation",
+      "label": "Crazy Willie's Infestation",
+      "note": "Infestation Zones · Belknap",
+      "phaseId": "belknap",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-infestations-crazy-willie-s-infestation",
+          "type": "completion",
+          "label": "Crazy Willie's Infestation",
+          "counterKey": "infestations",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-infestations-crazy-willie-s-infestation"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "belknap-marion-forks-infestation",
+      "label": "Marion Forks Infestation",
+      "note": "Infestation Zones · Belknap",
+      "phaseId": "belknap",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-infestations-marion-forks-infestation",
+          "type": "completion",
+          "label": "Marion Forks Infestation",
+          "counterKey": "infestations",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-infestations-marion-forks-infestation"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "belknap-pat-jens-lakes-infestation",
+      "label": "Pat Jens Lakes Infestation",
+      "note": "Infestation Zones · Belknap",
+      "phaseId": "belknap",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-infestations-pat-jens-lakes-infestation",
+          "type": "completion",
+          "label": "Pat Jens Lakes Infestation",
+          "counterKey": "infestations",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-infestations-pat-jens-lakes-infestation"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "belknap-bear-creek-hot-springs-horde",
+      "label": "Bear Creek Hot Springs Horde",
+      "note": "Hordes · Belknap",
+      "phaseId": "belknap",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-hordes-bear-creek-hot-springs-horde",
+          "type": "completion",
+          "label": "Bear Creek Hot Springs Horde",
+          "counterKey": "hordes",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-hordes-bear-creek-hot-springs-horde"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "belknap-belknap-crater-horde",
+      "label": "Belknap Crater Horde",
+      "note": "Hordes · Belknap",
+      "phaseId": "belknap",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-hordes-belknap-crater-horde",
+          "type": "completion",
+          "label": "Belknap Crater Horde",
+          "counterKey": "hordes",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-hordes-belknap-crater-horde"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "belknap-lava-arch-horde",
+      "label": "Lava Arch Horde",
+      "note": "Hordes · Belknap",
+      "phaseId": "belknap",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-hordes-lava-arch-horde",
+          "type": "completion",
+          "label": "Lava Arch Horde",
+          "counterKey": "hordes",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-hordes-lava-arch-horde"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "belknap-marion-forks-horde",
+      "label": "Marion Forks Horde",
+      "note": "Hordes · Belknap",
+      "phaseId": "belknap",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-hordes-marion-forks-horde",
+          "type": "completion",
+          "label": "Marion Forks Horde",
+          "counterKey": "hordes",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-hordes-marion-forks-horde"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "belknap-shadow-lake-horde",
+      "label": "Shadow Lake Horde",
+      "note": "Hordes · Belknap",
+      "phaseId": "belknap",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-hordes-shadow-lake-horde",
+          "type": "completion",
+          "label": "Shadow Lake Horde",
+          "counterKey": "hordes",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-hordes-shadow-lake-horde"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "belknap-twin-craters-horde",
+      "label": "Twin Craters Horde",
+      "note": "Hordes · Belknap",
+      "phaseId": "belknap",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-hordes-twin-craters-horde",
+          "type": "completion",
+          "label": "Twin Craters Horde",
+          "counterKey": "hordes",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-hordes-twin-craters-horde"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "belknap-patjens-lakes-horde",
+      "label": "Patjens Lakes Horde",
+      "note": "Hordes · Belknap",
+      "phaseId": "belknap",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-hordes-patjens-lakes-horde",
+          "type": "completion",
+          "label": "Patjens Lakes Horde",
+          "counterKey": "hordes",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-hordes-patjens-lakes-horde"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "lost-lake-not-gonna-kill-anyone",
+      "label": "Not Gonna Kill Anyone",
+      "note": "Story Missions · Lost Lake",
+      "phaseId": "lost-lake",
+      "isPhaseStart": true,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-not-gonna-kill-anyone",
+          "type": "completion",
+          "label": "Not Gonna Kill Anyone",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-not-gonna-kill-anyone"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "lost-lake-no-place-else-to-go",
+      "label": "No Place Else to Go",
+      "note": "Story Missions · Lost Lake",
+      "phaseId": "lost-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-no-place-else-to-go",
+          "type": "completion",
+          "label": "No Place Else to Go",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-no-place-else-to-go"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "lost-lake-sherman-s-camp-is-crawling",
+      "label": "Sherman's Camp Is Crawling",
+      "note": "Story Missions · Lost Lake",
+      "phaseId": "lost-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-sherman-s-camp-is-crawling",
+          "type": "completion",
+          "label": "Sherman's Camp Is Crawling",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-sherman-s-camp-is-crawling"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "lost-lake-i-need-your-help",
+      "label": "I Need Your Help",
+      "note": "Story Missions · Lost Lake",
+      "phaseId": "lost-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-i-need-your-help",
+          "type": "completion",
+          "label": "I Need Your Help",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-i-need-your-help"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "lost-lake-searching-for-lisa",
+      "label": "Searching for Lisa",
+      "note": "Story Missions · Lost Lake",
+      "phaseId": "lost-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-searching-for-lisa",
+          "type": "completion",
+          "label": "Searching for Lisa",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-searching-for-lisa"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "lost-lake-now-you-see-it",
+      "label": "Now You See It",
+      "note": "Story Missions · Lost Lake",
+      "phaseId": "lost-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-now-you-see-it",
+          "type": "completion",
+          "label": "Now You See It",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-now-you-see-it"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "lost-lake-playing-all-night",
+      "label": "Playing All Night",
+      "note": "Story Missions · Lost Lake",
+      "phaseId": "lost-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-playing-all-night",
+          "type": "completion",
+          "label": "Playing All Night",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-playing-all-night"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "lost-lake-with-other-men-s-blood",
+      "label": "With Other Men's Blood",
+      "note": "Story Missions · Lost Lake",
+      "phaseId": "lost-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-with-other-men-s-blood",
+          "type": "completion",
+          "label": "With Other Men's Blood",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-with-other-men-s-blood"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "lost-lake-it-s-on-a-mission",
+      "label": "It's on a Mission",
+      "note": "Story Missions · Lost Lake",
+      "phaseId": "lost-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-it-s-on-a-mission",
+          "type": "completion",
+          "label": "It's on a Mission",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-it-s-on-a-mission"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "lost-lake-flow-like-buried-rivers",
+      "label": "Flow Like Buried Rivers",
+      "note": "Story Missions · Lost Lake",
+      "phaseId": "lost-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-flow-like-buried-rivers",
+          "type": "completion",
+          "label": "Flow Like Buried Rivers",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-flow-like-buried-rivers"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "lost-lake-you-see-what-they-did",
+      "label": "You See What They Did",
+      "note": "Story Missions · Lost Lake",
+      "phaseId": "lost-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-you-see-what-they-did",
+          "type": "completion",
+          "label": "You See What They Did",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-you-see-what-they-did"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "lost-lake-do-you-have-my-back",
+      "label": "Do You Have My Back?",
+      "note": "Story Missions · Lost Lake",
+      "phaseId": "lost-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-do-you-have-my-back",
+          "type": "completion",
+          "label": "Do You Have My Back?",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-do-you-have-my-back"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "lost-lake-on-herod-s-birthday",
+      "label": "On Herod's Birthday",
+      "note": "Story Missions · Lost Lake",
+      "phaseId": "lost-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-on-herod-s-birthday",
+          "type": "completion",
+          "label": "On Herod's Birthday",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-on-herod-s-birthday"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "lost-lake-i-could-use-a-hand",
+      "label": "I Could Use a Hand",
+      "note": "Story Missions · Lost Lake",
+      "phaseId": "lost-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-i-could-use-a-hand",
+          "type": "completion",
+          "label": "I Could Use a Hand",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-i-could-use-a-hand"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "lost-lake-seeds-for-the-spring",
+      "label": "Seeds for the Spring",
+      "note": "Story Missions · Lost Lake",
+      "phaseId": "lost-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-seeds-for-the-spring",
+          "type": "completion",
+          "label": "Seeds for the Spring",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-seeds-for-the-spring"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "lost-lake-i-got-a-job-for-you",
+      "label": "I Got a Job for You",
+      "note": "Story Missions · Lost Lake",
+      "phaseId": "lost-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-i-got-a-job-for-you",
+          "type": "completion",
+          "label": "I Got a Job for You",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-i-got-a-job-for-you"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "lost-lake-moments-of-lucidity",
+      "label": "Moments of Lucidity",
+      "note": "Story Missions · Lost Lake",
+      "phaseId": "lost-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-moments-of-lucidity",
+          "type": "completion",
+          "label": "Moments of Lucidity",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-moments-of-lucidity"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "lost-lake-the-only-one-he-s-got",
+      "label": "The Only One He's Got",
+      "note": "Story Missions · Lost Lake",
+      "phaseId": "lost-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-the-only-one-he-s-got",
+          "type": "completion",
+          "label": "The Only One He's Got",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-the-only-one-he-s-got"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "lost-lake-i-got-work-to-do",
+      "label": "I Got Work to Do",
+      "note": "Story Missions · Lost Lake",
+      "phaseId": "lost-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-i-got-work-to-do",
+          "type": "completion",
+          "label": "I Got Work to Do",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-i-got-work-to-do"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "lost-lake-some-kinda-freak-expert",
+      "label": "Some Kinda Freak Expert",
+      "note": "Story Missions · Lost Lake",
+      "phaseId": "lost-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-some-kinda-freak-expert",
+          "type": "completion",
+          "label": "Some Kinda Freak Expert",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-some-kinda-freak-expert"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "lost-lake-lines-not-crossed",
+      "label": "Lines Not Crossed",
+      "note": "Story Missions · Lost Lake",
+      "phaseId": "lost-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-lines-not-crossed",
+          "type": "completion",
+          "label": "Lines Not Crossed",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-lines-not-crossed"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "lost-lake-we-re-not-hiding",
+      "label": "We're Not Hiding",
+      "note": "Story Missions · Lost Lake",
+      "phaseId": "lost-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-we-re-not-hiding",
+          "type": "completion",
+          "label": "We're Not Hiding",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-we-re-not-hiding"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "lost-lake-that-s-his-mistake",
+      "label": "That's His Mistake",
+      "note": "Story Missions · Lost Lake",
+      "phaseId": "lost-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-that-s-his-mistake",
+          "type": "completion",
+          "label": "That's His Mistake",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-that-s-his-mistake"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "lost-lake-drinking-himself-to-death",
+      "label": "Drinking Himself to Death",
+      "note": "Story Missions · Lost Lake",
+      "phaseId": "lost-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-drinking-himself-to-death",
+          "type": "completion",
+          "label": "Drinking Himself to Death",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-drinking-himself-to-death"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "lost-lake-about-boozer-s-arm",
+      "label": "About Boozer's Arm",
+      "note": "Story Missions · Lost Lake",
+      "phaseId": "lost-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-about-boozer-s-arm",
+          "type": "completion",
+          "label": "About Boozer's Arm",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-about-boozer-s-arm"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "lost-lake-was-this-a-good-idea",
+      "label": "Was This a Good Idea?",
+      "note": "Story Missions · Lost Lake",
+      "phaseId": "lost-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-was-this-a-good-idea",
+          "type": "completion",
+          "label": "Was This a Good Idea?",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-was-this-a-good-idea"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "lost-lake-you-twisted-my-arm",
+      "label": "You Twisted My Arm",
+      "note": "Story Missions · Lost Lake",
+      "phaseId": "lost-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-you-twisted-my-arm",
+          "type": "completion",
+          "label": "You Twisted My Arm",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-you-twisted-my-arm"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "lost-lake-you-could-have-done-more",
+      "label": "You Could Have Done More",
+      "note": "Story Missions · Lost Lake",
+      "phaseId": "lost-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-you-could-have-done-more",
+          "type": "completion",
+          "label": "You Could Have Done More",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-you-could-have-done-more"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "lost-lake-not-like-i-got-a-choice",
+      "label": "Not Like I Got a Choice",
+      "note": "Story Missions · Lost Lake",
+      "phaseId": "lost-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-not-like-i-got-a-choice",
+          "type": "completion",
+          "label": "Not Like I Got a Choice",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-not-like-i-got-a-choice"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "lost-lake-better-to-light-one-candle",
+      "label": "Better to Light One Candle",
+      "note": "Story Missions · Lost Lake",
+      "phaseId": "lost-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-better-to-light-one-candle",
+          "type": "completion",
+          "label": "Better to Light One Candle",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-better-to-light-one-candle"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "lost-lake-outta-the-darkness",
+      "label": "Outta the Darkness",
+      "note": "Story Missions · Lost Lake",
+      "phaseId": "lost-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-outta-the-darkness",
+          "type": "completion",
+          "label": "Outta the Darkness",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-outta-the-darkness"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "lost-lake-something-to-heal-his-soul",
+      "label": "Something to Heal His Soul",
+      "note": "Story Missions · Lost Lake",
+      "phaseId": "lost-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-something-to-heal-his-soul",
+          "type": "completion",
+          "label": "Something to Heal His Soul",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-something-to-heal-his-soul"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "lost-lake-have-it-your-way",
+      "label": "Have It Your Way",
+      "note": "Story Missions · Lost Lake",
+      "phaseId": "lost-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-have-it-your-way",
+          "type": "completion",
+          "label": "Have It Your Way",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-have-it-your-way"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "lost-lake-trying-to-help-the-camp",
+      "label": "Trying to Help the Camp",
+      "note": "Story Missions · Lost Lake",
+      "phaseId": "lost-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-trying-to-help-the-camp",
+          "type": "completion",
+          "label": "Trying to Help the Camp",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-trying-to-help-the-camp"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "lost-lake-riders-sent-to-find-you",
+      "label": "Riders Sent to Find You",
+      "note": "Story Missions · Lost Lake",
+      "phaseId": "lost-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-riders-sent-to-find-you",
+          "type": "completion",
+          "label": "Riders Sent to Find You",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-riders-sent-to-find-you"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "lost-lake-they-will-never-stop",
+      "label": "They Will Never Stop",
+      "note": "Story Missions · Lost Lake",
+      "phaseId": "lost-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-they-will-never-stop",
+          "type": "completion",
+          "label": "They Will Never Stop",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-they-will-never-stop"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "lost-lake-without-being-seen",
+      "label": "Without Being Seen",
+      "note": "Story Missions · Lost Lake",
+      "phaseId": "lost-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-without-being-seen",
+          "type": "completion",
+          "label": "Without Being Seen",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-without-being-seen"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "lost-lake-you-won-t-be-needing-this",
+      "label": "You Won't Be Needing This",
+      "note": "Story Missions · Lost Lake",
+      "phaseId": "lost-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-you-won-t-be-needing-this",
+          "type": "completion",
+          "label": "You Won't Be Needing This",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-you-won-t-be-needing-this"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "lost-lake-now-that-s-an-idea",
+      "label": "Now That's an Idea",
+      "note": "Story Missions · Lost Lake",
+      "phaseId": "lost-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-now-that-s-an-idea",
+          "type": "completion",
+          "label": "Now That's an Idea",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-now-that-s-an-idea"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "lost-lake-i-was-distracted",
+      "label": "I Was Distracted",
+      "note": "Story Missions · Lost Lake",
+      "phaseId": "lost-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-i-was-distracted",
+          "type": "completion",
+          "label": "I Was Distracted",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-i-was-distracted"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "lost-lake-why-am-i-here",
+      "label": "Why Am I Here?",
+      "note": "Story Missions · Lost Lake",
+      "phaseId": "lost-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-why-am-i-here",
+          "type": "completion",
+          "label": "Why Am I Here?",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-why-am-i-here"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "lost-lake-riding-nomad-again",
+      "label": "Riding Nomad Again",
+      "note": "Story Missions · Lost Lake",
+      "phaseId": "lost-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-riding-nomad-again",
+          "type": "completion",
+          "label": "Riding Nomad Again",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-riding-nomad-again"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "lost-lake-a-goddamn-war-zone",
+      "label": "A Goddamn War Zone",
+      "note": "Camp Jobs · Lost Lake",
+      "phaseId": "lost-lake",
+      "isPhaseStart": false,
+      "auto": {
+        "storymissions": 1
+      },
+      "ocrGoals": [
+        {
+          "id": "completion-encampmentjobs-a-goddamn-war-zone",
+          "type": "completion",
+          "label": "A Goddamn War Zone",
+          "counterKey": "encampmentjobs",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-encampmentjobs-a-goddamn-war-zone"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "lost-lake-drifters-at-eden-hill",
+      "label": "Drifters at Eden Hill",
+      "note": "Camp Jobs · Lost Lake",
+      "phaseId": "lost-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-encampmentjobs-drifters-at-eden-hill",
+          "type": "completion",
+          "label": "Drifters at Eden Hill",
+          "counterKey": "encampmentjobs",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-encampmentjobs-drifters-at-eden-hill"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "lost-lake-gone-fishing",
+      "label": "Gone Fishing",
+      "note": "Camp Jobs · Lost Lake",
+      "phaseId": "lost-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-encampmentjobs-gone-fishing",
+          "type": "completion",
+          "label": "Gone Fishing",
+          "counterKey": "encampmentjobs",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-encampmentjobs-gone-fishing"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "lost-lake-over-a-card-game",
+      "label": "Over a Card Game",
+      "note": "Camp Jobs · Lost Lake",
+      "phaseId": "lost-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-encampmentjobs-over-a-card-game",
+          "type": "completion",
+          "label": "Over a Card Game",
+          "counterKey": "encampmentjobs",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-encampmentjobs-over-a-card-game"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "lost-lake-how-many-bodies",
+      "label": "How Many Bodies?",
+      "note": "Camp Jobs · Lost Lake",
+      "phaseId": "lost-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-encampmentjobs-how-many-bodies",
+          "type": "completion",
+          "label": "How Many Bodies?",
+          "counterKey": "encampmentjobs",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-encampmentjobs-how-many-bodies"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "lost-lake-he-s-just-a-kid",
+      "label": "He's Just a Kid",
+      "note": "Camp Jobs · Lost Lake",
+      "phaseId": "lost-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-encampmentjobs-he-s-just-a-kid",
+          "type": "completion",
+          "label": "He's Just a Kid",
+          "counterKey": "encampmentjobs",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-encampmentjobs-he-s-just-a-kid"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "lost-lake-on-tonight-s-menu",
+      "label": "On Tonight's Menu",
+      "note": "Camp Jobs · Lost Lake",
+      "phaseId": "lost-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-encampmentjobs-on-tonight-s-menu",
+          "type": "completion",
+          "label": "On Tonight's Menu",
+          "counterKey": "encampmentjobs",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-encampmentjobs-on-tonight-s-menu"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "lost-lake-old-sawmill-nero-checkpoint",
+      "label": "Old Sawmill NERO Checkpoint",
+      "note": "NERO Checkpoints · Lost Lake",
+      "phaseId": "lost-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-nerosites-old-sawmill-nero-checkpoint",
+          "type": "completion",
+          "label": "Old Sawmill NERO Checkpoint",
+          "counterKey": "nerosites",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-nerosites-old-sawmill-nero-checkpoint"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "lost-lake-rogue-tunnel-nero-checkpoint",
+      "label": "Rogue Tunnel NERO Checkpoint",
+      "note": "NERO Checkpoints · Lost Lake",
+      "phaseId": "lost-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-nerosites-rogue-tunnel-nero-checkpoint",
+          "type": "completion",
+          "label": "Rogue Tunnel NERO Checkpoint",
+          "counterKey": "nerosites",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-nerosites-rogue-tunnel-nero-checkpoint"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "lost-lake-deerborn-ambush-camp",
+      "label": "Deerborn Ambush Camp",
+      "note": "Ambush Camps · Lost Lake",
+      "phaseId": "lost-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-ambushcamps-deerborn-ambush-camp",
+          "type": "completion",
+          "label": "Deerborn Ambush Camp",
+          "counterKey": "ambushcamps",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-ambushcamps-deerborn-ambush-camp"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "lost-lake-berley-lake-ambush-camp",
+      "label": "Berley Lake Ambush Camp",
+      "note": "Ambush Camps · Lost Lake",
+      "phaseId": "lost-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-ambushcamps-berley-lake-ambush-camp",
+          "type": "completion",
+          "label": "Berley Lake Ambush Camp",
+          "counterKey": "ambushcamps",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-ambushcamps-berley-lake-ambush-camp"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "lost-lake-sherman-s-camp-infestation",
+      "label": "Sherman's Camp Infestation",
+      "note": "Infestation Zones · Lost Lake",
+      "phaseId": "lost-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-infestations-sherman-s-camp-infestation",
+          "type": "completion",
+          "label": "Sherman's Camp Infestation",
+          "counterKey": "infestations",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-infestations-sherman-s-camp-infestation"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "lost-lake-rogue-camp-infestation",
+      "label": "Rogue Camp Infestation",
+      "note": "Infestation Zones · Lost Lake",
+      "phaseId": "lost-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-infestations-rogue-camp-infestation",
+          "type": "completion",
+          "label": "Rogue Camp Infestation",
+          "counterKey": "infestations",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-infestations-rogue-camp-infestation"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "lost-lake-berley-lake-infestation",
+      "label": "Berley Lake Infestation",
+      "note": "Infestation Zones · Lost Lake",
+      "phaseId": "lost-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-infestations-berley-lake-infestation",
+          "type": "completion",
+          "label": "Berley Lake Infestation",
+          "counterKey": "infestations",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-infestations-berley-lake-infestation"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "lost-lake-berley-lake-horde",
+      "label": "Berley Lake Horde",
+      "note": "Hordes · Lost Lake",
+      "phaseId": "lost-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-hordes-berley-lake-horde",
+          "type": "completion",
+          "label": "Berley Lake Horde",
+          "counterKey": "hordes",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-hordes-berley-lake-horde"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "lost-lake-river-flow-farms-horde",
+      "label": "River Flow Farms Horde",
+      "note": "Hordes · Lost Lake",
+      "phaseId": "lost-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-hordes-river-flow-farms-horde",
+          "type": "completion",
+          "label": "River Flow Farms Horde",
+          "counterKey": "hordes",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-hordes-river-flow-farms-horde"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "lost-lake-sherman-s-camp-horde",
+      "label": "Sherman's Camp Horde",
+      "note": "Hordes · Lost Lake",
+      "phaseId": "lost-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-hordes-sherman-s-camp-horde",
+          "type": "completion",
+          "label": "Sherman's Camp Horde",
+          "counterKey": "hordes",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-hordes-sherman-s-camp-horde"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "lost-lake-wapinitia-road-horde",
+      "label": "Wapinitia Road Horde",
+      "note": "Hordes · Lost Lake",
+      "phaseId": "lost-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-hordes-wapinitia-road-horde",
+          "type": "completion",
+          "label": "Wapinitia Road Horde",
+          "counterKey": "hordes",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-hordes-wapinitia-road-horde"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "lost-lake-westfir-horde",
+      "label": "Westfir Horde",
+      "note": "Hordes · Lost Lake",
+      "phaseId": "lost-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-hordes-westfir-horde",
+          "type": "completion",
+          "label": "Westfir Horde",
+          "counterKey": "hordes",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-hordes-westfir-horde"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "lost-lake-metolius-lava-cave-horde",
+      "label": "Metolius Lava Cave Horde",
+      "note": "Hordes · Lost Lake",
+      "phaseId": "lost-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-hordes-metolius-lava-cave-horde",
+          "type": "completion",
+          "label": "Metolius Lava Cave Horde",
+          "counterKey": "hordes",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-hordes-metolius-lava-cave-horde"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "iron-butte-don-t-get-caught",
+      "label": "Don't Get Caught",
+      "note": "Story Missions · Iron Butte",
+      "phaseId": "iron-butte",
+      "isPhaseStart": true,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-don-t-get-caught",
+          "type": "completion",
+          "label": "Don't Get Caught",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-don-t-get-caught"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "iron-butte-they-don-t-feel-pain",
+      "label": "They Don't Feel Pain",
+      "note": "Story Missions · Iron Butte",
+      "phaseId": "iron-butte",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-they-don-t-feel-pain",
+          "type": "completion",
+          "label": "They Don't Feel Pain",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-they-don-t-feel-pain"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "iron-butte-it-was-the-only-way",
+      "label": "It Was the Only Way",
+      "note": "Story Missions · Iron Butte",
+      "phaseId": "iron-butte",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-it-was-the-only-way",
+          "type": "completion",
+          "label": "It Was the Only Way",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-it-was-the-only-way"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "iron-butte-i-kept-my-name",
+      "label": "I Kept My Name",
+      "note": "Story Missions · Iron Butte",
+      "phaseId": "iron-butte",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-i-kept-my-name",
+          "type": "completion",
+          "label": "I Kept My Name",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-i-kept-my-name"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "iron-butte-should-have-seen-it-coming",
+      "label": "Should Have Seen It Coming",
+      "note": "Story Missions · Iron Butte",
+      "phaseId": "iron-butte",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-should-have-seen-it-coming",
+          "type": "completion",
+          "label": "Should Have Seen It Coming",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-should-have-seen-it-coming"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "iron-butte-that-never-gets-old",
+      "label": "That Never Gets Old",
+      "note": "Story Missions · Iron Butte",
+      "phaseId": "iron-butte",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-that-never-gets-old",
+          "type": "completion",
+          "label": "That Never Gets Old",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-that-never-gets-old"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "iron-butte-time-for-some-payback",
+      "label": "Time for Some Payback",
+      "note": "Story Missions · Iron Butte",
+      "phaseId": "iron-butte",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-time-for-some-payback",
+          "type": "completion",
+          "label": "Time for Some Payback",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-time-for-some-payback"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "iron-butte-i-m-good-with-that",
+      "label": "I'm Good with That",
+      "note": "Story Missions · Iron Butte",
+      "phaseId": "iron-butte",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-i-m-good-with-that",
+          "type": "completion",
+          "label": "I'm Good with That",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-i-m-good-with-that"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "iron-butte-iron-butte-pass-nero-checkpoint",
+      "label": "Iron Butte Pass NERO Checkpoint",
+      "note": "NERO Checkpoints · Iron Butte",
+      "phaseId": "iron-butte",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-nerosites-iron-butte-pass-nero-checkpoint",
+          "type": "completion",
+          "label": "Iron Butte Pass NERO Checkpoint",
+          "counterKey": "nerosites",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-nerosites-iron-butte-pass-nero-checkpoint"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "iron-butte-wagon-road-ambush-camp",
+      "label": "Wagon Road Ambush Camp",
+      "note": "Ambush Camps · Iron Butte",
+      "phaseId": "iron-butte",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-ambushcamps-wagon-road-ambush-camp",
+          "type": "completion",
+          "label": "Wagon Road Ambush Camp",
+          "counterKey": "ambushcamps",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-ambushcamps-wagon-road-ambush-camp"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "iron-butte-redwood-rv-park-ambush-camp",
+      "label": "Redwood RV Park Ambush Camp",
+      "note": "Ambush Camps · Iron Butte",
+      "phaseId": "iron-butte",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-ambushcamps-redwood-rv-park-ambush-camp",
+          "type": "completion",
+          "label": "Redwood RV Park Ambush Camp",
+          "counterKey": "ambushcamps",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-ambushcamps-redwood-rv-park-ambush-camp"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "crater-lake-mayday-mayday",
+      "label": "Mayday! Mayday!",
+      "note": "Story Missions · Crater Lake",
+      "phaseId": "crater-lake",
+      "isPhaseStart": true,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-mayday-mayday",
+          "type": "completion",
+          "label": "Mayday! Mayday!",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-mayday-mayday"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "crater-lake-not-from-around-here",
+      "label": "Not From Around Here",
+      "note": "Story Missions · Crater Lake",
+      "phaseId": "crater-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-not-from-around-here",
+          "type": "completion",
+          "label": "Not From Around Here",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-not-from-around-here"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "crater-lake-we-re-fighting-a-war",
+      "label": "We're Fighting a War",
+      "note": "Story Missions · Crater Lake",
+      "phaseId": "crater-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-we-re-fighting-a-war",
+          "type": "completion",
+          "label": "We're Fighting a War",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-we-re-fighting-a-war"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "crater-lake-prove-it-to-me",
+      "label": "Prove It to Me",
+      "note": "Story Missions · Crater Lake",
+      "phaseId": "crater-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-prove-it-to-me",
+          "type": "completion",
+          "label": "Prove It to Me",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-prove-it-to-me"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "crater-lake-driven-to-extinction",
+      "label": "Driven to Extinction",
+      "note": "Story Missions · Crater Lake",
+      "phaseId": "crater-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-driven-to-extinction",
+          "type": "completion",
+          "label": "Driven to Extinction",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-driven-to-extinction"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "crater-lake-don-t-give-me-orders",
+      "label": "Don't Give Me Orders",
+      "note": "Story Missions · Crater Lake",
+      "phaseId": "crater-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-don-t-give-me-orders",
+          "type": "completion",
+          "label": "Don't Give Me Orders",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-don-t-give-me-orders"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "crater-lake-a-target-on-their-backs",
+      "label": "A Target on Their Backs",
+      "note": "Story Missions · Crater Lake",
+      "phaseId": "crater-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-a-target-on-their-backs",
+          "type": "completion",
+          "label": "A Target on Their Backs",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-a-target-on-their-backs"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "crater-lake-i-don-t-have-a-pic",
+      "label": "I Don't Have a Pic",
+      "note": "Story Missions · Crater Lake",
+      "phaseId": "crater-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-i-don-t-have-a-pic",
+          "type": "completion",
+          "label": "I Don't Have a Pic",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-i-don-t-have-a-pic"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "crater-lake-a-war-we-can-win",
+      "label": "A War We Can Win",
+      "note": "Story Missions · Crater Lake",
+      "phaseId": "crater-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-a-war-we-can-win",
+          "type": "completion",
+          "label": "A War We Can Win",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-a-war-we-can-win"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "crater-lake-leave-all-that-by-the-door",
+      "label": "Leave All That by the Door",
+      "note": "Story Missions · Crater Lake",
+      "phaseId": "crater-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-leave-all-that-by-the-door",
+          "type": "completion",
+          "label": "Leave All That by the Door",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-leave-all-that-by-the-door"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "crater-lake-we-will-take-back-this-world",
+      "label": "We Will Take Back This World",
+      "note": "Story Missions · Crater Lake",
+      "phaseId": "crater-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-we-will-take-back-this-world",
+          "type": "completion",
+          "label": "We Will Take Back This World",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-we-will-take-back-this-world"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "crater-lake-i-know-things-are-strange",
+      "label": "I Know Things Are Strange",
+      "note": "Story Missions · Crater Lake",
+      "phaseId": "crater-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-i-know-things-are-strange",
+          "type": "completion",
+          "label": "I Know Things Are Strange",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-i-know-things-are-strange"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "crater-lake-i-know-the-look",
+      "label": "I Know the Look",
+      "note": "Story Missions · Crater Lake",
+      "phaseId": "crater-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-i-know-the-look",
+          "type": "completion",
+          "label": "I Know the Look",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-i-know-the-look"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "crater-lake-we-do-not-discriminate",
+      "label": "We Do Not Discriminate",
+      "note": "Story Missions · Crater Lake",
+      "phaseId": "crater-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-we-do-not-discriminate",
+          "type": "completion",
+          "label": "We Do Not Discriminate",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-we-do-not-discriminate"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "crater-lake-i-ve-had-better-days",
+      "label": "I've Had Better Days",
+      "note": "Story Missions · Crater Lake",
+      "phaseId": "crater-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-i-ve-had-better-days",
+          "type": "completion",
+          "label": "I've Had Better Days",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-i-ve-had-better-days"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "crater-lake-afraid-of-a-little-competition",
+      "label": "Afraid of a Little Competition?",
+      "note": "Story Missions · Crater Lake",
+      "phaseId": "crater-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-afraid-of-a-little-competition",
+          "type": "completion",
+          "label": "Afraid of a Little Competition?",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-afraid-of-a-little-competition"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "crater-lake-i-tried-to-hit-that-once",
+      "label": "I Tried to Hit That Once",
+      "note": "Story Missions · Crater Lake",
+      "phaseId": "crater-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-i-tried-to-hit-that-once",
+          "type": "completion",
+          "label": "I Tried to Hit That Once",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-i-tried-to-hit-that-once"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "crater-lake-just-another-requisition-form",
+      "label": "Just Another Requisition Form",
+      "note": "Story Missions · Crater Lake",
+      "phaseId": "crater-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-just-another-requisition-form",
+          "type": "completion",
+          "label": "Just Another Requisition Form",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-just-another-requisition-form"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "crater-lake-can-i-ask-you-something",
+      "label": "Can I Ask You Something?",
+      "note": "Story Missions · Crater Lake",
+      "phaseId": "crater-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-can-i-ask-you-something",
+          "type": "completion",
+          "label": "Can I Ask You Something?",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-can-i-ask-you-something"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "crater-lake-so-many-of-them",
+      "label": "So Many of Them",
+      "note": "Story Missions · Crater Lake",
+      "phaseId": "crater-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-so-many-of-them",
+          "type": "completion",
+          "label": "So Many of Them",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-so-many-of-them"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "crater-lake-you-couldn-t-stop-shaking",
+      "label": "You Couldn't Stop Shaking",
+      "note": "Story Missions · Crater Lake",
+      "phaseId": "crater-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-you-couldn-t-stop-shaking",
+          "type": "completion",
+          "label": "You Couldn't Stop Shaking",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-you-couldn-t-stop-shaking"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "crater-lake-can-t-be-replaced",
+      "label": "Can't Be Replaced",
+      "note": "Story Missions · Crater Lake",
+      "phaseId": "crater-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-can-t-be-replaced",
+          "type": "completion",
+          "label": "Can't Be Replaced",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-can-t-be-replaced"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "crater-lake-what-kept-me-going",
+      "label": "What Kept Me Going",
+      "note": "Story Missions · Crater Lake",
+      "phaseId": "crater-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-what-kept-me-going",
+          "type": "completion",
+          "label": "What Kept Me Going",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-what-kept-me-going"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "crater-lake-i-knew-these-people",
+      "label": "I Knew These People",
+      "note": "Story Missions · Crater Lake",
+      "phaseId": "crater-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-i-knew-these-people",
+          "type": "completion",
+          "label": "I Knew These People",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-i-knew-these-people"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "crater-lake-expect-the-worst",
+      "label": "Expect the Worst",
+      "note": "Story Missions · Crater Lake",
+      "phaseId": "crater-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-expect-the-worst",
+          "type": "completion",
+          "label": "Expect the Worst",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-expect-the-worst"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "crater-lake-we-couldn-t-take-the-risk",
+      "label": "We Couldn't Take the Risk",
+      "note": "Story Missions · Crater Lake",
+      "phaseId": "crater-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-we-couldn-t-take-the-risk",
+          "type": "completion",
+          "label": "We Couldn't Take the Risk",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-we-couldn-t-take-the-risk"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "crater-lake-this-one-s-on-me",
+      "label": "This One's on Me",
+      "note": "Story Missions · Crater Lake",
+      "phaseId": "crater-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-this-one-s-on-me",
+          "type": "completion",
+          "label": "This One's on Me",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-this-one-s-on-me"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "crater-lake-i-don-t-wanna-hang",
+      "label": "I Don't Wanna Hang",
+      "note": "Story Missions · Crater Lake",
+      "phaseId": "crater-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-i-don-t-wanna-hang",
+          "type": "completion",
+          "label": "I Don't Wanna Hang",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-i-don-t-wanna-hang"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "crater-lake-this-could-be-it",
+      "label": "This Could Be It",
+      "note": "Story Missions · Crater Lake",
+      "phaseId": "crater-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-this-could-be-it",
+          "type": "completion",
+          "label": "This Could Be It",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-this-could-be-it"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "crater-lake-you-alone-i-have-seen",
+      "label": "You Alone I Have Seen",
+      "note": "Story Missions · Crater Lake",
+      "phaseId": "crater-lake",
+      "isPhaseStart": false,
+      "auto": {
+        "hordes": 1
+      },
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-you-alone-i-have-seen",
+          "type": "completion",
+          "label": "You Alone I Have Seen",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-you-alone-i-have-seen"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "crater-lake-how-far-we-ve-fallen",
+      "label": "How Far We've Fallen",
+      "note": "Story Missions · Crater Lake",
+      "phaseId": "crater-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-how-far-we-ve-fallen",
+          "type": "completion",
+          "label": "How Far We've Fallen",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-how-far-we-ve-fallen"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "crater-lake-he-s-not-big-on-tunes",
+      "label": "He's Not Big on Tunes",
+      "note": "Story Missions · Crater Lake",
+      "phaseId": "crater-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-he-s-not-big-on-tunes",
+          "type": "completion",
+          "label": "He's Not Big on Tunes",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-he-s-not-big-on-tunes"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "crater-lake-i-ve-got-a-plan",
+      "label": "I've Got a Plan",
+      "note": "Story Missions · Crater Lake",
+      "phaseId": "crater-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-i-ve-got-a-plan",
+          "type": "completion",
+          "label": "I've Got a Plan",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-i-ve-got-a-plan"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "crater-lake-what-it-takes-to-survive",
+      "label": "What It Takes to Survive",
+      "note": "Story Missions · Crater Lake",
+      "phaseId": "crater-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-what-it-takes-to-survive",
+          "type": "completion",
+          "label": "What It Takes to Survive",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-what-it-takes-to-survive"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "crater-lake-shadow-of-death",
+      "label": "Shadow of Death",
+      "note": "Story Missions · Crater Lake",
+      "phaseId": "crater-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-shadow-of-death",
+          "type": "completion",
+          "label": "Shadow of Death",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-shadow-of-death"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "crater-lake-ascending-from-the-underworld",
+      "label": "Ascending from the Underworld",
+      "note": "Story Missions · Crater Lake",
+      "phaseId": "crater-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-ascending-from-the-underworld",
+          "type": "completion",
+          "label": "Ascending from the Underworld",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-ascending-from-the-underworld"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "crater-lake-never-give-up-hope",
+      "label": "Never Give Up Hope",
+      "note": "Camp Jobs · Crater Lake",
+      "phaseId": "crater-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-encampmentjobs-never-give-up-hope",
+          "type": "completion",
+          "label": "Never Give Up Hope",
+          "counterKey": "encampmentjobs",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-encampmentjobs-never-give-up-hope"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "crater-lake-keeping-souvenirs",
+      "label": "Keeping Souvenirs",
+      "note": "Camp Jobs · Crater Lake",
+      "phaseId": "crater-lake",
+      "isPhaseStart": false,
+      "auto": {
+        "storymissions": 1
+      },
+      "ocrGoals": [
+        {
+          "id": "completion-encampmentjobs-keeping-souvenirs",
+          "type": "completion",
+          "label": "Keeping Souvenirs",
+          "counterKey": "encampmentjobs",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-encampmentjobs-keeping-souvenirs"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "crater-lake-take-back-what-s-mine",
+      "label": "Take Back What's Mine",
+      "note": "Camp Jobs · Crater Lake",
+      "phaseId": "crater-lake",
+      "isPhaseStart": false,
+      "auto": {
+        "storymissions": 1
+      },
+      "ocrGoals": [
+        {
+          "id": "completion-encampmentjobs-take-back-what-s-mine",
+          "type": "completion",
+          "label": "Take Back What's Mine",
+          "counterKey": "encampmentjobs",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-encampmentjobs-take-back-what-s-mine"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "crater-lake-you-got-the-wrong-guy",
+      "label": "You Got the Wrong Guy",
+      "note": "Camp Jobs · Crater Lake",
+      "phaseId": "crater-lake",
+      "isPhaseStart": false,
+      "auto": {
+        "storymissions": 1
+      },
+      "ocrGoals": [
+        {
+          "id": "completion-encampmentjobs-you-got-the-wrong-guy",
+          "type": "completion",
+          "label": "You Got the Wrong Guy",
+          "counterKey": "encampmentjobs",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-encampmentjobs-you-got-the-wrong-guy"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "crater-lake-he-s-feeding-the-freaks",
+      "label": "He's Feeding the Freaks",
+      "note": "Camp Jobs · Crater Lake",
+      "phaseId": "crater-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-encampmentjobs-he-s-feeding-the-freaks",
+          "type": "completion",
+          "label": "He's Feeding the Freaks",
+          "counterKey": "encampmentjobs",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-encampmentjobs-he-s-feeding-the-freaks"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "crater-lake-didn-t-want-to-join-up",
+      "label": "Didn't Want to Join Up",
+      "note": "Camp Jobs · Crater Lake",
+      "phaseId": "crater-lake",
+      "isPhaseStart": false,
+      "auto": {
+        "storymissions": 1
+      },
+      "ocrGoals": [
+        {
+          "id": "completion-encampmentjobs-didn-t-want-to-join-up",
+          "type": "completion",
+          "label": "Didn't Want to Join Up",
+          "counterKey": "encampmentjobs",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-encampmentjobs-didn-t-want-to-join-up"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "crater-lake-just-doing-my-job",
+      "label": "Just Doing My Job",
+      "note": "Camp Jobs · Crater Lake",
+      "phaseId": "crater-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-encampmentjobs-just-doing-my-job",
+          "type": "completion",
+          "label": "Just Doing My Job",
+          "counterKey": "encampmentjobs",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-encampmentjobs-just-doing-my-job"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "crater-lake-how-do-i-get-them",
+      "label": "How Do I Get Them?",
+      "note": "Camp Jobs · Crater Lake",
+      "phaseId": "crater-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-encampmentjobs-how-do-i-get-them",
+          "type": "completion",
+          "label": "How Do I Get Them?",
+          "counterKey": "encampmentjobs",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-encampmentjobs-how-do-i-get-them"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "crater-lake-still-breathing",
+      "label": "Still Breathing",
+      "note": "Camp Jobs · Crater Lake",
+      "phaseId": "crater-lake",
+      "isPhaseStart": false,
+      "auto": {
+        "storymissions": 1
+      },
+      "ocrGoals": [
+        {
+          "id": "completion-encampmentjobs-still-breathing",
+          "type": "completion",
+          "label": "Still Breathing",
+          "counterKey": "encampmentjobs",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-encampmentjobs-still-breathing"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "crater-lake-you-don-t-want-to-know",
+      "label": "You Don't Want to Know",
+      "note": "Camp Jobs · Crater Lake",
+      "phaseId": "crater-lake",
+      "isPhaseStart": false,
+      "auto": {
+        "storymissions": 1
+      },
+      "ocrGoals": [
+        {
+          "id": "completion-encampmentjobs-you-don-t-want-to-know",
+          "type": "completion",
+          "label": "You Don't Want to Know",
+          "counterKey": "encampmentjobs",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-encampmentjobs-you-don-t-want-to-know"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "crater-lake-a-bunch-of-cavemen",
+      "label": "A Bunch of Cavemen",
+      "note": "Camp Jobs · Crater Lake",
+      "phaseId": "crater-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-encampmentjobs-a-bunch-of-cavemen",
+          "type": "completion",
+          "label": "A Bunch of Cavemen",
+          "counterKey": "encampmentjobs",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-encampmentjobs-a-bunch-of-cavemen"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "crater-lake-a-hell-of-a-fight",
+      "label": "A Hell of a Fight",
+      "note": "Camp Jobs · Crater Lake",
+      "phaseId": "crater-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-encampmentjobs-a-hell-of-a-fight",
+          "type": "completion",
+          "label": "A Hell of a Fight",
+          "counterKey": "encampmentjobs",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-encampmentjobs-a-hell-of-a-fight"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "crater-lake-the-anarchist-spy",
+      "label": "The Anarchist Spy",
+      "note": "Camp Jobs · Crater Lake",
+      "phaseId": "crater-lake",
+      "isPhaseStart": false,
+      "auto": {
+        "storymissions": 1
+      },
+      "ocrGoals": [
+        {
+          "id": "completion-encampmentjobs-the-anarchist-spy",
+          "type": "completion",
+          "label": "The Anarchist Spy",
+          "counterKey": "encampmentjobs",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-encampmentjobs-the-anarchist-spy"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "crater-lake-spruce-lake-nero-checkpoint",
+      "label": "Spruce Lake NERO Checkpoint",
+      "note": "NERO Checkpoints · Crater Lake",
+      "phaseId": "crater-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-nerosites-spruce-lake-nero-checkpoint",
+          "type": "completion",
+          "label": "Spruce Lake NERO Checkpoint",
+          "counterKey": "nerosites",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-nerosites-spruce-lake-nero-checkpoint"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "crater-lake-volcanic-legacy-scenic-byway-nero-checkpoint",
+      "label": "Volcanic Legacy Scenic Byway NERO Checkpoint",
+      "note": "NERO Checkpoints · Crater Lake",
+      "phaseId": "crater-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-nerosites-volcanic-legacy-scenic-byway-nero-checkpoint",
+          "type": "completion",
+          "label": "Volcanic Legacy Scenic Byway NERO Checkpoint",
+          "counterKey": "nerosites",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-nerosites-volcanic-legacy-scenic-byway-nero-checkpoint"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "crater-lake-spruce-lake-ambush-camp",
+      "label": "Spruce Lake Ambush Camp",
+      "note": "Ambush Camps · Crater Lake",
+      "phaseId": "crater-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-ambushcamps-spruce-lake-ambush-camp",
+          "type": "completion",
+          "label": "Spruce Lake Ambush Camp",
+          "counterKey": "ambushcamps",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-ambushcamps-spruce-lake-ambush-camp"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "crater-lake-cascade-lakes-railway-ambush-camp",
+      "label": "Cascade Lakes Railway Ambush Camp",
+      "note": "Ambush Camps · Crater Lake",
+      "phaseId": "crater-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-ambushcamps-cascade-lakes-railway-ambush-camp",
+          "type": "completion",
+          "label": "Cascade Lakes Railway Ambush Camp",
+          "counterKey": "ambushcamps",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-ambushcamps-cascade-lakes-railway-ambush-camp"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "crater-lake-tumblebug-river-infestation",
+      "label": "Tumblebug River Infestation",
+      "note": "Infestation Zones · Crater Lake",
+      "phaseId": "crater-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-infestations-tumblebug-river-infestation",
+          "type": "completion",
+          "label": "Tumblebug River Infestation",
+          "counterKey": "infestations",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-infestations-tumblebug-river-infestation"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "crater-lake-rimview-ranch-infestation",
+      "label": "Rimview Ranch Infestation",
+      "note": "Infestation Zones · Crater Lake",
+      "phaseId": "crater-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-infestations-rimview-ranch-infestation",
+          "type": "completion",
+          "label": "Rimview Ranch Infestation",
+          "counterKey": "infestations",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-infestations-rimview-ranch-infestation"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "crater-lake-mcleod-ridge-horde",
+      "label": "McLeod Ridge Horde",
+      "note": "Hordes · Crater Lake",
+      "phaseId": "crater-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-hordes-mcleod-ridge-horde",
+          "type": "completion",
+          "label": "McLeod Ridge Horde",
+          "counterKey": "hordes",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-hordes-mcleod-ridge-horde"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "crater-lake-rimview-ranch-horde",
+      "label": "Rimview Ranch Horde",
+      "note": "Hordes · Crater Lake",
+      "phaseId": "crater-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-hordes-rimview-ranch-horde",
+          "type": "completion",
+          "label": "Rimview Ranch Horde",
+          "counterKey": "hordes",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-hordes-rimview-ranch-horde"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "crater-lake-mt-bailey-horde",
+      "label": "Mt. Bailey Horde",
+      "note": "Hordes · Crater Lake",
+      "phaseId": "crater-lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-hordes-mt-bailey-horde",
+          "type": "completion",
+          "label": "Mt. Bailey Horde",
+          "counterKey": "hordes",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-hordes-mt-bailey-horde"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "highway-97-chemult-community-college-nero-checkpoint",
+      "label": "Chemult Community College NERO Checkpoint",
+      "note": "NERO Checkpoints · Highway 97",
+      "phaseId": "highway-97",
+      "isPhaseStart": true,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-nerosites-chemult-community-college-nero-checkpoint",
+          "type": "completion",
+          "label": "Chemult Community College NERO Checkpoint",
+          "counterKey": "nerosites",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-nerosites-chemult-community-college-nero-checkpoint"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "highway-97-pillette-bridge-nero-checkpoint",
+      "label": "Pillette Bridge NERO Checkpoint",
+      "note": "NERO Checkpoints · Highway 97",
+      "phaseId": "highway-97",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-nerosites-pillette-bridge-nero-checkpoint",
+          "type": "completion",
+          "label": "Pillette Bridge NERO Checkpoint",
+          "counterKey": "nerosites",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-nerosites-pillette-bridge-nero-checkpoint"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "highway-97-santiam-tunnel-nero-checkpoint",
+      "label": "Santiam Tunnel NERO Checkpoint",
+      "note": "NERO Checkpoints · Highway 97",
+      "phaseId": "highway-97",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-nerosites-santiam-tunnel-nero-checkpoint",
+          "type": "completion",
+          "label": "Santiam Tunnel NERO Checkpoint",
+          "counterKey": "nerosites",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-nerosites-santiam-tunnel-nero-checkpoint"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "highway-97-aspen-butte-ambush-camp",
+      "label": "Aspen Butte Ambush Camp",
+      "note": "Ambush Camps · Highway 97",
+      "phaseId": "highway-97",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-ambushcamps-aspen-butte-ambush-camp",
+          "type": "completion",
+          "label": "Aspen Butte Ambush Camp",
+          "counterKey": "ambushcamps",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-ambushcamps-aspen-butte-ambush-camp"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "highway-97-bare-bay-ambush-camp",
+      "label": "Bare Bay Ambush Camp",
+      "note": "Ambush Camps · Highway 97",
+      "phaseId": "highway-97",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-ambushcamps-bare-bay-ambush-camp",
+          "type": "completion",
+          "label": "Bare Bay Ambush Camp",
+          "counterKey": "ambushcamps",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-ambushcamps-bare-bay-ambush-camp"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "highway-97-cascade-lakes-rail-line-infestation",
+      "label": "Cascade Lakes Rail Line Infestation",
+      "note": "Infestation Zones · Highway 97",
+      "phaseId": "highway-97",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-infestations-cascade-lakes-rail-line-infestation",
+          "type": "completion",
+          "label": "Cascade Lakes Rail Line Infestation",
+          "counterKey": "infestations",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-infestations-cascade-lakes-rail-line-infestation"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "highway-97-chemult-college-infestation",
+      "label": "Chemult College Infestation",
+      "note": "Infestation Zones · Highway 97",
+      "phaseId": "highway-97",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-infestations-chemult-college-infestation",
+          "type": "completion",
+          "label": "Chemult College Infestation",
+          "counterKey": "infestations",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-infestations-chemult-college-infestation"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "highway-97-beasley-lake-horde",
+      "label": "Beasley Lake Horde",
+      "note": "Hordes · Highway 97",
+      "phaseId": "highway-97",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-hordes-beasley-lake-horde",
+          "type": "completion",
+          "label": "Beasley Lake Horde",
+          "counterKey": "hordes",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-hordes-beasley-lake-horde"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "highway-97-cascade-lakes-rail-line-horde",
+      "label": "Cascade Lakes Rail Line Horde",
+      "note": "Hordes · Highway 97",
+      "phaseId": "highway-97",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-hordes-cascade-lakes-rail-line-horde",
+          "type": "completion",
+          "label": "Cascade Lakes Rail Line Horde",
+          "counterKey": "hordes",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-hordes-cascade-lakes-rail-line-horde"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "highway-97-chemult-community-college-horde",
+      "label": "Chemult Community College Horde",
+      "note": "Hordes · Highway 97",
+      "phaseId": "highway-97",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-hordes-chemult-community-college-horde",
+          "type": "completion",
+          "label": "Chemult Community College Horde",
+          "counterKey": "hordes",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-hordes-chemult-community-college-horde"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "highway-97-chemult-station-horde",
+      "label": "Chemult Station Horde",
+      "note": "Hordes · Highway 97",
+      "phaseId": "highway-97",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-hordes-chemult-station-horde",
+          "type": "completion",
+          "label": "Chemult Station Horde",
+          "counterKey": "hordes",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-hordes-chemult-station-horde"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "highway-97-friendship-ridge-horde",
+      "label": "Friendship Ridge Horde",
+      "note": "Hordes · Highway 97",
+      "phaseId": "highway-97",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-hordes-friendship-ridge-horde",
+          "type": "completion",
+          "label": "Friendship Ridge Horde",
+          "counterKey": "hordes",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-hordes-friendship-ridge-horde"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "highway-97-groose-gardens-horde",
+      "label": "Groose Gardens Horde",
+      "note": "Hordes · Highway 97",
+      "phaseId": "highway-97",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-hordes-groose-gardens-horde",
+          "type": "completion",
+          "label": "Groose Gardens Horde",
+          "counterKey": "hordes",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-hordes-groose-gardens-horde"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "highway-97-juniper-ridge-horde",
+      "label": "Juniper Ridge Horde",
+      "note": "Hordes · Highway 97",
+      "phaseId": "highway-97",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-hordes-juniper-ridge-horde",
+          "type": "completion",
+          "label": "Juniper Ridge Horde",
+          "counterKey": "hordes",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-hordes-juniper-ridge-horde"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "highway-97-mt-scott-ski-resort-horde",
+      "label": "Mt. Scott Ski Resort Horde",
+      "note": "Hordes · Highway 97",
+      "phaseId": "highway-97",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-hordes-mt-scott-ski-resort-horde",
+          "type": "completion",
+          "label": "Mt. Scott Ski Resort Horde",
+          "counterKey": "hordes",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-hordes-mt-scott-ski-resort-horde"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "highway-97-rum-rye-gulch-horde",
+      "label": "Rum Rye Gulch Horde",
+      "note": "Hordes · Highway 97",
+      "phaseId": "highway-97",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-hordes-rum-rye-gulch-horde",
+          "type": "completion",
+          "label": "Rum Rye Gulch Horde",
+          "counterKey": "hordes",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-hordes-rum-rye-gulch-horde"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "highway-97-sagebrush-point-horde",
+      "label": "Sagebrush Point Horde",
+      "note": "Hordes · Highway 97",
+      "phaseId": "highway-97",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-hordes-sagebrush-point-horde",
+          "type": "completion",
+          "label": "Sagebrush Point Horde",
+          "counterKey": "hordes",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-hordes-sagebrush-point-horde"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "highway-97-solomon-hill-horde",
+      "label": "Solomon Hill Horde",
+      "note": "Hordes · Highway 97",
+      "phaseId": "highway-97",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-hordes-solomon-hill-horde",
+          "type": "completion",
+          "label": "Solomon Hill Horde",
+          "counterKey": "hordes",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-hordes-solomon-hill-horde"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "highway-97-beaver-marsh-rest-stop-horde",
+      "label": "Beaver Marsh Rest Stop Horde",
+      "note": "Hordes · Highway 97",
+      "phaseId": "highway-97",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-hordes-beaver-marsh-rest-stop-horde",
+          "type": "completion",
+          "label": "Beaver Marsh Rest Stop Horde",
+          "counterKey": "hordes",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-hordes-beaver-marsh-rest-stop-horde"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "highway-97-lobert-draw-ridge-horde",
+      "label": "Lobert Draw Ridge Horde",
+      "note": "Hordes · Highway 97",
+      "phaseId": "highway-97",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-hordes-lobert-draw-ridge-horde",
+          "type": "completion",
+          "label": "Lobert Draw Ridge Horde",
+          "counterKey": "hordes",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-hordes-lobert-draw-ridge-horde"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "endgame-keep-them-safe",
+      "label": "Keep Them Safe",
+      "note": "Story Missions · Endgame",
+      "phaseId": "endgame",
+      "isPhaseStart": true,
+      "auto": {
+        "hordes": 1
+      },
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-keep-them-safe",
+          "type": "completion",
+          "label": "Keep Them Safe",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-keep-them-safe"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "endgame-copeland-s-camp-has-been-attacked",
+      "label": "Copeland's Camp Has Been Attacked",
+      "note": "Story Missions · Endgame",
+      "phaseId": "endgame",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-copeland-s-camp-has-been-attacked",
+          "type": "completion",
+          "label": "Copeland's Camp Has Been Attacked",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-copeland-s-camp-has-been-attacked"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "endgame-the-last-of-em",
+      "label": "The Last of 'Em",
+      "note": "Story Missions · Endgame",
+      "phaseId": "endgame",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-the-last-of-em",
+          "type": "completion",
+          "label": "The Last of 'Em",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-the-last-of-em"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "endgame-kill-every-one-of-the-bastards",
+      "label": "Kill Every One of the Bastards",
+      "note": "Story Missions · Endgame",
+      "phaseId": "endgame",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-kill-every-one-of-the-bastards",
+          "type": "completion",
+          "label": "Kill Every One of the Bastards",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-kill-every-one-of-the-bastards"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "endgame-another-militia-attack",
+      "label": "Another Militia Attack",
+      "note": "Story Missions · Endgame",
+      "phaseId": "endgame",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-another-militia-attack",
+          "type": "completion",
+          "label": "Another Militia Attack",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-another-militia-attack"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "endgame-i-ll-save-some-for-you",
+      "label": "I'll Save Some for You",
+      "note": "Story Missions · Endgame",
+      "phaseId": "endgame",
+      "isPhaseStart": false,
+      "auto": {
+        "hordes": 1
+      },
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-i-ll-save-some-for-you",
+          "type": "completion",
+          "label": "I'll Save Some for You",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-i-ll-save-some-for-you"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "endgame-you-can-t-do-this-alone",
+      "label": "You Can't Do This Alone",
+      "note": "Story Missions · Endgame",
+      "phaseId": "endgame",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-you-can-t-do-this-alone",
+          "type": "completion",
+          "label": "You Can't Do This Alone",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-you-can-t-do-this-alone"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "endgame-for-an-outlaw-biker",
+      "label": "For an Outlaw Biker",
+      "note": "Story Missions · Endgame",
+      "phaseId": "endgame",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-for-an-outlaw-biker",
+          "type": "completion",
+          "label": "For an Outlaw Biker",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-for-an-outlaw-biker"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "endgame-where-s-my-damn-rings",
+      "label": "Where's My Damn Rings?",
+      "note": "Story Missions · Endgame",
+      "phaseId": "endgame",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-where-s-my-damn-rings",
+          "type": "completion",
+          "label": "Where's My Damn Rings?",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-where-s-my-damn-rings"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "endgame-for-the-benefit-of-others",
+      "label": "For the Benefit of Others",
+      "note": "Story Missions · Endgame",
+      "phaseId": "endgame",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-for-the-benefit-of-others",
+          "type": "completion",
+          "label": "For the Benefit of Others",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-for-the-benefit-of-others"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "endgame-i-m-not-a-ripper",
+      "label": "I'm Not a Ripper",
+      "note": "Story Missions · Endgame",
+      "phaseId": "endgame",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-i-m-not-a-ripper",
+          "type": "completion",
+          "label": "I'm Not a Ripper",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-i-m-not-a-ripper"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "endgame-there-s-nothing-you-can-do",
+      "label": "There's Nothing You Can Do",
+      "note": "Story Missions · Endgame",
+      "phaseId": "endgame",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-storymissions-there-s-nothing-you-can-do",
+          "type": "completion",
+          "label": "There's Nothing You Can Do",
+          "counterKey": "storymissions",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-storymissions-there-s-nothing-you-can-do"
+          ]
+        ]
+      }
+    }
+  ]
+}

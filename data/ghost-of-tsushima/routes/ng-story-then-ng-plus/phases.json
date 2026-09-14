@@ -1,0 +1,123 @@
+{
+  "legacy_all": {
+    "label": "Legacy All",
+    "note": "Fallback for older split files with no phase markers.",
+    "targetMinutes": 1440,
+    "visible": [
+      "trophies",
+      "inari",
+      "hotsprings",
+      "bamboo",
+      "haiku",
+      "shrines",
+      "lighthouses",
+      "records",
+      "artifacts",
+      "crickets",
+      "hiddenaltars",
+      "monochrome",
+      "cooper",
+      "sidetales",
+      "duels",
+      "territories",
+      "mythictales"
+    ]
+  },
+  "any_act1": {
+    "label": "NG Story Act 1",
+    "note": "Mission-only first playthrough. Use this pass to clear the Act 1 story spine and take the story trophy pops, not the platinum board.",
+    "targetMinutes": 240,
+    "progressFrom": null,
+    "visible": [
+      "trophies"
+    ]
+  },
+  "any_act2": {
+    "label": "NG Story Act 2",
+    "note": "Keep New Game on the main tale path. Cleanup remains intentionally deferred until the NG+ platinum pass.",
+    "targetMinutes": 480,
+    "progressFrom": "any_act1",
+    "visible": [
+      "trophies"
+    ]
+  },
+  "any_act3": {
+    "label": "NG Story Act 3",
+    "note": "Finish the story shell and hand off into the real platinum route on New Game+.",
+    "targetMinutes": 720,
+    "progressFrom": "any_act2",
+    "visible": [
+      "trophies"
+    ]
+  },
+  "ngp_act1": {
+    "label": "NG+ Platinum Act 1",
+    "note": "Second playthrough starts the real plat board. Izuhara is where the route cashes in the early collectible, duel, and liberation density.",
+    "targetMinutes": 960,
+    "progressFrom": "any_act3",
+    "visible": [
+      "inari",
+      "hotsprings",
+      "bamboo",
+      "haiku",
+      "shrines",
+      "lighthouses",
+      "records",
+      "artifacts",
+      "crickets",
+      "hiddenaltars",
+      "monochrome",
+      "sidetales",
+      "duels",
+      "territories",
+      "mythictales"
+    ]
+  },
+  "ngp_act2": {
+    "label": "NG+ Platinum Act 2",
+    "note": "Toyotama carries the heaviest mid-route load: side tales, duels, lighthouses, camps, and mythic spillover.",
+    "targetMinutes": 1200,
+    "progressFrom": "ngp_act1",
+    "visible": [
+      "inari",
+      "hotsprings",
+      "bamboo",
+      "haiku",
+      "shrines",
+      "lighthouses",
+      "records",
+      "artifacts",
+      "crickets",
+      "hiddenaltars",
+      "monochrome",
+      "sidetales",
+      "duels",
+      "territories",
+      "mythictales"
+    ]
+  },
+  "ngp_act3": {
+    "label": "NG+ Platinum Act 3",
+    "note": "Kamiagata closes the final lighthouse, camp, tale, vanity, and Cooper work before the last mop-up.",
+    "targetMinutes": 1440,
+    "progressFrom": "ngp_act2",
+    "visible": [
+      "inari",
+      "hotsprings",
+      "bamboo",
+      "haiku",
+      "shrines",
+      "lighthouses",
+      "records",
+      "artifacts",
+      "crickets",
+      "hiddenaltars",
+      "monochrome",
+      "cooper",
+      "sidetales",
+      "duels",
+      "territories",
+      "mythictales"
+    ]
+  }
+}

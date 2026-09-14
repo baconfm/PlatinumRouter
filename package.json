@@ -1,0 +1,22 @@
+{
+  "name": "platinum-router",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "validate": "node scripts/validate-data.mjs && node scripts/check-static-pages.mjs && node scripts/check-ocr-log.mjs",
+    "validate:data": "node scripts/validate-data.mjs",
+    "check:pages": "node scripts/check-static-pages.mjs",
+    "check:ocr-log": "node scripts/check-ocr-log.mjs",
+    "analyze:days-gone-training": "node scripts/summarize-days-gone-training-logs.mjs",
+    "analyze:days-gone-live-ocr": "node scripts/analyze-days-gone-live-ocr.mjs",
+    "status:days-gone-training": "node scripts/show-days-gone-training-status.mjs",
+    "train:days-gone-completions": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/run-days-gone-completion-training.ps1",
+    "train:days-gone-full-ocr": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/run-days-gone-full-ocr-overnight.ps1",
+    "scan:days-gone-center-popups": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/run-days-gone-center-popup-scan.ps1",
+    "build:days-gone-pb-benchmark": "node scripts/build-days-gone-pb-pace-benchmark.mjs",
+    "train:days-gone-title-catalog": "node scripts/train-days-gone-title-catalog.mjs",
+    "compile:route": "node scripts/compile-route.mjs",
+    "serve": "python scripts/router_server.py --port 8080"
+  }
+}

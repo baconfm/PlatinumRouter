@@ -1,0 +1,8 @@
+{
+  "quotas": {
+    "portland": { "label": "Portland", "targets": {} },
+    "staunton": { "label": "Staunton Island", "targets": {} },
+    "shoreside": { "label": "Shoreside Vale", "targets": {} },
+    "cleanup": { "label": "100% Cleanup", "targets": {} }
+  }
+}

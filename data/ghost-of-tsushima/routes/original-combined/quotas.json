@@ -1,0 +1,77 @@
+{
+  "quotas": {
+    "any_act1": {
+      "label": "NG Act 1",
+      "targets": {
+        "trophies": 4,
+        "inari": 22,
+        "hotsprings": 9,
+        "bamboo": 7,
+        "haiku": 8,
+        "records": 7,
+        "artifacts": 3,
+        "shrines": 7,
+        "crickets": 5,
+        "hiddenaltars": 6,
+        "monochrome": 1
+      }
+    },
+    "any_act2": {
+      "label": "NG Act 2",
+      "targets": {
+        "trophies": 10,
+        "inari": 37,
+        "hotsprings": 15,
+        "bamboo": 13,
+        "haiku": 13,
+        "records": 13,
+        "artifacts": 3,
+        "shrines": 12,
+        "crickets": 5,
+        "hiddenaltars": 7,
+        "monochrome": 2
+      }
+    },
+    "any_act3": {
+      "label": "NG Act 3",
+      "targets": {
+        "trophies": 17,
+        "inari": 47,
+        "hotsprings": 18,
+        "bamboo": 16,
+        "haiku": 18,
+        "records": 13,
+        "artifacts": 3,
+        "shrines": 15,
+        "crickets": 5,
+        "hiddenaltars": 7,
+        "monochrome": 2,
+        "cooper": 2
+      }
+    },
+    "ngp_act1": {
+      "label": "NG+ Act 1",
+      "targets": {
+        "trophies": 17,
+        "sidetales": 9,
+        "territories": 5
+      }
+    },
+    "ngp_act2": {
+      "label": "NG+ Act 2",
+      "targets": {
+        "trophies": 18,
+        "sidetales": 9,
+        "territories": 5
+      }
+    },
+    "ngp_act3": {
+      "label": "NG+ Act 3",
+      "targets": {
+        "trophies": 18,
+        "sidetales": 9,
+        "territories": 5
+      }
+    }
+  }
+}

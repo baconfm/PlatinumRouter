@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 2,
+  "routeUrl": "./data/days-gone/default-splits.json",
+  "completionCatalogUrl": "./data/days-gone/completion-titles.json",
+  "reviewedObjectiveUrl": "./outputs/training/days-gone/center-objective-crossmatch/reviewed-result.json",
+  "defaultBaseline": "jamcar-rescan",
+  "defaultComparison": "bacon-july25",
+  "defaultAnchor": "leon-finders-keepers",
+  "anchors": [
+    {
+      "id": "leon-finders-keepers",
+      "label": "Leon collectible / Finders Keepers",
+      "description": "Same route moment, using Leon's collectible popup or the Finders Keepers trophy popup in each run.",
+      "timestamps": {
+        "jamcar-rescan": 268.833,
+        "bacon-july25": 380.583
+      }
+    }
+  ],
+  "milestones": [
+    {
+      "id": "old-reliable",
+      "label": "Old Reliable",
+      "category": "trophies",
+      "categoryLabel": "Cumulative trophy",
+      "note": "Cumulative crafted-weapon kill trophy. Treat its popup time as a progression and safety marker, not a direct route split.",
+      "timestamps": {
+        "bacon-july25": 13179.283
+      }
+    }
+  ],
+  "runs": [
+    {
+      "id": "jamcar-rescan",
+      "label": "JamCar WR - Aug rescan",
+      "shortLabel": "WR",
+      "kind": "World-record route - buffered full rescan",
+      "bufferedResultUrl": "./outputs/training/days-gone/jamcar-buffered-whole-run-60fps/result.json",
+      "reviewedObjectiveRunKey": "jamcar"
+    },
+    {
+      "id": "bacon-july25",
+      "label": "Bacon Jul 25 - new run",
+      "shortLabel": "Jul 25",
+      "kind": "Latest full run - realtime priority replay",
+      "bufferedResultUrl": "./outputs/training/days-gone/priority-realtime-full-run/result.json",
+      "reviewedObjectiveRunKey": "bacon"
+    }
+  ]
+}

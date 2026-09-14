@@ -1,0 +1,74 @@
+{
+  "storymissions": {
+    "label": "Story Missions",
+    "shortLabel": "Story Missions",
+    "queueLabel": "Story Missions",
+    "overlayLabel": "STORY",
+    "icon": "route",
+    "accent": "#f6c453",
+    "description": "All story missions required by the All Storylines route.",
+    "requirement": "Complete all 144 story missions.",
+    "max": 144,
+    "paceWeight": 8
+  },
+  "encampmentjobs": {
+    "label": "Camp Jobs",
+    "shortLabel": "Camp Jobs",
+    "queueLabel": "Camp Jobs",
+    "overlayLabel": "CAMP",
+    "icon": "camp",
+    "accent": "#84cc16",
+    "description": "All camp jobs required by the All Storylines route.",
+    "requirement": "Complete all 34 camp jobs.",
+    "max": 34,
+    "paceWeight": 5
+  },
+  "nerosites": {
+    "label": "NERO Checkpoints",
+    "shortLabel": "NERO Checkpoints",
+    "queueLabel": "NERO Checkpoints",
+    "overlayLabel": "NERO",
+    "icon": "research",
+    "accent": "#22d3ee",
+    "description": "All nero checkpoints required by the All Storylines route.",
+    "requirement": "Complete all 12 nero checkpoints.",
+    "max": 12,
+    "paceWeight": 5
+  },
+  "ambushcamps": {
+    "label": "Ambush Camps",
+    "shortLabel": "Ambush Camps",
+    "queueLabel": "Ambush Camps",
+    "overlayLabel": "AMB",
+    "icon": "ambush",
+    "accent": "#ef4444",
+    "description": "All ambush camps required by the All Storylines route.",
+    "requirement": "Complete all 14 ambush camps.",
+    "max": 14,
+    "paceWeight": 8
+  },
+  "infestations": {
+    "label": "Infestation Zones",
+    "shortLabel": "Infestation Zones",
+    "queueLabel": "Infestation Zones",
+    "overlayLabel": "INF",
+    "icon": "infestation",
+    "accent": "#f97316",
+    "description": "All infestation zones required by the All Storylines route.",
+    "requirement": "Complete all 12 infestation zones.",
+    "max": 12,
+    "paceWeight": 7
+  },
+  "hordes": {
+    "label": "Hordes",
+    "shortLabel": "Hordes",
+    "queueLabel": "Hordes",
+    "overlayLabel": "HORDE",
+    "icon": "horde",
+    "accent": "#dc2626",
+    "description": "All hordes required by the All Storylines route.",
+    "requirement": "Complete all 40 hordes.",
+    "max": 40,
+    "paceWeight": 11
+  }
+}

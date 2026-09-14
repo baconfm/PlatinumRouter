@@ -1,0 +1,169 @@
+{
+  "trophies": {
+    "label": "Trophies",
+    "shortLabel": "Trophy",
+    "queueLabel": "Trophy",
+    "icon": "trophy",
+    "max": 52,
+    "act1": 0,
+    "paceWeight": 0
+  },
+  "inari": {
+    "label": "Inari Shrines",
+    "shortLabel": "Inari",
+    "queueLabel": "Inari",
+    "icon": "inari",
+    "max": 49,
+    "act1": 22,
+    "paceWeight": 1
+  },
+  "hotsprings": {
+    "label": "Hot Springs",
+    "shortLabel": "Spring",
+    "queueLabel": "Spring",
+    "icon": "spring",
+    "max": 18,
+    "act1": 9,
+    "paceWeight": 0.8
+  },
+  "bamboo": {
+    "label": "Bamboo Strikes",
+    "shortLabel": "Bamboo",
+    "queueLabel": "Bamboo",
+    "icon": "bamboo",
+    "max": 16,
+    "act1": 6,
+    "paceWeight": 0.7
+  },
+  "haiku": {
+    "label": "Haiku",
+    "shortLabel": "Haiku",
+    "queueLabel": "Haiku",
+    "icon": "haiku",
+    "max": 19,
+    "act1": 8,
+    "paceWeight": 0.9
+  },
+  "records": {
+    "label": "Records",
+    "shortLabel": "Records",
+    "queueLabel": "Records",
+    "icon": "record",
+    "max": 20,
+    "act1": 0,
+    "paceWeight": 0.35
+  },
+  "artifacts": {
+    "label": "Artifacts",
+    "shortLabel": "Arts",
+    "queueLabel": "Arts",
+    "icon": "artifact",
+    "max": 20,
+    "act1": 0,
+    "paceWeight": 0.45
+  },
+  "shrines": {
+    "label": "Shinto Shrines",
+    "shortLabel": "Shrine",
+    "queueLabel": "Shrine",
+    "icon": "shrine",
+    "max": 16,
+    "act1": 7,
+    "paceWeight": 3
+  },
+  "lighthouses": {
+    "label": "Lighthouses",
+    "shortLabel": "Light",
+    "queueLabel": "Light",
+    "icon": "lighthouse",
+    "max": 8,
+    "act1": 3,
+    "paceWeight": 0.8
+  },
+  "crickets": {
+    "label": "Crickets",
+    "shortLabel": "Cricket",
+    "queueLabel": "Cricket",
+    "icon": "cricket",
+    "max": 5,
+    "act1": 0,
+    "paceWeight": 0.35
+  },
+  "hiddenaltars": {
+    "label": "Hidden Altars",
+    "shortLabel": "Altars",
+    "queueLabel": "Altars",
+    "icon": "altar",
+    "max": 10,
+    "act1": 0,
+    "paceWeight": 0.25
+  },
+  "duels": {
+    "label": "Duels",
+    "shortLabel": "Duels",
+    "queueLabel": "Duels",
+    "icon": "duel",
+    "max": 25,
+    "act1": 0,
+    "paceWeight": 2
+  },
+  "territories": {
+    "label": "Mongol Territories",
+    "shortLabel": "Camps",
+    "queueLabel": "Camps",
+    "icon": "territory",
+    "max": 56,
+    "act1": 0,
+    "paceWeight": 3
+  },
+  "mythictales": {
+    "label": "Mythic Tales",
+    "shortLabel": "Mythic",
+    "queueLabel": "Mythic",
+    "icon": "mythic",
+    "max": 7,
+    "act1": 0,
+    "paceWeight": 6
+  },
+  "sidetales": {
+    "label": "Side Tales",
+    "shortLabel": "Tales",
+    "queueLabel": "Tales",
+    "icon": "tale",
+    "max": 61,
+    "act1": 0,
+    "paceWeight": 3.5
+  },
+  "monochrome": {
+    "label": "Monochrome",
+    "shortLabel": "Mono",
+    "queueLabel": "Mono",
+    "icon": "monochrome",
+    "max": 2,
+    "act1": 0,
+    "paceWeight": 0
+  },
+  "cooper": {
+    "label": "Cooper",
+    "shortLabel": "Cooper",
+    "queueLabel": "Cooper",
+    "icon": "trader",
+    "max": 3,
+    "act1": 0,
+    "paceWeight": 0
+  },
+  "deaths": {
+    "label": "Deaths",
+    "shortLabel": "Deaths",
+    "queueLabel": "Deaths",
+    "overlayLabel": "Deaths",
+    "icon": "death",
+    "accent": "#ef4444",
+    "description": "Optional run death counter.",
+    "requirement": "Turn on in Settings when this run should show deaths.",
+    "max": 999,
+    "displayMode": "count",
+    "nonProgress": true,
+    "paceWeight": 0
+  }
+}

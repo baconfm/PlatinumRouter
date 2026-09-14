@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Phase Editor</title>
+  <script>
+    (() => {
+      try {
+        const valid = new Set(["classic", "earth"]);
+        const query = new URLSearchParams(window.location.search).get("theme");
+        const stored = localStorage.getItem("platinum-router-theme");
+        const theme = valid.has(query) ? query : (valid.has(stored) ? stored : "classic");
+        document.documentElement.dataset.theme = theme;
+      } catch {
+        document.documentElement.dataset.theme = "classic";
+      }
+    })();
+  </script>
+  <link rel="stylesheet" href="./styles/base.css?v=20260511a" />
+  <link rel="stylesheet" href="./styles/layout.css?v=20260511a" />
+  <link rel="stylesheet" href="./styles/components.css?v=20260511a" />
+  <link rel="stylesheet" href="./styles/phase-editor.css" />
+</head>
+<body class="phaseEditorPage">
+  <div class="app">
+    <div class="top phasePageTop">
+      <div>
+        <div class="eyebrow">Route Editing</div>
+        <div class="title">Phase Editor</div>
+        <div id="pageSubtitle" class="subtitle">Edit phase labels, notes, visible objectives, and quota targets.</div>
+      </div>
+
+      <div class="topMeta">
+        <label class="gamePickerField">
+          <span class="eyebrow">Game</span>
+          <select id="gamePicker" class="gamePickerSelect" aria-label="Select game"></select>
+        </label>
+        <label class="gamePickerField" id="routePickerField" hidden>
+          <span class="eyebrow">Route</span>
+          <select id="routePicker" class="gamePickerSelect" aria-label="Select route"></select>
+        </label>
+        <div class="badge">Phases</div>
+      </div>
+    </div>
+
+    <div class="panel phaseCommandPanel">
+      <div class="phaseCommandBar">
+        <div class="phaseCommandCopy">
+          <div class="eyebrow">Workflow</div>
+          <div id="editorNotesText" class="subtitle">
+            Use this page to define what the controller shows during each section of the run.
+          </div>
+        </div>
+
+        <div class="phaseCommandActions">
+          <button id="addActsEditorBtn" class="btn">Add Phase</button>
+          <button id="exportActsEditorBtn" class="btn">Export Phases</button>
+          <label class="btn">
+            Import Phases
+            <input id="importActsEditorInput" type="file" accept="application/json" hidden />
+          </label>
+          <button id="copyActsEditorBtn" class="btn">Copy Phases</button>
+          <button id="resetActsEditorBtn" class="btn">Reset</button>
+          <button id="saveActsEditorBtn" class="btn primary">Save Phase Setup</button>
+          <button id="savePhaseFilesBtn" class="btn">Save Local Files</button>
+        </div>
+      </div>
+
+      <div class="phaseNavBar">
+        <div>
+          <div class="eyebrow">Navigation</div>
+          <div class="subtitle">Jump between controller, overlay, and route tools.</div>
+        </div>
+
+        <div class="phaseNavLinks">
+          <a href="./index.html" class="btn">Controller</a>
+          <a href="./overlay.html" class="btn">Overlay</a>
+          <a href="./minoverlay.html" class="btn">Mini Overlay</a>
+          <a href="./run-comparison.html" class="btn">Run Comparison</a>
+          <a href="./splits.html" class="btn">Split Editor</a>
+          <a href="./game-editor.html" class="btn">Game Editor</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="phaseWorkspace">
+      <aside class="panel phaseSidebarPanel">
+        <div id="actsEditorPhaseList"></div>
+      </aside>
+
+      <main id="actsEditorForm" class="panel phaseInspectorPanel"></main>
+    </div>
+  </div>
+
+  <script type="module" src="./js/theme-init.js?v=20260511a"></script>
+  <script type="module" src="./js/phases-page.js?v=20260711h"></script>
+</body>
+</html>

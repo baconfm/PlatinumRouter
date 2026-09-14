@@ -1,0 +1,1082 @@
+{
+  "categories": {
+    "storymissions": {
+      "label": "Story Missions",
+      "titles": [
+        {
+          "title": "He Can't Be Far",
+          "region": "Cascade"
+        },
+        {
+          "title": "We'll Make It Quick",
+          "region": "Cascade"
+        },
+        {
+          "title": "I Say We Head North",
+          "region": "Cascade"
+        },
+        {
+          "title": "Bad Way to Go",
+          "region": "Cascade"
+        },
+        {
+          "title": "You Got a Death Wish",
+          "region": "Cascade"
+        },
+        {
+          "title": "Drifters on the Mountain",
+          "region": "Cascade"
+        },
+        {
+          "title": "Bugged the Hell Out",
+          "region": "Cascade"
+        },
+        {
+          "title": "Sounded Like Engines",
+          "region": "Cascade"
+        },
+        {
+          "title": "Smoke on the Mountain",
+          "region": "Cascade"
+        },
+        {
+          "title": "Out of Nowhere",
+          "region": "Cascade"
+        },
+        {
+          "title": "They're Not Sleeping",
+          "region": "Cascade"
+        },
+        {
+          "title": "It's a Rifle, Not a Gun",
+          "region": "Cascade"
+        },
+        {
+          "title": "We're Getting Low on Meat",
+          "region": "Cascade"
+        },
+        {
+          "title": "Making Contact",
+          "region": "Cascade"
+        },
+        {
+          "title": "I've Pulled Weeds Before",
+          "region": "Cascade"
+        },
+        {
+          "title": "Give Me a Couple Days",
+          "region": "Cascade"
+        },
+        {
+          "title": "No One Saw It Coming",
+          "region": "Cascade"
+        },
+        {
+          "title": "It Couldn't Be That Easy",
+          "region": "Cascade"
+        },
+        {
+          "title": "They Don't Like Visitors",
+          "region": "Cascade"
+        },
+        {
+          "title": "That's When I Knew",
+          "region": "Cascade"
+        },
+        {
+          "title": "It's a Long Story",
+          "region": "Cascade"
+        },
+        {
+          "title": "Riding the Open Road",
+          "region": "Cascade"
+        },
+        {
+          "title": "Price on Your Head",
+          "region": "Belknap"
+        },
+        {
+          "title": "What Did You Do?",
+          "region": "Belknap"
+        },
+        {
+          "title": "Searching for Something",
+          "region": "Belknap"
+        },
+        {
+          "title": "What's a Nice Girl",
+          "region": "Belknap"
+        },
+        {
+          "title": "It's Not Safe Here",
+          "region": "Belknap"
+        },
+        {
+          "title": "Lots of Sick People",
+          "region": "Belknap"
+        },
+        {
+          "title": "It Was on Me",
+          "region": "Belknap"
+        },
+        {
+          "title": "They Won't Let Me Leave",
+          "region": "Belknap"
+        },
+        {
+          "title": "I Brought You Something",
+          "region": "Belknap"
+        },
+        {
+          "title": "What Have They Done",
+          "region": "Belknap"
+        },
+        {
+          "title": "No Beginning and No End",
+          "region": "Belknap"
+        },
+        {
+          "title": "Not Gonna Kill Anyone",
+          "region": "Lost Lake"
+        },
+        {
+          "title": "No Place Else to Go",
+          "region": "Lost Lake"
+        },
+        {
+          "title": "Sherman's Camp Is Crawling",
+          "region": "Lost Lake"
+        },
+        {
+          "title": "I Need Your Help",
+          "region": "Lost Lake"
+        },
+        {
+          "title": "Searching for Lisa",
+          "region": "Lost Lake"
+        },
+        {
+          "title": "Now You See It",
+          "region": "Lost Lake"
+        },
+        {
+          "title": "Playing All Night",
+          "region": "Lost Lake"
+        },
+        {
+          "title": "With Other Men's Blood",
+          "region": "Lost Lake"
+        },
+        {
+          "title": "It's on a Mission",
+          "region": "Lost Lake"
+        },
+        {
+          "title": "Flow Like Buried Rivers",
+          "region": "Lost Lake"
+        },
+        {
+          "title": "You See What They Did",
+          "region": "Lost Lake"
+        },
+        {
+          "title": "Do You Have My Back?",
+          "region": "Lost Lake"
+        },
+        {
+          "title": "On Herod's Birthday",
+          "region": "Lost Lake"
+        },
+        {
+          "title": "I Could Use a Hand",
+          "region": "Lost Lake"
+        },
+        {
+          "title": "Seeds for the Spring",
+          "region": "Lost Lake"
+        },
+        {
+          "title": "I Got a Job for You",
+          "region": "Lost Lake"
+        },
+        {
+          "title": "Moments of Lucidity",
+          "region": "Lost Lake"
+        },
+        {
+          "title": "The Only One He's Got",
+          "region": "Lost Lake"
+        },
+        {
+          "title": "I Got Work to Do",
+          "region": "Lost Lake"
+        },
+        {
+          "title": "Some Kinda Freak Expert",
+          "region": "Lost Lake"
+        },
+        {
+          "title": "Lines Not Crossed",
+          "region": "Lost Lake"
+        },
+        {
+          "title": "We're Not Hiding",
+          "region": "Lost Lake"
+        },
+        {
+          "title": "That's His Mistake",
+          "region": "Lost Lake"
+        },
+        {
+          "title": "Drinking Himself to Death",
+          "region": "Lost Lake"
+        },
+        {
+          "title": "About Boozer's Arm",
+          "region": "Lost Lake"
+        },
+        {
+          "title": "Was This a Good Idea?",
+          "region": "Lost Lake"
+        },
+        {
+          "title": "You Twisted My Arm",
+          "region": "Lost Lake"
+        },
+        {
+          "title": "You Could Have Done More",
+          "region": "Lost Lake"
+        },
+        {
+          "title": "Not Like I Got a Choice",
+          "region": "Lost Lake"
+        },
+        {
+          "title": "Better to Light One Candle",
+          "region": "Lost Lake"
+        },
+        {
+          "title": "Outta the Darkness",
+          "region": "Lost Lake"
+        },
+        {
+          "title": "Something to Heal His Soul",
+          "region": "Lost Lake"
+        },
+        {
+          "title": "Have It Your Way",
+          "region": "Lost Lake"
+        },
+        {
+          "title": "Trying to Help the Camp",
+          "region": "Lost Lake"
+        },
+        {
+          "title": "Riders Sent to Find You",
+          "region": "Lost Lake"
+        },
+        {
+          "title": "They Will Never Stop",
+          "region": "Lost Lake"
+        },
+        {
+          "title": "Without Being Seen",
+          "region": "Lost Lake"
+        },
+        {
+          "title": "You Won't Be Needing This",
+          "region": "Lost Lake"
+        },
+        {
+          "title": "Now That's an Idea",
+          "region": "Lost Lake"
+        },
+        {
+          "title": "I Was Distracted",
+          "region": "Lost Lake"
+        },
+        {
+          "title": "Why Am I Here?",
+          "region": "Lost Lake"
+        },
+        {
+          "title": "Riding Nomad Again",
+          "region": "Lost Lake"
+        },
+        {
+          "title": "Don't Get Caught",
+          "region": "Iron Butte"
+        },
+        {
+          "title": "They Don't Feel Pain",
+          "region": "Iron Butte"
+        },
+        {
+          "title": "It Was the Only Way",
+          "region": "Iron Butte"
+        },
+        {
+          "title": "I Kept My Name",
+          "region": "Iron Butte"
+        },
+        {
+          "title": "Should Have Seen It Coming",
+          "region": "Iron Butte"
+        },
+        {
+          "title": "That Never Gets Old",
+          "region": "Iron Butte"
+        },
+        {
+          "title": "Time for Some Payback",
+          "region": "Iron Butte"
+        },
+        {
+          "title": "I'm Good with That",
+          "region": "Iron Butte"
+        },
+        {
+          "title": "Mayday! Mayday!",
+          "region": "Crater Lake"
+        },
+        {
+          "title": "Not From Around Here",
+          "region": "Crater Lake"
+        },
+        {
+          "title": "We're Fighting a War",
+          "region": "Crater Lake"
+        },
+        {
+          "title": "Prove It to Me",
+          "region": "Crater Lake"
+        },
+        {
+          "title": "Driven to Extinction",
+          "region": "Crater Lake"
+        },
+        {
+          "title": "Don't Give Me Orders",
+          "region": "Crater Lake"
+        },
+        {
+          "title": "A Target on Their Backs",
+          "region": "Crater Lake"
+        },
+        {
+          "title": "I Don't Have a Pic",
+          "region": "Crater Lake"
+        },
+        {
+          "title": "A War We Can Win",
+          "region": "Crater Lake"
+        },
+        {
+          "title": "Leave All That by the Door",
+          "region": "Crater Lake"
+        },
+        {
+          "title": "We Will Take Back This World",
+          "region": "Crater Lake"
+        },
+        {
+          "title": "I Know Things Are Strange",
+          "region": "Crater Lake"
+        },
+        {
+          "title": "I Know the Look",
+          "region": "Crater Lake"
+        },
+        {
+          "title": "We Do Not Discriminate",
+          "region": "Crater Lake"
+        },
+        {
+          "title": "I've Had Better Days",
+          "region": "Crater Lake"
+        },
+        {
+          "title": "Afraid of a Little Competition?",
+          "region": "Crater Lake"
+        },
+        {
+          "title": "I Tried to Hit That Once",
+          "region": "Crater Lake"
+        },
+        {
+          "title": "Just Another Requisition Form",
+          "region": "Crater Lake"
+        },
+        {
+          "title": "Can I Ask You Something?",
+          "region": "Crater Lake"
+        },
+        {
+          "title": "So Many of Them",
+          "region": "Crater Lake"
+        },
+        {
+          "title": "You Couldn't Stop Shaking",
+          "region": "Crater Lake"
+        },
+        {
+          "title": "Can't Be Replaced",
+          "region": "Crater Lake"
+        },
+        {
+          "title": "What Kept Me Going",
+          "region": "Crater Lake"
+        },
+        {
+          "title": "I Knew These People",
+          "region": "Crater Lake"
+        },
+        {
+          "title": "Expect the Worst",
+          "region": "Crater Lake"
+        },
+        {
+          "title": "We Couldn't Take the Risk",
+          "region": "Crater Lake"
+        },
+        {
+          "title": "This One's on Me",
+          "region": "Crater Lake"
+        },
+        {
+          "title": "I Don't Wanna Hang",
+          "region": "Crater Lake"
+        },
+        {
+          "title": "This Could Be It",
+          "region": "Crater Lake"
+        },
+        {
+          "title": "You Alone I Have Seen",
+          "region": "Crater Lake"
+        },
+        {
+          "title": "How Far We've Fallen",
+          "region": "Crater Lake"
+        },
+        {
+          "title": "He's Not Big on Tunes",
+          "region": "Crater Lake"
+        },
+        {
+          "title": "I've Got a Plan",
+          "region": "Crater Lake"
+        },
+        {
+          "title": "What It Takes to Survive",
+          "region": "Crater Lake"
+        },
+        {
+          "title": "Shadow of Death",
+          "region": "Crater Lake"
+        },
+        {
+          "title": "Ascending from the Underworld",
+          "region": "Crater Lake"
+        },
+        {
+          "title": "Keep Them Safe",
+          "region": "Endgame"
+        },
+        {
+          "title": "Copeland's Camp Has Been Attacked",
+          "region": "Endgame"
+        },
+        {
+          "title": "The Last of 'Em",
+          "region": "Endgame"
+        },
+        {
+          "title": "Kill Every One of the Bastards",
+          "region": "Endgame"
+        },
+        {
+          "title": "Another Militia Attack",
+          "region": "Endgame"
+        },
+        {
+          "title": "I'll Save Some for You",
+          "region": "Endgame"
+        },
+        {
+          "title": "You Can't Do This Alone",
+          "region": "Endgame"
+        },
+        {
+          "title": "For an Outlaw Biker",
+          "region": "Endgame"
+        },
+        {
+          "title": "Where's My Damn Rings?",
+          "region": "Endgame"
+        },
+        {
+          "title": "For the Benefit of Others",
+          "region": "Endgame"
+        },
+        {
+          "title": "I'm Not a Ripper",
+          "region": "Endgame"
+        },
+        {
+          "title": "There's Nothing You Can Do",
+          "region": "Endgame"
+        }
+      ]
+    },
+    "encampmentjobs": {
+      "label": "Camp Job",
+      "titles": [
+        {
+          "title": "Drugged Outta His Mind",
+          "region": "Cascade",
+          "camp": "Copeland's Camp"
+        },
+        {
+          "title": "Hear About a Ripper Camp?",
+          "region": "Cascade",
+          "camp": "Copeland's Camp"
+        },
+        {
+          "title": "He Never Came Back",
+          "region": "Cascade",
+          "camp": "Copeland's Camp"
+        },
+        {
+          "title": "Hard to Miss",
+          "region": "Cascade",
+          "camp": "Copeland's Camp"
+        },
+        {
+          "title": "Here's a Little Chaos",
+          "region": "Cascade",
+          "camp": "Copeland's Camp"
+        },
+        {
+          "title": "Nose Down, They Feed Ya",
+          "region": "Cascade",
+          "camp": "Copeland's Camp"
+        },
+        {
+          "title": "Nice and Bloody",
+          "region": "Belknap",
+          "camp": "Hot Springs"
+        },
+        {
+          "title": "The Rest of Our Drugs",
+          "region": "Belknap",
+          "camp": "Hot Springs"
+        },
+        {
+          "title": "Everyone Has to Work",
+          "region": "Belknap",
+          "camp": "Hot Springs"
+        },
+        {
+          "title": "A Score to Settle",
+          "region": "Belknap",
+          "camp": "Hot Springs"
+        },
+        {
+          "title": "Coming Into Town",
+          "region": "Belknap",
+          "camp": "Hot Springs"
+        },
+        {
+          "title": "I'll Double It",
+          "region": "Belknap",
+          "camp": "Hot Springs"
+        },
+        {
+          "title": "Rippers, Rest in Hell",
+          "region": "Belknap",
+          "camp": "Hot Springs"
+        },
+        {
+          "title": "Part of the Family",
+          "region": "Belknap",
+          "camp": "Hot Springs"
+        },
+        {
+          "title": "A Goddamn War Zone",
+          "region": "Lost Lake",
+          "camp": "Iron Mike's"
+        },
+        {
+          "title": "Drifters at Eden Hill",
+          "region": "Lost Lake",
+          "camp": "Iron Mike's"
+        },
+        {
+          "title": "Gone Fishing",
+          "region": "Lost Lake",
+          "camp": "Iron Mike's"
+        },
+        {
+          "title": "Over a Card Game",
+          "region": "Lost Lake",
+          "camp": "Iron Mike's"
+        },
+        {
+          "title": "How Many Bodies?",
+          "region": "Lost Lake",
+          "camp": "Iron Mike's"
+        },
+        {
+          "title": "He's Just a Kid",
+          "region": "Lost Lake",
+          "camp": "Iron Mike's"
+        },
+        {
+          "title": "On Tonight's Menu",
+          "region": "Lost Lake",
+          "camp": "Iron Mike's"
+        },
+        {
+          "title": "Never Give Up Hope",
+          "region": "Crater Lake",
+          "camp": "Wizard Island"
+        },
+        {
+          "title": "Keeping Souvenirs",
+          "region": "Crater Lake",
+          "camp": "Diamond Lake"
+        },
+        {
+          "title": "Take Back What's Mine",
+          "region": "Crater Lake",
+          "camp": "Wizard Island"
+        },
+        {
+          "title": "You Got the Wrong Guy",
+          "region": "Crater Lake",
+          "camp": "Wizard Island"
+        },
+        {
+          "title": "He's Feeding the Freaks",
+          "region": "Crater Lake",
+          "camp": "Wizard Island"
+        },
+        {
+          "title": "Didn't Want to Join Up",
+          "region": "Crater Lake",
+          "camp": "Diamond Lake"
+        },
+        {
+          "title": "Just Doing My Job",
+          "region": "Crater Lake",
+          "camp": "Diamond Lake"
+        },
+        {
+          "title": "How Do I Get Them?",
+          "region": "Crater Lake",
+          "camp": "Wizard Island"
+        },
+        {
+          "title": "Still Breathing",
+          "region": "Crater Lake",
+          "camp": "Wizard Island"
+        },
+        {
+          "title": "You Don't Want to Know",
+          "region": "Crater Lake",
+          "camp": "Wizard Island"
+        },
+        {
+          "title": "A Bunch of Cavemen",
+          "region": "Crater Lake",
+          "camp": "Diamond Lake"
+        },
+        {
+          "title": "A Hell of a Fight",
+          "region": "Crater Lake",
+          "camp": "Diamond Lake"
+        },
+        {
+          "title": "The Anarchist Spy",
+          "region": "Crater Lake",
+          "camp": "Wizard Island"
+        }
+      ]
+    },
+    "nerosites": {
+      "label": "NERO Checkpoint",
+      "titles": [
+        {
+          "title": "Chemult Community College NERO Checkpoint",
+          "region": "Highway 97"
+        },
+        {
+          "title": "Horse Lake NERO Checkpoint",
+          "region": "Cascade"
+        },
+        {
+          "title": "Iron Butte Pass NERO Checkpoint",
+          "region": "Iron Butte"
+        },
+        {
+          "title": "Little Bear Lake NERO Checkpoint",
+          "region": "Cascade"
+        },
+        {
+          "title": "Marion Forks Tunnel NERO Checkpoint",
+          "region": "Belknap"
+        },
+        {
+          "title": "Old Pioneer Cemetery NERO Checkpoint",
+          "region": "Cascade"
+        },
+        {
+          "title": "Old Sawmill NERO Checkpoint",
+          "region": "Lost Lake"
+        },
+        {
+          "title": "Pillette Bridge NERO Checkpoint",
+          "region": "Highway 97"
+        },
+        {
+          "title": "Rogue Tunnel NERO Checkpoint",
+          "region": "Lost Lake"
+        },
+        {
+          "title": "Santiam Tunnel NERO Checkpoint",
+          "region": "Highway 97"
+        },
+        {
+          "title": "Spruce Lake NERO Checkpoint",
+          "region": "Crater Lake"
+        },
+        {
+          "title": "Volcanic Legacy Scenic Byway NERO Checkpoint",
+          "region": "Crater Lake"
+        }
+      ]
+    },
+    "ambushcamps": {
+      "label": "Ambush Camp",
+      "titles": [
+        {
+          "title": "Cascade Radio Tower Ambush Camp",
+          "region": "Cascade",
+          "aliases": [
+            "No Starving Patriots"
+          ],
+          "linkedCollectible": "radiofreeoregon-05"
+        },
+        {
+          "title": "Jefferson Rail Tunnel Ambush Camp",
+          "region": "Cascade"
+        },
+        {
+          "title": "Horse Creek Ambush Camp",
+          "region": "Cascade"
+        },
+        {
+          "title": "Black Crater Ambush Camp",
+          "region": "Belknap"
+        },
+        {
+          "title": "Belknap Caves Ambush Camp",
+          "region": "Belknap"
+        },
+        {
+          "title": "Bear Creek Hot Springs Ambush Camp",
+          "region": "Belknap"
+        },
+        {
+          "title": "Deerborn Ambush Camp",
+          "region": "Lost Lake"
+        },
+        {
+          "title": "Berley Lake Ambush Camp",
+          "region": "Lost Lake"
+        },
+        {
+          "title": "Wagon Road Ambush Camp",
+          "region": "Iron Butte"
+        },
+        {
+          "title": "Redwood RV Park Ambush Camp",
+          "region": "Iron Butte"
+        },
+        {
+          "title": "Spruce Lake Ambush Camp",
+          "region": "Crater Lake"
+        },
+        {
+          "title": "Cascade Lakes Railway Ambush Camp",
+          "region": "Crater Lake"
+        },
+        {
+          "title": "Aspen Butte Ambush Camp",
+          "region": "Highway 97"
+        },
+        {
+          "title": "Bare Bay Ambush Camp",
+          "region": "Highway 97"
+        }
+      ]
+    },
+    "infestations": {
+      "label": "Infestation Zone",
+      "titles": [
+        {
+          "title": "Logging Camp Infestation",
+          "region": "Cascade",
+          "aliases": [
+            "Logging Camp",
+            "Clear Out Those Nests"
+          ],
+          "notes": "Route-order variants: clearing before the story mission shows Logging Camp Infestation; clearing during the mission shows Clear Out Those Nests."
+        },
+        {
+          "title": "Pioneer Cemetery Infestation",
+          "region": "Cascade"
+        },
+        {
+          "title": "Crazy Willie's Infestation",
+          "region": "Belknap"
+        },
+        {
+          "title": "Marion Forks Infestation",
+          "region": "Belknap"
+        },
+        {
+          "title": "Pat Jens Lakes Infestation",
+          "region": "Belknap",
+          "aliases": [
+            "Patjens Lakes Infestation"
+          ]
+        },
+        {
+          "title": "Sherman's Camp Infestation",
+          "region": "Lost Lake"
+        },
+        {
+          "title": "Rogue Camp Infestation",
+          "region": "Lost Lake"
+        },
+        {
+          "title": "Berley Lake Infestation",
+          "region": "Lost Lake"
+        },
+        {
+          "title": "Tumblebug River Infestation",
+          "region": "Crater Lake"
+        },
+        {
+          "title": "Rimview Ranch Infestation",
+          "region": "Crater Lake"
+        },
+        {
+          "title": "Cascade Lakes Rail Line Infestation",
+          "region": "Highway 97",
+          "aliases": [
+            "Cascade Lake Railway Infestation"
+          ]
+        },
+        {
+          "title": "Chemult College Infestation",
+          "region": "Highway 97",
+          "aliases": [
+            "Chemult Community College Infestation"
+          ]
+        },
+        {
+          "title": "South Oregon Crier Infestation",
+          "region": "South Oregon",
+          "countsTowardCounter": false,
+          "aliases": [
+            "South Oregon Crier Nests"
+          ]
+        }
+      ]
+    },
+    "hordes": {
+      "label": "Horde",
+      "titles": [
+        {
+          "title": "Horse Lake Horde",
+          "region": "Cascade"
+        },
+        {
+          "title": "O'Leary Mountain Horde",
+          "region": "Cascade"
+        },
+        {
+          "title": "Little Bear Lake Horde",
+          "region": "Cascade"
+        },
+        {
+          "title": "Cascade Highway Horde",
+          "region": "Cascade"
+        },
+        {
+          "title": "Death Train Horde",
+          "region": "Cascade"
+        },
+        {
+          "title": "Proxy Falls Horde",
+          "region": "Cascade"
+        },
+        {
+          "title": "White King Mine Horde",
+          "region": "Cascade"
+        },
+        {
+          "title": "Grotto Caves Horde",
+          "region": "Cascade"
+        },
+        {
+          "title": "Bear Creek Hot Springs Horde",
+          "region": "Belknap"
+        },
+        {
+          "title": "Belknap Crater Horde",
+          "region": "Belknap"
+        },
+        {
+          "title": "Lava Arch Horde",
+          "region": "Belknap"
+        },
+        {
+          "title": "Marion Forks Horde",
+          "region": "Belknap"
+        },
+        {
+          "title": "Shadow Lake Horde",
+          "region": "Belknap"
+        },
+        {
+          "title": "Twin Craters Horde",
+          "region": "Belknap"
+        },
+        {
+          "title": "Patjens Lakes Horde",
+          "region": "Belknap",
+          "aliases": [
+            "Pat Jens Lakes Horde"
+          ]
+        },
+        {
+          "title": "Berley Lake Horde",
+          "region": "Lost Lake"
+        },
+        {
+          "title": "River Flow Farms Horde",
+          "region": "Lost Lake"
+        },
+        {
+          "title": "Sherman's Camp Horde",
+          "region": "Lost Lake"
+        },
+        {
+          "title": "Wapinitia Road Horde",
+          "region": "Lost Lake"
+        },
+        {
+          "title": "Westfir Horde",
+          "region": "Lost Lake"
+        },
+        {
+          "title": "Metolius Lava Cave Horde",
+          "region": "Lost Lake"
+        },
+        {
+          "title": "McLeod Ridge Horde",
+          "region": "Crater Lake",
+          "aliases": [
+            "Mcleod Ridge Horde"
+          ]
+        },
+        {
+          "title": "Rimview Ranch Horde",
+          "region": "Crater Lake"
+        },
+        {
+          "title": "Mt. Bailey Horde",
+          "region": "Crater Lake",
+          "aliases": [
+            "Mount Bailey Horde"
+          ]
+        },
+        {
+          "title": "Beasley Lake Horde",
+          "region": "Highway 97"
+        },
+        {
+          "title": "Cascade Lakes Rail Line Horde",
+          "region": "Highway 97"
+        },
+        {
+          "title": "Chemult Community College Horde",
+          "region": "Highway 97"
+        },
+        {
+          "title": "Chemult Station Horde",
+          "region": "Highway 97"
+        },
+        {
+          "title": "Friendship Ridge Horde",
+          "region": "Highway 97"
+        },
+        {
+          "title": "Groose Gardens Horde",
+          "region": "Highway 97"
+        },
+        {
+          "title": "Juniper Ridge Horde",
+          "region": "Highway 97"
+        },
+        {
+          "title": "Mt. Scott Ski Resort Horde",
+          "region": "Highway 97",
+          "aliases": [
+            "Mount Scott Ski Resort Horde"
+          ]
+        },
+        {
+          "title": "Rum Rye Gulch Horde",
+          "region": "Highway 97"
+        },
+        {
+          "title": "Sagebrush Point Horde",
+          "region": "Highway 97"
+        },
+        {
+          "title": "Solomon Hill Horde",
+          "region": "Highway 97"
+        },
+        {
+          "title": "Beaver Marsh Rest Stop Horde",
+          "region": "Highway 97"
+        },
+        {
+          "title": "Lobert Draw Ridge Horde",
+          "region": "Highway 97"
+        },
+        {
+          "title": "Chemult Station Horde",
+          "region": "Story",
+          "countsTowardCounter": false,
+          "notes": "Story encounter; distinct from the Highway 97 free-roam horde."
+        },
+        {
+          "title": "Iron Butte Ranch Horde",
+          "region": "Story",
+          "countsTowardCounter": false
+        },
+        {
+          "title": "Old Sawmill Horde",
+          "region": "Story",
+          "countsTowardCounter": false
+        }
+      ]
+    }
+  }
+}

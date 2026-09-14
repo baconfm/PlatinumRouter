@@ -1,0 +1,81 @@
+{
+  "quotas": {
+    "cascade": {
+      "label": "Cascade",
+      "targets": {
+        "storymissions": 25,
+        "encampmentjobs": 6,
+        "nerosites": 3,
+        "ambushcamps": 3,
+        "infestations": 2,
+        "hordes": 8
+      }
+    },
+    "belknap": {
+      "label": "Belknap",
+      "targets": {
+        "storymissions": 38,
+        "encampmentjobs": 14,
+        "nerosites": 4,
+        "ambushcamps": 6,
+        "infestations": 5,
+        "hordes": 15
+      }
+    },
+    "lost-lake": {
+      "label": "Lost Lake",
+      "targets": {
+        "storymissions": 81,
+        "encampmentjobs": 21,
+        "nerosites": 6,
+        "ambushcamps": 8,
+        "infestations": 8,
+        "hordes": 21
+      }
+    },
+    "iron-butte": {
+      "label": "Iron Butte",
+      "targets": {
+        "storymissions": 89,
+        "encampmentjobs": 21,
+        "nerosites": 7,
+        "ambushcamps": 10,
+        "infestations": 8,
+        "hordes": 21
+      }
+    },
+    "crater-lake": {
+      "label": "Crater Lake",
+      "targets": {
+        "storymissions": 132,
+        "encampmentjobs": 34,
+        "nerosites": 9,
+        "ambushcamps": 12,
+        "infestations": 10,
+        "hordes": 25
+      }
+    },
+    "highway-97": {
+      "label": "Highway 97",
+      "targets": {
+        "storymissions": 132,
+        "encampmentjobs": 34,
+        "nerosites": 12,
+        "ambushcamps": 14,
+        "infestations": 12,
+        "hordes": 38
+      }
+    },
+    "endgame": {
+      "label": "Endgame",
+      "targets": {
+        "storymissions": 144,
+        "encampmentjobs": 34,
+        "nerosites": 12,
+        "ambushcamps": 14,
+        "infestations": 12,
+        "hordes": 40
+      }
+    }
+  }
+}

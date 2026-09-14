@@ -1,0 +1,55 @@
+{
+  "id": "the-last-of-us-part-ii",
+  "title": "The Last of Us Part II Remastered",
+  "overlayTitle": "TLOU2 Grounded-Locked Platinum",
+  "subtitle": "Strict fresh-profile route scaffold: Grounded New Game into Grounded New Game+, no easy cleanup, no modifiers, base platinum only.",
+  "defaultDifficulty": "Grounded",
+  "supportsDirge": false,
+  "appendDifficultyToTitle": false,
+  "collectibleTotal": 287,
+  "collectibleLabel": "Route Collectibles + Gear",
+  "collectibleDescription": "Combined chapter-route count for artifacts, journal entries, trading cards, coins, safes, manuals, workbenches, and key gear.",
+  "collectibleCounterKeys": [
+    "artifacts",
+    "journals",
+    "cards",
+    "coins",
+    "safes",
+    "manuals",
+    "workbenches",
+    "gear"
+  ],
+  "hiddenCounters": {
+    "overlay": [
+      "artifacts",
+      "journals",
+      "cards",
+      "coins",
+      "safes",
+      "manuals",
+      "workbenches",
+      "gear"
+    ],
+    "totals": [],
+    "focus": [],
+    "quota": []
+  },
+  "overallCounterKeys": [
+    "trophies",
+    "routecollectibles",
+    "ellieparts",
+    "elliesupps",
+    "abbyparts",
+    "abbysupps"
+  ],
+  "rules": [
+    "Fresh profile / clean trophy state",
+    "Fresh New Game on Grounded",
+    "Grounded NG+ if NG+ is required",
+    "No lowering difficulty",
+    "No gameplay modifiers or cheats",
+    "No Very Light / Easy cleanup",
+    "All platinum-critical trophies earned while locked to Grounded"
+  ],
+  "resourceCaveat": "Grounded NG+ loot values still need practical verification; PT2 splits repeat PT1 baselines as a test scaffold."
+}

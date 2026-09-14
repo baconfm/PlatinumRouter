@@ -1,0 +1,233 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-08-10",
+  "categories": {
+    "encampmentjobs": {
+      "label": "Camp Job",
+      "titles": [
+        { "title": "Drugged Outta His Mind", "region": "Cascade", "camp": "Copeland's Camp" },
+        { "title": "Hear About a Ripper Camp?", "region": "Cascade", "camp": "Copeland's Camp" },
+        { "title": "He Never Came Back", "region": "Cascade", "camp": "Copeland's Camp" },
+        { "title": "Hard to Miss", "region": "Cascade", "camp": "Copeland's Camp" },
+        { "title": "Here's a Little Chaos", "region": "Cascade", "camp": "Copeland's Camp" },
+        { "title": "Nose Down, They Feed Ya", "region": "Cascade", "camp": "Copeland's Camp" },
+        { "title": "Nice and Bloody", "region": "Belknap", "camp": "Hot Springs" },
+        { "title": "The Rest of Our Drugs", "region": "Belknap", "camp": "Hot Springs" },
+        { "title": "Everyone Has to Work", "region": "Belknap", "camp": "Hot Springs" },
+        { "title": "A Score to Settle", "region": "Belknap", "camp": "Hot Springs" },
+        { "title": "Coming Into Town", "region": "Belknap", "camp": "Hot Springs" },
+        { "title": "I'll Double It", "region": "Belknap", "camp": "Hot Springs" },
+        { "title": "Rippers, Rest in Hell", "region": "Belknap", "camp": "Hot Springs" },
+        { "title": "Part of the Family", "region": "Belknap", "camp": "Hot Springs" },
+        { "title": "A Goddamn War Zone", "region": "Lost Lake", "camp": "Iron Mike's" },
+        { "title": "Drifters at Eden Hill", "region": "Lost Lake", "camp": "Iron Mike's" },
+        { "title": "Gone Fishing", "region": "Lost Lake", "camp": "Iron Mike's" },
+        { "title": "Over a Card Game", "region": "Lost Lake", "camp": "Iron Mike's" },
+        { "title": "How Many Bodies?", "region": "Lost Lake", "camp": "Iron Mike's" },
+        { "title": "He's Just a Kid", "region": "Lost Lake", "camp": "Iron Mike's" },
+        { "title": "On Tonight's Menu", "region": "Lost Lake", "camp": "Iron Mike's" },
+        { "title": "Never Give Up Hope", "region": "Crater Lake", "camp": "Wizard Island" },
+        { "title": "Keeping Souvenirs", "region": "Crater Lake", "camp": "Diamond Lake" },
+        { "title": "Take Back What's Mine", "region": "Crater Lake", "camp": "Wizard Island" },
+        { "title": "You Got the Wrong Guy", "region": "Crater Lake", "camp": "Wizard Island" },
+        { "title": "He's Feeding the Freaks", "region": "Crater Lake", "camp": "Wizard Island" },
+        { "title": "Didn't Want to Join Up", "region": "Crater Lake", "camp": "Diamond Lake" },
+        { "title": "Just Doing My Job", "region": "Crater Lake", "camp": "Diamond Lake" },
+        { "title": "How Do I Get Them?", "region": "Crater Lake", "camp": "Wizard Island" },
+        { "title": "Still Breathing", "region": "Crater Lake", "camp": "Wizard Island" },
+        { "title": "You Don't Want to Know", "region": "Crater Lake", "camp": "Wizard Island" },
+        { "title": "A Bunch of Cavemen", "region": "Crater Lake", "camp": "Diamond Lake" },
+        { "title": "A Hell of a Fight", "region": "Crater Lake", "camp": "Diamond Lake" },
+        { "title": "The Anarchist Spy", "region": "Crater Lake", "camp": "Wizard Island" }
+      ]
+    },
+    "infestations": {
+      "label": "Infestation Zone",
+      "titles": [
+        {
+          "title": "Logging Camp Infestation",
+          "region": "Cascade",
+          "aliases": ["Logging Camp", "Clear Out Those Nests"],
+          "notes": "Route-order variants: clearing before the story mission shows Logging Camp Infestation; clearing during the mission shows Clear Out Those Nests."
+        },
+        { "title": "Pioneer Cemetery Infestation", "region": "Cascade" },
+        { "title": "Crazy Willie's Infestation", "region": "Belknap" },
+        { "title": "Marion Forks Infestation", "region": "Belknap" },
+        { "title": "Pat Jens Lakes Infestation", "region": "Belknap", "aliases": ["Patjens Lakes Infestation"] },
+        { "title": "Sherman's Camp Infestation", "region": "Lost Lake" },
+        { "title": "Rogue Camp Infestation", "region": "Lost Lake" },
+        { "title": "Berley Lake Infestation", "region": "Lost Lake" },
+        { "title": "Tumblebug River Infestation", "region": "Crater Lake" },
+        { "title": "Rimview Ranch Infestation", "region": "Crater Lake" },
+        { "title": "Cascade Lakes Rail Line Infestation", "region": "Highway 97", "aliases": ["Cascade Lake Railway Infestation"] },
+        { "title": "Chemult College Infestation", "region": "Highway 97", "aliases": ["Chemult Community College Infestation"] },
+        { "title": "South Oregon Crier Infestation", "region": "South Oregon", "countsTowardCounter": false, "aliases": ["South Oregon Crier Nests"] }
+      ]
+    },
+    "hordes": {
+      "label": "Horde",
+      "titles": [
+        { "title": "Horse Lake Horde", "region": "Cascade" },
+        { "title": "O'Leary Mountain Horde", "region": "Cascade" },
+        { "title": "Little Bear Lake Horde", "region": "Cascade" },
+        { "title": "Cascade Highway Horde", "region": "Cascade" },
+        { "title": "Death Train Horde", "region": "Cascade" },
+        { "title": "Proxy Falls Horde", "region": "Cascade" },
+        { "title": "White King Mine Horde", "region": "Cascade" },
+        { "title": "Grotto Caves Horde", "region": "Cascade" },
+        { "title": "Bear Creek Hot Springs Horde", "region": "Belknap" },
+        { "title": "Belknap Crater Horde", "region": "Belknap" },
+        { "title": "Lava Arch Horde", "region": "Belknap" },
+        { "title": "Marion Forks Horde", "region": "Belknap" },
+        { "title": "Shadow Lake Horde", "region": "Belknap" },
+        { "title": "Twin Craters Horde", "region": "Belknap" },
+        { "title": "Patjens Lakes Horde", "region": "Belknap", "aliases": ["Pat Jens Lakes Horde"] },
+        { "title": "Berley Lake Horde", "region": "Lost Lake" },
+        { "title": "River Flow Farms Horde", "region": "Lost Lake" },
+        { "title": "Sherman's Camp Horde", "region": "Lost Lake" },
+        { "title": "Wapinitia Road Horde", "region": "Lost Lake" },
+        { "title": "Westfir Horde", "region": "Lost Lake" },
+        { "title": "Metolius Lava Cave Horde", "region": "Lost Lake" },
+        { "title": "McLeod Ridge Horde", "region": "Crater Lake", "aliases": ["Mcleod Ridge Horde"] },
+        { "title": "Rimview Ranch Horde", "region": "Crater Lake" },
+        { "title": "Mt. Bailey Horde", "region": "Crater Lake", "aliases": ["Mount Bailey Horde"] },
+        { "title": "Beasley Lake Horde", "region": "Highway 97" },
+        { "title": "Cascade Lakes Rail Line Horde", "region": "Highway 97" },
+        { "title": "Chemult Community College Horde", "region": "Highway 97" },
+        { "title": "Chemult Station Horde", "region": "Highway 97" },
+        { "title": "Friendship Ridge Horde", "region": "Highway 97" },
+        { "title": "Groose Gardens Horde", "region": "Highway 97" },
+        { "title": "Juniper Ridge Horde", "region": "Highway 97" },
+        { "title": "Mt. Scott Ski Resort Horde", "region": "Highway 97", "aliases": ["Mount Scott Ski Resort Horde"] },
+        { "title": "Rum Rye Gulch Horde", "region": "Highway 97" },
+        { "title": "Sagebrush Point Horde", "region": "Highway 97" },
+        { "title": "Solomon Hill Horde", "region": "Highway 97" },
+        { "title": "Beaver Marsh Rest Stop Horde", "region": "Highway 97" },
+        { "title": "Lobert Draw Ridge Horde", "region": "Highway 97" },
+        { "title": "Chemult Station Horde", "region": "Story", "countsTowardCounter": false, "notes": "Story encounter; distinct from the Highway 97 free-roam horde." },
+        { "title": "Iron Butte Ranch Horde", "region": "Story", "countsTowardCounter": false },
+        { "title": "Old Sawmill Horde", "region": "Story", "countsTowardCounter": false }
+      ]
+    },
+    "ambushcamps": {
+      "label": "Ambush Camp",
+      "titles": [
+        { "title": "Cascade Radio Tower Ambush Camp", "region": "Cascade", "aliases": ["No Starving Patriots"], "linkedCollectible": "radiofreeoregon-05" },
+        { "title": "Jefferson Rail Tunnel Ambush Camp", "region": "Cascade" },
+        { "title": "Horse Creek Ambush Camp", "region": "Cascade" },
+        { "title": "Black Crater Ambush Camp", "region": "Belknap" },
+        { "title": "Belknap Caves Ambush Camp", "region": "Belknap" },
+        { "title": "Bear Creek Hot Springs Ambush Camp", "region": "Belknap" },
+        { "title": "Deerborn Ambush Camp", "region": "Lost Lake" },
+        { "title": "Berley Lake Ambush Camp", "region": "Lost Lake" },
+        { "title": "Wagon Road Ambush Camp", "region": "Iron Butte" },
+        { "title": "Redwood RV Park Ambush Camp", "region": "Iron Butte" },
+        { "title": "Spruce Lake Ambush Camp", "region": "Crater Lake" },
+        { "title": "Cascade Lakes Railway Ambush Camp", "region": "Crater Lake" },
+        { "title": "Aspen Butte Ambush Camp", "region": "Highway 97" },
+        { "title": "Bare Bay Ambush Camp", "region": "Highway 97" }
+      ]
+    },
+    "radiofreeoregon": {
+      "label": "Radio Free Oregon · Story Mission",
+      "titles": [
+        {
+          "title": "Drinking Himself to Death",
+          "countsTowardCounter": false,
+          "linkedCollectible": "radiofreeoregon-04",
+          "notes": "Approaching this mission triggers Numb The People; use the mission completion as recovery when fast travel suppresses the broadcast toast."
+        }
+      ]
+    },
+    "charactercollectibles": {
+      "label": "Character Collectible · Story Mission",
+      "titles": [
+        {
+          "title": "I Don't Have a Pic",
+          "countsTowardCounter": false,
+          "linkedCollectible": "charactercollectibles-23",
+          "notes": "Awards Kouri - To Have And to Hold. Hold on Tight is the trophy fallback."
+        },
+        {
+          "title": "They Will Never Stop",
+          "countsTowardCounter": false,
+          "linkedCollectible": "charactercollectibles-32",
+          "notes": "Awards Jessie - They Shall Be Of One Mind."
+        }
+      ]
+    },
+    "colonelspeeches": {
+      "label": "Colonel Speech · Mission",
+      "titles": [
+        { "title": "We Do Not Discriminate", "countsTowardCounter": false, "linkedCollectible": "colonelspeeches-01" },
+        { "title": "We Must Fill the Ark", "countsTowardCounter": false, "linkedCollectible": "colonelspeeches-02" },
+        { "title": "Throw Them Into the Furnace", "countsTowardCounter": false, "linkedCollectible": "colonelspeeches-03" },
+        { "title": "My Eyes Have Been Opened", "countsTowardCounter": false, "linkedCollectible": "colonelspeeches-04" },
+        { "title": "Evil Surrounds Us", "countsTowardCounter": false, "linkedCollectible": "colonelspeeches-05" },
+        { "title": "Shadow of Death", "countsTowardCounter": false, "linkedCollectible": "colonelspeeches-06" }
+      ]
+    },
+    "nerointel": {
+      "label": "NERO Intel · Story Mission",
+      "titles": [
+        {
+          "title": "What It Takes to Survive",
+          "countsTowardCounter": false,
+          "linkedCollectible": "nerointel-43"
+        }
+      ]
+    },
+    "routecollectibles": {
+      "label": "Story Mission Anchor",
+      "titles": [
+        { "title": "Drifters on the Mountain", "countsTowardCounter": false },
+        { "title": "Smoke on the Mountain", "countsTowardCounter": false },
+        { "title": "They're Not Sleeping", "countsTowardCounter": false },
+        { "title": "What Did You Do", "countsTowardCounter": false },
+        { "title": "What's a Nice Girl", "countsTowardCounter": false },
+        { "title": "It's a Rifle, Not a Gun", "countsTowardCounter": false },
+        { "title": "We're Getting Low on Meat", "countsTowardCounter": false },
+        { "title": "What Have They Done", "countsTowardCounter": false },
+        { "title": "We've All Done Things", "countsTowardCounter": false },
+        { "title": "Searching for Lisa", "countsTowardCounter": false },
+        { "title": "With Other Men's Blood", "countsTowardCounter": false },
+        { "title": "Flow Like Buried Rivers", "countsTowardCounter": false },
+        { "title": "On Herod's Birthday", "countsTowardCounter": false, "aliases": ["Un Herod's Birthday"] },
+        { "title": "Seeds for the Spring", "countsTowardCounter": false },
+        { "title": "Moments of Lucidity", "countsTowardCounter": false },
+        { "title": "About Boozer's Arm", "countsTowardCounter": false },
+        { "title": "Not Like I Got a Choice", "countsTowardCounter": false },
+        { "title": "Outta the Darkness", "countsTowardCounter": false },
+        { "title": "Have It Your Way", "countsTowardCounter": false },
+        { "title": "I Was Distracted", "countsTowardCounter": false, "aliases": ["Was Distracted"] },
+        { "title": "We Will Take Back This World", "countsTowardCounter": false },
+        { "title": "I Know Things Are Strange", "countsTowardCounter": false, "aliases": ["Know Things Are Strange"] },
+        { "title": "Afraid of a Little Competition", "countsTowardCounter": false },
+        { "title": "Tried to Hit That Once", "countsTowardCounter": false },
+        { "title": "You Couldn't Stop Shaking", "countsTowardCounter": false, "aliases": ["You Couldon't Stop Shaking"] },
+        { "title": "We Couldn't Take the Risk", "countsTowardCounter": false },
+        { "title": "This One's on Me", "countsTowardCounter": false },
+        { "title": "Another Militia Attack", "countsTowardCounter": false },
+        { "title": "Kill Every One of the Bastards", "countsTowardCounter": false },
+        { "title": "Where's My Damn Rings", "countsTowardCounter": false }
+      ]
+    },
+    "nerosites": {
+      "label": "NERO Checkpoint",
+      "titles": [
+        { "title": "Chemult Community College NERO Checkpoint" },
+        { "title": "Horse Lake NERO Checkpoint" },
+        { "title": "Iron Butte Pass NERO Checkpoint" },
+        { "title": "Little Bear Lake NERO Checkpoint" },
+        { "title": "Marion Forks Tunnel NERO Checkpoint" },
+        { "title": "Old Pioneer Cemetery NERO Checkpoint" },
+        { "title": "Old Sawmill NERO Checkpoint" },
+        { "title": "Pillette Bridge NERO Checkpoint" },
+        { "title": "Rogue Tunnel NERO Checkpoint" },
+        { "title": "Santiam Tunnel NERO Checkpoint" },
+        { "title": "Spruce Lake NERO Checkpoint" },
+        { "title": "Volcanic Legacy Scenic Byway NERO Checkpoint" }
+      ]
+    }
+  }
+}

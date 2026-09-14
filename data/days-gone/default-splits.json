@@ -1,0 +1,4287 @@
+{
+  "splits": [
+    {
+      "id": "split_1783344207614_0_4626",
+      "label": "Leon",
+      "note": "Play the Game Normally",
+      "phaseId": "",
+      "isPhaseStart": true,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "finders-keepers",
+          "type": "trophy",
+          "label": "Finders Keepers",
+          "counterKey": "trophies",
+          "optional": false
+        },
+        {
+          "id": "charactercollectibles-01",
+          "type": "collectible",
+          "label": "Leon - Crude Drawing of an Angel Statue",
+          "counterKey": "charactercollectibles",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "finders-keepers",
+            "charactercollectibles-01"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "crazy-willies",
+      "label": "Crazy Willies",
+      "note": "Mayweed, before last molotov ir after crowberry, col inside motel, crowberry right side from suppressor, col before bike part Nests",
+      "phaseId": "cascades",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "herbology-19",
+          "type": "collectible",
+          "label": "Mayweed",
+          "counterKey": "herbology",
+          "optional": false
+        },
+        {
+          "id": "herbology-06",
+          "type": "collectible",
+          "label": "Crowberry",
+          "counterKey": "herbology",
+          "optional": false
+        },
+        {
+          "id": "tourism-10",
+          "type": "collectible",
+          "label": "Frontier Motel Brochures",
+          "counterKey": "tourism",
+          "optional": false
+        },
+        {
+          "id": "herbology-11",
+          "type": "collectible",
+          "label": "Arrowhead",
+          "counterKey": "herbology",
+          "optional": true
+        },
+        {
+          "id": "tourism-09",
+          "type": "collectible",
+          "label": "Seeking Gorgeous Man",
+          "counterKey": "tourism",
+          "optional": true
+        },
+        {
+          "id": "just-a-flesh-wound",
+          "type": "trophy",
+          "label": "Just a Flesh Wound",
+          "counterKey": "trophies",
+          "optional": false
+        },
+        {
+          "id": "completion-infestations-crazy-willie-s-infestation",
+          "type": "completion",
+          "label": "Crazy Willie's Infestation",
+          "counterKey": "infestations",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "anyGoalGroups",
+        "groups": [
+          [
+            "just-a-flesh-wound"
+          ],
+          [
+            "completion-infestations-crazy-willie-s-infestation"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "o-leary",
+      "label": "O'Leary + Peaceful Lake / Copeland Sweep",
+      "note": "Mandatory opening sweep: take the O'Leary herbs, then collect Copeland - Hunting Season, Copeland - The Right to Bear Arms, Manny - Happy Birthday, Stud and the nearby Peaceful Lake collectibles. Do not leave Copeland cleanup for endgame.",
+      "phaseId": "cascades",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-routecollectibles-drifters-on-the-mountain",
+          "type": "completion",
+          "label": "Drifters on the Mountain",
+          "counterKey": "routecollectibles",
+          "optional": true
+        },
+        {
+          "id": "herbology-02",
+          "type": "collectible",
+          "label": "Black Currant",
+          "counterKey": "herbology",
+          "optional": false
+        },
+        {
+          "id": "herbology-24",
+          "type": "collectible",
+          "label": "Wood Lily",
+          "counterKey": "herbology",
+          "optional": false
+        },
+        {
+          "id": "herbology-20",
+          "type": "collectible",
+          "label": "Mountain Sorrel",
+          "counterKey": "herbology",
+          "optional": false
+        },
+        {
+          "id": "herbology-23",
+          "type": "collectible",
+          "label": "Wild Bergamot",
+          "counterKey": "herbology",
+          "optional": false
+        },
+        {
+          "id": "herbology-09",
+          "type": "collectible",
+          "label": "Salmon Berry",
+          "counterKey": "herbology",
+          "optional": false
+        },
+        {
+          "id": "charactercollectibles-04",
+          "type": "collectible",
+          "label": "Manny - Happy Birthday, Stud",
+          "counterKey": "charactercollectibles",
+          "optional": false
+        },
+        {
+          "id": "charactercollectibles-05",
+          "type": "collectible",
+          "label": "Manny - Zen and the Art of Bike Repair",
+          "counterKey": "charactercollectibles",
+          "optional": false
+        },
+        {
+          "id": "charactercollectibles-03",
+          "type": "collectible",
+          "label": "Copeland - Hunting Season",
+          "counterKey": "charactercollectibles",
+          "optional": false
+        },
+        {
+          "id": "charactercollectibles-02",
+          "type": "collectible",
+          "label": "Copeland - The Right to Bear Arms",
+          "counterKey": "charactercollectibles",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "charactercollectibles-02",
+            "charactercollectibles-03"
+          ],
+          [
+            "charactercollectibles-04",
+            "charactercollectibles-05"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "nero-checkpoint",
+      "label": "Nero Checkpoint",
+      "note": "Ipca left side of the nero container, and recorder after injector, scaly hedgehog while going down to little bear horde, cairn while going down fix scaly hedgehog",
+      "phaseId": "cascades",
+      "isPhaseStart": false,
+      "auto": {
+        "nerosites": 1
+      },
+      "ocrGoals": [
+        {
+          "id": "nerointel-29",
+          "type": "collectible",
+          "label": "Mobile Medical Unit Recording - 0820",
+          "counterKey": "nerointel",
+          "optional": false
+        },
+        {
+          "id": "herbology-32",
+          "type": "collectible",
+          "label": "Scaly Hedgehog",
+          "counterKey": "herbology",
+          "optional": false
+        },
+        {
+          "id": "better-living-through-chemistry",
+          "type": "trophy",
+          "label": "Better Living through Chemistry",
+          "counterKey": "trophies",
+          "optional": false
+        },
+        {
+          "id": "ipca-tech-01-little-bear-lake-nero-checkpoint",
+          "type": "pickup",
+          "label": "IPCA Tech - Little Bear Lake NERO Checkpoint",
+          "counterKey": "ipca",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "better-living-through-chemistry"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "no-starving-patriots",
+      "label": "No Starving Patriots",
+      "note": "Ambush camp. Its completion popup also confirms the delayed Home Of The Free RFO entry if fast travel suppresses that toast.",
+      "phaseId": "cascades",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "herbology-29",
+          "type": "collectible",
+          "label": "King Bolete",
+          "counterKey": "herbology",
+          "optional": false
+        },
+        {
+          "id": "completion-ambushcamps-cascade-radio-tower-ambush-camp",
+          "type": "completion",
+          "label": "No Starving Patriots",
+          "counterKey": "ambushcamps",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-ambushcamps-cascade-radio-tower-ambush-camp"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "smoke-on-the-mountain",
+      "label": "Smoke on the Mountain",
+      "note": "Story mission. Its center completion advances directly into Horse Lake NERO/IPCA, Death Train, then Jefferson Rail Tunnel.",
+      "phaseId": "cascades",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-routecollectibles-smoke-on-the-mountain",
+          "type": "completion",
+          "label": "Smoke on the Mountain",
+          "counterKey": "routecollectibles",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "id": "horse-lake-early-cluster",
+      "label": "Horse Lake Early Cluster",
+      "note": "After Smoke on the Mountain: Horse Lake NERO Checkpoint → IPCA Tech → Field Recording - 1260 → Death Train Horde → Jefferson Rail Tunnel Ambush Camp/bunker map. Unlock smoke bombs early and avoid returning.",
+      "phaseId": "cascades",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-nerosites-horse-lake-nero-checkpoint",
+          "type": "completion",
+          "label": "Horse Lake NERO Checkpoint",
+          "counterKey": "nerosites",
+          "optional": false
+        },
+        {
+          "id": "ipca-tech-04-horse-lake-nero-checkpoint",
+          "type": "pickup",
+          "label": "IPCA Tech - Horse Lake NERO Checkpoint",
+          "counterKey": "ipca",
+          "optional": false
+        },
+        {
+          "id": "nerointel-16",
+          "type": "collectible",
+          "label": "Field Recording - 1260",
+          "counterKey": "nerointel",
+          "optional": false
+        },
+        {
+          "id": "completion-hordes-death-train-horde",
+          "type": "completion",
+          "label": "Death Train Horde",
+          "counterKey": "hordes",
+          "optional": false
+        },
+        {
+          "id": "completion-ambushcamps-jefferson-rail-tunnel-ambush-camp",
+          "type": "completion",
+          "label": "Jefferson Rail Tunnel Ambush Camp",
+          "counterKey": "ambushcamps",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-nerosites-horse-lake-nero-checkpoint",
+            "completion-hordes-death-train-horde",
+            "completion-ambushcamps-jefferson-rail-tunnel-ambush-camp"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "drive-to-cemetery",
+      "label": "Drive to cemetery",
+      "note": "Bristly manzita + tourism collectible at the hydro, King Bolette Rainbow falls",
+      "phaseId": "cascades",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "historical-04",
+          "type": "collectible",
+          "label": "Rainbow Falls - Path Of The Spirits",
+          "counterKey": "historical",
+          "optional": false
+        },
+        {
+          "id": "herbology-03",
+          "type": "collectible",
+          "label": "Bristly Manzanita",
+          "counterKey": "herbology",
+          "optional": false
+        },
+        {
+          "id": "historical-03",
+          "type": "collectible",
+          "label": "Caldera Reservoir - Bombs In The River",
+          "counterKey": "historical",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "herbology-15"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "cemetery-area",
+      "label": "Cemetery Area",
+      "note": "1. Infestation, Blue Camas, Nero injector, Recorder, 2. Infestation, Pamplet, Nero Checkpoint, IPCA, REC, Last Infestation",
+      "phaseId": "cascades",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "herbology-15",
+          "type": "collectible",
+          "label": "Blue Camas",
+          "counterKey": "herbology",
+          "optional": false
+        },
+        {
+          "id": "nerointel-25",
+          "type": "collectible",
+          "label": "Researcher Field Note - 0701",
+          "counterKey": "nerointel",
+          "optional": false,
+          "linkedCounters": [
+            {
+              "counterKey": "nerosites",
+              "delta": 1
+            }
+          ]
+        },
+        {
+          "id": "nerointel-01",
+          "type": "collectible",
+          "label": "Researcher Field Note - 2000",
+          "counterKey": "nerointel",
+          "optional": false
+        },
+        {
+          "id": "nerointel-52",
+          "type": "collectible",
+          "label": "Researcher Field Note - 2055",
+          "counterKey": "nerointel",
+          "optional": false
+        },
+        {
+          "id": "herbology-27",
+          "type": "collectible",
+          "label": "Horn of Plenty",
+          "counterKey": "herbology",
+          "optional": false
+        },
+        {
+          "id": "historical-01",
+          "type": "collectible",
+          "label": "Peter Skene Ogden - Fur Trade Warrior",
+          "counterKey": "historical",
+          "optional": false
+        },
+        {
+          "id": "tourism-01",
+          "type": "collectible",
+          "label": "Old Pioneer Cemetery Brochure",
+          "counterKey": "tourism",
+          "optional": false
+        },
+        {
+          "id": "historical-36",
+          "type": "collectible",
+          "label": "Margaret Alice Miller - The Guardian Angel",
+          "counterKey": "historical",
+          "optional": false
+        },
+        {
+          "id": "nerointel-12",
+          "type": "collectible",
+          "label": "Nero Evacuation Notice",
+          "counterKey": "nerointel",
+          "optional": false
+        },
+        {
+          "id": "nerointel-17",
+          "type": "collectible",
+          "label": "Mobile Medical Unit Recording - 1111",
+          "counterKey": "nerointel",
+          "optional": false
+        },
+        {
+          "id": "first-time-buyer",
+          "type": "trophy",
+          "label": "First Time Buyer",
+          "counterKey": "trophies",
+          "optional": false
+        },
+        {
+          "id": "rippersermons-11",
+          "type": "collectible",
+          "label": "The Free",
+          "counterKey": "rippersermons",
+          "optional": true
+        },
+        {
+          "id": "radiofreeoregon-05",
+          "type": "collectible",
+          "label": "Home Of The Free",
+          "counterKey": "radiofreeoregon",
+          "optional": true
+        },
+        {
+          "id": "the-ends-and-the-means",
+          "type": "trophy",
+          "label": "The Ends and the Means",
+          "counterKey": "trophies",
+          "optional": true
+        },
+        {
+          "id": "historical-02",
+          "type": "collectible",
+          "label": "Grotto Caves - The Buried Caves",
+          "counterKey": "historical",
+          "optional": true
+        },
+        {
+          "id": "completion-nerosites-old-pioneer-cemetery-nero-checkpoint",
+          "type": "completion",
+          "label": "Old Pioneer Cemetery NERO Checkpoint",
+          "counterKey": "nerosites",
+          "optional": true
+        },
+        {
+          "id": "completion-infestations-pioneer-cemetery-infestation",
+          "type": "completion",
+          "label": "Pioneer Cemetery Infestation",
+          "counterKey": "infestations",
+          "optional": false
+        },
+        {
+          "id": "ipca-tech-02-old-pioneer-cemetery-nero-checkpoint",
+          "type": "pickup",
+          "label": "IPCA Tech - Old Pioneer Cemetery NERO Checkpoint",
+          "counterKey": "ipca",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "first-time-buyer"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "ambush-camp",
+      "label": "Ambush camp",
+      "note": "FT Cope after",
+      "phaseId": "cascades",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "radiofreeoregon-06",
+          "type": "collectible",
+          "label": "The Dead Can't Speak",
+          "counterKey": "radiofreeoregon",
+          "optional": true
+        },
+        {
+          "id": "radiofreeoregon-19",
+          "type": "collectible",
+          "label": "Property Rights",
+          "counterKey": "radiofreeoregon",
+          "optional": true
+        },
+        {
+          "id": "completion-ambushcamps-horse-creek-ambush-camp",
+          "type": "completion",
+          "label": "Horse Creek Ambush Camp",
+          "counterKey": "ambushcamps",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "id": "belknap-border-checkpoint",
+      "label": "Belknap Border Checkpoint",
+      "note": "IPCA White trailer, Recorder, injector - Motel and Arrowhead if not picked up during Crazy",
+      "phaseId": "belknap",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "historical-10",
+          "type": "collectible",
+          "label": "McKenzie Pass - Robber's Pass",
+          "counterKey": "historical",
+          "optional": false
+        },
+        {
+          "id": "nerointel-22",
+          "type": "collectible",
+          "label": "Mobile Medical Unit Recording - 1788",
+          "counterKey": "nerointel",
+          "optional": false
+        },
+        {
+          "id": "nerointel-31",
+          "type": "collectible",
+          "label": "Researcher Field Note - 1735",
+          "counterKey": "nerointel",
+          "optional": true
+        },
+        {
+          "id": "completion-nerosites-iron-butte-pass-nero-checkpoint",
+          "type": "completion",
+          "label": "Iron Butte Pass NERO Checkpoint",
+          "counterKey": "nerosites",
+          "optional": false
+        },
+        {
+          "id": "ipca-tech-03-iron-butte-pass-nero-checkpoint",
+          "type": "pickup",
+          "label": "IPCA Tech - Iron Butte Pass NERO Checkpoint",
+          "counterKey": "ipca",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "id": "tucker",
+      "label": "Tucker + Price on Your Head",
+      "note": "Shitlist, portrait, landmark next to hotel and guestbook. Finish Drugged Outta His Mind, then route directly to Logging Camp for Clear Out Those Nests.",
+      "phaseId": "belknap",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "charactercollectibles-08",
+          "type": "collectible",
+          "label": "Alkai - A Portrait of Salome",
+          "counterKey": "charactercollectibles",
+          "optional": false
+        },
+        {
+          "id": "charactercollectibles-06",
+          "type": "collectible",
+          "label": "Tucker - Trust No One",
+          "counterKey": "charactercollectibles",
+          "optional": false
+        },
+        {
+          "id": "historical-08",
+          "type": "collectible",
+          "label": "Salome Hot Springs - The Salt Springs",
+          "counterKey": "historical",
+          "optional": false
+        },
+        {
+          "id": "tourism-06",
+          "type": "collectible",
+          "label": "Salome Hot Springs Guestbook",
+          "counterKey": "tourism",
+          "optional": false
+        },
+        {
+          "id": "radiofreeoregon-12",
+          "type": "collectible",
+          "label": "The Black Helicopters",
+          "counterKey": "radiofreeoregon",
+          "optional": true
+        },
+        {
+          "id": "special-delivery",
+          "type": "trophy",
+          "label": "Special Delivery",
+          "counterKey": "trophies",
+          "optional": true
+        },
+        {
+          "id": "completion-encampmentjobs-drugged-outta-his-mind",
+          "type": "completion",
+          "label": "Drugged Outta His Mind",
+          "counterKey": "encampmentjobs",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "id": "nero-injector-next-to-logging-camp",
+      "label": "Logging Camp NERO + Nests",
+      "note": "Do after Drugged Outta His Mind while Clear Out Those Nests is active: finish Logging Camp infestation, recorder, injector and linked NERO/IPCA checks in one pass. Clear Out Those Nests or Logging Camp Infestation completes the same INF goal.",
+      "phaseId": "cascades",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "nerointel-28",
+          "type": "collectible",
+          "label": "Black Box Recording - 1001",
+          "counterKey": "nerointel",
+          "optional": false,
+          "linkedCounters": [
+            {
+              "counterKey": "nerosites",
+              "delta": 1
+            }
+          ]
+        },
+        {
+          "id": "completion-infestations-logging-camp-infestation",
+          "type": "completion",
+          "label": "Logging Camp Infestation",
+          "counterKey": "infestations",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "nerointel-28"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "split_1783579706255_11_9557",
+      "label": "Drop the Crate at Copes",
+      "note": "",
+      "phaseId": "",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": []
+    },
+    {
+      "id": "rock",
+      "label": "Marion Forks Infestation + NERO",
+      "note": "N1, N2 drive-in recorder, recorder in NERO next to rock. Exact center completions detected: Marion Forks Infestation and Marion Forks Tunnel NERO Checkpoint.",
+      "phaseId": "belknap",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "nerointel-21",
+          "type": "collectible",
+          "label": "Field Recording - 1577",
+          "counterKey": "nerointel",
+          "optional": false,
+          "linkedCounters": [
+            {
+              "counterKey": "nerosites",
+              "delta": 1
+            }
+          ]
+        },
+        {
+          "id": "nerointel-23",
+          "type": "collectible",
+          "label": "Mobile Medical Unit Recording - 0817",
+          "counterKey": "nerointel",
+          "optional": false
+        },
+        {
+          "id": "tourism-07",
+          "type": "collectible",
+          "label": "Bears? Where?! Black Bear Awareness Poster",
+          "counterKey": "tourism",
+          "optional": true
+        },
+        {
+          "id": "radiofreeoregon-01",
+          "type": "collectible",
+          "label": "NERO Death Camps",
+          "counterKey": "radiofreeoregon",
+          "optional": true
+        },
+        {
+          "id": "completion-infestations-marion-forks-infestation",
+          "type": "completion",
+          "label": "Marion Forks Infestation",
+          "counterKey": "infestations",
+          "optional": false
+        },
+        {
+          "id": "completion-nerosites-marion-forks-tunnel-nero-checkpoint",
+          "type": "completion",
+          "label": "Marion Forks Tunnel NERO Checkpoint",
+          "counterKey": "nerosites",
+          "optional": false
+        },
+        {
+          "id": "ipca-tech-05-marion-forks-tunnel-nero-checkpoint",
+          "type": "pickup",
+          "label": "IPCA Tech - Marion Forks Tunnel NERO Checkpoint",
+          "counterKey": "ipca",
+          "optional": false
+        },
+        {
+          "id": "nerointel-15",
+          "type": "collectible",
+          "label": "Mobile Medical Unit Recording - 0980",
+          "counterKey": "nerointel",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-infestations-marion-forks-infestation",
+            "completion-nerosites-marion-forks-tunnel-nero-checkpoint"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "ambush-camp-2",
+      "label": "Bear Creek Hot Springs Ambush Camp",
+      "note": "Collectible. Exact center completion detected: Bear Creek Hot Springs Ambush Camp.",
+      "phaseId": "belknap",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "tourism-05",
+          "type": "collectible",
+          "label": "The Benefits of Bear Creek Hotsprings",
+          "counterKey": "tourism",
+          "optional": false
+        },
+        {
+          "id": "completion-ambushcamps-bear-creek-hot-springs-ambush-camp",
+          "type": "completion",
+          "label": "Bear Creek Hot Springs Ambush Camp",
+          "counterKey": "ambushcamps",
+          "optional": false
+        },
+        {
+          "id": "completion-ambushcamps-black-crater-ambush-camp",
+          "type": "completion",
+          "label": "Black Crater Ambush Camp",
+          "counterKey": "ambushcamps",
+          "optional": false
+        },
+        {
+          "id": "completion-ambushcamps-belknap-caves-ambush-camp",
+          "type": "completion",
+          "label": "Belknap Caves Ambush Camp",
+          "counterKey": "ambushcamps",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-ambushcamps-bear-creek-hot-springs-ambush-camp"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "tucker-job-1",
+      "label": "Tucker job 1",
+      "note": "Stonecrop 2",
+      "phaseId": "belknap",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "herbology-22",
+          "type": "collectible",
+          "label": "Stone Crop",
+          "counterKey": "herbology",
+          "optional": false
+        },
+        {
+          "id": "historical-14",
+          "type": "collectible",
+          "label": "The Lava Arch - Lava River Cave",
+          "counterKey": "historical",
+          "optional": false
+        },
+        {
+          "id": "historical-25",
+          "type": "collectible",
+          "label": "Captain Jack - The Modoc Warrior",
+          "counterKey": "historical",
+          "optional": false
+        },
+        {
+          "id": "historical-13",
+          "type": "collectible",
+          "label": "Three Fingered Jack Viewpoint - Old Hot Fingers",
+          "counterKey": "historical",
+          "optional": true
+        },
+        {
+          "id": "tourism-08",
+          "type": "collectible",
+          "label": "Belknap Fire Season Warning Sign",
+          "counterKey": "tourism",
+          "optional": true
+        },
+        {
+          "id": "dont-stop-me-now",
+          "type": "trophy",
+          "label": "Don't Stop Me Now",
+          "counterKey": "trophies",
+          "optional": true
+        },
+        {
+          "id": "radiofreeoregon-08",
+          "type": "collectible",
+          "label": "Bunker Down",
+          "counterKey": "radiofreeoregon",
+          "optional": true
+        },
+        {
+          "id": "radiofreeoregon-18",
+          "type": "collectible",
+          "label": "The Earth Is Ours",
+          "counterKey": "radiofreeoregon",
+          "optional": true
+        },
+        {
+          "id": "one-down",
+          "type": "trophy",
+          "label": "One Down",
+          "counterKey": "trophies",
+          "optional": true
+        },
+        {
+          "id": "radiofreeoregon-15",
+          "type": "collectible",
+          "label": "Built To Last",
+          "counterKey": "radiofreeoregon",
+          "optional": true
+        },
+        {
+          "id": "completion-hordes-lava-arch-horde",
+          "type": "completion",
+          "label": "Lava Arch Horde",
+          "counterKey": "hordes",
+          "optional": false
+        },
+        {
+          "id": "completion-hordes-twin-craters-horde",
+          "type": "completion",
+          "label": "Twin Craters Horde",
+          "counterKey": "hordes",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "id": "helo-chase",
+      "label": "Helo chase",
+      "note": "Bitterroot and Desert Hackberry. Horse Lake, Death Train, Jefferson Rail Tunnel, IPCA Tech, and Field Recording - 1260 moved to the early Horse Lake cluster.",
+      "phaseId": "belknap",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "herbology-14",
+          "type": "collectible",
+          "label": "Bitterroot",
+          "counterKey": "herbology",
+          "optional": false
+        },
+        {
+          "id": "herbology-07",
+          "type": "collectible",
+          "label": "Desert Hackberry",
+          "counterKey": "herbology",
+          "optional": false
+        },
+        {
+          "id": "ipca-tech-06-southern-cascade-crashed-nero-chopper-research-site",
+          "type": "pickup",
+          "label": "IPCA Tech - Southern Cascade Crashed NERO Chopper Research Site",
+          "counterKey": "ipca",
+          "optional": false
+        },
+        {
+          "id": "ipca-tech-15-hot-springs-nero-helicopter-crash-research-site",
+          "type": "pickup",
+          "label": "IPCA Tech - Hot Springs NERO Helicopter Crash Research Site",
+          "counterKey": "ipca",
+          "optional": false
+        },
+        {
+          "id": "completion-routecollectibles-they-re-not-sleeping",
+          "type": "completion",
+          "label": "They're Not Sleeping",
+          "counterKey": "routecollectibles",
+          "optional": true
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "herbology-14",
+            "herbology-07"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "lisa",
+      "label": "Lisa + Nice and Bloody",
+      "note": "Menu, Lisa bottom house, Tucker's house, two inside the house with tents, return job. Exact camp-job completion detected: Nice and Bloody.",
+      "phaseId": "belknap",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "tourism-02",
+          "type": "collectible",
+          "label": "Hungry Jim's Menu",
+          "counterKey": "tourism",
+          "optional": false
+        },
+        {
+          "id": "tourism-04",
+          "type": "collectible",
+          "label": "Marion Forks Postcards",
+          "counterKey": "tourism",
+          "optional": false
+        },
+        {
+          "id": "tourism-03",
+          "type": "collectible",
+          "label": "Marion Forks Bumper Stickers",
+          "counterKey": "tourism",
+          "optional": false
+        },
+        {
+          "id": "charactercollectibles-09",
+          "type": "collectible",
+          "label": "Lisa - Have a Good Day",
+          "counterKey": "charactercollectibles",
+          "optional": false
+        },
+        {
+          "id": "charactercollectibles-07",
+          "type": "collectible",
+          "label": "Tucker - I Can't Go On",
+          "counterKey": "charactercollectibles",
+          "optional": false
+        },
+        {
+          "id": "historical-24",
+          "type": "collectible",
+          "label": "Outlaw Memorial - The Oregon Legend",
+          "counterKey": "historical",
+          "optional": false
+        },
+        {
+          "id": "completion-encampmentjobs-nice-and-bloody",
+          "type": "completion",
+          "label": "Nice and Bloody",
+          "counterKey": "encampmentjobs",
+          "optional": false
+        },
+        {
+          "id": "completion-encampmentjobs-the-rest-of-our-drugs",
+          "type": "completion",
+          "label": "The Rest of Our Drugs",
+          "counterKey": "encampmentjobs",
+          "optional": false
+        },
+        {
+          "id": "completion-encampmentjobs-everyone-has-to-work",
+          "type": "completion",
+          "label": "Everyone Has to Work",
+          "counterKey": "encampmentjobs",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "completion-encampmentjobs-nice-and-bloody"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "bambi",
+      "label": "Bambi",
+      "note": "BM, Arrowhead, Landmark, DM,Landmark",
+      "phaseId": "belknap",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-routecollectibles-we-re-getting-low-on-meat",
+          "type": "completion",
+          "label": "We're Getting Low on Meat",
+          "counterKey": "routecollectibles",
+          "optional": true
+        },
+        {
+          "id": "historical-06",
+          "type": "collectible",
+          "label": "Teller Cabin - The Horror House",
+          "counterKey": "historical",
+          "optional": false
+        },
+        {
+          "id": "historical-05",
+          "type": "collectible",
+          "label": "Peaceful Lake - Battle on the Misty Lake",
+          "counterKey": "historical",
+          "optional": true
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "historical-06"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "obrian",
+      "label": "OBRIAN",
+      "note": "Rec at box",
+      "phaseId": "belknap",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "nerointel-48",
+          "type": "collectible",
+          "label": "Inspector Field Note - 1381",
+          "counterKey": "nerointel",
+          "optional": false
+        },
+        {
+          "id": "nerointel-41",
+          "type": "collectible",
+          "label": "Researcher Field Note - 2006",
+          "counterKey": "nerointel",
+          "optional": true
+        },
+        {
+          "id": "nerointel-47",
+          "type": "collectible",
+          "label": "Inspector Field Note - 1376",
+          "counterKey": "nerointel",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "id": "roach",
+      "label": "Roach",
+      "note": "ft ambush, 3 fingered jack viewpoint, fire warning, agoseris(3 cars), Nero grave site recorder, old wagon motel",
+      "phaseId": "belknap",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "nerointel-46",
+          "type": "collectible",
+          "label": "Inspector Field Note - 1375",
+          "counterKey": "nerointel",
+          "optional": false
+        },
+        {
+          "id": "radiofreeoregon-09",
+          "type": "collectible",
+          "label": "Animals Don't Watch The Sky",
+          "counterKey": "radiofreeoregon",
+          "optional": true
+        },
+        {
+          "id": "nerointel-26",
+          "type": "collectible",
+          "label": "Researcher Field Note - 1677",
+          "counterKey": "nerointel",
+          "optional": true,
+          "linkedCounters": [
+            {
+              "counterKey": "nerosites",
+              "delta": 1
+            }
+          ]
+        },
+        {
+          "id": "nerointel-49",
+          "type": "collectible",
+          "label": "Inspector Field Note - 1674",
+          "counterKey": "nerointel",
+          "optional": true
+        },
+        {
+          "id": "welcome-to-the-party-pal",
+          "type": "trophy",
+          "label": "Welcome to the Party, Pal",
+          "counterKey": "trophies",
+          "optional": true
+        },
+        {
+          "id": "historical-11",
+          "type": "collectible",
+          "label": "Indigenous Petroglyphs - Stories in Stone",
+          "counterKey": "historical",
+          "optional": true
+        },
+        {
+          "id": "historical-07",
+          "type": "collectible",
+          "label": "Belknap Crater - Belknap's Volcano",
+          "counterKey": "historical",
+          "optional": true
+        },
+        {
+          "id": "completion-hordes-white-king-mine-horde",
+          "type": "completion",
+          "label": "White King Mine Horde",
+          "counterKey": "hordes",
+          "optional": true
+        },
+        {
+          "id": "completion-infestations-pat-jens-lakes-infestation",
+          "type": "completion",
+          "label": "Pat Jens Lakes Infestation",
+          "counterKey": "infestations",
+          "optional": true
+        },
+        {
+          "id": "herbology-10",
+          "type": "collectible",
+          "label": "Agoseris",
+          "counterKey": "herbology",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "id": "thunderegg",
+      "label": "Thunderegg",
+      "note": "",
+      "phaseId": "belknap",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-routecollectibles-what-did-you-do",
+          "type": "completion",
+          "label": "What Did You Do",
+          "counterKey": "routecollectibles",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "id": "lavender",
+      "label": "Lavender",
+      "note": "Lavender - Get below O'Leary? MBY Survivor.",
+      "phaseId": "belknap",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-routecollectibles-what-s-a-nice-girl",
+          "type": "completion",
+          "label": "What's a Nice Girl",
+          "counterKey": "routecollectibles",
+          "optional": true
+        },
+        {
+          "id": "herbology-25",
+          "type": "collectible",
+          "label": "Lavender",
+          "counterKey": "herbology",
+          "optional": false
+        },
+        {
+          "id": "rippersermons-03",
+          "type": "collectible",
+          "label": "Pain is a Gift",
+          "counterKey": "rippersermons",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "id": "saving-lisa",
+      "label": "Saving Lisa",
+      "note": "Stealth & Landmark",
+      "phaseId": "lost_lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-routecollectibles-what-have-they-done",
+          "type": "completion",
+          "label": "What Have They Done",
+          "counterKey": "routecollectibles",
+          "optional": true
+        },
+        {
+          "id": "historical-09",
+          "type": "collectible",
+          "label": "Belknap Caves - The Lava River Caves",
+          "counterKey": "historical",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "im-out-of-control"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "boozer-drive",
+      "label": "Boozer Drive",
+      "note": "",
+      "phaseId": "lost_lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "lost-and-found"
+          ]
+        ]
+      },
+      "ocrGoals": []
+    },
+    {
+      "id": "lost-lake",
+      "label": "Lost Lake",
+      "note": "AM Survivor+Landmark",
+      "phaseId": "lost_lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "historical-26",
+          "type": "collectible",
+          "label": "The 45th Parallel - The Halfway Point",
+          "counterKey": "historical",
+          "optional": false
+        },
+        {
+          "id": "tourism-11",
+          "type": "collectible",
+          "label": "Sherman's Camp Brochure",
+          "counterKey": "tourism",
+          "optional": true
+        },
+        {
+          "id": "lost-and-found",
+          "type": "trophy",
+          "label": "Lost and Found",
+          "counterKey": "trophies",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "id": "lisa-hint",
+      "label": "Lisa Hint",
+      "note": "bulrush, Bear berry, Nests, Rogue Camp Whisky menu?",
+      "phaseId": "lost_lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-routecollectibles-searching-for-lisa",
+          "type": "completion",
+          "label": "Searching for Lisa",
+          "counterKey": "routecollectibles",
+          "optional": true
+        },
+        {
+          "id": "tourism-14",
+          "type": "collectible",
+          "label": "Rogue Camp Whiskey Menu",
+          "counterKey": "tourism",
+          "optional": false
+        },
+        {
+          "id": "charactercollectibles-10",
+          "type": "collectible",
+          "label": "Lisa - I Can't Forget",
+          "counterKey": "charactercollectibles",
+          "optional": false
+        },
+        {
+          "id": "herbology-31",
+          "type": "collectible",
+          "label": "Mica Cap",
+          "counterKey": "herbology",
+          "optional": false
+        },
+        {
+          "id": "herbology-01",
+          "type": "collectible",
+          "label": "Bearberry",
+          "counterKey": "herbology",
+          "optional": false
+        },
+        {
+          "id": "completion-infestations-rogue-camp-infestation",
+          "type": "completion",
+          "label": "Rogue Camp Infestation",
+          "counterKey": "infestations",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "herbology-01"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "obrian-2",
+      "label": "OBRIAN",
+      "note": "Cloudberry - next to car, Coltsfoot - Rock next Ambush, Stout Label - Pinball machine",
+      "phaseId": "lost_lake",
+      "isPhaseStart": false,
+      "auto": {
+        "ambushcamps": 1
+      },
+      "ocrGoals": [
+        {
+          "id": "completion-routecollectibles-moments-of-lucidity",
+          "type": "completion",
+          "label": "Moments of Lucidity",
+          "counterKey": "routecollectibles",
+          "optional": true
+        },
+        {
+          "id": "tourism-26",
+          "type": "collectible",
+          "label": "Adam Finch Stout Label",
+          "counterKey": "tourism",
+          "optional": false
+        },
+        {
+          "id": "nerointel-42",
+          "type": "collectible",
+          "label": "Researcher Field Note - 2071",
+          "counterKey": "nerointel",
+          "optional": false
+        },
+        {
+          "id": "herbology-17",
+          "type": "collectible",
+          "label": "Coltsfoot",
+          "counterKey": "herbology",
+          "optional": false
+        },
+        {
+          "id": "herbology-05",
+          "type": "collectible",
+          "label": "Cloudberry",
+          "counterKey": "herbology",
+          "optional": false
+        },
+        {
+          "id": "radiofreeoregon-13",
+          "type": "collectible",
+          "label": "They're Coming For Us",
+          "counterKey": "radiofreeoregon",
+          "optional": true
+        },
+        {
+          "id": "ipca-tech-08-lost-lake-nero-research-site",
+          "type": "pickup",
+          "label": "IPCA Tech - Lost Lake NERO Research Site",
+          "counterKey": "ipca",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "id": "skizzo",
+      "label": "Skizzo",
+      "note": "BM: IRON MIKE COLLECTIBLES x 3, During drive, Landmark + Campfire cadets",
+      "phaseId": "lost_lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "charactercollectibles-17",
+          "type": "collectible",
+          "label": "Iron Mike - I'll Always Be With You",
+          "counterKey": "charactercollectibles",
+          "optional": false
+        },
+        {
+          "id": "charactercollectibles-18",
+          "type": "collectible",
+          "label": "Iron Mike - Let There Be Peace",
+          "counterKey": "charactercollectibles",
+          "optional": false
+        },
+        {
+          "id": "tourism-12",
+          "type": "collectible",
+          "label": "Meet The Campfire Cadets",
+          "counterKey": "tourism",
+          "optional": false
+        },
+        {
+          "id": "historical-20",
+          "type": "collectible",
+          "label": "Camp Pioneer - The Grand Campsite",
+          "counterKey": "historical",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "tourism-12"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "ripper-territory",
+      "label": "Ripper territory",
+      "note": "Inc Cap inside house, Breaker Knife? MG45 and hordes?",
+      "phaseId": "lost_lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-routecollectibles-we-ve-all-done-things",
+          "type": "completion",
+          "label": "We've All Done Things",
+          "counterKey": "routecollectibles",
+          "optional": true
+        },
+        {
+          "id": "rippersermons-10",
+          "type": "collectible",
+          "label": "Rest In Peace",
+          "counterKey": "rippersermons",
+          "optional": false
+        },
+        {
+          "id": "herbology-28",
+          "type": "collectible",
+          "label": "Ink Cap",
+          "counterKey": "herbology",
+          "optional": false
+        },
+        {
+          "id": "this-is-a-knife",
+          "type": "trophy",
+          "label": "This is a Knife",
+          "counterKey": "trophies",
+          "optional": true
+        },
+        {
+          "id": "completion-encampmentjobs-hear-about-a-ripper-camp",
+          "type": "completion",
+          "label": "Hear About a Ripper Camp?",
+          "counterKey": "encampmentjobs",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "id": "nero-2",
+      "label": "It's On a Mission",
+      "note": "Sawmill Nero Checkpoint",
+      "phaseId": "lost_lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "nerointel-02",
+          "type": "collectible",
+          "label": "Researcher Field Note - 2064",
+          "counterKey": "nerointel",
+          "optional": false
+        },
+        {
+          "id": "nerointel-19",
+          "type": "collectible",
+          "label": "Mobile Medical Unit Recording - 1301",
+          "counterKey": "nerointel",
+          "optional": false
+        },
+        {
+          "id": "diy-oregonian",
+          "type": "trophy",
+          "label": "D.I.Y. Oregonian",
+          "counterKey": "trophies",
+          "optional": true
+        },
+        {
+          "id": "rippersermons-02",
+          "type": "collectible",
+          "label": "Don't Run",
+          "counterKey": "rippersermons",
+          "optional": true
+        },
+        {
+          "id": "completion-encampmentjobs-he-never-came-back",
+          "type": "completion",
+          "label": "He Never Came Back",
+          "counterKey": "encampmentjobs",
+          "optional": true
+        },
+        {
+          "id": "completion-hordes-proxy-falls-horde",
+          "type": "completion",
+          "label": "Proxy Falls Horde",
+          "counterKey": "hordes",
+          "optional": true
+        },
+        {
+          "id": "completion-infestations-berley-lake-infestation",
+          "type": "completion",
+          "label": "Berley Lake Infestation",
+          "counterKey": "infestations",
+          "optional": true
+        },
+        {
+          "id": "herbology-16",
+          "type": "collectible",
+          "label": "Bulrush",
+          "counterKey": "herbology",
+          "optional": true
+        },
+        {
+          "id": "completion-encampmentjobs-a-score-to-settle",
+          "type": "completion",
+          "label": "A Score to Settle",
+          "counterKey": "encampmentjobs",
+          "optional": false
+        },
+        {
+          "id": "completion-hordes-berley-lake-horde",
+          "type": "completion",
+          "label": "Berley Lake Horde",
+          "counterKey": "hordes",
+          "optional": false
+        },
+        {
+          "id": "completion-nerosites-old-sawmill-nero-checkpoint",
+          "type": "completion",
+          "label": "Old Sawmill NERO Checkpoint",
+          "counterKey": "nerosites",
+          "optional": false
+        },
+        {
+          "id": "ipca-tech-14-old-sawmill-nero-checkpoint",
+          "type": "pickup",
+          "label": "IPCA Tech - Old Sawmill NERO Checkpoint",
+          "counterKey": "ipca",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "id": "hole-in-the-roof",
+      "label": "Hole in the roof - GUITAR",
+      "note": "",
+      "phaseId": "lost_lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "songs-02",
+          "type": "collectible",
+          "label": "Mirrors",
+          "counterKey": "songs",
+          "optional": false
+        },
+        {
+          "id": "songs-01",
+          "type": "collectible",
+          "label": "Yesterday",
+          "counterKey": "songs",
+          "optional": true
+        },
+        {
+          "id": "historical-16",
+          "type": "collectible",
+          "label": "Moon Trees - Grown From Outer Space",
+          "counterKey": "historical",
+          "optional": true
+        },
+        {
+          "id": "completion-encampmentjobs-a-goddamn-war-zone",
+          "type": "completion",
+          "label": "A Goddamn War Zone",
+          "counterKey": "encampmentjobs",
+          "optional": true
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "songs-02"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "little-bear-lake-horde",
+      "label": "Little Bear Lake Horde",
+      "note": "tuck+ rip Little Bear Lake Horde,",
+      "phaseId": "lost_lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-hordes-little-bear-lake-horde",
+          "type": "completion",
+          "label": "Little Bear Lake Horde",
+          "counterKey": "hordes",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "id": "iron-mike",
+      "label": "Iron Mike",
+      "note": "Lost Lake Landmark",
+      "phaseId": "lost_lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-routecollectibles-flow-like-buried-rivers",
+          "type": "completion",
+          "label": "Flow Like Buried Rivers",
+          "counterKey": "routecollectibles",
+          "optional": true
+        },
+        {
+          "id": "completion-routecollectibles-it-s-a-rifle-not-a-gun",
+          "type": "completion",
+          "label": "It's a Rifle, Not a Gun",
+          "counterKey": "routecollectibles",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "id": "iron-mike-2",
+      "label": "Iron Mike 2",
+      "note": "Shermans camp Landmark",
+      "phaseId": "lost_lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-routecollectibles-seeds-for-the-spring",
+          "type": "completion",
+          "label": "Seeds for the Spring",
+          "counterKey": "routecollectibles",
+          "optional": true
+        },
+        {
+          "id": "historical-18",
+          "type": "collectible",
+          "label": "Architectural Memorial - The Community Builder",
+          "counterKey": "historical",
+          "optional": false
+        },
+        {
+          "id": "im-out-of-control",
+          "type": "trophy",
+          "label": "I'm Out of Control",
+          "counterKey": "trophies",
+          "optional": true
+        },
+        {
+          "id": "completion-infestations-sherman-s-camp-infestation",
+          "type": "completion",
+          "label": "Sherman's Camp Infestation",
+          "counterKey": "infestations",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "id": "2x-fast-travel-guitar",
+      "label": "2x fast travel guitar",
+      "note": "",
+      "phaseId": "lost_lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "songs-03",
+          "type": "collectible",
+          "label": "Our Lies",
+          "counterKey": "songs",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "id": "herod",
+      "label": "Herod",
+      "note": "Horde x2?",
+      "phaseId": "lost_lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-routecollectibles-on-herod-s-birthday",
+          "type": "completion",
+          "label": "On Herod's Birthday",
+          "counterKey": "routecollectibles",
+          "optional": true
+        },
+        {
+          "id": "nerointel-04",
+          "type": "collectible",
+          "label": "Researcher Field Note - 2060",
+          "counterKey": "nerointel",
+          "optional": true
+        },
+        {
+          "id": "completion-hordes-bear-creek-hot-springs-horde",
+          "type": "completion",
+          "label": "Bear Creek Hot Springs Horde",
+          "counterKey": "hordes",
+          "optional": false
+        },
+        {
+          "id": "completion-hordes-belknap-crater-horde",
+          "type": "completion",
+          "label": "Belknap Crater Horde",
+          "counterKey": "hordes",
+          "optional": false
+        },
+        {
+          "id": "completion-hordes-shadow-lake-horde",
+          "type": "completion",
+          "label": "Shadow Lake Horde",
+          "counterKey": "hordes",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "id": "bike-chase",
+      "label": "Bike Chase",
+      "note": "",
+      "phaseId": "lost_lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "brothers-in-arm",
+          "type": "trophy",
+          "label": "Brothers in Arm",
+          "counterKey": "trophies",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "id": "rikki-dam",
+      "label": "Rikki Dam",
+      "note": "Cairn?",
+      "phaseId": "lost_lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "nerointel-24",
+          "type": "collectible",
+          "label": "Researcher Field Note - 0988",
+          "counterKey": "nerointel",
+          "optional": true
+        },
+        {
+          "id": "historical-17",
+          "type": "collectible",
+          "label": "Metolius Lava Cave - Distillery Cave",
+          "counterKey": "historical",
+          "optional": true
+        },
+        {
+          "id": "songs-04",
+          "type": "collectible",
+          "label": "Perfect",
+          "counterKey": "songs",
+          "optional": true
+        },
+        {
+          "id": "completion-encampmentjobs-hard-to-miss",
+          "type": "completion",
+          "label": "Hard to Miss",
+          "counterKey": "encampmentjobs",
+          "optional": true
+        },
+        {
+          "id": "completion-hordes-metolius-lava-cave-horde",
+          "type": "completion",
+          "label": "Metolius Lava Cave Horde",
+          "counterKey": "hordes",
+          "optional": true
+        },
+        {
+          "id": "completion-encampmentjobs-coming-into-town",
+          "type": "completion",
+          "label": "Coming Into Town",
+          "counterKey": "encampmentjobs",
+          "optional": false
+        },
+        {
+          "id": "completion-encampmentjobs-drifters-at-eden-hill",
+          "type": "completion",
+          "label": "Drifters at Eden Hill",
+          "counterKey": "encampmentjobs",
+          "optional": false
+        },
+        {
+          "id": "completion-hordes-river-flow-farms-horde",
+          "type": "completion",
+          "label": "River Flow Farms Horde",
+          "counterKey": "hordes",
+          "optional": false
+        },
+        {
+          "id": "completion-hordes-wapinitia-road-horde",
+          "type": "completion",
+          "label": "Wapinitia Road Horde",
+          "counterKey": "hordes",
+          "optional": false
+        },
+        {
+          "id": "completion-hordes-westfir-horde",
+          "type": "completion",
+          "label": "Westfir Horde",
+          "counterKey": "hordes",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "charactercollectibles-19"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "after-boozer-bike",
+      "label": "After Boozer bike",
+      "note": "Rikki and Infirmary Collectibles",
+      "phaseId": "lost_lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "charactercollectibles-13",
+          "type": "collectible",
+          "label": "Rikki - Wrench in Hand",
+          "counterKey": "charactercollectibles",
+          "optional": false
+        },
+        {
+          "id": "charactercollectibles-14",
+          "type": "collectible",
+          "label": "Rikki - Your Lamp in the Sky",
+          "counterKey": "charactercollectibles",
+          "optional": false
+        },
+        {
+          "id": "charactercollectibles-19",
+          "type": "collectible",
+          "label": "Addy - Straying From the Path of God",
+          "counterKey": "charactercollectibles",
+          "optional": false
+        },
+        {
+          "id": "charactercollectibles-20",
+          "type": "collectible",
+          "label": "Addy - The Old Generator",
+          "counterKey": "charactercollectibles",
+          "optional": false
+        },
+        {
+          "id": "songs-05",
+          "type": "collectible",
+          "label": "She's My Drug",
+          "counterKey": "songs",
+          "optional": true
+        },
+        {
+          "id": "nerointel-03",
+          "type": "collectible",
+          "label": "Researcher Field Note - 2068",
+          "counterKey": "nerointel",
+          "optional": true
+        },
+        {
+          "id": "wannabe-fortune-hunter",
+          "type": "trophy",
+          "label": "Wannabe Fortune Hunter",
+          "counterKey": "trophies",
+          "optional": true
+        },
+        {
+          "id": "completion-hordes-o-leary-mountain-horde",
+          "type": "completion",
+          "label": "O'Leary Mountain Horde",
+          "counterKey": "hordes",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "id": "talking-to-boozer",
+      "label": "Talking to boozer",
+      "note": "",
+      "phaseId": "lost_lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-routecollectibles-about-boozer-s-arm",
+          "type": "completion",
+          "label": "About Boozer's Arm",
+          "counterKey": "routecollectibles",
+          "optional": true
+        },
+        {
+          "id": "historical-12",
+          "type": "collectible",
+          "label": "Memorial of The Unknown Mailman - Pioneer Mailman",
+          "counterKey": "historical",
+          "optional": true
+        },
+        {
+          "id": "radiofreeoregon-07",
+          "type": "collectible",
+          "label": "The Just Shall Not Starve",
+          "counterKey": "radiofreeoregon",
+          "optional": true
+        },
+        {
+          "id": "completion-encampmentjobs-i-ll-double-it",
+          "type": "completion",
+          "label": "I'll Double It",
+          "counterKey": "encampmentjobs",
+          "optional": true
+        },
+        {
+          "id": "completion-encampmentjobs-gone-fishing",
+          "type": "completion",
+          "label": "Gone Fishing",
+          "counterKey": "encampmentjobs",
+          "optional": true
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "historical-42"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "lucky-lad",
+      "label": "Lucky Lad",
+      "note": "Go back in the mines AM, Landmark, Ambush camp",
+      "phaseId": "lost_lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "nerointel-32",
+          "type": "collectible",
+          "label": "Researcher Field Note - 2073",
+          "counterKey": "nerointel",
+          "optional": false,
+          "linkedCounters": [
+            {
+              "counterKey": "nerosites",
+              "delta": 1
+            }
+          ]
+        },
+        {
+          "id": "historical-42",
+          "type": "collectible",
+          "label": "Lucky Lad Mine - The Gold Rush Mine",
+          "counterKey": "historical",
+          "optional": false
+        },
+        {
+          "id": "completion-ambushcamps-deerborn-ambush-camp",
+          "type": "completion",
+          "label": "Deerborn Ambush Camp",
+          "counterKey": "ambushcamps",
+          "optional": false
+        },
+        {
+          "id": "completion-ambushcamps-berley-lake-ambush-camp",
+          "type": "completion",
+          "label": "Berley Lake Ambush Camp",
+          "counterKey": "ambushcamps",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "id": "boozer-drinking",
+      "label": "Boozer drinking",
+      "note": "",
+      "phaseId": "lost_lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": []
+    },
+    {
+      "id": "puppy",
+      "label": "Puppy",
+      "note": "Ipca, Nero rec, Injector. Numb The People is recovered from the Drinking Himself to Death completion if its broadcast toast is suppressed.",
+      "phaseId": "lost_lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-radiofreeoregon-drinking-himself-to-death",
+          "type": "completion",
+          "label": "Drinking Himself to Death",
+          "counterKey": "radiofreeoregon",
+          "optional": true
+        },
+        {
+          "id": "nerointel-05",
+          "type": "collectible",
+          "label": "Flight Data Recording - 2044",
+          "counterKey": "nerointel",
+          "optional": false,
+          "linkedCounters": [
+            {
+              "counterKey": "nerosites",
+              "delta": 1
+            }
+          ]
+        },
+        {
+          "id": "radiofreeoregon-04",
+          "type": "collectible",
+          "label": "Numb The People",
+          "counterKey": "radiofreeoregon",
+          "optional": true
+        },
+        {
+          "id": "nerointel-11",
+          "type": "collectible",
+          "label": "Researcher Field Note - 2102",
+          "counterKey": "nerointel",
+          "optional": true
+        },
+        {
+          "id": "completion-hordes-marion-forks-horde",
+          "type": "completion",
+          "label": "Marion Forks Horde",
+          "counterKey": "hordes",
+          "optional": true
+        },
+        {
+          "id": "completion-hordes-grotto-caves-horde",
+          "type": "completion",
+          "label": "Grotto Caves Horde",
+          "counterKey": "hordes",
+          "optional": true
+        },
+        {
+          "id": "completion-encampmentjobs-over-a-card-game",
+          "type": "completion",
+          "label": "Over a Card Game",
+          "counterKey": "encampmentjobs",
+          "optional": true
+        },
+        {
+          "id": "completion-hordes-horse-lake-horde",
+          "type": "completion",
+          "label": "Horse Lake Horde",
+          "counterKey": "hordes",
+          "optional": false
+        },
+        {
+          "id": "radiofreeoregon-03",
+          "type": "collectible",
+          "label": "My Cold Dead Hands",
+          "counterKey": "radiofreeoregon",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "anyGoalGroups",
+        "groups": [
+          [
+            "charactercollectibles-12"
+          ],
+          [
+            "charactercollectibles-11"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "after-puppy",
+      "label": "After Puppy",
+      "note": "when you return get two character collectibles in the house",
+      "phaseId": "lost_lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "charactercollectibles-12",
+          "type": "collectible",
+          "label": "Boozer - My Beautiful Wife",
+          "counterKey": "charactercollectibles",
+          "optional": false
+        },
+        {
+          "id": "charactercollectibles-11",
+          "type": "collectible",
+          "label": "Boozer - Our Only Guest",
+          "counterKey": "charactercollectibles",
+          "optional": false
+        },
+        {
+          "id": "songs-06",
+          "type": "collectible",
+          "label": "Sun Won't Shine",
+          "counterKey": "songs",
+          "optional": true
+        },
+        {
+          "id": "lend-me-your-ears",
+          "type": "trophy",
+          "label": "Lend Me Your Ears",
+          "counterKey": "trophies",
+          "optional": true
+        },
+        {
+          "id": "radiofreeoregon-14",
+          "type": "collectible",
+          "label": "The Advanced Guard",
+          "counterKey": "radiofreeoregon",
+          "optional": true
+        },
+        {
+          "id": "nerointel-09",
+          "type": "collectible",
+          "label": "Flight Data Recording - 2041",
+          "counterKey": "nerointel",
+          "optional": true,
+          "linkedCounters": [
+            {
+              "counterKey": "nerosites",
+              "delta": 1
+            }
+          ]
+        },
+        {
+          "id": "nerointel-33",
+          "type": "collectible",
+          "label": "Researcher Field Note - 1960",
+          "counterKey": "nerointel",
+          "optional": true,
+          "linkedCounters": [
+            {
+              "counterKey": "nerosites",
+              "delta": 1
+            }
+          ]
+        },
+        {
+          "id": "tourism-13",
+          "type": "collectible",
+          "label": "Sherman's Camp Farmer's Market Poster",
+          "counterKey": "tourism",
+          "optional": true
+        },
+        {
+          "id": "completion-encampmentjobs-here-s-a-little-chaos",
+          "type": "completion",
+          "label": "Here's a Little Chaos",
+          "counterKey": "encampmentjobs",
+          "optional": true
+        },
+        {
+          "id": "completion-hordes-patjens-lakes-horde",
+          "type": "completion",
+          "label": "Patjens Lakes Horde",
+          "counterKey": "hordes",
+          "optional": true
+        },
+        {
+          "id": "completion-encampmentjobs-rippers-rest-in-hell",
+          "type": "completion",
+          "label": "Rippers, Rest in Hell",
+          "counterKey": "encampmentjobs",
+          "optional": false
+        },
+        {
+          "id": "completion-hordes-cascade-highway-horde",
+          "type": "completion",
+          "label": "Cascade Highway Horde",
+          "counterKey": "hordes",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "id": "skizzo-2",
+      "label": "Skizzo",
+      "note": "Bear Grass, RIP sermon, golden currant",
+      "phaseId": "lost_lake",
+      "isPhaseStart": false,
+      "auto": {
+        "cairns": 1
+      },
+      "ocrGoals": [
+        {
+          "id": "herbology-12",
+          "type": "collectible",
+          "label": "Beargrass",
+          "counterKey": "herbology",
+          "optional": false
+        },
+        {
+          "id": "herbology-08",
+          "type": "collectible",
+          "label": "Golden Currant",
+          "counterKey": "herbology",
+          "optional": false
+        },
+        {
+          "id": "rippersermons-06",
+          "type": "collectible",
+          "label": "Sacrifice for Freedom",
+          "counterKey": "rippersermons",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "anyGoalGroups",
+        "groups": [
+          [
+            "historical-39"
+          ],
+          [
+            "tourism-27"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "sneak-out",
+      "label": "Sneak out",
+      "note": "Historical marker Left from Rippers, Gas station, Tourism, Rip Sermon, indian pipe, cairn, alpaca farm x2 landmark + on a table collectible, mountain landmark + cairn",
+      "phaseId": "iron_butte",
+      "isPhaseStart": false,
+      "auto": {
+        "cairns": 1
+      },
+      "ocrGoals": [
+        {
+          "id": "completion-charactercollectibles-they-will-never-stop",
+          "type": "completion",
+          "label": "They Will Never Stop",
+          "counterKey": "charactercollectibles",
+          "optional": true
+        },
+        {
+          "id": "completion-routecollectibles-not-like-i-got-a-choice",
+          "type": "completion",
+          "label": "Not Like I Got a Choice",
+          "counterKey": "routecollectibles",
+          "optional": true
+        },
+        {
+          "id": "historical-40",
+          "type": "collectible",
+          "label": "Iron Butte Ranch - The Summer Marsh",
+          "counterKey": "historical",
+          "optional": false
+        },
+        {
+          "id": "herbology-18",
+          "type": "collectible",
+          "label": "Indian Pipe",
+          "counterKey": "herbology",
+          "optional": false
+        },
+        {
+          "id": "tourism-25",
+          "type": "collectible",
+          "label": "Iron Butte Ranch Masters Tournament",
+          "counterKey": "tourism",
+          "optional": false
+        },
+        {
+          "id": "rippersermons-12",
+          "type": "collectible",
+          "label": "The Rising is Coming",
+          "counterKey": "rippersermons",
+          "optional": false
+        },
+        {
+          "id": "historical-39",
+          "type": "collectible",
+          "label": "Snowbrush Ranch - The First Alpaca Farm",
+          "counterKey": "historical",
+          "optional": false
+        },
+        {
+          "id": "tourism-27",
+          "type": "collectible",
+          "label": "Snowbrush Ranch Alpaca Farm",
+          "counterKey": "tourism",
+          "optional": false
+        },
+        {
+          "id": "historical-41",
+          "type": "collectible",
+          "label": "Iron Butte - The Iron Mountain",
+          "counterKey": "historical",
+          "optional": true
+        },
+        {
+          "id": "take-back-your-name",
+          "type": "trophy",
+          "label": "Take Back Your Name",
+          "counterKey": "trophies",
+          "optional": true
+        },
+        {
+          "id": "ipca-tech-09-iron-butte-nero-research-site",
+          "type": "pickup",
+          "label": "IPCA Tech - Iron Butte NERO Research Site",
+          "counterKey": "ipca",
+          "optional": false
+        },
+        {
+          "id": "charactercollectibles-32",
+          "type": "collectible",
+          "label": "Jessie - They Shall Be Of One Mind",
+          "counterKey": "charactercollectibles",
+          "optional": false
+        },
+        {
+          "id": "rippersermons-04",
+          "type": "collectible",
+          "label": "Set You Free",
+          "counterKey": "rippersermons",
+          "optional": false
+        },
+        {
+          "id": "nerointel-13",
+          "type": "collectible",
+          "label": "Nero Site Order - TS-03-900SQM",
+          "counterKey": "nerointel",
+          "optional": false,
+          "linkedCounters": [
+            {
+              "counterKey": "nerosites",
+              "delta": 1
+            }
+          ]
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "take-back-your-name"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "explosives",
+      "label": "eXPLOSIVES",
+      "note": "Skizzo collectiblesx2",
+      "phaseId": "iron_butte",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-routecollectibles-outta-the-darkness",
+          "type": "completion",
+          "label": "Outta the Darkness",
+          "counterKey": "routecollectibles",
+          "optional": true
+        },
+        {
+          "id": "completion-routecollectibles-have-it-your-way",
+          "type": "completion",
+          "label": "Have It Your Way",
+          "counterKey": "routecollectibles",
+          "optional": true
+        },
+        {
+          "id": "charactercollectibles-15",
+          "type": "collectible",
+          "label": "Skizzo - The Shit List",
+          "counterKey": "charactercollectibles",
+          "optional": false
+        },
+        {
+          "id": "charactercollectibles-16",
+          "type": "collectible",
+          "label": "Skizzo - With Honors",
+          "counterKey": "charactercollectibles",
+          "optional": false
+        },
+        {
+          "id": "completion-encampmentjobs-how-many-bodies",
+          "type": "completion",
+          "label": "How Many Bodies?",
+          "counterKey": "encampmentjobs",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "rippersermons-05"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "nero-checkpoint-with-boozeman",
+      "label": "Nero Checkpoint with boozeman",
+      "note": "Ipca RIP TENT, Nero Paper(recorder container), Injector, Rip sermon",
+      "phaseId": "iron_butte",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "nerointel-14",
+          "type": "collectible",
+          "label": "Mobile Medical Site Order - TS-27-760GDQ",
+          "counterKey": "nerointel",
+          "optional": false
+        },
+        {
+          "id": "rippersermons-05",
+          "type": "collectible",
+          "label": "Destroy Your Ego",
+          "counterKey": "rippersermons",
+          "optional": false
+        },
+        {
+          "id": "performance-enhanced",
+          "type": "trophy",
+          "label": "Performance Enhanced",
+          "counterKey": "trophies",
+          "optional": true
+        },
+        {
+          "id": "charactercollectibles-31",
+          "type": "collectible",
+          "label": "Jessie - Riding With the Mongrels",
+          "counterKey": "charactercollectibles",
+          "optional": true
+        },
+        {
+          "id": "completion-nerosites-rogue-tunnel-nero-checkpoint",
+          "type": "completion",
+          "label": "Rogue Tunnel NERO Checkpoint",
+          "counterKey": "nerosites",
+          "optional": true
+        },
+        {
+          "id": "completion-ambushcamps-redwood-rv-park-ambush-camp",
+          "type": "completion",
+          "label": "Redwood RV Park Ambush Camp",
+          "counterKey": "ambushcamps",
+          "optional": false
+        },
+        {
+          "id": "ipca-tech-16-rogue-tunnel-nero-checkpoint",
+          "type": "pickup",
+          "label": "IPCA Tech - Rogue Tunnel NERO Checkpoint",
+          "counterKey": "ipca",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "id": "iron-mike-3",
+      "label": "O'Brian, Iron Mike",
+      "note": "Keep the PB placement: collect Flight Data Recording - 2097 during this O'Brian / Iron Mike window, using the long call for the detour. Do not defer it to late game.",
+      "phaseId": "iron_butte",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-routecollectibles-i-was-distracted",
+          "type": "completion",
+          "label": "I Was Distracted",
+          "counterKey": "routecollectibles",
+          "optional": true
+        },
+        {
+          "id": "nerointel-10",
+          "type": "collectible",
+          "label": "Flight Data Recording - 2097",
+          "counterKey": "nerointel",
+          "optional": false,
+          "linkedCounters": [
+            {
+              "counterKey": "nerosites",
+              "delta": 1
+            }
+          ]
+        },
+        {
+          "id": "charactercollectibles-33",
+          "type": "collectible",
+          "label": "Jim - Advisory Warning",
+          "counterKey": "charactercollectibles",
+          "optional": true
+        },
+        {
+          "id": "herbology-30",
+          "type": "collectible",
+          "label": "Larch Bolete",
+          "counterKey": "herbology",
+          "optional": true
+        },
+        {
+          "id": "radiofreeoregon-02",
+          "type": "collectible",
+          "label": "It's All A Lie",
+          "counterKey": "radiofreeoregon",
+          "optional": true
+        },
+        {
+          "id": "radiofreeoregon-17",
+          "type": "collectible",
+          "label": "Cleanse Our Minds",
+          "counterKey": "radiofreeoregon",
+          "optional": true
+        },
+        {
+          "id": "rippersermons-07",
+          "type": "collectible",
+          "label": "One Mind",
+          "counterKey": "rippersermons",
+          "optional": true
+        },
+        {
+          "id": "rippersermons-08",
+          "type": "collectible",
+          "label": "Founder's Tale",
+          "counterKey": "rippersermons",
+          "optional": true
+        },
+        {
+          "id": "radiofreeoregon-16",
+          "type": "collectible",
+          "label": "Traitors Shall Hang",
+          "counterKey": "radiofreeoregon",
+          "optional": true
+        },
+        {
+          "id": "historical-43",
+          "type": "collectible",
+          "label": "Iron Butte Meteorite - Gift From the Sky",
+          "counterKey": "historical",
+          "optional": true
+        },
+        {
+          "id": "rippersermons-01",
+          "type": "collectible",
+          "label": "Fear the Rising",
+          "counterKey": "rippersermons",
+          "optional": true
+        },
+        {
+          "id": "historical-37",
+          "type": "collectible",
+          "label": "Devil's Lake - View Of The Cascades",
+          "counterKey": "historical",
+          "optional": true
+        },
+        {
+          "id": "rippersermons-09",
+          "type": "collectible",
+          "label": "The Ultimate Goal",
+          "counterKey": "rippersermons",
+          "optional": true
+        },
+        {
+          "id": "riding-nomad",
+          "type": "trophy",
+          "label": "Riding NOMAD",
+          "counterKey": "trophies",
+          "optional": true
+        },
+        {
+          "id": "completion-ambushcamps-wagon-road-ambush-camp",
+          "type": "completion",
+          "label": "Wagon Road Ambush Camp",
+          "counterKey": "ambushcamps",
+          "optional": true
+        },
+        {
+          "id": "completion-encampmentjobs-part-of-the-family",
+          "type": "completion",
+          "label": "Part of the Family",
+          "counterKey": "encampmentjobs",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "id": "big-bear-alert",
+      "label": "Big Bear Alert",
+      "note": "Bistort(also keeping runners)? Silverweed(outside WI also)",
+      "phaseId": "iron_butte",
+      "isPhaseStart": false,
+      "auto": {
+        "cairns": 1
+      },
+      "ocrGoals": [
+        {
+          "id": "completion-routecollectibles-with-other-men-s-blood",
+          "type": "completion",
+          "label": "With Other Men's Blood",
+          "counterKey": "routecollectibles",
+          "optional": true
+        },
+        {
+          "id": "herbology-13",
+          "type": "collectible",
+          "label": "Bistort",
+          "counterKey": "herbology",
+          "optional": false
+        },
+        {
+          "id": "herbology-21",
+          "type": "collectible",
+          "label": "Silverweed",
+          "counterKey": "herbology",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "tourism-17"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "diamond-lake",
+      "label": "Diamond Lake",
+      "note": "Last tent char collect + Fishing",
+      "phaseId": "crater_lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "tourism-17",
+          "type": "collectible",
+          "label": "Fishing At Diamond Lake Village",
+          "counterKey": "tourism",
+          "optional": false
+        },
+        {
+          "id": "charactercollectibles-24",
+          "type": "collectible",
+          "label": "Kouri - To Protect and Serve",
+          "counterKey": "charactercollectibles",
+          "optional": false
+        },
+        {
+          "id": "kitchen-courier",
+          "type": "trophy",
+          "label": "Kitchen Courier",
+          "counterKey": "trophies",
+          "optional": true
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "allGoalGroups",
+        "groups": [
+          [
+            "herbology-04"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "kouri",
+      "label": "Kouri",
+      "note": "Bunch berry",
+      "phaseId": "crater_lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-charactercollectibles-i-don-t-have-a-pic",
+          "type": "completion",
+          "label": "I Don't Have a Pic",
+          "counterKey": "charactercollectibles",
+          "optional": true
+        },
+        {
+          "id": "herbology-04",
+          "type": "collectible",
+          "label": "Bunchberry",
+          "counterKey": "herbology",
+          "optional": false
+        },
+        {
+          "id": "completion-encampmentjobs-didn-t-want-to-join-up",
+          "type": "completion",
+          "label": "Didn't Want to Join Up",
+          "counterKey": "encampmentjobs",
+          "optional": false
+        },
+        {
+          "id": "charactercollectibles-23",
+          "type": "collectible",
+          "label": "Kouri - To Have And to Hold",
+          "counterKey": "charactercollectibles",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "id": "wizard-island",
+      "label": "Wizard Island",
+      "note": "Matt's Tent. Hold on Tight confirms Kouri - To Have And to Hold and completes this split; the six Colonel mission titles also award their matching speech collectibles.",
+      "phaseId": "crater_lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-routecollectibles-we-will-take-back-this-world",
+          "type": "completion",
+          "label": "We Will Take Back This World",
+          "counterKey": "routecollectibles",
+          "optional": true
+        },
+        {
+          "id": "charactercollectibles-21",
+          "type": "collectible",
+          "label": "Colonel - Sleepy Tea",
+          "counterKey": "charactercollectibles",
+          "optional": false
+        },
+        {
+          "id": "hold-on-tight",
+          "type": "trophy",
+          "label": "Hold on Tight",
+          "counterKey": "trophies",
+          "optional": true
+        },
+        {
+          "id": "charactercollectibles-22",
+          "type": "collectible",
+          "label": "Colonel - The Good Book",
+          "counterKey": "charactercollectibles",
+          "optional": false
+        },
+        {
+          "id": "colonelspeeches-01",
+          "type": "collectible",
+          "label": "We Do Not Discriminate",
+          "counterKey": "colonelspeeches",
+          "optional": false
+        },
+        {
+          "id": "colonelspeeches-02",
+          "type": "collectible",
+          "label": "We Must Fill the Ark",
+          "counterKey": "colonelspeeches",
+          "optional": false
+        },
+        {
+          "id": "colonelspeeches-03",
+          "type": "collectible",
+          "label": "Throw Them Into the Furnace",
+          "counterKey": "colonelspeeches",
+          "optional": false
+        },
+        {
+          "id": "colonelspeeches-04",
+          "type": "collectible",
+          "label": "My Eyes Have Been Opened",
+          "counterKey": "colonelspeeches",
+          "optional": false
+        },
+        {
+          "id": "colonelspeeches-05",
+          "type": "collectible",
+          "label": "Evil Surrounds Us",
+          "counterKey": "colonelspeeches",
+          "optional": false
+        },
+        {
+          "id": "colonelspeeches-06",
+          "type": "collectible",
+          "label": "Shadow of Death",
+          "counterKey": "colonelspeeches",
+          "optional": false
+        },
+        {
+          "id": "best-friends-forever",
+          "type": "trophy",
+          "label": "Best Friends Forever",
+          "counterKey": "trophies",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "anyGoalGroups",
+        "groups": [
+          [
+            "hold-on-tight"
+          ],
+          [
+            "historical-28"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "keeping-runners",
+      "label": "Keeping Runners",
+      "note": "MAzama Village Landmark, Rec, Injector, Runner Cave Landmark, Golden chanterelle, Ambush, Nero checkpoint, Recording, Ipca tech",
+      "phaseId": "crater_lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "historical-28",
+          "type": "collectible",
+          "label": "Mazama Village - The New Deal Projects",
+          "counterKey": "historical",
+          "optional": false
+        },
+        {
+          "id": "herbology-26",
+          "type": "collectible",
+          "label": "Golden Chanterelle",
+          "counterKey": "herbology",
+          "optional": false
+        },
+        {
+          "id": "nerointel-34",
+          "type": "collectible",
+          "label": "Researcher Field Note - 1463",
+          "counterKey": "nerointel",
+          "optional": false,
+          "linkedCounters": [
+            {
+              "counterKey": "nerosites",
+              "delta": 1
+            }
+          ]
+        },
+        {
+          "id": "nerointel-51",
+          "type": "collectible",
+          "label": "Mobile Medical Unit Recording - 1683",
+          "counterKey": "nerointel",
+          "optional": false
+        },
+        {
+          "id": "historical-29",
+          "type": "collectible",
+          "label": "Mazama Falls - The Silent Falls",
+          "counterKey": "historical",
+          "optional": true
+        },
+        {
+          "id": "radiofreeoregon-11",
+          "type": "collectible",
+          "label": "The Federal Ark",
+          "counterKey": "radiofreeoregon",
+          "optional": true
+        },
+        {
+          "id": "nerointel-37",
+          "type": "collectible",
+          "label": "Researcher Field Note - 2043",
+          "counterKey": "nerointel",
+          "optional": true
+        },
+        {
+          "id": "completion-encampmentjobs-keeping-souvenirs",
+          "type": "completion",
+          "label": "Keeping Souvenirs",
+          "counterKey": "encampmentjobs",
+          "optional": true
+        },
+        {
+          "id": "completion-nerosites-pillette-bridge-nero-checkpoint",
+          "type": "completion",
+          "label": "Pillette Bridge NERO Checkpoint",
+          "counterKey": "nerosites",
+          "optional": true
+        },
+        {
+          "id": "completion-ambushcamps-bare-bay-ambush-camp",
+          "type": "completion",
+          "label": "Bare Bay Ambush Camp",
+          "counterKey": "ambushcamps",
+          "optional": true
+        },
+        {
+          "id": "completion-encampmentjobs-never-give-up-hope",
+          "type": "completion",
+          "label": "Never Give Up Hope",
+          "counterKey": "encampmentjobs",
+          "optional": false
+        },
+        {
+          "id": "completion-nerosites-spruce-lake-nero-checkpoint",
+          "type": "completion",
+          "label": "Spruce Lake NERO Checkpoint",
+          "counterKey": "nerosites",
+          "optional": false
+        },
+        {
+          "id": "completion-ambushcamps-spruce-lake-ambush-camp",
+          "type": "completion",
+          "label": "Spruce Lake Ambush Camp",
+          "counterKey": "ambushcamps",
+          "optional": false
+        },
+        {
+          "id": "completion-ambushcamps-cascade-lakes-railway-ambush-camp",
+          "type": "completion",
+          "label": "Cascade Lakes Railway Ambush Camp",
+          "counterKey": "ambushcamps",
+          "optional": false
+        },
+        {
+          "id": "ipca-tech-10-pillette-bridge-nero-checkpoint",
+          "type": "pickup",
+          "label": "IPCA Tech - Pillette Bridge NERO Checkpoint",
+          "counterKey": "ipca",
+          "optional": false
+        },
+        {
+          "id": "ipca-tech-17-spruce-lake-nero-checkpoint",
+          "type": "pickup",
+          "label": "IPCA Tech - Spruce Lake NERO Checkpoint",
+          "counterKey": "ipca",
+          "optional": false
+        },
+        {
+          "id": "radiofreeoregon-10",
+          "type": "collectible",
+          "label": "Global Conspiracy",
+          "counterKey": "radiofreeoregon",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "id": "yeast-drive-wi-lakeside",
+      "label": "Yeast Drive WI lakeside",
+      "note": "Landmark 4x, Criers, Landmark + 2x Tourism",
+      "phaseId": "crater_lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "historical-27",
+          "type": "collectible",
+          "label": "Crater Lake - The Old Man Of The Lake",
+          "counterKey": "historical",
+          "optional": false
+        },
+        {
+          "id": "historical-23",
+          "type": "collectible",
+          "label": "Crater Lake - The Native American Legend",
+          "counterKey": "historical",
+          "optional": false
+        },
+        {
+          "id": "historical-31",
+          "type": "collectible",
+          "label": "Camp Adair - The War Games",
+          "counterKey": "historical",
+          "optional": false
+        },
+        {
+          "id": "historical-30",
+          "type": "collectible",
+          "label": "The Phantom Ship - The Ghost On The Water",
+          "counterKey": "historical",
+          "optional": false
+        },
+        {
+          "id": "historical-22",
+          "type": "collectible",
+          "label": "Crater Lake - The Volcanic Lake",
+          "counterKey": "historical",
+          "optional": false
+        },
+        {
+          "id": "tourism-15",
+          "type": "collectible",
+          "label": "Preserving The Beauty of Crater Lake Poster",
+          "counterKey": "tourism",
+          "optional": false
+        },
+        {
+          "id": "tourism-16",
+          "type": "collectible",
+          "label": "Crater Lake Postcards",
+          "counterKey": "tourism",
+          "optional": false
+        },
+        {
+          "id": "the-broken-roadshow",
+          "type": "trophy",
+          "label": "The Broken Roadshow",
+          "counterKey": "trophies",
+          "optional": true
+        },
+        {
+          "id": "nerointel-06",
+          "type": "collectible",
+          "label": "Field Recording - 2011",
+          "counterKey": "nerointel",
+          "optional": true,
+          "linkedCounters": [
+            {
+              "counterKey": "nerosites",
+              "delta": 1
+            }
+          ]
+        },
+        {
+          "id": "sarahlabnotes-02",
+          "type": "collectible",
+          "label": "Yeast",
+          "counterKey": "sarahlabnotes",
+          "optional": true
+        },
+        {
+          "id": "ipca-tech-07-crater-lake-island-crash-site",
+          "type": "pickup",
+          "label": "IPCA Tech - Crater Lake Island Crash Site",
+          "counterKey": "ipca",
+          "optional": false
+        },
+        {
+          "id": "historical-38",
+          "type": "collectible",
+          "label": "Waloo Lake - The Oregon Conservationist",
+          "counterKey": "historical",
+          "optional": false
+        },
+        {
+          "id": "sarahlabnotes-01",
+          "type": "collectible",
+          "label": "Deacon's Alive???",
+          "counterKey": "sarahlabnotes",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "id": "go-to-highway",
+      "label": "Go to Highway",
+      "note": "Checkpoint, Recorder, Ipca",
+      "phaseId": "highway_97",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "nerointel-38",
+          "type": "collectible",
+          "label": "Mobile Medical Unit Recording - 1685",
+          "counterKey": "nerointel",
+          "optional": false
+        },
+        {
+          "id": "completion-nerosites-volcanic-legacy-scenic-byway-nero-checkpoint",
+          "type": "completion",
+          "label": "Volcanic Legacy Scenic Byway NERO Checkpoint",
+          "counterKey": "nerosites",
+          "optional": false
+        },
+        {
+          "id": "ipca-tech-12-volcanic-legacy-scenic-byway-nero-checkpoint",
+          "type": "pickup",
+          "label": "IPCA Tech - Volcanic Legacy Scenic Byway NERO Checkpoint",
+          "counterKey": "ipca",
+          "optional": false
+        },
+        {
+          "id": "ipca-tech-18-highway-97-island-nero-research-site",
+          "type": "pickup",
+          "label": "IPCA Tech - Highway 97 Island NERO Research Site",
+          "counterKey": "ipca",
+          "optional": false
+        },
+        {
+          "id": "completion-nerointel-what-it-takes-to-survive",
+          "type": "completion",
+          "label": "What It Takes to Survive",
+          "counterKey": "nerointel",
+          "optional": false,
+          "linkedCounters": [
+            {
+              "counterKey": "nerointel",
+              "delta": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "la-infection",
+      "label": "La infection",
+      "note": "Character collectibles in tents",
+      "phaseId": "highway_97",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "charactercollectibles-29",
+          "type": "collectible",
+          "label": "Taylor - Delivery Boy",
+          "counterKey": "charactercollectibles",
+          "optional": false
+        },
+        {
+          "id": "charactercollectibles-28",
+          "type": "collectible",
+          "label": "Taylor - Flying High",
+          "counterKey": "charactercollectibles",
+          "optional": false
+        },
+        {
+          "id": "charactercollectibles-25",
+          "type": "collectible",
+          "label": "Doc Jiminez - Doctor Arturo",
+          "counterKey": "charactercollectibles",
+          "optional": false
+        },
+        {
+          "id": "completion-infestations-tumblebug-river-infestation",
+          "type": "completion",
+          "label": "Tumblebug River Infestation",
+          "counterKey": "infestations",
+          "optional": false
+        },
+        {
+          "id": "completion-infestations-rimview-ranch-infestation",
+          "type": "completion",
+          "label": "Rimview Ranch Infestation",
+          "counterKey": "infestations",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "id": "tailor-silicate",
+      "label": "Tailor + Silicate",
+      "note": "More criers?",
+      "phaseId": "highway_97",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-routecollectibles-afraid-of-a-little-competition",
+          "type": "completion",
+          "label": "Afraid of a Little Competition",
+          "counterKey": "routecollectibles",
+          "optional": true
+        },
+        {
+          "id": "sarahlabnotes-03",
+          "type": "collectible",
+          "label": "Silicate",
+          "counterKey": "sarahlabnotes",
+          "optional": true
+        },
+        {
+          "id": "completion-encampmentjobs-how-do-i-get-them",
+          "type": "completion",
+          "label": "How Do I Get Them?",
+          "counterKey": "encampmentjobs",
+          "optional": false
+        },
+        {
+          "id": "completion-encampmentjobs-you-don-t-want-to-know",
+          "type": "completion",
+          "label": "You Don't Want to Know",
+          "counterKey": "encampmentjobs",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "id": "polystyrene-bike-chase",
+      "label": "Polystyrene + Bike chase",
+      "note": "Criers? Field note and Injector",
+      "phaseId": "highway_97",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "nerointel-40",
+          "type": "collectible",
+          "label": "Researcher Field Note - 1005",
+          "counterKey": "nerointel",
+          "optional": false,
+          "linkedCounters": [
+            {
+              "counterKey": "nerosites",
+              "delta": 1
+            }
+          ]
+        },
+        {
+          "id": "historical-35",
+          "type": "collectible",
+          "label": "Japanese Balloon Bomb - The Casualties of War",
+          "counterKey": "historical",
+          "optional": true
+        },
+        {
+          "id": "completion-encampmentjobs-you-got-the-wrong-guy",
+          "type": "completion",
+          "label": "You Got the Wrong Guy",
+          "counterKey": "encampmentjobs",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "id": "split_1783755398816_60_1058",
+      "label": "CCC",
+      "note": "",
+      "phaseId": "",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "tourism-22",
+          "type": "collectible",
+          "label": "Chemult Community College Green Week Poster",
+          "counterKey": "tourism",
+          "optional": false
+        },
+        {
+          "id": "nerointel-27",
+          "type": "collectible",
+          "label": "Mobile Medical Unit Recording - 1682",
+          "counterKey": "nerointel",
+          "optional": true
+        },
+        {
+          "id": "theres-no-stopping-me",
+          "type": "trophy",
+          "label": "There's No Stopping Me",
+          "counterKey": "trophies",
+          "optional": true
+        },
+        {
+          "id": "ghost-of-farewell",
+          "type": "trophy",
+          "label": "Ghost of Farewell",
+          "counterKey": "trophies",
+          "optional": true
+        },
+        {
+          "id": "old-reliable",
+          "type": "trophy",
+          "label": "Old Reliable",
+          "counterKey": "trophies",
+          "optional": true
+        },
+        {
+          "id": "historical-19",
+          "type": "collectible",
+          "label": "Booker-Hicks Logging Camp - The Wandering Timber Town",
+          "counterKey": "historical",
+          "optional": true
+        },
+        {
+          "id": "nerointel-50",
+          "type": "collectible",
+          "label": "Inspector Field Note - 1680",
+          "counterKey": "nerointel",
+          "optional": true
+        },
+        {
+          "id": "sarahlabnotes-04",
+          "type": "collectible",
+          "label": "Riding With Deacon",
+          "counterKey": "sarahlabnotes",
+          "optional": true
+        },
+        {
+          "id": "completion-encampmentjobs-take-back-what-s-mine",
+          "type": "completion",
+          "label": "Take Back What's Mine",
+          "counterKey": "encampmentjobs",
+          "optional": true
+        },
+        {
+          "id": "completion-nerosites-chemult-community-college-nero-checkpoint",
+          "type": "completion",
+          "label": "Chemult Community College NERO Checkpoint",
+          "counterKey": "nerosites",
+          "optional": true
+        },
+        {
+          "id": "completion-encampmentjobs-he-s-feeding-the-freaks",
+          "type": "completion",
+          "label": "He's Feeding the Freaks",
+          "counterKey": "encampmentjobs",
+          "optional": false
+        },
+        {
+          "id": "completion-hordes-chemult-community-college-horde",
+          "type": "completion",
+          "label": "Chemult Community College Horde",
+          "counterKey": "hordes",
+          "optional": false
+        },
+        {
+          "id": "ipca-tech-11-chemult-community-college-nero-checkpoint",
+          "type": "pickup",
+          "label": "IPCA Tech - Chemult Community College NERO Checkpoint",
+          "counterKey": "ipca",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "id": "split_1783755451243_61_4278",
+      "label": "Cloverdale",
+      "note": "",
+      "phaseId": "",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-routecollectibles-i-know-things-are-strange",
+          "type": "completion",
+          "label": "I Know Things Are Strange",
+          "counterKey": "routecollectibles",
+          "optional": true
+        },
+        {
+          "id": "tourism-28",
+          "type": "collectible",
+          "label": "Classified Virus Research",
+          "counterKey": "tourism",
+          "optional": false
+        },
+        {
+          "id": "charactercollectibles-30",
+          "type": "collectible",
+          "label": "Sarah - My Old Lady",
+          "counterKey": "charactercollectibles",
+          "optional": false
+        },
+        {
+          "id": "worlds-end",
+          "type": "trophy",
+          "label": "World's End",
+          "counterKey": "trophies",
+          "optional": true
+        },
+        {
+          "id": "infestation-exterminator",
+          "type": "trophy",
+          "label": "Infestation Exterminator",
+          "counterKey": "trophies",
+          "optional": true
+        },
+        {
+          "id": "go-kick-rocks",
+          "type": "trophy",
+          "label": "Go Kick Rocks",
+          "counterKey": "trophies",
+          "optional": true
+        },
+        {
+          "id": "completion-infestations-chemult-college-infestation",
+          "type": "completion",
+          "label": "Chemult College Infestation",
+          "counterKey": "infestations",
+          "optional": true
+        },
+        {
+          "id": "completion-encampmentjobs-just-doing-my-job",
+          "type": "completion",
+          "label": "Just Doing My Job",
+          "counterKey": "encampmentjobs",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "id": "newt-problem",
+      "label": "I don't wanna hang - Newt problem",
+      "note": "Rec + Injector",
+      "phaseId": "highway_97",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "nerointel-30",
+          "type": "collectible",
+          "label": "Researcher Field Note - 2069",
+          "counterKey": "nerointel",
+          "optional": false,
+          "linkedCounters": [
+            {
+              "counterKey": "nerosites",
+              "delta": 1
+            }
+          ]
+        },
+        {
+          "id": "its-getting-cold-outside",
+          "type": "trophy",
+          "label": "It's Getting Cold Outside",
+          "counterKey": "trophies",
+          "optional": true
+        },
+        {
+          "id": "sarahlabnotes-05",
+          "type": "collectible",
+          "label": "The Cloverdale Virus",
+          "counterKey": "sarahlabnotes",
+          "optional": true
+        },
+        {
+          "id": "youve-got-red-on-you",
+          "type": "trophy",
+          "label": "You've Got Red on You",
+          "counterKey": "trophies",
+          "optional": true
+        },
+        {
+          "id": "sarahlabnotes-06",
+          "type": "collectible",
+          "label": "Teensy Tabby",
+          "counterKey": "sarahlabnotes",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "id": "split_1783755355879_60_5997",
+      "label": "Chemult Horde",
+      "note": "Top-right Weaver - Chemical Reactions is the durable fallback: it completes this split and also confirms Teensy Tabby.",
+      "phaseId": "",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-hordes-chemult-station-horde",
+          "type": "completion",
+          "label": "Chemult Station Horde",
+          "counterKey": "hordes",
+          "optional": false
+        },
+        {
+          "id": "charactercollectibles-27",
+          "type": "collectible",
+          "label": "Weaver - Chemical Reactions",
+          "counterKey": "charactercollectibles",
+          "optional": false
+        }
+      ],
+      "ocrCompletion": {
+        "mode": "anyGoalGroups",
+        "groups": [
+          [
+            "completion-hordes-chemult-station-horde"
+          ],
+          [
+            "charactercollectibles-27"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "split_1783755503010_63_2676",
+      "label": "Poison",
+      "note": "",
+      "phaseId": "",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-routecollectibles-tried-to-hit-that-once",
+          "type": "completion",
+          "label": "Tried to Hit That Once",
+          "counterKey": "routecollectibles",
+          "optional": true
+        },
+        {
+          "id": "tourism-24",
+          "type": "collectible",
+          "label": "Klamath Marsh Wetlands Preservation Flyer",
+          "counterKey": "tourism",
+          "optional": false
+        },
+        {
+          "id": "herbology-33",
+          "type": "collectible",
+          "label": "Water Hemlock",
+          "counterKey": "herbology",
+          "optional": false
+        },
+        {
+          "id": "historical-32",
+          "type": "collectible",
+          "label": "Gentleman Bandit Memorial - Poetic Justice",
+          "counterKey": "historical",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "id": "split_1783755757056_64_136",
+      "label": "MP3",
+      "note": "",
+      "phaseId": "",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "nerointel-20",
+          "type": "collectible",
+          "label": "Mobile Medical Unit Recording - 0805",
+          "counterKey": "nerointel",
+          "optional": false
+        },
+        {
+          "id": "completion-infestations-cascade-lakes-rail-line-infestation",
+          "type": "completion",
+          "label": "Cascade Lakes Rail Line Infestation",
+          "counterKey": "infestations",
+          "optional": false
+        },
+        {
+          "id": "completion-infestations-south-oregon-crier-infestation",
+          "type": "completion",
+          "label": "South Oregon Crier Infestation",
+          "counterKey": "infestations",
+          "optional": false
+        },
+        {
+          "id": "completion-hordes-beasley-lake-horde",
+          "type": "completion",
+          "label": "Beasley Lake Horde",
+          "counterKey": "hordes",
+          "optional": false
+        },
+        {
+          "id": "completion-ambushcamps-aspen-butte-ambush-camp",
+          "type": "completion",
+          "label": "Aspen Butte Ambush Camp",
+          "counterKey": "ambushcamps",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "id": "split_1783755745558_64_5036",
+      "label": "O'Brian + Bike Chase",
+      "note": "",
+      "phaseId": "highway_97",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-routecollectibles-you-couldn-t-stop-shaking",
+          "type": "completion",
+          "label": "You Couldn't Stop Shaking",
+          "counterKey": "routecollectibles",
+          "optional": true
+        },
+        {
+          "id": "nerointel-39",
+          "type": "collectible",
+          "label": "Researcher Field Note - 2020",
+          "counterKey": "nerointel",
+          "optional": false,
+          "linkedCounters": [
+            {
+              "counterKey": "nerosites",
+              "delta": 1
+            }
+          ]
+        },
+        {
+          "id": "tourism-18",
+          "type": "collectible",
+          "label": "Chemult Suds-Fest",
+          "counterKey": "tourism",
+          "optional": false
+        },
+        {
+          "id": "tourism-21",
+          "type": "collectible",
+          "label": "Pet Parade",
+          "counterKey": "tourism",
+          "optional": false
+        },
+        {
+          "id": "historical-34",
+          "type": "collectible",
+          "label": "The Stagecoach Legend - Rushing for Gold",
+          "counterKey": "historical",
+          "optional": false
+        },
+        {
+          "id": "tourism-20",
+          "type": "collectible",
+          "label": "Take Out & Tunes",
+          "counterKey": "tourism",
+          "optional": false
+        },
+        {
+          "id": "historical-33",
+          "type": "collectible",
+          "label": "Bill The Grey Fox Miner - Oregon's Worst Bandit",
+          "counterKey": "historical",
+          "optional": false
+        },
+        {
+          "id": "tourism-19",
+          "type": "collectible",
+          "label": "Balloons Over Chemult",
+          "counterKey": "tourism",
+          "optional": false
+        },
+        {
+          "id": "tourism-23",
+          "type": "collectible",
+          "label": "Chemult Ski Resort Brochure",
+          "counterKey": "tourism",
+          "optional": false
+        },
+        {
+          "id": "charactercollectibles-26",
+          "type": "collectible",
+          "label": "Weaver - Look to the Stars",
+          "counterKey": "charactercollectibles",
+          "optional": true
+        },
+        {
+          "id": "nerointel-36",
+          "type": "collectible",
+          "label": "Researcher Field Note - 2072",
+          "counterKey": "nerointel",
+          "optional": true
+        },
+        {
+          "id": "historical-21",
+          "type": "collectible",
+          "label": "Lost Cabin Mine - The Goldmine",
+          "counterKey": "historical",
+          "optional": true
+        },
+        {
+          "id": "nerointel-35",
+          "type": "collectible",
+          "label": "Researcher Field Note - 1833",
+          "counterKey": "nerointel",
+          "optional": true,
+          "linkedCounters": [
+            {
+              "counterKey": "nerosites",
+              "delta": 1
+            }
+          ]
+        },
+        {
+          "id": "marauder-camp-hunter",
+          "type": "trophy",
+          "label": "Marauder Camp Hunter",
+          "counterKey": "trophies",
+          "optional": true
+        },
+        {
+          "id": "nerointel-44",
+          "type": "collectible",
+          "label": "Researcher Field Note - 2105",
+          "counterKey": "nerointel",
+          "optional": true
+        },
+        {
+          "id": "nerointel-45",
+          "type": "collectible",
+          "label": "Researcher Field Note - 2106",
+          "counterKey": "nerointel",
+          "optional": true
+        },
+        {
+          "id": "surviving-isnt-living",
+          "type": "trophy",
+          "label": "Surviving isn't Living",
+          "counterKey": "trophies",
+          "optional": true
+        },
+        {
+          "id": "completion-hordes-mt-bailey-horde",
+          "type": "completion",
+          "label": "Mt. Bailey Horde",
+          "counterKey": "hordes",
+          "optional": true
+        },
+        {
+          "id": "completion-encampmentjobs-a-bunch-of-cavemen",
+          "type": "completion",
+          "label": "A Bunch of Cavemen",
+          "counterKey": "encampmentjobs",
+          "optional": true
+        },
+        {
+          "id": "completion-encampmentjobs-a-hell-of-a-fight",
+          "type": "completion",
+          "label": "A Hell of a Fight",
+          "counterKey": "encampmentjobs",
+          "optional": true
+        },
+        {
+          "id": "completion-encampmentjobs-he-s-just-a-kid",
+          "type": "completion",
+          "label": "He's Just a Kid",
+          "counterKey": "encampmentjobs",
+          "optional": false
+        },
+        {
+          "id": "completion-encampmentjobs-on-tonight-s-menu",
+          "type": "completion",
+          "label": "On Tonight's Menu",
+          "counterKey": "encampmentjobs",
+          "optional": false
+        },
+        {
+          "id": "completion-hordes-mcleod-ridge-horde",
+          "type": "completion",
+          "label": "McLeod Ridge Horde",
+          "counterKey": "hordes",
+          "optional": false
+        },
+        {
+          "id": "completion-hordes-rimview-ranch-horde",
+          "type": "completion",
+          "label": "Rimview Ranch Horde",
+          "counterKey": "hordes",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "id": "split_1783756027263_66_8698",
+      "label": "Shadow of Death",
+      "note": "Santiam Tunnel. Collect Flight Data Recording - 1377 and Flight Data Recording - 1787 back-to-back in the same pass; do not leave either for cleanup.",
+      "phaseId": "",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-routecollectibles-we-couldn-t-take-the-risk",
+          "type": "completion",
+          "label": "We Couldn't Take the Risk",
+          "counterKey": "routecollectibles",
+          "optional": true
+        },
+        {
+          "id": "completion-routecollectibles-this-one-s-on-me",
+          "type": "completion",
+          "label": "This One's on Me",
+          "counterKey": "routecollectibles",
+          "optional": true
+        },
+        {
+          "id": "nerointel-18",
+          "type": "collectible",
+          "label": "Mobile Medical Unit Recording - 1231",
+          "counterKey": "nerointel",
+          "optional": false
+        },
+        {
+          "id": "make-it-rain",
+          "type": "trophy",
+          "label": "Make it Rain",
+          "counterKey": "trophies",
+          "optional": true
+        },
+        {
+          "id": "farewell-original",
+          "type": "trophy",
+          "label": "Farewell Original",
+          "counterKey": "trophies",
+          "optional": true
+        },
+        {
+          "id": "nerointel-08",
+          "type": "collectible",
+          "label": "Flight Data Recording - 1377",
+          "counterKey": "nerointel",
+          "optional": true,
+          "linkedCounters": [
+            {
+              "counterKey": "nerosites",
+              "delta": 1
+            }
+          ]
+        },
+        {
+          "id": "burnout-apocalypse",
+          "type": "trophy",
+          "label": "Burnout Apocalypse",
+          "counterKey": "trophies",
+          "optional": true
+        },
+        {
+          "id": "the-art-of-bike-repair",
+          "type": "trophy",
+          "label": "The Art of Bike Repair",
+          "counterKey": "trophies",
+          "optional": true
+        },
+        {
+          "id": "nerointel-07",
+          "type": "collectible",
+          "label": "Flight Data Recording - 1787",
+          "counterKey": "nerointel",
+          "optional": true,
+          "linkedCounters": [
+            {
+              "counterKey": "nerosites",
+              "delta": 1
+            }
+          ]
+        },
+        {
+          "id": "morior-invictus",
+          "type": "trophy",
+          "label": "Morior Invictus",
+          "counterKey": "trophies",
+          "optional": true
+        },
+        {
+          "id": "completion-encampmentjobs-the-anarchist-spy",
+          "type": "completion",
+          "label": "The Anarchist Spy",
+          "counterKey": "encampmentjobs",
+          "optional": true
+        },
+        {
+          "id": "completion-hordes-lobert-draw-ridge-horde",
+          "type": "completion",
+          "label": "Lobert Draw Ridge Horde",
+          "counterKey": "hordes",
+          "optional": true
+        },
+        {
+          "id": "ipca-tech-13-santiam-tunnel-nero-checkpoint",
+          "type": "pickup",
+          "label": "IPCA Tech - Santiam Tunnel NERO Checkpoint",
+          "counterKey": "ipca",
+          "optional": false
+        },
+        {
+          "id": "completion-nerosites-santiam-tunnel-nero-checkpoint",
+          "type": "completion",
+          "label": "Santiam Tunnel NERO Checkpoint",
+          "counterKey": "nerosites",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "id": "split_1783756248546_67_1249",
+      "label": "Iron Butt",
+      "note": "",
+      "phaseId": "iron_butte",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "rippersermons-13",
+          "type": "collectible",
+          "label": "Join or Die",
+          "counterKey": "rippersermons",
+          "optional": false
+        },
+        {
+          "id": "ambush-camp-hunter",
+          "type": "trophy",
+          "label": "Ambush Camp Hunter",
+          "counterKey": "trophies",
+          "optional": true
+        },
+        {
+          "id": "completion-hordes-iron-butte-ranch-horde",
+          "type": "completion",
+          "label": "Iron Butte Ranch Horde",
+          "counterKey": "hordes",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "id": "split_1783756355058_68_7547",
+      "label": "Manny",
+      "note": "",
+      "phaseId": "cascades",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "ive-been-waiting-for-this",
+          "type": "trophy",
+          "label": "I've Been Waiting for This",
+          "counterKey": "trophies",
+          "optional": true
+        },
+        {
+          "id": "completion-encampmentjobs-nose-down-they-feed-ya",
+          "type": "completion",
+          "label": "Nose Down, They Feed Ya",
+          "counterKey": "encampmentjobs",
+          "optional": true
+        },
+        {
+          "id": "completion-hordes-sherman-s-camp-horde",
+          "type": "completion",
+          "label": "Sherman's Camp Horde",
+          "counterKey": "hordes",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "id": "split_1783756378934_69_4516",
+      "label": "3 Camps",
+      "note": "",
+      "phaseId": "lost_lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "historical-15",
+          "type": "collectible",
+          "label": "Berley Lake - The Moon Country",
+          "counterKey": "historical",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "id": "split_1783756398611_70_5644",
+      "label": "Sawmill",
+      "note": "",
+      "phaseId": "lost_lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-hordes-old-sawmill-horde",
+          "type": "completion",
+          "label": "Old Sawmill Horde",
+          "counterKey": "hordes",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "id": "split_1783757115727_71_9829",
+      "label": "The End",
+      "note": "",
+      "phaseId": "lost_lake",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-routecollectibles-another-militia-attack",
+          "type": "completion",
+          "label": "Another Militia Attack",
+          "counterKey": "routecollectibles",
+          "optional": true
+        },
+        {
+          "id": "completion-routecollectibles-kill-every-one-of-the-bastards",
+          "type": "completion",
+          "label": "Kill Every One of the Bastards",
+          "counterKey": "routecollectibles",
+          "optional": true
+        },
+        {
+          "id": "days-done",
+          "type": "trophy",
+          "label": "Days Done",
+          "counterKey": "trophies",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "id": "split_1783754086712_60_6823",
+      "label": "Rings",
+      "note": "Backup for Matt's stuff.",
+      "phaseId": "",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "completion-routecollectibles-where-s-my-damn-rings",
+          "type": "completion",
+          "label": "Where's My Damn Rings",
+          "counterKey": "routecollectibles",
+          "optional": true
+        },
+        {
+          "id": "mr-fahrenheit",
+          "type": "trophy",
+          "label": "Mr. Fahrenheit",
+          "counterKey": "trophies",
+          "optional": true
+        },
+        {
+          "id": "completion-encampmentjobs-still-breathing",
+          "type": "completion",
+          "label": "Still Breathing",
+          "counterKey": "encampmentjobs",
+          "optional": true
+        },
+        {
+          "id": "completion-hordes-juniper-ridge-horde",
+          "type": "completion",
+          "label": "Juniper Ridge Horde",
+          "counterKey": "hordes",
+          "optional": true
+        },
+        {
+          "id": "completion-hordes-beaver-marsh-rest-stop-horde",
+          "type": "completion",
+          "label": "Beaver Marsh Rest Stop Horde",
+          "counterKey": "hordes",
+          "optional": true
+        },
+        {
+          "id": "completion-hordes-mt-scott-ski-resort-horde",
+          "type": "completion",
+          "label": "Mt. Scott Ski Resort Horde",
+          "counterKey": "hordes",
+          "optional": true
+        },
+        {
+          "id": "completion-hordes-cascade-lakes-rail-line-horde",
+          "type": "completion",
+          "label": "Cascade Lakes Rail Line Horde",
+          "counterKey": "hordes",
+          "optional": true
+        },
+        {
+          "id": "completion-hordes-friendship-ridge-horde",
+          "type": "completion",
+          "label": "Friendship Ridge Horde",
+          "counterKey": "hordes",
+          "optional": false
+        },
+        {
+          "id": "completion-hordes-groose-gardens-horde",
+          "type": "completion",
+          "label": "Groose Gardens Horde",
+          "counterKey": "hordes",
+          "optional": false
+        },
+        {
+          "id": "completion-hordes-rum-rye-gulch-horde",
+          "type": "completion",
+          "label": "Rum Rye Gulch Horde",
+          "counterKey": "hordes",
+          "optional": false
+        },
+        {
+          "id": "completion-hordes-sagebrush-point-horde",
+          "type": "completion",
+          "label": "Sagebrush Point Horde",
+          "counterKey": "hordes",
+          "optional": false
+        },
+        {
+          "id": "completion-hordes-solomon-hill-horde",
+          "type": "completion",
+          "label": "Solomon Hill Horde",
+          "counterKey": "hordes",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "id": "split_1783757293968_73_7292",
+      "label": "Rikki and Lisa",
+      "note": "",
+      "phaseId": "",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": []
+    },
+    {
+      "id": "split_1783757307607_74_2640",
+      "label": "OBRIIAAAAAN",
+      "note": "",
+      "phaseId": "",
+      "isPhaseStart": false,
+      "auto": {},
+      "ocrGoals": [
+        {
+          "id": "radiofreeoregon-20",
+          "type": "collectible",
+          "label": "We Are Watching",
+          "counterKey": "radiofreeoregon",
+          "optional": false
+        },
+        {
+          "id": "one-percenter",
+          "type": "trophy",
+          "label": "One Percenter",
+          "counterKey": "trophies",
+          "optional": false
+        },
+        {
+          "id": "farewell-drift",
+          "type": "trophy",
+          "label": "Farewell Drift",
+          "counterKey": "trophies",
+          "optional": false
+        },
+        {
+          "id": "variety-is-the-spice-of-life",
+          "type": "trophy",
+          "label": "Variety is the Spice of Life",
+          "counterKey": "trophies",
+          "optional": false
+        },
+        {
+          "id": "best-friends-forever-for-life",
+          "type": "trophy",
+          "label": "Best Friends Forever (For Life)",
+          "counterKey": "trophies",
+          "optional": false
+        }
+      ]
+    }
+  ]
+}

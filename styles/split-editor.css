@@ -1,0 +1,976 @@
+#splitEditorGrid .splitEditorCard.is-filter-hidden {
+  display: none;
+}
+
+.splitEditorPage .app {
+  padding: 8px;
+}
+
+.splitPageTop {
+  gap: 12px;
+  padding: 0 0 8px 0;
+}
+
+.splitPageTop .title {
+  max-width: 760px;
+  font-size: 23px;
+}
+
+.splitPageTop .subtitle {
+  max-width: 780px;
+  margin-top: 4px;
+  font-size: 12px;
+}
+
+.splitCommandPanel {
+  display: grid;
+  gap: 8px;
+  padding: 10px 12px;
+}
+
+.splitCommandBar {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.splitCommandCopy {
+  display: none;
+}
+
+.splitCommandActions,
+.splitNavLinks,
+.splitFilterActions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.splitCommandActions {
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.splitSaveStatus {
+  min-width: 170px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1.2;
+  text-align: right;
+}
+
+.splitSaveStatus.is-ok {
+  color: var(--green);
+}
+
+.splitSaveStatus.is-error {
+  color: var(--red);
+}
+
+.splitNavBar {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 0;
+  border-top: 0;
+}
+
+.splitNavBar > div:first-child {
+  display: none;
+}
+
+.splitFilterPanel,
+.splitWorkspacePanel {
+  margin-top: 8px;
+  padding: 10px 12px;
+}
+
+.splitFilterBar {
+  display: grid;
+  grid-template-columns: minmax(220px, 1.2fr) minmax(220px, 0.9fr) auto auto;
+  gap: 8px 10px;
+  align-items: end;
+}
+
+.splitFilterField > span {
+  font-size: 11px;
+  line-height: 1;
+  opacity: 0.86;
+  margin-bottom: 5px;
+  letter-spacing: 0.02em;
+}
+
+.splitFilterStats {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 38px;
+}
+
+#splitEditorGrid .editorCard {
+  padding: 10px 12px;
+  border-radius: 12px;
+  background:
+    linear-gradient(90deg, rgba(17, 34, 78, 0.26) 0%, rgba(7, 15, 36, 0.18) 100%),
+    rgba(6, 11, 24, 0.82);
+  border: 1px solid rgba(120, 160, 255, 0.16);
+}
+
+#splitEditorGrid {
+  display: grid;
+  gap: 8px;
+}
+
+#splitEditorGrid .splitEditorCard {
+  display: grid;
+  gap: 7px;
+  position: relative;
+  transition:
+    border-color 120ms ease,
+    background 120ms ease,
+    opacity 120ms ease,
+    transform 120ms ease;
+}
+
+#splitEditorGrid .splitEditorCard:hover {
+  border-color: rgba(120, 160, 255, 0.22);
+}
+
+#splitEditorGrid .splitEditorCard.is-collapsed {
+  padding: 6px 8px;
+}
+
+#splitEditorGrid .splitEditorCard.is-expanded {
+  border-color: rgba(120, 160, 255, 0.26);
+}
+
+#splitEditorGrid .splitEditorCard.is-dragging {
+  opacity: 0.48;
+  transform: scale(0.995);
+}
+
+#splitEditorGrid .splitEditorCard.is-drag-over-before::before,
+#splitEditorGrid .splitEditorCard.is-drag-over-after::after {
+  content: "";
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  height: 3px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, transparent, var(--accent, #78a0ff), transparent);
+  box-shadow: 0 0 16px rgba(120, 160, 255, 0.45);
+  pointer-events: none;
+}
+
+#splitEditorGrid .splitEditorCard.is-drag-over-before::before {
+  top: -6px;
+}
+
+#splitEditorGrid .splitEditorCard.is-drag-over-after::after {
+  bottom: -6px;
+}
+
+#splitEditorGrid .splitSlate {
+  display: grid;
+  grid-template-columns: 38px minmax(160px, 1fr) auto;
+  gap: 8px;
+  align-items: center;
+  min-height: 40px;
+}
+
+#splitEditorGrid .splitDragHandle {
+  width: 34px;
+  height: 34px;
+  appearance: none;
+  border: 1px solid rgba(120, 160, 255, 0.18);
+  border-radius: 12px;
+  background:
+    linear-gradient(180deg, rgba(31, 54, 106, 0.72), rgba(13, 24, 54, 0.92));
+  color: var(--text);
+  cursor: grab;
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+#splitEditorGrid .splitDragHandle:hover {
+  border-color: rgba(120, 160, 255, 0.38);
+  background:
+    linear-gradient(180deg, rgba(39, 70, 132, 0.82), rgba(16, 30, 67, 0.96));
+}
+
+#splitEditorGrid .splitDragHandle:active {
+  cursor: grabbing;
+}
+
+#splitEditorGrid .splitSlateMain {
+  min-width: 0;
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+  padding: 0;
+  display: grid;
+  gap: 2px;
+}
+
+#splitEditorGrid .splitSlateEditorMain {
+  cursor: default;
+  display: grid;
+  grid-template-columns: minmax(220px, 0.78fr) minmax(180px, 0.34fr);
+  gap: 8px;
+}
+
+#splitEditorGrid .splitSlateTopLine {
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#splitEditorGrid .splitSlateTitle {
+  min-width: 0;
+  color: var(--text);
+  font-size: 14px;
+  line-height: 1.15;
+  font-weight: 900;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#splitEditorGrid .splitSlateMeta {
+  color: var(--text-soft);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+#splitEditorGrid .splitSlateInlineObjectives,
+#splitEditorGrid .splitSlateObjectives {
+  display: flex;
+  gap: 5px;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#splitEditorGrid .splitSlateInlineObjectives {
+  flex: 0 0 auto;
+}
+
+#splitEditorGrid .splitObjectiveMark,
+#splitEditorGrid .splitObjectiveMore,
+#splitEditorGrid .splitSummaryEmpty {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 24px;
+  padding: 0 7px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text);
+  font-size: 11px;
+  font-weight: 900;
+}
+
+#splitEditorGrid .splitSummaryEmpty {
+  color: var(--text-soft);
+  font-weight: 700;
+}
+
+#splitEditorGrid .splitObjectiveAmount {
+  margin-right: 3px;
+}
+
+#splitEditorGrid .splitSummaryIcon {
+  width: 15px;
+  height: 15px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  line-height: 1;
+}
+
+#splitEditorGrid .splitSlateToggle {
+  min-height: 30px;
+  padding: 0 10px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+#splitEditorGrid .splitEditorBody {
+  display: grid;
+  gap: 8px;
+  padding: 4px 0 0 46px;
+}
+
+#splitEditorGrid .splitEditorBody[hidden] {
+  display: none;
+}
+
+#splitEditorGrid .splitExpandedBar {
+  align-items: center;
+  gap: 8px;
+  flex-wrap: nowrap;
+}
+
+#splitEditorGrid .splitEditorCard .eyebrow {
+  margin-bottom: 2px;
+  opacity: 0.76;
+}
+
+#splitEditorGrid .splitEditorCard .mid {
+  font-size: 14px;
+  line-height: 1.15;
+  font-weight: 900;
+}
+
+#splitEditorGrid .splitPhaseHint {
+  display: none;
+}
+
+#splitEditorGrid .splitRowActions {
+  gap: 4px !important;
+  padding: 0;
+  border-radius: 0;
+  background: transparent;
+  border: 0;
+  flex-wrap: nowrap;
+  margin-left: auto;
+}
+
+#splitEditorGrid [data-row-action] {
+  min-height: 26px;
+  padding: 0 8px;
+  border-radius: 9px;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+#splitEditorGrid .splitEditLine {
+  display: grid;
+  grid-template-columns: minmax(260px, 1fr) minmax(220px, 360px);
+  gap: 8px;
+  align-items: stretch;
+}
+
+#splitEditorGrid .field > span {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+#splitEditorGrid .splitEditLine .field {
+  gap: 4px;
+}
+
+#splitEditorGrid .splitEditLine .field > span {
+  position: static;
+  width: auto;
+  height: auto;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+  color: var(--text-soft);
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+#splitEditorGrid input,
+#splitEditorGrid select,
+#splitEditorGrid textarea {
+  min-height: 32px;
+  padding: 6px 9px;
+  border-radius: 9px;
+  font-size: 12px;
+}
+
+#splitEditorGrid textarea[data-field="note"] {
+  min-height: 32px !important;
+  height: 32px;
+  resize: vertical;
+  line-height: 1.25;
+}
+
+#splitEditorGrid .splitNoteField {
+  grid-column: 1 / -1;
+}
+
+#splitEditorGrid .splitAutoDetails {
+  padding: 7px 8px;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.025);
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+#splitEditorGrid .splitAutoSummary {
+  cursor: pointer;
+  gap: 8px;
+  list-style: none;
+  align-items: center;
+}
+
+#splitEditorGrid .splitAutoSummary::-webkit-details-marker {
+  display: none;
+}
+
+#splitEditorGrid .splitAutoEyebrow {
+  display: none;
+}
+
+#splitEditorGrid .autoSummaryChips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+#splitEditorGrid .autoSummaryChip,
+#splitEditorGrid .autoSummaryEmpty {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 24px;
+  padding: 0 8px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  font-size: 11px;
+}
+
+#splitEditorGrid .autoSummaryLabel {
+  color: var(--text);
+}
+
+#splitEditorGrid .autoSummaryValue {
+  color: var(--gold);
+  font-weight: 800;
+}
+
+#splitEditorGrid .autoSummaryEmpty {
+  color: var(--text-soft);
+}
+
+#splitEditorGrid .splitAutoPanel {
+  margin-top: 8px;
+  display: grid;
+  gap: 8px;
+}
+
+#splitEditorGrid .splitAutoToolbar {
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+#splitEditorGrid .splitAutoToolbar > .subtitle {
+  font-size: 11px;
+}
+
+#splitEditorGrid .splitAutoToolbarActions {
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+#splitEditorGrid .autoPicker {
+  display: grid;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 14px;
+  background: rgba(3, 9, 20, 0.45);
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+#splitEditorGrid .autoPickerSearch {
+  min-height: 34px;
+}
+
+#splitEditorGrid .autoPickerOptions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+#splitEditorGrid .autoPickerOption {
+  appearance: none;
+  border: 1px solid rgba(255,255,255,0.08);
+  background: rgba(20, 38, 79, 0.8);
+  color: var(--text);
+  min-height: 30px;
+  padding: 0 10px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+#splitEditorGrid .autoPickerOption[hidden] {
+  display: none;
+}
+
+#splitEditorGrid .ocrGoalPicker .autoPickerOption[hidden] {
+  display: none;
+}
+
+#splitEditorGrid .autoPickerOption:hover {
+  border-color: rgba(120, 160, 255, 0.26);
+}
+
+#splitEditorGrid .autoPickerEmpty {
+  color: var(--text-soft);
+  font-size: 12px;
+}
+
+#splitEditorGrid .autoCounterChipList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+#splitEditorGrid .autoCounterChip {
+  flex: 0 1 250px;
+  max-width: 320px;
+  display: grid;
+  grid-template-columns: 32px minmax(0, 1fr) 32px;
+  gap: 0;
+  align-items: center;
+  min-height: 42px;
+  border-radius: 999px;
+  overflow: hidden;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+#splitEditorGrid .autoCounterBody {
+  min-width: 0;
+  min-height: 100%;
+  padding: 5px 8px;
+  display: grid;
+  gap: 4px;
+  background: rgba(255,255,255,0.02);
+  border-left: 1px solid rgba(255,255,255,0.08);
+  border-right: 1px solid rgba(255,255,255,0.08);
+}
+
+#splitEditorGrid .autoCounterTopLine {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+#splitEditorGrid .autoCounterName {
+  min-width: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+#splitEditorGrid .autoCounterIcon {
+  width: 16px;
+  height: 16px;
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  line-height: 1;
+}
+
+#splitEditorGrid .autoCounterLabel {
+  font-size: 11px;
+  font-weight: 800;
+  color: var(--text);
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#splitEditorGrid .autoCounterContext {
+  display: block;
+  font-size: 11px;
+  color: var(--text-soft);
+  line-height: 1.3;
+  white-space: nowrap;
+}
+
+#splitEditorGrid .autoCounterEdge {
+  min-width: 32px;
+  min-height: 42px;
+  height: 100%;
+  padding: 0;
+  border-radius: 0;
+  border: 0;
+  background: rgba(20, 38, 79, 0.78);
+  font-size: 16px;
+  line-height: 1;
+}
+
+#splitEditorGrid .autoCounterEdge:hover {
+  background: rgba(29, 55, 110, 0.9);
+}
+
+#splitEditorGrid .autoCounterEdge-left {
+  border-top-left-radius: 999px;
+  border-bottom-left-radius: 999px;
+}
+
+#splitEditorGrid .autoCounterEdge-right {
+  border-top-right-radius: 999px;
+  border-bottom-right-radius: 999px;
+}
+
+#splitEditorGrid .autoCounterInput {
+  width: 38px;
+  min-height: 24px;
+  padding: 3px 5px;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 800;
+  border-radius: 999px;
+}
+
+#splitEditorGrid .autoCountersEmpty {
+  padding: 10px 12px;
+  border-radius: 16px;
+  background: rgba(255,255,255,0.02);
+  border: 1px dashed rgba(255,255,255,0.08);
+  color: var(--text-soft);
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+#splitEditorGrid .splitOcrGoalPanel {
+  display: grid;
+  gap: 8px;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(120, 160, 255, 0.12);
+}
+
+#splitEditorGrid .ocrGoalChipList {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+#splitEditorGrid .ocrGoalChip {
+  display: grid;
+  grid-template-columns: minmax(150px, 1fr) auto auto;
+  gap: 8px;
+  align-items: center;
+  min-height: 40px;
+  padding: 7px 8px;
+  border: 1px solid rgba(120, 160, 255, 0.16);
+  border-radius: 12px;
+  background: rgba(6, 12, 28, 0.68);
+}
+
+#splitEditorGrid .ocrGoalText {
+  display: grid;
+  gap: 2px;
+  min-width: 0;
+}
+
+#splitEditorGrid .ocrGoalText strong,
+#splitEditorGrid .ocrGoalText span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#splitEditorGrid .ocrGoalText strong {
+  font-size: 12px;
+  line-height: 1.1;
+}
+
+#splitEditorGrid .ocrGoalText span,
+#splitEditorGrid .ocrGoalOptional {
+  color: var(--text-soft);
+  font-size: 11px;
+  font-weight: 800;
+}
+
+#splitEditorGrid .ocrGoalOptional {
+  display: inline-flex;
+  gap: 5px;
+  align-items: center;
+}
+
+#splitEditorGrid .ocrGoalRemove {
+  min-height: 26px;
+  padding: 0 8px;
+}
+
+#splitEditorGrid .ocrGoalPicker .autoPickerOption {
+  display: inline-grid;
+  gap: 2px;
+  text-align: left;
+}
+
+#splitEditorGrid .ocrGoalPicker .autoPickerOption span {
+  color: var(--text-soft);
+  font-size: 10px;
+  font-weight: 800;
+}
+
+#splitEditorGrid .routeBalanceCard {
+  margin-top: 4px;
+  padding: 12px;
+  border-style: dashed;
+  background:
+    linear-gradient(90deg, rgba(46, 54, 24, 0.48) 0%, rgba(7, 16, 10, 0.74) 100%),
+    rgba(6, 11, 24, 0.82);
+}
+
+#splitEditorGrid .routeBalanceHeader {
+  display: grid;
+  grid-template-columns: minmax(180px, 1fr) auto minmax(180px, 1fr);
+  gap: 12px;
+  align-items: center;
+}
+
+#splitEditorGrid .routeBalanceSubtitle {
+  margin-top: 3px;
+  color: var(--text-soft);
+  font-size: 10px;
+  font-weight: 750;
+}
+
+#splitEditorGrid .routeBalanceScore {
+  display: grid;
+  place-items: center;
+  min-width: 96px;
+  padding: 7px 12px;
+  border: 1px solid rgba(132, 204, 22, 0.24);
+  border-radius: 12px;
+  background: rgba(132, 204, 22, 0.08);
+}
+
+#splitEditorGrid .routeBalanceScore strong {
+  color: #b8f36a;
+  font-size: 19px;
+  line-height: 1;
+}
+
+#splitEditorGrid .routeBalanceScore span {
+  margin-top: 3px;
+  color: var(--text-soft);
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+#splitEditorGrid .routeBalanceStats {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+#splitEditorGrid .routeBalanceChips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 10px;
+}
+
+#splitEditorGrid .routeBalanceChip {
+  display: inline-grid;
+  grid-template-columns: 24px minmax(84px, auto) auto;
+  gap: 7px;
+  align-items: center;
+  min-height: 48px;
+  padding: 6px 10px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+#splitEditorGrid .routeBalanceChip-missing {
+  border-color: rgba(246, 196, 83, 0.2);
+}
+
+#splitEditorGrid .routeBalanceChip-over {
+  border-color: rgba(239, 68, 68, 0.26);
+}
+
+#splitEditorGrid .routeBalanceChip-complete {
+  border-color: rgba(132, 204, 22, 0.22);
+  background: rgba(132, 204, 22, 0.055);
+}
+
+#splitEditorGrid .routeBalanceChipIcon,
+#splitEditorGrid .routeBalanceIcon {
+  width: 20px;
+  height: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  line-height: 1;
+}
+
+#splitEditorGrid .routeBalanceChipMain {
+  display: grid;
+  gap: 1px;
+}
+
+#splitEditorGrid .routeBalanceChipLabel {
+  color: var(--text);
+  font-size: 11px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+#splitEditorGrid .routeBalanceChipValue,
+#splitEditorGrid .routeBalanceChipStatus,
+#splitEditorGrid .routeBalanceChipSources {
+  color: var(--text-soft);
+  font-size: 10px;
+  font-weight: 800;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+#splitEditorGrid .routeBalanceChipStatus {
+  color: var(--gold);
+}
+
+#splitEditorGrid .routeBalanceChip-complete .routeBalanceChipStatus {
+  color: #a3e635;
+}
+
+#splitEditorGrid .routeBalanceChipSources {
+  margin-top: 2px;
+  font-size: 9px;
+}
+
+#splitEditorGrid .routeBalanceProgress {
+  display: block;
+  width: 100%;
+  height: 3px;
+  margin-top: 4px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+#splitEditorGrid .routeBalanceProgress span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #f6c453, #84cc16);
+}
+
+#splitEditorGrid .routeBalanceSubhead {
+  margin-top: 12px;
+  color: var(--text-soft);
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+#splitEditorGrid .routeBalanceDone {
+  color: var(--text-soft);
+  font-size: 12px;
+}
+
+#splitEditorGrid .routeBalanceCovered,
+#splitEditorGrid .routeBalanceOver {
+  margin-top: 12px;
+  padding-top: 1px;
+  border-top: 1px solid rgba(255, 255, 255, 0.055);
+}
+
+@media (max-width: 900px) {
+  .splitFilterBar {
+    grid-template-columns: 1fr;
+  }
+
+  #splitEditorGrid .splitEditLine {
+    grid-template-columns: 1fr;
+  }
+
+  #splitEditorGrid .autoCounterChip {
+    max-width: none;
+  }
+
+  #splitEditorGrid .routeBalanceHeader {
+    grid-template-columns: 1fr auto;
+  }
+
+  #splitEditorGrid .routeBalanceStats {
+    grid-column: 1 / -1;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 760px) {
+  .splitEditorPage .app {
+    padding: 8px;
+  }
+
+  .splitCommandActions,
+  .splitNavBar {
+    align-items: stretch;
+  }
+
+  #splitEditorGrid .editorCard {
+    padding: 10px;
+  }
+
+  #splitEditorGrid .splitSlate {
+    grid-template-columns: 36px minmax(0, 1fr) auto;
+  }
+
+  #splitEditorGrid .splitSlateEditorMain {
+    grid-template-columns: 1fr;
+  }
+
+  #splitEditorGrid .splitSlateTopLine {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  #splitEditorGrid .splitSlateInlineObjectives,
+  #splitEditorGrid .splitSlateObjectives {
+    grid-column: 2 / -1;
+    justify-content: flex-start;
+  }
+
+  #splitEditorGrid .splitEditorBody {
+    padding-left: 0;
+  }
+
+  #splitEditorGrid .splitExpandedBar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  #splitEditorGrid .splitRowActions {
+    align-self: flex-start;
+  }
+}

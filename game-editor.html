@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Game Editor</title>
+  <script>
+    (() => {
+      try {
+        const valid = new Set(["classic", "earth"]);
+        const query = new URLSearchParams(window.location.search).get("theme");
+        const stored = localStorage.getItem("platinum-router-theme");
+        const theme = valid.has(query) ? query : (valid.has(stored) ? stored : "classic");
+        document.documentElement.dataset.theme = theme;
+      } catch {
+        document.documentElement.dataset.theme = "classic";
+      }
+    })();
+  </script>
+  <link rel="stylesheet" href="./styles/base.css?v=20260511a" />
+  <link rel="stylesheet" href="./styles/layout.css?v=20260511a" />
+  <link rel="stylesheet" href="./styles/components.css?v=20260511a" />
+  <link rel="stylesheet" href="./styles/game-editor.css" />
+</head>
+<body class="gameEditorPage">
+  <div class="app">
+    <div class="top gamePageTop">
+      <div>
+        <div class="eyebrow">Routing Tool</div>
+        <div class="title">Game Editor</div>
+        <div id="pageSubtitle" class="subtitle">Create a new game package with metadata, counters, and starter files.</div>
+      </div>
+      <div class="badge">Games</div>
+    </div>
+
+    <div class="panel gameCommandPanel">
+      <div class="gameCommandBar">
+        <div class="gameCommandCopy">
+          <div class="eyebrow">Workflow</div>
+          <div id="gameEditorNotesText" class="subtitle">Create package metadata, build counters visually, and generate the scaffold JSON files.</div>
+        </div>
+
+        <div class="gameNavLinks">
+          <a href="./index.html" class="btn">Controller</a>
+          <a href="./overlay.html" class="btn">Overlay</a>
+          <a href="./minoverlay.html" class="btn">Mini Overlay</a>
+          <a href="./run-comparison.html" class="btn">Run Comparison</a>
+          <a href="./splits.html" class="btn">Split Editor</a>
+          <a href="./phases.html" class="btn">Phase Editor</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel gameSummaryPanel">
+      <div class="gameSummaryStats">
+        <div id="gameCounterCountPill" class="pill">0 counters</div>
+        <div id="gameTotalTrackedPill" class="pill">0 total tracked</div>
+        <div id="gameScaffoldStatusPill" class="pill">Scaffold not generated</div>
+        <div id="gameManifestStatusPill" class="pill">Ready to add a new game</div>
+      </div>
+
+      <div id="gameCounterPreview" class="gameCounterPreview">
+        <span class="subtitle">No counters yet.</span>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="mid">Game Setup</div>
+      <div class="subtitle" style="margin-top:6px">
+        Define the game, build counters visually, and generate the scaffold JSON files.
+      </div>
+
+      <div class="fields" style="margin-top:16px">
+        <label class="field">
+          <span>Game ID</span>
+          <input id="gameIdInput" type="text" placeholder="ghost-of-tsushima" />
+        </label>
+
+        <label class="field">
+          <span>Game Title</span>
+          <input id="gameTitleInput" type="text" placeholder="Ghost of Tsushima" />
+        </label>
+
+        <label class="field">
+          <span>Subtitle</span>
+          <input id="gameSubtitleInput" type="text" placeholder="Speedrun Controller" />
+        </label>
+
+        <label class="field">
+          <span>Difficulty</span>
+          <input id="gameDifficultyInput" type="text" placeholder="Route" />
+        </label>
+
+        <label class="field">
+          <span>Default Phase ID</span>
+          <input id="defaultPhaseIdInput" type="text" placeholder="legacy_all" />
+        </label>
+
+        <label class="field">
+          <span>Default Phase Label</span>
+          <input id="defaultPhaseLabelInput" type="text" placeholder="Legacy All" />
+        </label>
+      </div>
+    </div>
+
+    <div class="panel gameBuilderPanel">
+      <div class="row between" style="gap:12px;flex-wrap:wrap">
+        <div>
+          <div class="mid">Counters Builder</div>
+          <div class="subtitle" style="margin-top:6px">
+            Build counters.json with proper rows instead of typing raw text.
+          </div>
+        </div>
+      </div>
+
+      <div class="gameActionGroups">
+        <div class="gameActionGroup">
+          <div class="eyebrow">Presets</div>
+          <div class="gameActionRow">
+            <button id="loadExampleBtn" class="btn">Load Ghost Starter</button>
+            <button id="loadDaysGoneBtn" class="btn">Load Days Gone Starter</button>
+          </div>
+        </div>
+
+        <div class="gameActionGroup">
+          <div class="eyebrow">Builder</div>
+          <div class="gameActionRow">
+            <button id="addCounterBtn" class="btn">Add Counter</button>
+            <button id="resetCountersBtn" class="btn">Reset Counters</button>
+            <button id="generateBtn" class="btn primary">Generate Scaffold</button>
+          </div>
+        </div>
+
+        <div class="gameActionGroup">
+          <div class="eyebrow">Export</div>
+          <div class="gameActionRow">
+            <button id="copyGamesBtn" class="btn">Copy games.json</button>
+            <button id="copyPackageBtn" class="btn">Copy Full Package</button>
+            <button id="downloadPackageBtn" class="btn">Download Package</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel gameBuilderPanel">
+      <div id="counterBuilderGrid" class="editorGrid"></div>
+    </div>
+
+    <div class="panel">
+      <div class="gameOutputHeader">
+        <div>
+          <div class="mid">Generated Files</div>
+          <div class="subtitle" style="margin-top:6px">
+            Review the scaffold output here before copying or downloading it.
+          </div>
+        </div>
+      </div>
+
+      <div class="editorGrid gameOutputGrid" style="grid-template-columns: 1fr 1fr;">
+        <div class="editorCard">
+          <div class="eyebrow">games.json</div>
+          <pre id="gamesJsonOutput" class="codeBlock" style="white-space:pre-wrap;overflow:auto;margin-top:10px;"></pre>
+        </div>
+
+        <div class="editorCard">
+          <div class="eyebrow">meta.json</div>
+          <pre id="metaJsonOutput" class="codeBlock" style="white-space:pre-wrap;overflow:auto;margin-top:10px;"></pre>
+        </div>
+
+        <div class="editorCard">
+          <div class="eyebrow">counters.json</div>
+          <pre id="countersJsonOutput" class="codeBlock" style="white-space:pre-wrap;overflow:auto;margin-top:10px;"></pre>
+        </div>
+
+        <div class="editorCard">
+          <div class="eyebrow">phases.json</div>
+          <pre id="phasesJsonOutput" class="codeBlock" style="white-space:pre-wrap;overflow:auto;margin-top:10px;"></pre>
+        </div>
+
+        <div class="editorCard">
+          <div class="eyebrow">quotas.json</div>
+          <pre id="quotasJsonOutput" class="codeBlock" style="white-space:pre-wrap;overflow:auto;margin-top:10px;"></pre>
+        </div>
+
+        <div class="editorCard">
+          <div class="eyebrow">default-splits.json</div>
+          <pre id="splitsJsonOutput" class="codeBlock" style="white-space:pre-wrap;overflow:auto;margin-top:10px;"></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="./js/theme-init.js?v=20260511a"></script>
+  <script type="module" src="./js/game-editor.js?v=20260425d"></script>
+</body>
+</html>

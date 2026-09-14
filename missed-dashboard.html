@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Missed OCR Dashboard</title>
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="./styles/controller.css" />
+  <link rel="stylesheet" href="./styles/missed-dashboard.css" />
+</head>
+<body class="missedDashboardPage">
+  <main class="missedDashboardShell">
+    <header class="missedDashboardHeader currentSplitCard">
+      <div class="missedDashboardTitleRow">
+        <div>
+          <div class="eyebrow" id="dashboardEyebrow">Missed OCR Dashboard</div>
+          <h1 id="dashboardTitle">Needs Review</h1>
+        </div>
+        <button id="missedRefreshBtn" class="btn" type="button">Refresh</button>
+      </div>
+      <div class="currentSplitHeading">
+        <div>
+          <div class="eyebrow">Current Split</div>
+          <h2 id="currentSplitTitle">Loading route...</h2>
+        </div>
+        <div class="currentSplitActions">
+          <button id="undoCurrentSplitBtn" class="btn" type="button">Undo</button>
+          <button id="completeCurrentSplitBtn" class="btn primary" type="button">
+            Complete Current Split
+          </button>
+        </div>
+      </div>
+      <div id="currentSplitGoals" class="currentSplitGoals"></div>
+    </header>
+
+    <section class="missedDashboardCard">
+      <div class="missedDashboardStats">
+        <span id="missedCountPill" class="pill">0 missed</span>
+        <span id="missedRunState" class="subtitle">Timer idle</span>
+      </div>
+      <div id="missedDashboardList" class="missedDashboardList"></div>
+    </section>
+  </main>
+
+    <script type="module" src="./js/missed-dashboard.js?v=20260725a"></script>
+</body>
+</html>

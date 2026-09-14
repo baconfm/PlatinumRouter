@@ -1,0 +1,163 @@
+{
+  "legacy_all": {
+    "label": "Legacy All",
+    "description": "Full route-wide tracker for imported or rough split sets.",
+    "note": "Use this catch-all view when the split list has not been cleaned into stronger region markers yet.",
+    "objectiveNote": "Track every objective bucket at once and use this as the safety net while the late route is still being refined.",
+    "targetMinutes": 1560,
+    "visible": [
+      "trophies",
+      "routecollectibles",
+      "encampmentjobs",
+      "nerosites",
+      "infestations",
+      "ambushcamps",
+      "hordes",
+      "nerointel",
+      "historical",
+      "charactercollectibles",
+      "tourism",
+      "rippersermons",
+      "herbology",
+      "ipca",
+      "songs",
+      "cairns",
+      "sarahlabnotes",
+      "radiofreeoregon",
+      "colonelspeeches"
+    ]
+  },
+  "cascades": {
+    "label": "Cascades",
+    "description": "Open with Copeland, cemetery cleanup, and the first NERO chain.",
+    "note": "Early route density is high here: checkpoints, nests, route pickups, and the first IPCA pieces all overlap.",
+    "objectiveNote": "Front-load route pickups, NERO clears, and corpse looting while the map is still compact. This is the cleanest section to stay ahead on collectibles and checklist pace.",
+    "targetMinutes": 180,
+    "visible": [
+      "trophies",
+      "routecollectibles",
+      "encampmentjobs",
+      "nerosites",
+      "infestations",
+      "ipca",
+      "ambushcamps",
+      "hordes",
+      "nerointel",
+      "historical",
+      "tourism",
+      "herbology",
+      "cairns"
+    ]
+  },
+  "belknap": {
+    "label": "Belknap",
+    "description": "Push Hot Springs trust and clear the first Tucker-side loops.",
+    "note": "Belknap is where the route starts stacking jobs, tourism, intel, and checkpoint value at the same time.",
+    "objectiveNote": "Use this phase to build Tucker progress fast. Keep jobs, checkpoints, and route pickups moving together so trust and credits do not lag behind the story.",
+    "targetMinutes": 360,
+    "visible": [
+      "trophies",
+      "routecollectibles",
+      "encampmentjobs",
+      "nerosites",
+      "infestations",
+      "ambushcamps",
+      "hordes",
+      "nerointel",
+      "historical",
+      "charactercollectibles",
+      "tourism",
+      "herbology",
+      "ipca"
+    ]
+  },
+  "lost_lake": {
+    "label": "Lost Lake",
+    "description": "The long midgame grind of jobs, hordes, songs, and map cleanup.",
+    "note": "Most of the route's density lives here. This phase is doing the heavy lifting for trust, credits, songs, and route-wide progress.",
+    "objectiveNote": "Keep Iron Mike strong: this is the best phase to push the 20k camp spend setup, start horde momentum for late skills, and bank a huge share of the collectible route.",
+    "targetMinutes": 900,
+    "visible": [
+      "trophies",
+      "routecollectibles",
+      "encampmentjobs",
+      "ambushcamps",
+      "hordes",
+      "nerosites",
+      "nerointel",
+      "historical",
+      "charactercollectibles",
+      "tourism",
+      "rippersermons",
+      "herbology",
+      "ipca",
+      "songs",
+      "cairns"
+    ]
+  },
+  "iron_butte": {
+    "label": "Iron Butte",
+    "description": "Short, dangerous stretch with sermon-heavy cleanup and escape routing.",
+    "note": "The source notes are conservative in Iron Butte, so treat every sermon, cairn, and route pickup here as high priority.",
+    "objectiveNote": "Do not assume you can remember Iron Butte cleanup later. This phase is where the route wants the R.I.P. sermon spike and the messiest one-off pickups locked in.",
+    "targetMinutes": 1050,
+    "visible": [
+      "trophies",
+      "routecollectibles",
+      "ambushcamps",
+      "nerosites",
+      "nerointel",
+      "historical",
+      "charactercollectibles",
+      "tourism",
+      "rippersermons",
+      "herbology",
+      "ipca",
+      "cairns"
+    ]
+  },
+  "crater_lake": {
+    "label": "Crater Lake",
+    "description": "Diamond Lake and Wizard Island with heavier story pacing and tighter NERO loops.",
+    "note": "Crater Lake is more story-driven, but it quietly sets up the bike, trust, and checkpoint state you need for smooth late cleanup.",
+    "objectiveNote": "Stay on story rhythm, but keep Diamond Lake and Wizard Island productive. This is the bridge into late-game trust, bike spend, and the last big NERO sweep.",
+    "targetMinutes": 1320,
+    "visible": [
+      "trophies",
+      "routecollectibles",
+      "encampmentjobs",
+      "hordes",
+      "nerosites",
+      "nerointel",
+      "historical",
+      "charactercollectibles",
+      "tourism",
+      "herbology",
+      "ipca"
+    ]
+  },
+  "highway_97": {
+    "label": "Highway 97",
+    "description": "Late-game cleanup through Highway 97 and the loosest notes in the current route set.",
+    "note": "Treat this as controlled cleanup with room for post-story mop-up. The route source is weakest here, so expect a manual finish pass.",
+    "objectiveNote": "Use Highway 97 as the cleanup bridge into full 100% mop-up: finish the route totals, then expect the remaining trust, 45 skills, 989 ears, 541 corpse loot, and any missing full-collectible categories to settle here or just after story end.",
+    "targetMinutes": 1560,
+    "visible": [
+      "trophies",
+      "routecollectibles",
+      "nerosites",
+      "infestations",
+      "ambushcamps",
+      "hordes",
+      "nerointel",
+      "historical",
+      "charactercollectibles",
+      "tourism",
+      "sarahlabnotes",
+      "radiofreeoregon",
+      "colonelspeeches",
+      "herbology",
+      "ipca"
+    ]
+  }
+}

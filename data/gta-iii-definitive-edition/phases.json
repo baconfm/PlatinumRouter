@@ -1,0 +1,26 @@
+{
+  "portland": {
+    "label": "Portland",
+    "note": "Opening island route and missable mission chains.",
+    "targetMinutes": 0,
+    "visible": ["trophies", "storymissions", "hiddenpackages", "rampages", "uniquejumps"]
+  },
+  "staunton": {
+    "label": "Staunton Island",
+    "note": "Middle-game mission and service-activity routing.",
+    "targetMinutes": 0,
+    "visible": ["trophies", "storymissions", "hiddenpackages", "rampages", "uniquejumps"]
+  },
+  "shoreside": {
+    "label": "Shoreside Vale",
+    "note": "Late-game missions and D-Ice save-state protection.",
+    "targetMinutes": 0,
+    "visible": ["trophies", "storymissions", "hiddenpackages", "rampages", "uniquejumps"]
+  },
+  "cleanup": {
+    "label": "100% Cleanup",
+    "note": "Remaining activities, lists, packages, jumps, and rampages.",
+    "targetMinutes": 0,
+    "visible": ["trophies", "storymissions", "hiddenpackages", "rampages", "uniquejumps"]
+  }
+}

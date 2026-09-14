@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Platinum Router Controller</title>
+  <script>
+    (() => {
+      try {
+        const valid = new Set(["classic", "earth"]);
+        const query = new URLSearchParams(window.location.search).get("theme");
+        const stored = localStorage.getItem("platinum-router-theme");
+        const theme = valid.has(query) ? query : (valid.has(stored) ? stored : "classic");
+        document.documentElement.dataset.theme = theme;
+      } catch {
+        document.documentElement.dataset.theme = "classic";
+      }
+    })();
+  </script>
+  <link rel="stylesheet" href="./styles/base.css?v=20260525a" />
+  <link rel="stylesheet" href="./styles/layout.css?v=20260511a" />
+  <link rel="stylesheet" href="./styles/components.css?v=20260511a" />
+  <link rel="stylesheet" href="./styles/controller.css?v=20260706a" />
+</head>
+<body>
+  <div class="app">
+    <div class="layout controllerLayout">
+      <div class="stack primaryStack">
+        <div class="panel heroPanel">
+          <div class="heroGrid">
+            <div class="heroMain">
+              <div class="eyebrow">Live Run</div>
+              <div id="timer" class="timer">00:00:00</div>
+              <div id="currentSplitLabel" class="heroTitle">No split</div>
+              <div id="currentSplitMarkers" class="currentSplitMarkers" aria-label="Current split pickups"></div>
+
+              <div class="row heroMetaRow">
+                <div id="historyCount" class="pill">0 splits logged</div>
+                <div id="modePill" class="pill">Route</div>
+                <div id="queuePill" class="pill">0 total splits</div>
+              </div>
+
+              <div id="currentObjectiveText" class="heroObjective">No note for this split yet.</div>
+
+              <div class="row heroActions">
+                <button id="startPauseBtn" class="btn primary">Start</button>
+                <button id="undoBtn" class="btn">Undo</button>
+                <button id="advanceCurrentBtn" class="btn primary">Complete Current Split</button>
+              </div>
+
+              <div class="card nextSplitCard">
+                <div class="eyebrow">Up Next</div>
+                <div id="nextSplitLabel" class="mid" style="margin-top:6px">Run complete</div>
+                <div id="nextSplitHint" class="subtitle" style="margin-top:6px">No next split in the queue.</div>
+              </div>
+            </div>
+
+            <div class="heroStats">
+              <div class="card statCard" id="overallCard">
+                <div class="eyebrow">Overall</div>
+                <div id="overallPercent" class="big">0%</div>
+                <div class="bar">
+                  <span id="overallBar" style="width:0%"></span>
+                </div>
+              </div>
+
+              <div class="card statCard" id="phaseProgressCard">
+                <div class="eyebrow" id="actQuotaLabel">Phase</div>
+                <div id="act1SummaryValue" class="big">0%</div>
+                <div class="bar">
+                  <span id="act1SummaryBar" style="width:0%;background:var(--blue)"></span>
+                </div>
+              </div>
+
+              <div class="card statCard" id="collectiblesCard">
+                <div class="eyebrow">Collectibles</div>
+                <div id="collectiblesValue" class="big">0/0</div>
+                <div class="bar">
+                  <span id="collectiblesBar" style="width:0%;background:var(--gold)"></span>
+                </div>
+              </div>
+
+              <div class="card statCard" id="paceCard">
+                <div class="eyebrow">Estimate</div>
+                <div id="pacePill" class="mid" style="margin-top:6px">No target</div>
+                <div class="paceEstimateRows">
+                  <div class="paceEstimateRow">
+                    <span>Current split</span>
+                    <strong id="paceSplitEstimate">No split estimate</strong>
+                  </div>
+                  <div class="paceEstimateRow">
+                    <span>Full run</span>
+                    <strong id="paceRunEstimate">No full-run estimate</strong>
+                  </div>
+                </div>
+                <div id="paceDetail" class="paceDetail">No weighted estimate</div>
+              </div>
+
+              <div class="card statCard routeHealthCard" id="routeHealthCard">
+                <div class="eyebrow">Route Health</div>
+                <div id="routeHealthSummary" class="mid" style="margin-top:6px">Checking route</div>
+                <div id="routeHealthList" class="routeHealthList"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel queuePanel">
+          <div class="queueShell">
+            <div class="queueMainColumn">
+              <div class="row between queueHeader">
+                <div>
+                  <div class="eyebrow">Upcoming Route</div>
+                  <div class="mid" style="margin-top:6px">Next Splits</div>
+                  <div class="subtitle">Only the live split is clickable. The queue stays focused on what matters next.</div>
+                </div>
+
+                <div id="queueWindowPill" class="pill">Showing next 8</div>
+              </div>
+
+              <div id="splitButtons" class="splitList"></div>
+
+              <details class="deskDetails historyDetails">
+                <summary class="deskSummary">
+                  <span class="deskSummaryTitle">Completed Splits</span>
+                  <span id="historySaved" class="deskSummaryMeta">0 saved</span>
+                </summary>
+
+                <div class="deskBody">
+                  <div id="historyList" class="history"></div>
+                  <div class="subtitle" style="margin-top:10px;">
+                    Undo reverses the latest split and its auto-progress.
+                  </div>
+                </div>
+              </details>
+            </div>
+
+            <div class="routeSupportColumn">
+              <div class="row between focusHeader">
+                <div>
+                  <div class="eyebrow">Live Manual Controls</div>
+                  <div id="activePhaseName" class="mid" style="margin-top:6px">Legacy All</div>
+                  <div class="subtitle supportSubtitle">Keep the counters that drive your overlay visible without letting them bury the route queue.</div>
+                </div>
+
+                <div id="counterDeskSummary" class="pill">0 live controls</div>
+              </div>
+
+              <div id="activePhaseNote" class="objectiveText">No phase note.</div>
+              <div id="visibleObjectives" class="visibleList"></div>
+
+              <details class="deskDetails">
+                <summary class="deskSummary">
+                  <span class="deskSummaryTitle">Manual Corrections</span>
+                  <span id="focusCountPill" class="deskSummaryMeta">0 live controls</span>
+                </summary>
+
+                <div class="deskBody">
+                  <div id="focusGrid" class="progressGrid focusGrid"></div>
+                  <div class="eyebrow deskSubEyebrow">All Counters</div>
+                  <div id="progressGrid" class="progressGrid"></div>
+
+                  <details id="screenTrackerDaysGoneCollectibleChecklist" class="screenTrackerChecklist manualChecklistDashboard" hidden>
+                    <summary>
+                      <span>
+                        <span class="eyebrow">Missing Collectibles</span>
+                        <span id="screenTrackerDaysGoneCollectibleSummary" class="subtitle">236 known missing</span>
+                      </span>
+                      <span id="screenTrackerDaysGoneCollectibleState" class="pill">Missing</span>
+                    </summary>
+                    <div id="screenTrackerDaysGoneCollectibleList" class="screenTrackerChecklistList"></div>
+                    <div class="row" style="margin-top:10px;gap:8px;">
+                      <button id="screenTrackerDaysGoneCollectibleResetBtn" class="btn" type="button">Reset Days Gone Dashboard</button>
+                    </div>
+                  </details>
+                </div>
+              </details>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="stack sideStack">
+        <section class="panel mediaDock" aria-labelledby="mediaDockTitle">
+          <div class="row between mediaDockHeader">
+            <div>
+              <div class="eyebrow">Stream Companion</div>
+              <div id="mediaDockTitle" class="mid" style="margin-top:6px">Media + Live Chat</div>
+            </div>
+            <span id="mediaPlatformPill" class="pill">Ready</span>
+          </div>
+
+          <form id="mediaSourceForm" class="mediaSourceForm">
+            <label class="field mediaSourceField">
+              <span class="mediaFieldLabel">YouTube or Twitch URL</span>
+              <input
+                id="mediaSourceInput"
+                type="text"
+                inputmode="url"
+                autocomplete="off"
+                placeholder="Paste a video, live stream, or Twitch channel URL"
+                aria-describedby="mediaSourceHelp mediaStatus"
+              />
+            </label>
+            <button class="btn primary" type="submit">Load</button>
+          </form>
+
+          <div id="mediaSourceHelp" class="subtitle mediaSourceHelp">
+            YouTube videos and live streams work with a video URL. Twitch works with a channel or video URL.
+          </div>
+
+          <div id="mediaStage" class="mediaStage" hidden>
+            <div class="mediaPlayerFrame">
+              <iframe
+                id="mediaPlayer"
+                title="Stream media player"
+                allow="autoplay; encrypted-media; picture-in-picture; fullscreen"
+                allowfullscreen
+              ></iframe>
+            </div>
+
+            <div id="mediaChatFrame" class="mediaChatFrame">
+              <iframe id="mediaChat" title="Stream live chat"></iframe>
+            </div>
+          </div>
+
+          <div id="mediaEmptyState" class="mediaEmptyState">
+            <span class="mediaEmptyIcon" aria-hidden="true">&#9654;</span>
+            <strong>Bring the stream into your route</strong>
+            <span>Paste a link above to watch without leaving the controller.</span>
+          </div>
+
+          <div class="row between mediaDockFooter">
+            <span id="mediaStatus" class="subtitle" role="status" aria-live="polite">No stream loaded.</span>
+            <div class="row mediaDockActions">
+              <button id="mediaChatToggle" class="btn" type="button" aria-pressed="true" hidden>Hide Chat</button>
+              <button id="mediaClearBtn" class="btn" type="button" hidden>Clear</button>
+            </div>
+          </div>
+        </section>
+
+        <div class="panel">
+          <div class="card quotaCard">
+            <div class="eyebrow" id="act1QuotaTitle">Phase Quota</div>
+            <div id="act1QuotaText" class="mid quotaInline" style="margin-top:8px">
+              No quota targets for this phase
+            </div>
+          </div>
+        </div>
+
+        <div class="panel">
+          <button id="settingsToggle" class="btn full">Show Settings</button>
+
+          <div id="settingsPanel" class="settings" hidden>
+            <details class="deskDetails routeSetupDetails">
+              <summary class="deskSummary">
+                <span class="deskSummaryTitle">Route Setup</span>
+                <span id="runTitle" class="deskSummaryMeta">Platinum Router</span>
+              </summary>
+
+              <div class="deskBody">
+                <div class="fields compactFields">
+                  <label class="field gamePickerField">
+                    <span>Game</span>
+                    <select id="gamePicker" class="gamePickerSelect" aria-label="Select game"></select>
+                  </label>
+                  <label class="field gamePickerField" id="routePickerField" hidden>
+                    <span>Route</span>
+                    <select id="routePicker" class="gamePickerSelect" aria-label="Select route"></select>
+                  </label>
+                </div>
+
+                <div id="difficultyBadge" class="badge lethal" style="margin-top:10px;">Route</div>
+              </div>
+            </details>
+
+            <div class="eyebrow" style="margin-bottom:10px">Run Data</div>
+
+            <div class="row" style="flex-wrap:wrap;gap:8px;">
+              <button id="exportTimesBtn" class="btn">Export Times</button>
+              <button id="exportSplitLogBtn" class="btn">Export Split Log</button>
+              <span id="runDataExportStatus" class="runDataExportStatus" aria-live="polite"></span>
+
+              <label class="btn">
+                Import Times
+                <input id="importTimesInput" type="file" accept="application/json" hidden />
+              </label>
+
+              <label class="btn">
+                Import Splits
+                <input id="importSplitsInput" type="file" accept="application/json" hidden />
+              </label>
+
+              <button id="resetBtn" class="btn danger">Reset Run</button>
+            </div>
+
+            <div class="card" style="margin-top:14px;">
+              <div class="eyebrow">Practice Timer Start</div>
+              <div class="subtitle" style="margin-top:6px;">
+                Set a custom elapsed time for practice or testing. Format: HH:MM:SS
+              </div>
+
+              <div class="row" style="margin-top:12px;gap:8px;flex-wrap:wrap;">
+                <input
+                  id="practiceStartTimeInput"
+                  type="text"
+                  inputmode="numeric"
+                  placeholder="07:00:00"
+                  value="00:00:00"
+                  style="max-width:180px;"
+                />
+                <button id="setStartTimeBtn" class="btn">Set Time</button>
+                <button id="resetStartTimeBtn" class="btn">Reset to 00:00:00</button>
+              </div>
+            </div>
+
+            <div class="card shortcutCard" style="margin-top:14px;">
+              <div class="eyebrow">Display</div>
+              <div class="subtitle" style="margin-top:6px;">
+                Classic is the safe fallback. If anything breaks, use ?theme=classic.
+              </div>
+
+              <div class="fields compactFields" style="margin-top:12px;">
+                <label class="field">
+                  <span>Theme</span>
+                  <select id="themePicker" data-theme-picker aria-label="Select theme"></select>
+                </label>
+                <label class="optionToggle">
+                  <input id="showDeathCounterInput" type="checkbox" />
+                  <span>Show death counter</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="card shortcutCard" style="margin-top:14px;">
+              <div class="eyebrow">OBS Sources</div>
+              <div class="subtitle" style="margin-top:6px;">
+                Browser-source links for the active game and route.
+              </div>
+
+              <div class="obsLinkList">
+                <a id="obsOverlayLink" class="btn" href="./overlay.html?v=20260707e">Full Overlay</a>
+                <a class="btn" href="./overlay.html?layout=core&v=20260707e">Core Overlay</a>
+                <a id="obsMiniOverlayLink" class="btn" href="./minoverlay.html">Mini Overlay</a>
+                <a class="btn" href="./days-gone-noguns.html">Days Gone No Guns</a>
+                <a class="btn" href="./days-gone-noguns-overlay.html">No Guns OBS</a>
+              </div>
+            </div>
+
+            <div class="card shortcutCard screenTrackerCard" style="margin-top:14px;">
+              <div class="eyebrow">Screen Tracker</div>
+              <div class="subtitle" style="margin-top:6px;">
+                OCR runs continuously, logs raw hits/errors, and no longer waits for Accept/Reject.
+              </div>
+              <div class="subtitle" style="margin-top:6px;">
+                Explicit auto-sync rules can still update counters while raw trial data is saved.
+              </div>
+              <div id="screenTrackerObsHealth" class="screenTrackerObsHealth" data-tone="offline" role="status" aria-live="polite">
+                <span class="screenTrackerObsHealthDot" aria-hidden="true"></span>
+                <span id="screenTrackerObsHealthText">OBS not connected</span>
+              </div>
+
+              <div class="fields compactFields" style="margin-top:12px;">
+                <label class="field">
+                  <span>OBS WebSocket</span>
+                  <input id="screenTrackerObsUrl" type="text" value="ws://127.0.0.1:4455" />
+                </label>
+                <label class="field">
+                  <span>Capture Source</span>
+                  <input id="screenTrackerObsSource" type="text" placeholder="Game Capture / Capture Card" />
+                </label>
+                <label class="field">
+                  <span>Password</span>
+                  <input id="screenTrackerObsPassword" type="password" autocomplete="off" />
+                </label>
+                <label class="field">
+                  <span>Scan Mode</span>
+                  <select id="screenTrackerRegion"></select>
+                </label>
+                <label class="field">
+                  <span>Lookahead</span>
+                  <input id="screenTrackerLookahead" type="number" min="0" max="3" step="1" value="1" />
+                </label>
+                <label class="field">
+                  <span>Video Interval</span>
+                  <input id="screenTrackerVideoInterval" type="number" min="100" max="5000" step="25" value="125" />
+                </label>
+                <label class="optionToggle">
+                  <input id="screenTrackerExpectedOnly" type="checkbox" checked />
+                  <span>Only suggest expected route objectives</span>
+                </label>
+                <label class="optionToggle" hidden>
+                  <input id="screenTrackerPauseOnSuggestion" type="checkbox" checked />
+                  <span>Pause video scan when a suggestion appears</span>
+                </label>
+              </div>
+
+              <div class="screenTrackerLookingFor">
+                <div class="row between screenTrackerLookingForHeader">
+                  <div>
+                    <div class="eyebrow">Looking For</div>
+                    <div id="screenTrackerLookingForSummary" class="subtitle">No route targets loaded.</div>
+                  </div>
+                  <div id="screenTrackerLookingForMode" class="pill">Expected</div>
+                </div>
+                <div id="screenTrackerLookingForList" class="screenTrackerLookingForList"></div>
+              </div>
+
+              <details id="screenTrackerHaikuChecklist" class="screenTrackerHaikuChecklist" hidden>
+                <summary>
+                  <span>
+                    <span class="eyebrow">Haiku Checklist</span>
+                    <span id="screenTrackerHaikuSummary" class="subtitle">19 missing</span>
+                  </span>
+                  <span id="screenTrackerHaikuState" class="pill">Missing</span>
+                </summary>
+                <div id="screenTrackerHaikuList" class="screenTrackerHaikuList"></div>
+                <div class="row" style="margin-top:10px;gap:8px;">
+                  <button id="screenTrackerHaikuResetBtn" class="btn" type="button">Reset Haiku List</button>
+                </div>
+              </details>
+
+              <details id="screenTrackerTrophyChecklist" class="screenTrackerChecklist" hidden>
+                <summary>
+                  <span>
+                    <span class="eyebrow">Trophy Checklist</span>
+                    <span id="screenTrackerTrophySummary" class="subtitle">52 missing</span>
+                  </span>
+                  <span id="screenTrackerTrophyState" class="pill">Missing</span>
+                </summary>
+                <div id="screenTrackerTrophyList" class="screenTrackerChecklistList"></div>
+                <div class="row" style="margin-top:10px;gap:8px;">
+                  <button id="screenTrackerTrophyResetBtn" class="btn" type="button">Reset Trophy List</button>
+                </div>
+              </details>
+
+              <div class="row screenTrackerActions" style="margin-top:12px;gap:8px;flex-wrap:wrap;">
+                <button id="screenTrackerConnectBtn" class="btn" type="button">Connect OBS</button>
+                <button id="screenTrackerScanBtn" class="btn primary" type="button">Scan Screen</button>
+                <button id="screenTrackerVideoBtn" class="btn primary" type="button" aria-pressed="false">Start Video Scan</button>
+                <label class="btn">
+                  Scan Image
+                  <input id="screenTrackerUploadInput" type="file" accept="image/*" hidden />
+                </label>
+                <button id="screenTrackerDebugCropsBtn" class="btn" type="button">Save Debug Crops</button>
+                <button id="screenTrackerMissedDashboardBtn" class="btn" type="button">Missed Dashboard</button>
+              </div>
+
+              <div class="screenTrackerOcrLogBar">
+                <div>
+                  <div class="eyebrow">OCR Run Log</div>
+                  <div id="screenTrackerOcrLogState" class="subtitle">0 OCR events saved</div>
+                </div>
+                <div class="row" style="gap:8px;flex-wrap:wrap;">
+                  <button id="screenTrackerDownloadLogBtn" class="btn" type="button">Download Log</button>
+                  <button id="screenTrackerClearLogBtn" class="btn" type="button">Clear Log</button>
+                </div>
+              </div>
+
+              <div class="screenTrackerManual">
+                <textarea id="screenTrackerManualText" rows="3" placeholder="Paste OCR text here to test matching"></textarea>
+                <button id="screenTrackerAnalyzeTextBtn" class="btn" type="button">Analyze Text</button>
+              </div>
+
+              <div id="screenTrackerStatus" class="screenTrackerStatus" aria-live="polite"></div>
+
+              <div id="screenTrackerSuggestion" class="screenTrackerSuggestion" hidden>
+                <div>
+                  <div id="screenTrackerSuggestionTitle" class="mid">No suggestion</div>
+                  <div id="screenTrackerSuggestionDetail" class="subtitle" style="margin-top:4px;"></div>
+                </div>
+                <pre id="screenTrackerOcrText" class="screenTrackerOcrText"></pre>
+                <div id="screenTrackerSuggestionActions" class="row" style="gap:8px;flex-wrap:wrap;" hidden>
+                  <button id="screenTrackerConfirmBtn" class="btn primary" type="button">Confirm</button>
+                  <button id="screenTrackerRejectBtn" class="btn" type="button">Reject</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="card shortcutCard" style="margin-top:14px;">
+              <div class="eyebrow">Keyboard Shortcuts</div>
+              <div class="subtitle" style="margin-top:6px;">
+                Fast controls work anywhere outside text inputs.
+              </div>
+
+              <div class="shortcutList">
+                <div class="shortcutItem">
+                  <span>Start or pause timer</span>
+                  <kbd>Space</kbd>
+                </div>
+                <div class="shortcutItem">
+                  <span>Complete current split</span>
+                  <kbd>Enter</kbd>
+                </div>
+                <div class="shortcutItem">
+                  <span>Undo latest split</span>
+                  <kbd>Backspace</kbd>
+                </div>
+                <div class="shortcutItem">
+                  <span>Show or hide settings</span>
+                  <kbd>S</kbd>
+                </div>
+                <div class="shortcutItem">
+                  <span>Add or remove a death</span>
+                  <kbd>D / Shift+D</kbd>
+                </div>
+              </div>
+            </div>
+
+            <div class="debugDock" style="margin-top:14px;">
+              <div class="eyebrow" style="margin-bottom:10px">Debug</div>
+
+              <div class="row" style="flex-wrap:wrap;gap:8px;">
+                <button id="debugToggle" class="btn">Show Debug</button>
+                <button id="debugClear" class="btn">Clear Logs</button>
+                <button id="debugCopy" class="btn">Copy Compact Snapshot</button>
+              </div>
+              <div class="subtitle" style="margin-top:8px;">
+                Paste compact snapshots into chat. Keep Run Data exports for files/backups, not AI context.
+              </div>
+
+              <div id="debugPanel" class="debugPanel" hidden>
+                <div class="debugSection">
+                  <div class="eyebrow">Status</div>
+                  <div id="debugStatus"></div>
+                </div>
+
+                <div class="debugSection">
+                  <div class="eyebrow">Logs</div>
+                  <div id="debugBody" class="debugBody"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="panel" style="margin-top:12px;">
+      <div class="row between" style="gap:12px;flex-wrap:wrap;">
+        <div>
+          <div class="eyebrow">Navigation</div>
+          <div class="subtitle">Open the overlay or editor pages for the active game.</div>
+        </div>
+
+        <div class="row" style="gap:8px;flex-wrap:wrap;">
+          <a href="./overlay.html?v=20260707e" class="btn">Overlay</a>
+          <a href="./overlay.html?layout=core&v=20260707e" class="btn">Core Overlay</a>
+          <a href="./minoverlay.html" class="btn">Mini Overlay</a>
+          <a href="./days-gone-noguns.html" class="btn">Days Gone No Guns</a>
+          <a href="./run-comparison.html" class="btn">Run Comparison</a>
+          <a href="./splits.html" class="btn">Split Editor</a>
+          <a href="./phases.html" class="btn">Phase Editor</a>
+          <a href="./game-editor.html" class="btn">Game Editor</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script type="module" src="./js/theme-init.js?v=20260511a"></script>
+  <script type="module" src="./js/media-dock.js?v=20260715a"></script>
+  <script type="module" src="./controller.js?v=20260724d"></script>
+</body>
+</html>

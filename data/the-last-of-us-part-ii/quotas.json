@@ -1,0 +1,162 @@
+{
+  "quotas": {
+    "setup": {
+      "label": "Setup / Rules Proof",
+      "targets": {}
+    },
+    "pt1_jackson": {
+      "label": "PT1 Grounded NG: Jackson",
+      "targets": {
+        "trophies": 2,
+        "routecollectibles": 19,
+        "artifacts": 9,
+        "journals": 4,
+        "cards": 4,
+        "safes": 1,
+        "workbenches": 1,
+        "ellieparts": 47,
+        "elliesupps": 38
+      }
+    },
+    "pt1_ellie_day1": {
+      "label": "PT1 Grounded NG: Ellie Seattle Day 1",
+      "targets": {
+        "trophies": 6,
+        "routecollectibles": 103,
+        "artifacts": 53,
+        "journals": 8,
+        "cards": 26,
+        "safes": 5,
+        "manuals": 2,
+        "workbenches": 5,
+        "gear": 4,
+        "ellieparts": 285,
+        "elliesupps": 237
+      }
+    },
+    "pt1_ellie_day2": {
+      "label": "PT1 Grounded NG: Ellie Seattle Day 2",
+      "targets": {
+        "trophies": 8,
+        "routecollectibles": 154,
+        "artifacts": 72,
+        "journals": 15,
+        "cards": 40,
+        "safes": 8,
+        "manuals": 4,
+        "workbenches": 9,
+        "gear": 6,
+        "ellieparts": 411,
+        "elliesupps": 400
+      }
+    },
+    "pt1_ellie_day3": {
+      "label": "PT1 Grounded NG: Ellie Seattle Day 3",
+      "targets": {
+        "trophies": 9,
+        "routecollectibles": 177,
+        "artifacts": 81,
+        "journals": 18,
+        "cards": 46,
+        "safes": 9,
+        "manuals": 4,
+        "workbenches": 13,
+        "gear": 6,
+        "ellieparts": 505,
+        "elliesupps": 471
+      }
+    },
+    "pt1_abby": {
+      "label": "PT1 Grounded NG: Abby Route",
+      "targets": {
+        "trophies": 17,
+        "routecollectibles": 275,
+        "artifacts": 122,
+        "journals": 18,
+        "cards": 46,
+        "coins": 32,
+        "safes": 14,
+        "manuals": 8,
+        "workbenches": 23,
+        "gear": 12,
+        "ellieparts": 505,
+        "elliesupps": 471,
+        "abbyparts": 591,
+        "abbysupps": 500
+      }
+    },
+    "pt1_santa_barbara": {
+      "label": "PT1 Grounded NG: Santa Barbara",
+      "targets": {
+        "trophies": 23,
+        "routecollectibles": 287,
+        "artifacts": 127,
+        "journals": 20,
+        "cards": 48,
+        "coins": 32,
+        "safes": 14,
+        "manuals": 8,
+        "workbenches": 25,
+        "gear": 13,
+        "ellieparts": 558,
+        "elliesupps": 477,
+        "abbyparts": 591,
+        "abbysupps": 500
+      }
+    },
+    "pt1_story": {
+      "label": "PT1 Grounded NG: Story / Interludes",
+      "targets": {
+        "trophies": 23,
+        "routecollectibles": 287,
+        "artifacts": 127,
+        "journals": 20,
+        "cards": 48,
+        "coins": 32,
+        "safes": 14,
+        "manuals": 8,
+        "workbenches": 25,
+        "gear": 13,
+        "ellieparts": 558,
+        "elliesupps": 477,
+        "abbyparts": 591,
+        "abbysupps": 500
+      }
+    },
+    "pt2_story": {
+      "label": "PT2 Grounded NG+: Story Gates",
+      "targets": {
+        "trophies": 23,
+        "ngplusverify": 1
+      }
+    },
+    "pt2_ellie": {
+      "label": "PT2 Grounded NG+: Ellie Upgrade Cleanup",
+      "targets": {
+        "trophies": 23,
+        "ellieparts": 970,
+        "elliesupps": 950,
+        "ngplusverify": 46
+      }
+    },
+    "pt2_abby": {
+      "label": "PT2 Grounded NG+: Abby Upgrade Cleanup",
+      "targets": {
+        "trophies": 23,
+        "abbyparts": 950,
+        "abbysupps": 950,
+        "ngplusverify": 42
+      }
+    },
+    "final_platinum": {
+      "label": "Final Platinum Lock",
+      "targets": {
+        "trophies": 26,
+        "ellieparts": 970,
+        "elliesupps": 950,
+        "abbyparts": 950,
+        "abbysupps": 950
+      }
+    }
+  }
+}

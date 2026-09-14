@@ -1,0 +1,25 @@
+{
+  "defaultGameId": "ghost-of-tsushima",
+  "games": [
+    {
+      "id": "ghost-of-tsushima",
+      "title": "Ghost of Tsushima",
+      "path": "./data/ghost-of-tsushima"
+    },
+    {
+      "id": "days-gone",
+      "title": "Days Gone",
+      "path": "./data/days-gone"
+    },
+    {
+      "id": "the-last-of-us-part-ii",
+      "title": "The Last of Us Part II Remastered",
+      "path": "./data/the-last-of-us-part-ii"
+    },
+    {
+      "id": "gta-iii-definitive-edition",
+      "title": "Grand Theft Auto III: Definitive Edition",
+      "path": "./data/gta-iii-definitive-edition"
+    }
+  ]
+}

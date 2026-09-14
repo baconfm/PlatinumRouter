@@ -1,0 +1,135 @@
+{
+  "id": "days-gone",
+  "title": "Days Gone",
+  "overlayTitle": "Days Gone 100% Route",
+  "subtitle": "100% route scaffold with all 240 collectibles plus platinum cleanup targets: 45 skills, 3 camps at Trust 3, 20k spend, 989 ears, 541 corpse loot.",
+  "defaultDifficulty": "Route",
+  "supportsDirge": false,
+  "appendDifficultyToTitle": false,
+  "defaultRouteId": "platinum-100-map",
+  "routes": [
+    {
+      "id": "platinum-100-map",
+      "title": "Platinum + 100% Map",
+      "shortTitle": "Plat + 100%",
+      "badgeLabel": "100%",
+      "overlayTitle": "Days Gone 100% Route",
+      "subtitle": "Platinum, full map completion, collectibles, and cleanup objectives."
+    },
+    {
+      "id": "all-storylines",
+      "title": "All Storylines",
+      "shortTitle": "Storylines",
+      "badgeLabel": "All Storylines",
+      "overlayTitle": "Days Gone All Storylines",
+      "subtitle": "Every mission, camp job, NERO checkpoint, ambush camp, infestation zone, and horde. No collectibles or trophy cleanup.",
+      "collectibleTotal": 0,
+      "collectibleCounterKeys": [],
+      "splitAutoCounterKeys": [
+        "storymissions",
+        "encampmentjobs",
+        "nerosites",
+        "ambushcamps",
+        "infestations",
+        "hordes"
+      ],
+      "overallCounterKeys": [
+        "storymissions",
+        "encampmentjobs",
+        "nerosites",
+        "ambushcamps",
+        "infestations",
+        "hordes"
+      ],
+      "hiddenCounters": {
+        "overlay": [],
+        "totals": [],
+        "focus": [],
+        "quota": []
+      },
+      "data": {
+        "counters": "routes/all-storylines/counters.json",
+        "defaultSplits": "routes/all-storylines/default-splits.json",
+        "phases": "routes/all-storylines/phases.json",
+        "quotas": "routes/all-storylines/quotas.json",
+        "completionTitles": "routes/all-storylines/completion-titles.json",
+        "neroIpcaClusters": "routes/all-storylines/nero-ipca-clusters.json",
+        "paceBenchmark": "routes/all-storylines/pace-benchmark.json"
+      }
+    }
+  ],
+  "collectibleTotal": 240,
+  "collectibleLabel": "All Collectibles",
+  "collectibleShortLabel": "COL",
+  "collectibleDescription": "Combined progress across every Days Gone collectible category that counts toward the full 240 collectible set.",
+  "paceTargetMs": 55444000,
+  "paceTargetLabel": "Current record 15:24:04",
+  "collectibleCounterKeys": [
+    "charactercollectibles",
+    "nerointel",
+    "sarahlabnotes",
+    "radiofreeoregon",
+    "colonelspeeches",
+    "historical",
+    "tourism",
+    "rippersermons",
+    "herbology",
+    "songs"
+  ],
+  "splitAutoCounterKeys": [
+    "encampmentjobs",
+    "nerosites",
+    "infestations",
+    "ambushcamps",
+    "hordes",
+    "ipca",
+    "cairns"
+  ],
+  "completionTitleRules": [
+    {
+      "title": "Nice and Bloody",
+      "counterKey": "encampmentjobs",
+      "label": "Camp Job"
+    }
+  ],
+  "hiddenCounters": {
+    "overlay": [
+      "routecollectibles",
+      "charactercollectibles",
+      "nerointel",
+      "sarahlabnotes",
+      "radiofreeoregon",
+      "colonelspeeches",
+      "historical",
+      "tourism",
+      "rippersermons",
+      "herbology",
+      "songs"
+    ],
+    "totals": [
+      "routecollectibles"
+    ],
+    "focus": [],
+    "quota": []
+  },
+  "overallCounterKeys": [
+    "trophies",
+    "encampmentjobs",
+    "nerosites",
+    "infestations",
+    "ambushcamps",
+    "hordes",
+    "nerointel",
+    "sarahlabnotes",
+    "radiofreeoregon",
+    "colonelspeeches",
+    "historical",
+    "charactercollectibles",
+    "tourism",
+    "rippersermons",
+    "herbology",
+    "ipca",
+    "songs",
+    "cairns"
+  ]
+}

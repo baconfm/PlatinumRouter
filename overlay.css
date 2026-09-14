@@ -1,0 +1,1290 @@
+:root {
+  --bg: rgba(13, 28, 16, 0.94);
+  --bg2: rgba(22, 45, 27, 0.96);
+  --border: rgba(173, 207, 145, 0.16);
+  --border-strong: rgba(173, 207, 145, 0.28);
+  --text: #f3f8ed;
+  --muted: rgba(205, 220, 193, 0.72);
+  --pill: rgba(255, 248, 235, 0.045);
+  --pill-active: rgba(96, 156, 91, 0.18);
+  --mono: "Cascadia Code", "Consolas", "SFMono-Regular", monospace;
+  --numeric: "Arial", "Segoe UI", "Inter", "Roboto", sans-serif;
+  --overlay-serif: "Palatino Linotype", "Book Antiqua", Georgia, serif;
+  --timer-green: #60e29a;
+  --timer-green-strong: #9cf5c2;
+  --phase-accent: #9fc46f;
+  --phase-accent-soft: rgba(159, 196, 111, 0.22);
+  --phase-accent-strong: rgba(159, 196, 111, 0.42);
+}
+
+:root[data-theme="earth"] {
+  --bg: rgba(28, 34, 22, 0.94);
+  --bg2: rgba(46, 57, 34, 0.96);
+  --border: rgba(202, 191, 149, 0.16);
+  --border-strong: rgba(202, 191, 149, 0.28);
+  --text: #f7f1e7;
+  --muted: rgba(222, 213, 189, 0.74);
+  --pill: rgba(255, 248, 235, 0.05);
+  --pill-active: rgba(126, 154, 96, 0.18);
+  --timer-green: #35d17a;
+  --timer-green-strong: #9befb7;
+  --phase-accent: #b7ca7b;
+  --phase-accent-soft: rgba(183, 202, 123, 0.22);
+  --phase-accent-strong: rgba(183, 202, 123, 0.4);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  color: var(--text);
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  overflow: hidden;
+  width: 100vw;
+  height: fit-content;
+}
+
+body {
+  display: block;
+  min-width: 0;
+  min-height: 0;
+  padding: 12px 28px 24px 28px;
+}
+
+.overlayShell {
+  width: max-content;
+  max-width: calc(100vw - 56px);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: stretch;
+  margin: 0 auto;
+  filter: drop-shadow(0 10px 22px rgba(0, 0, 0, 0.32));
+}
+
+.overlayBar {
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  grid-template-columns: max-content auto max-content;
+  align-items: center;
+  gap: 14px;
+  width: max-content;
+  max-width: 100%;
+  min-height: 74px;
+  padding: 0;
+  border-radius: 0;
+  background: transparent;
+  border: 0;
+  backdrop-filter: none;
+  box-shadow: none;
+  overflow: visible;
+}
+
+.overlayBar::before {
+  display: none;
+}
+
+.overlayBar::after {
+  display: none;
+}
+
+:root[data-theme="earth"] .overlayBar {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+}
+
+:root[data-theme="earth"] .overlayBar::before {
+  display: none;
+}
+
+.timerChip,
+.counterChip,
+.metaChip,
+.quotaChip {
+  min-height: 38px;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 0 10px;
+  border-radius: 12px;
+  border: 1px solid rgba(223, 211, 174, 0.28);
+  background:
+    linear-gradient(180deg, rgba(77, 91, 54, 0.93) 0%, rgba(18, 26, 17, 0.97) 100%);
+  backdrop-filter: blur(8px) saturate(1.08);
+  white-space: nowrap;
+  flex: 0 0 auto;
+  font-family: var(--numeric);
+  box-shadow:
+    0 2px 8px rgba(0, 0, 0, 0.28),
+    inset 0 1px 0 rgba(255, 248, 235, 0.1),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.34);
+}
+
+.timerChip {
+  font-family: var(--mono);
+  min-height: 56px;
+  min-width: 210px;
+  justify-content: center;
+  font-size: 29px;
+  font-weight: 900;
+  letter-spacing: 0;
+  color: var(--timer-green);
+  border-color: rgba(74, 222, 128, 0.3);
+  border-radius: 18px;
+  background:
+    radial-gradient(circle at 50% 0%, rgba(74, 222, 128, 0.18) 0%, rgba(74, 222, 128, 0) 58%),
+    linear-gradient(180deg, rgba(20, 90, 47, 0.92) 0%, rgba(9, 39, 23, 0.96) 100%);
+}
+
+.overlayCore {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 126px auto 78px;
+  align-items: center;
+  gap: 0;
+  justify-self: center;
+  min-width: 0;
+  min-height: 70px;
+  padding: 6px;
+  border-radius: 20px;
+  border: 1px solid rgba(74, 222, 128, 0.28);
+  background:
+    radial-gradient(circle at 50% 0%, rgba(74, 222, 128, 0.12) 0%, rgba(74, 222, 128, 0) 58%),
+    linear-gradient(180deg, rgba(17, 62, 34, 0.92) 0%, rgba(8, 25, 15, 0.98) 100%);
+  box-shadow:
+    0 4px 16px rgba(0, 0, 0, 0.34),
+    inset 0 1px 0 rgba(255, 248, 235, 0.08),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.32);
+}
+
+.overlayCore .timerChip {
+  grid-column: 2;
+  grid-row: 1;
+  justify-self: center;
+}
+
+.overlayCore .progressChip {
+  grid-column: 3;
+  grid-row: 1;
+  justify-self: end;
+}
+
+.coreTrophyChip {
+  grid-column: 1;
+  grid-row: 1;
+  justify-self: start;
+  width: 126px;
+  min-width: 126px;
+  min-height: 58px;
+  border-radius: 16px;
+  justify-content: center;
+  padding: 0 14px;
+}
+
+.coreTrophyChip[hidden] {
+  display: inline-flex;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.timerChip.running {
+  color: var(--timer-green-strong);
+  border-color: rgba(74, 222, 128, 0.36);
+  box-shadow:
+    inset 0 0 0 1px rgba(74, 222, 128, 0.1),
+    0 0 18px rgba(34, 197, 94, 0.12);
+}
+
+.metaChip,
+.quotaChip {
+  font-size: 12px;
+  font-weight: 900;
+  color: #fffaf0;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.85);
+}
+
+.progressChip {
+  width: 78px;
+  min-width: 78px;
+  min-height: 58px;
+  border-radius: 16px;
+  font-size: 18px;
+  justify-content: center;
+  background:
+    linear-gradient(180deg, rgba(255, 248, 235, 0.12) 0%, rgba(38, 43, 34, 0.88) 100%);
+}
+
+.overlayCore .progressChip,
+.overlayCore .coreTrophyChip {
+  border-color: rgba(255, 248, 235, 0.1);
+  background:
+    linear-gradient(180deg, rgba(255, 248, 235, 0.08) 0%, rgba(255, 248, 235, 0.02) 100%);
+  box-shadow: none;
+}
+
+.overlayCore .progressChip {
+  border-left-color: rgba(74, 222, 128, 0.16);
+}
+
+.overlayCore .coreTrophyChip {
+  border-right-color: rgba(74, 222, 128, 0.16);
+}
+
+.overlayCore .timerChip {
+  min-height: 58px;
+  min-width: 224px;
+  border: 0;
+  border-radius: 16px;
+  background: transparent;
+  box-shadow: none;
+  font-size: 32px;
+  text-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.95),
+    0 0 8px rgba(74, 222, 128, 0.28);
+}
+
+:root[data-theme="earth"] .timerChip {
+  border-color: rgba(86, 211, 141, 0.32);
+  background:
+    linear-gradient(180deg, rgba(48, 132, 76, 0.22) 0%, rgba(18, 58, 31, 0.32) 100%);
+}
+
+:root[data-theme="earth"] .metaChip,
+:root[data-theme="earth"] .quotaChip,
+:root[data-theme="earth"] .counterChip {
+  background:
+    linear-gradient(180deg, rgba(64, 77, 47, 0.86) 0%, rgba(25, 32, 22, 0.94) 100%);
+  border-color: rgba(202, 191, 149, 0.2);
+}
+
+:root[data-theme="earth"] .counterChip.activePhaseChip {
+  background:
+    linear-gradient(180deg, rgba(82, 96, 57, 0.9) 0%, rgba(31, 40, 25, 0.95) 100%);
+}
+
+:root[data-theme="earth"] .debugBtn,
+:root[data-theme="earth"] .debugSection select {
+  background: rgba(77, 93, 51, 0.42);
+}
+
+:root[data-theme="earth"] .debugPanel {
+  background: rgba(13, 19, 10, 0.82);
+}
+
+.quotaWrap,
+.chipsWrap {
+  display: grid;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+}
+
+.quotaWrap {
+  flex: 0 0 auto;
+}
+
+.chipsWrap {
+  width: max-content;
+  grid-template-rows: repeat(2, 40px);
+  grid-auto-flow: column;
+  grid-auto-columns: max-content;
+  justify-content: start;
+  align-content: center;
+  overflow: visible;
+  scrollbar-width: none;
+}
+
+.overlaySide {
+  min-width: 0;
+  max-width: none;
+}
+
+.overlaySide-left {
+  justify-content: flex-end;
+}
+
+.overlaySide-right {
+  justify-content: flex-start;
+}
+
+#dirgeChip {
+  padding: 0 9px;
+  font-size: 10px;
+  letter-spacing: 0.08em;
+}
+
+.chipsWrap::-webkit-scrollbar {
+  display: none;
+}
+
+.quotaChip,
+.counterChip {
+  min-width: 106px;
+  justify-content: center;
+  background:
+    linear-gradient(180deg, rgba(255, 244, 221, 0.1) 0%, var(--accent-soft, rgba(255, 255, 255, 0.05)) 100%),
+    linear-gradient(180deg, rgba(70, 82, 50, 0.94) 0%, rgba(19, 27, 18, 0.98) 100%);
+  border-color: var(--accent-mid, var(--border));
+  box-shadow:
+    0 2px 8px rgba(0, 0, 0, 0.26),
+    inset 0 1px 0 rgba(255, 248, 235, 0.08),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.32);
+}
+
+.quotaChip-complete {
+  border-color: rgba(74, 222, 128, 0.36);
+  background:
+    linear-gradient(135deg, rgba(74, 222, 128, 0.08) 0%, rgba(74, 222, 128, 0.18) 100%);
+}
+
+.counterChip.activePhaseChip {
+  background:
+    linear-gradient(180deg, rgba(255, 246, 228, 0.1) 0%, var(--accent-soft, var(--pill-active)) 100%),
+    linear-gradient(180deg, rgba(70, 82, 51, 0.9) 0%, rgba(27, 34, 22, 0.96) 100%);
+  border-color: var(--accent-strong, var(--border-strong));
+  box-shadow:
+    0 0 14px var(--accent-soft, rgba(119, 168, 255, 0.14)),
+    inset 0 1px 0 rgba(255, 248, 235, 0.05);
+}
+
+.chipIconBadge {
+  width: 26px;
+  height: 26px;
+  flex: 0 0 26px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background:
+    radial-gradient(circle at 35% 30%, rgba(255, 247, 225, 0.16) 0%, rgba(255, 247, 225, 0) 52%),
+    rgba(255, 248, 235, 0.07);
+  color: var(--accent, var(--text));
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 248, 235, 0.05),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.14);
+}
+
+.chipIconSvg {
+  width: 17px;
+  height: 17px;
+  display: block;
+}
+
+.chipMeta,
+.quotaMeta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0;
+  line-height: 1;
+}
+
+.chipLabel,
+.quotaLabel {
+  display: none;
+}
+
+body[data-game="days-gone"] .overlaySide .counterChip:not(.counterChipSpacer) .chipLabel {
+  display: inline;
+  margin-right: 5px;
+  color: rgba(255, 248, 233, 0.72);
+  font-family: var(--numeric);
+  font-size: 9px;
+  font-weight: 950;
+  letter-spacing: 0.04em;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.92);
+}
+
+body[data-game="days-gone"] .overlaySide .counterChip:not(.counterChipSpacer) .chipMeta {
+  gap: 0;
+}
+
+body[data-game="days-gone"] .overlaySide .counterChip:not(.counterChipSpacer) .chipIconBadge {
+  width: 22px;
+  height: 22px;
+  flex-basis: 22px;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+body[data-game="days-gone"] .overlaySide .counterChip:not(.counterChipSpacer) .chipIconSvg {
+  width: 20px;
+  height: 20px;
+  stroke-width: 2.25;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.82));
+}
+
+.objectiveIconEmoji {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", "Twemoji Mozilla", emoji, sans-serif;
+  line-height: 1;
+  transform: translateY(0.5px);
+  font-variant-emoji: emoji;
+}
+
+.chipIconSvg.objectiveIconEmoji {
+  width: auto;
+  height: auto;
+  font-size: 17px;
+}
+
+.coreTrophyChip .chipIconBadge {
+  width: 28px;
+  height: 28px;
+  flex-basis: 28px;
+}
+
+.coreTrophyChip .chipIconSvg {
+  width: 18px;
+  height: 18px;
+}
+
+.coreTrophyChip .chipIconSvg.objectiveIconEmoji {
+  font-size: 19px;
+}
+
+.coreTrophyChip .chipValue {
+  font-size: 20px;
+  min-width: 54px;
+  text-align: left;
+}
+
+.chipValue,
+.quotaValue {
+  font-family: var(--numeric);
+  font-size: 17px;
+  font-weight: 900;
+  color: #fffdf4;
+  letter-spacing: 0;
+  font-variant-numeric: tabular-nums;
+  text-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.95),
+    0 0 4px rgba(0, 0, 0, 0.72);
+}
+
+.counterChipSpacer {
+  visibility: hidden;
+  pointer-events: none;
+}
+
+:root[data-overlay-mode="core"] body {
+  padding: 10px 12px;
+}
+
+:root[data-overlay-mode="core"] .overlayShell {
+  width: 100%;
+  max-width: 100%;
+  align-items: center;
+}
+
+:root[data-overlay-mode="core"] .overlayBar {
+  width: 100%;
+  grid-template-columns: 1fr auto 1fr;
+  min-height: 64px;
+}
+
+:root[data-overlay-mode="core"] .overlaySide {
+  display: none;
+}
+
+:root[data-overlay-mode="core"] .overlayCore {
+  grid-column: 2;
+  grid-template-columns: 142px auto 86px;
+  gap: 0;
+  min-height: 76px;
+  padding: 6px;
+  border-radius: 22px;
+}
+
+:root[data-overlay-mode="core"] .timerChip {
+  min-height: 64px;
+  min-width: 260px;
+  border-radius: 18px;
+  font-size: 34px;
+}
+
+:root[data-overlay-mode="core"] .progressChip {
+  width: 86px;
+  min-width: 86px;
+  min-height: 64px;
+  border-radius: 16px;
+  font-size: 19px;
+}
+
+:root[data-overlay-mode="core"] .coreTrophyChip {
+  width: 142px;
+  min-width: 142px;
+  min-height: 64px;
+  border-radius: 16px;
+}
+
+:root[data-overlay-mode="mobile"] body {
+  padding: 14px 16px 8px 16px;
+}
+
+:root[data-overlay-mode="mobile"] .overlayBar {
+  grid-template-columns: 1fr auto 1fr;
+}
+
+:root[data-overlay-mode="mobile"] .overlaySide {
+  display: none;
+}
+
+:root[data-overlay-mode="mobile"] .overlayCore {
+  grid-column: 2;
+  grid-template-columns: 124px auto 78px;
+  gap: 0;
+  min-height: 74px;
+  padding: 6px;
+  border-radius: 20px;
+}
+
+:root[data-overlay-mode="mobile"] .timerChip {
+  min-height: 62px;
+  min-width: 200px;
+  border-radius: 16px;
+  font-size: 32px;
+  border-width: 2px;
+}
+
+:root[data-overlay-mode="mobile"] .progressChip {
+  width: 78px;
+  min-width: 78px;
+  min-height: 62px;
+  border-radius: 16px;
+  font-size: 18px;
+}
+
+:root[data-overlay-mode="mobile"] .coreTrophyChip {
+  width: 124px;
+  min-width: 124px;
+  min-height: 62px;
+  border-radius: 16px;
+}
+
+:root[data-overlay-mode="mobile"] .coreTrophyChip .chipIconBadge {
+  width: 25px;
+  height: 25px;
+  flex-basis: 25px;
+}
+
+:root[data-overlay-mode="mobile"] .coreTrophyChip .chipIconSvg.objectiveIconEmoji {
+  font-size: 18px;
+}
+
+:root[data-overlay-mode="mobile"] .coreTrophyChip .chipValue {
+  font-size: 16px;
+}
+
+.empty {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 700;
+  padding: 0 6px;
+  white-space: nowrap;
+}
+
+.debugDock {
+  display: none;
+}
+
+body.debugEnabled .debugDock {
+  display: block;
+  width: min(1000px, calc(100vw - 20px));
+}
+
+.debugRow {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.debugBtn {
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--text);
+  padding: 8px 10px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.debugBtn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.debugPanel {
+  display: none;
+  margin-top: 10px;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.55);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  max-width: 1000px;
+}
+
+.debugPanel.open {
+  display: block;
+}
+
+.debugSection + .debugSection {
+  margin-top: 12px;
+}
+
+.debugSection select {
+  width: 100%;
+  min-height: 34px;
+  margin-top: 8px;
+  padding: 8px 10px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--text);
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.debugBody {
+  max-height: 320px;
+  overflow: auto;
+  display: grid;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.debugLog {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 8px 10px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.debugLog-info {
+  border-color: rgba(97, 168, 255, 0.25);
+}
+
+.debugLog-warn {
+  border-color: rgba(255, 196, 0, 0.28);
+}
+
+.debugLog-error {
+  border-color: rgba(255, 93, 115, 0.28);
+}
+
+.debugLogTop {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  font-size: 11px;
+  color: var(--muted);
+  margin-bottom: 4px;
+}
+
+.debugLogName,
+.debugLogLevel {
+  font-weight: 800;
+}
+
+.debugLogMsg {
+  font-size: 13px;
+  color: var(--text);
+}
+
+.debugLogData {
+  margin: 6px 0 0;
+  padding: 8px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.25);
+  font-family: var(--mono);
+  font-size: 11px;
+  white-space: pre-wrap;
+  word-break: break-word;
+  color: #dbeafe;
+}
+
+.debugStatusRow {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 10px;
+  padding: 6px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.debugStatusRow:first-child {
+  border-top: 0;
+}
+
+.debugStatusKey {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.debugStatusValue {
+  color: var(--text);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.debugEmpty {
+  color: var(--muted);
+  font-size: 12px;
+  padding: 8px 0;
+}
+
+@media (max-width: 760px) {
+  body {
+    padding: 10px 12px 8px 12px;
+  }
+
+  .overlayBar {
+    width: 100%;
+    max-width: 100%;
+    min-height: 40px;
+    padding: 0;
+    gap: 6px;
+  }
+
+  .overlayCore {
+    grid-template-columns: 98px auto 62px;
+    gap: 0;
+    min-height: 58px;
+    padding: 3px;
+    border-radius: 15px;
+  }
+
+  .progressChip {
+    width: 62px;
+    min-width: 62px;
+  }
+
+  .coreTrophyChip {
+    width: 98px;
+    min-width: 98px;
+    padding: 0 5px;
+  }
+
+  .timerChip,
+  .counterChip,
+  .metaChip,
+  .quotaChip {
+    min-height: 34px;
+  }
+
+  .debugStatusRow {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+}
+
+@media (max-width: 760px) {
+  :root[data-overlay-mode="mobile"] body {
+    padding: 14px 12px 8px 12px;
+  }
+
+  :root[data-overlay-mode="mobile"] .overlayCore {
+    grid-template-columns: 112px auto 70px;
+    gap: 0;
+    min-height: 68px;
+    padding: 4px;
+    border-radius: 18px;
+  }
+
+  :root[data-overlay-mode="mobile"] .timerChip {
+    min-height: 54px;
+    min-width: 178px;
+    border-radius: 15px;
+    font-size: 28px;
+  }
+
+  :root[data-overlay-mode="mobile"] .progressChip {
+    width: 70px;
+    min-width: 70px;
+    min-height: 54px;
+    border-radius: 13px;
+    font-size: 14px;
+  }
+
+  :root[data-overlay-mode="mobile"] .coreTrophyChip {
+    width: 112px;
+    min-width: 112px;
+    min-height: 54px;
+    border-radius: 13px;
+  }
+
+  :root[data-overlay-mode="mobile"] .coreTrophyChip .chipValue {
+    font-size: 15px;
+  }
+}
+
+:root[data-overlay-mode="mini"] body {
+  width: max-content;
+  min-width: 0;
+  height: fit-content;
+  padding: 10px 16px;
+}
+
+.miniOverlayPage {
+  background: transparent;
+}
+
+.miniOverlayShell {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  max-width: calc(100vw - 32px);
+  padding: 0;
+  filter: drop-shadow(0 8px 18px rgba(0, 0, 0, 0.35));
+}
+
+.miniTimer {
+  min-width: 132px;
+  min-height: 42px;
+  border-radius: 12px;
+  font-size: 21px;
+}
+
+.miniChip,
+.miniTrophyChip {
+  min-height: 34px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0 8px;
+  border-radius: 11px;
+  border: 1px solid var(--accent-mid, rgba(223, 211, 174, 0.18));
+  background:
+    linear-gradient(180deg, rgba(255, 244, 221, 0.08) 0%, var(--accent-soft, rgba(255, 255, 255, 0.05)) 100%),
+    linear-gradient(180deg, rgba(55, 65, 43, 0.86) 0%, rgba(25, 30, 22, 0.94) 100%);
+  backdrop-filter: blur(10px) saturate(0.92);
+  white-space: nowrap;
+  flex: 0 0 auto;
+  font-family: var(--overlay-serif);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 248, 235, 0.04),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.14);
+}
+
+.miniTrophyChip {
+  min-width: 82px;
+  justify-content: center;
+}
+
+.miniCompleteChip {
+  min-width: 54px;
+  justify-content: center;
+  color: var(--text);
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.miniTrophyChip[hidden],
+.miniDeathChip[hidden] {
+  display: none;
+}
+
+.miniObjectiveChips {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  min-width: 0;
+  max-width: calc(100vw - 310px);
+  overflow: hidden;
+}
+
+.miniObjectiveChips[hidden] {
+  display: none;
+}
+
+.miniChip.activePhaseChip {
+  border-color: var(--accent-strong, var(--border-strong));
+  background:
+    linear-gradient(180deg, rgba(255, 246, 228, 0.1) 0%, var(--accent-soft, var(--pill-active)) 100%),
+    linear-gradient(180deg, rgba(70, 82, 51, 0.9) 0%, rgba(27, 34, 22, 0.96) 100%);
+  box-shadow:
+    0 0 14px var(--accent-soft, rgba(119, 168, 255, 0.14)),
+    inset 0 1px 0 rgba(255, 248, 235, 0.05);
+}
+
+.miniChip .chipIconBadge,
+.miniTrophyChip .chipIconBadge {
+  width: 21px;
+  height: 21px;
+  flex-basis: 21px;
+}
+
+.miniChip .chipValue,
+.miniTrophyChip .chipValue {
+  font-size: 13px;
+  font-weight: 900;
+  color: var(--text);
+  letter-spacing: 0.01em;
+}
+
+:root[data-overlay-mode="mini"] .empty {
+  min-height: 34px;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 10px;
+  border-radius: 11px;
+  background: rgba(0, 0, 0, 0.28);
+}
+
+:root[data-overlay-mode="patch"] body {
+  width: max-content;
+  min-width: 0;
+  height: fit-content;
+  padding: 56px 28px 20px;
+}
+
+.patchOverlayPage {
+  background: transparent;
+}
+
+.patchOverlayShell {
+  position: relative;
+  isolation: isolate;
+  min-height: 104px;
+  align-items: flex-end;
+  gap: 8px;
+  padding: 34px 34px 17px;
+  border-radius: 8px 8px 18px 18px;
+  background:
+    radial-gradient(circle at 50% 4%, rgba(184, 22, 18, 0.12) 0%, rgba(184, 22, 18, 0) 34%),
+    linear-gradient(90deg, rgba(5, 5, 4, 0) 0%, rgba(5, 5, 4, 0.7) 13%, rgba(9, 10, 8, 0.84) 50%, rgba(5, 5, 4, 0.7) 87%, rgba(5, 5, 4, 0) 100%);
+  filter:
+    drop-shadow(0 12px 22px rgba(0, 0, 0, 0.52))
+    drop-shadow(0 0 18px rgba(86, 11, 11, 0.18));
+  overflow: visible;
+}
+
+.patchOverlayShell::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  left: 12px;
+  right: 12px;
+  bottom: 17px;
+  height: 40px;
+  border-radius: 8px;
+  background:
+    linear-gradient(90deg, rgba(64, 7, 7, 0) 0%, rgba(91, 13, 13, 0.34) 22%, rgba(148, 20, 16, 0.42) 50%, rgba(91, 13, 13, 0.34) 78%, rgba(64, 7, 7, 0) 100%);
+  transform: skewX(-8deg);
+  opacity: 0.68;
+}
+
+.patchOverlayShell::after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  left: 40px;
+  right: 40px;
+  bottom: 10px;
+  height: 2px;
+  border-radius: 999px;
+  background:
+    linear-gradient(90deg, rgba(241, 229, 202, 0) 0%, rgba(241, 229, 202, 0.34) 22%, rgba(153, 18, 18, 0.72) 50%, rgba(241, 229, 202, 0.34) 78%, rgba(241, 229, 202, 0) 100%);
+  opacity: 0.9;
+}
+
+.patchOverlayShell .miniTimer::after {
+  content: none;
+}
+
+.patchOverlayShell > * {
+  position: relative;
+  z-index: 2;
+}
+
+.patchOverlayShell .timerChip,
+.patchOverlayShell .miniChip,
+.patchOverlayShell .miniTrophyChip {
+  position: relative;
+  border-radius: 7px;
+  border-color: rgba(224, 211, 180, 0.24);
+  background:
+    linear-gradient(180deg, rgba(255, 244, 221, 0.07) 0%, rgba(255, 244, 221, 0.02) 100%),
+    linear-gradient(180deg, rgba(55, 60, 45, 0.95) 0%, rgba(12, 14, 11, 0.98) 100%);
+  box-shadow:
+    0 5px 14px rgba(0, 0, 0, 0.42),
+    inset 0 1px 0 rgba(255, 245, 220, 0.09),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.44);
+}
+
+.patchOverlayShell .timerChip::before,
+.patchOverlayShell .miniChip::before,
+.patchOverlayShell .miniTrophyChip::before {
+  content: "";
+  position: absolute;
+  inset: 3px;
+  border: 1px dashed rgba(232, 221, 194, 0.13);
+  border-radius: 5px;
+  pointer-events: none;
+}
+
+.patchOverlayShell .miniTimer {
+  min-width: 158px;
+  min-height: 46px;
+  color: #79f0aa;
+  border-color: rgba(120, 241, 170, 0.28);
+  background:
+    radial-gradient(circle at 50% 0%, rgba(120, 241, 170, 0.16) 0%, rgba(120, 241, 170, 0) 58%),
+    linear-gradient(180deg, rgba(18, 58, 35, 0.98) 0%, rgba(5, 16, 10, 0.99) 100%);
+  font-size: 24px;
+  text-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.95),
+    0 0 8px rgba(120, 241, 170, 0.34);
+}
+
+.patchOverlayShell .miniChip,
+.patchOverlayShell .miniTrophyChip {
+  min-height: 36px;
+  min-width: 84px;
+  padding: 0 9px;
+}
+
+.patchOverlayShell .miniCompleteChip {
+  color: #fff5df;
+  min-width: 58px;
+}
+
+.patchOverlayShell .chipIconBadge {
+  background: rgba(255, 245, 218, 0.1);
+  border-color: rgba(255, 245, 218, 0.06);
+}
+
+.patchOverlayShell .chipValue {
+  color: #fff8e9;
+  font-size: 15px;
+  font-family: var(--numeric);
+  font-weight: 950;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.92);
+}
+
+.patchOverlayShell .miniObjectiveChips {
+  max-width: calc(100vw - 380px);
+}
+
+:root[data-overlay-mode="patch-full"] body {
+  padding: 82px 28px 24px;
+}
+
+.patchFullOverlayPage {
+  background: transparent;
+}
+
+.patchFullOverlayShell {
+  filter:
+    drop-shadow(0 14px 26px rgba(0, 0, 0, 0.5))
+    drop-shadow(0 0 18px rgba(86, 11, 11, 0.16));
+}
+
+.patchFullOverlayBar {
+  gap: 14px;
+  min-height: 100px;
+}
+
+.patchFullOverlayBar::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 0;
+  left: -18px;
+  right: -18px;
+  bottom: 4px;
+  height: 74px;
+  border-radius: 10px 10px 18px 18px;
+  background:
+    radial-gradient(circle at 50% 8%, rgba(184, 22, 18, 0.13) 0%, rgba(184, 22, 18, 0) 34%),
+    linear-gradient(90deg, rgba(5, 5, 4, 0) 0%, rgba(5, 5, 4, 0.62) 12%, rgba(9, 10, 8, 0.82) 50%, rgba(5, 5, 4, 0.62) 88%, rgba(5, 5, 4, 0) 100%);
+  pointer-events: none;
+}
+
+.patchFullOverlayBar::after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 0;
+  left: 18px;
+  right: 18px;
+  bottom: -3px;
+  height: 2px;
+  border-radius: 999px;
+  background:
+    linear-gradient(90deg, rgba(241, 229, 202, 0) 0%, rgba(241, 229, 202, 0.28) 22%, rgba(153, 18, 18, 0.68) 50%, rgba(241, 229, 202, 0.28) 78%, rgba(241, 229, 202, 0) 100%);
+  pointer-events: none;
+}
+
+.patchFullOverlayShell .overlaySide,
+.patchFullOverlayShell .overlayCore {
+  position: relative;
+  z-index: 2;
+}
+
+.patchFullOverlayShell .overlayCore {
+  isolation: isolate;
+  overflow: visible;
+  min-height: 76px;
+  border-color: rgba(120, 241, 170, 0.28);
+  background:
+    radial-gradient(circle at 50% -18%, rgba(120, 241, 170, 0.16) 0%, rgba(120, 241, 170, 0) 58%),
+    linear-gradient(180deg, rgba(18, 58, 35, 0.96) 0%, rgba(5, 16, 10, 0.98) 100%);
+  box-shadow:
+    0 7px 18px rgba(0, 0, 0, 0.42),
+    inset 0 1px 0 rgba(255, 245, 220, 0.08),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.42);
+}
+
+.patchFullOverlayShell .overlayCore::before {
+  content: none;
+}
+
+.patchFullOverlayShell .overlayCore > * {
+  position: relative;
+  z-index: 2;
+}
+
+.patchFullOverlayShell .timerChip,
+.patchFullOverlayShell .counterChip,
+.patchFullOverlayShell .metaChip,
+.patchFullOverlayShell .quotaChip {
+  position: relative;
+  border-radius: 9px;
+  border-color: rgba(224, 211, 180, 0.24);
+  background:
+    linear-gradient(180deg, rgba(255, 244, 221, 0.07) 0%, rgba(255, 244, 221, 0.02) 100%),
+    linear-gradient(180deg, rgba(55, 60, 45, 0.95) 0%, rgba(12, 14, 11, 0.98) 100%);
+  box-shadow:
+    0 5px 14px rgba(0, 0, 0, 0.42),
+    inset 0 1px 0 rgba(255, 245, 220, 0.09),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.44);
+}
+
+.patchFullOverlayShell .overlaySide .counterChip,
+.patchFullOverlayShell .overlaySide .quotaChip {
+  min-height: 44px;
+  min-width: 112px;
+  padding-inline: 12px;
+}
+
+.patchFullOverlayShell .overlayCore .timerChip {
+  min-height: 62px;
+}
+
+.patchFullOverlayShell .overlaySide .chipLabel {
+  font-size: 10px;
+}
+
+.patchFullOverlayShell .overlaySide .chipValue,
+.patchFullOverlayShell .overlaySide .quotaValue {
+  font-size: 18px;
+}
+
+body[data-game="days-gone"] .patchFullOverlayShell .overlaySide .counterChip:not(.counterChipSpacer) .chipIconBadge {
+  width: 24px;
+  height: 24px;
+  flex-basis: 24px;
+}
+
+body[data-game="days-gone"] .patchFullOverlayShell .overlaySide .counterChip:not(.counterChipSpacer) .chipIconSvg {
+  width: 22px;
+  height: 22px;
+}
+
+.patchFullOverlayShell .timerChip::before,
+.patchFullOverlayShell .counterChip::before,
+.patchFullOverlayShell .metaChip::before,
+.patchFullOverlayShell .quotaChip::before {
+  content: "";
+  position: absolute;
+  inset: 3px;
+  border: 1px dashed rgba(232, 221, 194, 0.13);
+  border-radius: 6px;
+  pointer-events: none;
+}
+
+.patchFullOverlayShell .overlayCore .timerChip {
+  color: #79f0aa;
+  text-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.95),
+    0 0 8px rgba(120, 241, 170, 0.34);
+}
+
+.patchFullOverlayShell .chipValue,
+.patchFullOverlayShell .quotaValue {
+  color: #fff8e9;
+  font-weight: 950;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.92);
+}
+
+.patchFullOverlayShell .chipIconBadge {
+  background: rgba(255, 245, 218, 0.1);
+  border-color: rgba(255, 245, 218, 0.06);
+}
+
+/* The core reads as one instrument panel, not three nested pills. */
+.patchFullOverlayShell .overlayCore {
+  grid-template-columns: 112px 220px 74px;
+  min-height: 72px;
+  padding: 4px;
+  border-radius: 13px;
+  border-color: rgba(224, 211, 180, 0.26);
+  background:
+    radial-gradient(circle at 50% 0%, rgba(255, 244, 221, 0.07) 0%, rgba(255, 244, 221, 0) 52%),
+    linear-gradient(180deg, rgba(55, 60, 45, 0.97) 0%, rgba(12, 14, 11, 0.99) 100%);
+}
+
+.patchFullOverlayShell .overlayCore .timerChip,
+.patchFullOverlayShell .overlayCore .counterChip,
+.patchFullOverlayShell .overlayCore .metaChip {
+  min-height: 62px;
+  padding: 0 14px;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  backdrop-filter: none;
+  box-shadow: none;
+}
+
+.patchFullOverlayShell .overlayCore .timerChip {
+  min-width: 220px;
+  font-size: 30px;
+}
+
+.patchFullOverlayShell .overlayCore .coreTrophyChip {
+  justify-self: stretch;
+  justify-content: center;
+  border-right: 1px solid rgba(224, 211, 180, 0.2);
+}
+
+.patchFullOverlayShell .overlayCore .progressChip {
+  justify-self: stretch;
+  justify-content: center;
+  border-left: 1px solid rgba(224, 211, 180, 0.2);
+  font-size: 18px;
+  font-weight: 950;
+}
+
+.patchFullOverlayShell .overlayCore .timerChip::before,
+.patchFullOverlayShell .overlayCore .counterChip::before,
+.patchFullOverlayShell .overlayCore .metaChip::before {
+  content: none;
+}

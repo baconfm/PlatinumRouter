@@ -1,0 +1,84 @@
+{
+  "quotas": {
+    "legacy_all": {
+      "label": "Legacy All",
+      "targets": {}
+    },
+    "any_act1": {
+      "label": "Single-Playthrough Act 1",
+      "targets": {
+        "trophies": 10,
+        "inari": 22,
+        "hotsprings": 9,
+        "bamboo": 7,
+        "haiku": 8,
+        "shrines": 7,
+        "lighthouses": 1,
+        "records": 9,
+        "artifacts": 4,
+        "crickets": 5,
+        "hiddenaltars": 9,
+        "monochrome": 1,
+        "sidetales": 4,
+        "duels": 2,
+        "territories": 4,
+        "mythictales": 1
+      }
+    },
+    "any_act2": {
+      "label": "Single-Playthrough Act 2",
+      "targets": {
+        "trophies": 18,
+        "inari": 36,
+        "hotsprings": 14,
+        "bamboo": 13,
+        "haiku": 12,
+        "shrines": 12,
+        "lighthouses": 2,
+        "records": 14,
+        "artifacts": 7,
+        "crickets": 5,
+        "hiddenaltars": 10,
+        "monochrome": 2,
+        "sidetales": 4,
+        "duels": 5,
+        "territories": 5,
+        "mythictales": 2
+      }
+    },
+    "any_act3": {
+      "label": "Single-Playthrough Act 3",
+      "targets": {
+        "trophies": 52,
+        "inari": 49,
+        "hotsprings": 18,
+        "bamboo": 16,
+        "haiku": 19,
+        "shrines": 16,
+        "lighthouses": 8,
+        "records": 20,
+        "artifacts": 20,
+        "crickets": 5,
+        "hiddenaltars": 10,
+        "monochrome": 2,
+        "cooper": 3,
+        "sidetales": 61,
+        "duels": 25,
+        "territories": 56,
+        "mythictales": 7
+      }
+    },
+    "ngp_act1": {
+      "label": "Legacy NG+ Act 1",
+      "targets": {}
+    },
+    "ngp_act2": {
+      "label": "Legacy NG+ Act 2",
+      "targets": {}
+    },
+    "ngp_act3": {
+      "label": "Legacy NG+ Act 3",
+      "targets": {}
+    }
+  }
+}

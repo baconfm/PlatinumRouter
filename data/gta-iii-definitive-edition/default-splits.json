@@ -1,0 +1,90 @@
+{
+  "splits": [
+    {
+      "id": "give-me-liberty",
+      "label": "Give Me Liberty",
+      "phaseId": "portland",
+      "isPhaseStart": true,
+      "note": "OCR start marker: Give Me Liberty. Trophy toast may overlap shortly afterward.",
+      "auto": { "storymissions": 1 },
+      "ocrGoals": [{ "id": "give-me-liberty", "label": "Give Me Liberty", "counterKey": "routesignals" }],
+      "scanRegions": ["gta_center_event"]
+    },
+    {
+      "id": "luigis-girls",
+      "label": "Luigi's Girls",
+      "phaseId": "portland",
+      "note": "OCR start marker: Luigi's Girls.",
+      "auto": { "storymissions": 1 },
+      "ocrGoals": [{ "id": "luigis-girls", "label": "Luigi's Girls", "counterKey": "routesignals" }],
+      "scanRegions": ["gta_center_event"]
+    },
+    {
+      "id": "dont-spank-ma-bitch-up",
+      "label": "Don't Spank Ma Bitch Up",
+      "phaseId": "portland",
+      "note": "OCR start marker: Don't Spank Ma Bitch Up.",
+      "auto": { "storymissions": 1 },
+      "ocrGoals": [{ "id": "dont-spank-ma-bitch-up", "label": "Don't Spank Ma Bitch Up", "counterKey": "routesignals" }],
+      "scanRegions": ["gta_center_event"]
+    },
+    {
+      "id": "drive-misty-for-me",
+      "label": "Drive Misty For Me",
+      "phaseId": "portland",
+      "note": "OCR start marker: Drive Misty For Me.",
+      "auto": { "storymissions": 1 },
+      "ocrGoals": [{ "id": "drive-misty-for-me", "label": "Drive Misty For Me", "counterKey": "routesignals" }],
+      "scanRegions": ["gta_center_event"]
+    },
+    {
+      "id": "pump-action-pimp",
+      "label": "Pump-Action Pimp",
+      "phaseId": "portland",
+      "note": "OCR start marker: Pump-Action Pimp.",
+      "auto": { "storymissions": 1 },
+      "ocrGoals": [{ "id": "pump-action-pimp", "label": "Pump-Action Pimp", "counterKey": "routesignals" }],
+      "scanRegions": ["gta_center_event"]
+    },
+    {
+      "id": "the-fuzz-ball",
+      "label": "The Fuzz Ball",
+      "phaseId": "portland",
+      "note": "OCR start marker: The Fuzz Ball. Finish Luigi's chain before Portland lockouts become a risk.",
+      "auto": { "storymissions": 1 },
+      "ocrGoals": [{ "id": "the-fuzz-ball", "label": "The Fuzz Ball", "counterKey": "routesignals" }],
+      "scanRegions": ["gta_center_event"]
+    },
+    {
+      "id": "portland-route-buildout",
+      "label": "Portland Route Buildout",
+      "phaseId": "portland",
+      "note": "Manual placeholder while the remaining mission order and completion banners are trained from practice logs.",
+      "auto": {}
+    },
+    {
+      "id": "staunton-route-buildout",
+      "label": "Staunton Island Route Buildout",
+      "phaseId": "staunton",
+      "isPhaseStart": true,
+      "note": "Manual placeholder for the Staunton route.",
+      "auto": {}
+    },
+    {
+      "id": "shoreside-route-buildout",
+      "label": "Shoreside Vale Route Buildout",
+      "phaseId": "shoreside",
+      "isPhaseStart": true,
+      "note": "Manual placeholder. Preserve a backup before the final D-Ice chain.",
+      "auto": {}
+    },
+    {
+      "id": "final-cleanup",
+      "label": "Final 100% Cleanup",
+      "phaseId": "cleanup",
+      "isPhaseStart": true,
+      "note": "Do not leave Kingdom Come as the final completion item.",
+      "auto": {}
+    }
+  ]
+}

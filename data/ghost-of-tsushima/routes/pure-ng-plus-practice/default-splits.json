@@ -1,0 +1,457 @@
+{
+  "splits": [
+    {
+      "id": "ngp-haiku-and-golden-temple-board",
+      "label": "NG+ Haiku and Golden Temple Board",
+      "note": "(prologue skipped) Haiku - Golden Temple - GT Hotspring - Shrine - Hotspring - Bamboo - Tale(FS) - FTB HS - Fox - Arrow Peak - Hidden stash \nFTH(ng+ charm, pick poison) Fox - Yuna(arti/record)",
+      "phaseId": "ngp_act1",
+      "isPhaseStart": true,
+      "auto": {
+        "artifacts": 1,
+        "bamboo": 1,
+        "shrines": 2,
+        "haiku": 1,
+        "territories": 1,
+        "hotsprings": 3,
+        "hiddenaltars": 2,
+        "records": 2,
+        "sidetales": 1,
+        "inari": 1
+      }
+    },
+    {
+      "id": "split_1779630669701_1_7190",
+      "label": "Journey to Komoda",
+      "note": "Fox - Hotspring - Fox Beach Crevices - Fox Forest Crevice - Fox Waterfall - Haiku - Shrine - Monochrome Bamboo - Komoda Bamboo - Haiku - Fox -  Fox - Shrine",
+      "phaseId": "",
+      "isPhaseStart": false,
+      "auto": {
+        "monochrome": 1,
+        "bamboo": 2,
+        "shrines": 2,
+        "hotsprings": 1,
+        "haiku": 2,
+        "inari": 6
+      }
+    },
+    {
+      "id": "split_1779633210803_2_6757",
+      "label": "TAKA",
+      "note": "Hotspring, Bamboo, Fox , Hotspring  - Taka ",
+      "phaseId": "",
+      "isPhaseStart": false,
+      "auto": {
+        "bamboo": 1,
+        "hotsprings": 2,
+        "inari": 1
+      }
+    },
+    {
+      "id": "ngp-hiyoshi-ariake-sweep",
+      "label": "NG+ Hiyoshi / Ariake Sweep",
+      "note": "Fox, haiku, spring, and Hiyoshi lane. Start the lighthouse line while Act 1 is still compact.",
+      "phaseId": "ngp_act1",
+      "isPhaseStart": false,
+      "auto": {
+        "bamboo": 1,
+        "hotsprings": 1,
+        "lighthouses": 1,
+        "shrines": 1,
+        "crickets": 1,
+        "haiku": 1,
+        "hiddenaltars": 2,
+        "records": 1,
+        "inari": 3,
+        "sidetales": 2
+      }
+    },
+    {
+      "id": "ngp-ishikawa-route-board",
+      "label": "NG+ Ishikawa Route Board",
+      "note": "Bow route, Hiyoshi records, shrine, and altar stack while pushing Ishikawa availability.",
+      "phaseId": "ngp_act1",
+      "isPhaseStart": false,
+      "auto": {
+        "bamboo": 1,
+        "hotsprings": 2,
+        "shrines": 1,
+        "haiku": 1,
+        "hiddenaltars": 2,
+        "records": 3,
+        "inari": 2,
+        "sidetales": 2
+      }
+    },
+    {
+      "id": "ngp-masako-golden-forest",
+      "label": "NG+ Masako / Golden Forest",
+      "note": "Golden Forest fox chain, Masako progression, and the mid-Izuhara cleanup pass.",
+      "phaseId": "ngp_act1",
+      "isPhaseStart": false,
+      "auto": {
+        "crickets": 1,
+        "hiddenaltars": 2,
+        "records": 1,
+        "territories": 1,
+        "inari": 4,
+        "sidetales": 3
+      }
+    },
+    {
+      "id": "ngp-ryuzo-komatsu-board",
+      "label": "NG+ Ryuzo / Komatsu Board",
+      "note": "Komatsu routing, cricket finish, artifact line, and the second lighthouse push.",
+      "phaseId": "ngp_act1",
+      "isPhaseStart": false,
+      "auto": {
+        "bamboo": 1,
+        "hotsprings": 1,
+        "hiddenaltars": 1,
+        "lighthouses": 1,
+        "artifacts": 2,
+        "crickets": 2,
+        "haiku": 2,
+        "records": 2,
+        "inari": 3,
+        "territories": 1,
+        "sidetales": 3
+      }
+    },
+    {
+      "id": "ngp-heavenly-strike-arrow-peak",
+      "label": "NG+ Heavenly Strike / Arrow Peak",
+      "note": "Mythic handoff, Arrow Peak/PB shrine work, and duel setup before the north side closes.",
+      "phaseId": "ngp_act1",
+      "isPhaseStart": false,
+      "auto": {
+        "hotsprings": 1,
+        "haiku": 1,
+        "shrines": 2,
+        "inari": 3,
+        "mythictales": 1,
+        "duels": 1,
+        "sidetales": 2
+      }
+    },
+    {
+      "id": "ngp-izuhara-mythic-and-duels",
+      "label": "NG+ Izuhara Mythic and Duels",
+      "note": "Finish the Act 1 mythic chain, clean the duel board, and remove the loose unlock clutter.",
+      "phaseId": "ngp_act1",
+      "isPhaseStart": false,
+      "auto": {
+        "bamboo": 1,
+        "haiku": 1,
+        "inari": 2,
+        "shrines": 1,
+        "mythictales": 2,
+        "duels": 3,
+        "territories": 1,
+        "sidetales": 1
+      }
+    },
+    {
+      "id": "ngp-izuhara-tales-and-territory-sweep",
+      "label": "NG+ Izuhara Tales and Territory Sweep",
+      "note": "Front-load the Act 1 tale board and planned liberation work before Castle Kaneda.",
+      "phaseId": "ngp_act1",
+      "isPhaseStart": false,
+      "auto": {
+        "bamboo": 1,
+        "haiku": 1,
+        "hotsprings": 1,
+        "inari": 2,
+        "shrines": 1,
+        "artifacts": 1,
+        "hiddenaltars": 1,
+        "lighthouses": 1,
+        "records": 1,
+        "duels": 2,
+        "territories": 4,
+        "sidetales": 2
+      }
+    },
+    {
+      "id": "ngp-castle-kaneda-exit",
+      "label": "NG+ Castle Kaneda Exit",
+      "note": "Close Izuhara clean. Use spare encounters here for any early combat-misc practice still missing.",
+      "phaseId": "ngp_act1",
+      "isPhaseStart": false,
+      "auto": {
+        "hotsprings": 1,
+        "inari": 1,
+        "monochrome": 1,
+        "crickets": 1,
+        "sidetales": 1
+      }
+    },
+    {
+      "id": "ngp-akashima-arrival-umugi-cove",
+      "label": "NG+ Akashima Arrival / Umugi Cove",
+      "note": "Open Toyotama, tag the Umugi line, and start folding side tales into the story spine again.",
+      "phaseId": "ngp_act2",
+      "isPhaseStart": false,
+      "auto": {
+        "hotsprings": 1,
+        "shrines": 1,
+        "bamboo": 1,
+        "haiku": 1,
+        "records": 1,
+        "artifacts": 1,
+        "inari": 2,
+        "duels": 1,
+        "territories": 1,
+        "sidetales": 3
+      }
+    },
+    {
+      "id": "ngp-yarikawa-story-spine",
+      "label": "NG+ Yarikawa Story Spine",
+      "note": "Walls/Coward/Yarikawa route with the nearby cleanup that does not break pace.",
+      "phaseId": "ngp_act2",
+      "isPhaseStart": false,
+      "auto": {
+        "hotsprings": 1,
+        "shrines": 1,
+        "bamboo": 1,
+        "records": 1,
+        "artifacts": 1,
+        "inari": 2,
+        "duels": 1,
+        "territories": 2,
+        "sidetales": 3
+      }
+    },
+    {
+      "id": "ngp-sakai-armor-omi-loop",
+      "label": "NG+ Sakai Armor / Omi Loop",
+      "note": "Family route, Omi loop, and the first Toyotama mythic cluster.",
+      "phaseId": "ngp_act2",
+      "isPhaseStart": false,
+      "auto": {
+        "hotsprings": 1,
+        "shrines": 1,
+        "bamboo": 1,
+        "haiku": 1,
+        "mythictales": 1,
+        "records": 1,
+        "inari": 3,
+        "artifacts": 2,
+        "duels": 1,
+        "sidetales": 4,
+        "territories": 2
+      }
+    },
+    {
+      "id": "ngp-toyotama-coast-sweep",
+      "label": "NG+ Toyotama Coast Sweep",
+      "note": "Coastline sweep for lighthouse pressure, collectibles, and easy tale pickups.",
+      "phaseId": "ngp_act2",
+      "isPhaseStart": false,
+      "auto": {
+        "bamboo": 1,
+        "hotsprings": 1,
+        "haiku": 1,
+        "inari": 2,
+        "lighthouses": 1,
+        "records": 1,
+        "artifacts": 1,
+        "duels": 2,
+        "sidetales": 3,
+        "territories": 4
+      }
+    },
+    {
+      "id": "ngp-monk-and-tale-board",
+      "label": "NG+ Monk and Tale Board",
+      "note": "Norio side of the island, monk chain setup, and dense Toyotama tale value.",
+      "phaseId": "ngp_act2",
+      "isPhaseStart": false,
+      "auto": {
+        "haiku": 1,
+        "hotsprings": 1,
+        "inari": 2,
+        "shrines": 1,
+        "mythictales": 1,
+        "records": 1,
+        "artifacts": 1,
+        "duels": 2,
+        "sidetales": 5,
+        "territories": 3
+      }
+    },
+    {
+      "id": "ngp-six-blades-duel-board",
+      "label": "NG+ Six Blades / Duel Board",
+      "note": "Use the Kojiro board to cash out the duel count while it is all in one window.",
+      "phaseId": "ngp_act2",
+      "isPhaseStart": false,
+      "auto": {
+        "bamboo": 1,
+        "inari": 1,
+        "mythictales": 1,
+        "artifacts": 1,
+        "duels": 4,
+        "sidetales": 2,
+        "territories": 2
+      }
+    },
+    {
+      "id": "ngp-toyotama-camp-sweep",
+      "label": "NG+ Toyotama Camp Sweep",
+      "note": "Liberation-heavy stretch. Good place to mop Perfect Parry, terror arrow, and fall-damage practice cleanup if needed.",
+      "phaseId": "ngp_act2",
+      "isPhaseStart": false,
+      "auto": {
+        "bamboo": 1,
+        "haiku": 1,
+        "hotsprings": 1,
+        "inari": 2,
+        "shrines": 1,
+        "artifacts": 1,
+        "duels": 1,
+        "lighthouses": 1,
+        "records": 1,
+        "sidetales": 3,
+        "territories": 7
+      }
+    },
+    {
+      "id": "ngp-castle-shimura-exit",
+      "label": "NG+ Castle Shimura Exit",
+      "note": "Close Toyotama with the second dye merchant and any short spillover tale work.",
+      "phaseId": "ngp_act2",
+      "isPhaseStart": false,
+      "auto": {
+        "inari": 1,
+        "monochrome": 1,
+        "territories": 3,
+        "sidetales": 2
+      }
+    },
+    {
+      "id": "ngp-kamiagata-entry-jogaku-board",
+      "label": "NG+ Kamiagata Entry / Jogaku Board",
+      "note": "Open the north, take the first lighthouse, and set the final side-tale board in motion.",
+      "phaseId": "ngp_act3",
+      "isPhaseStart": false,
+      "auto": {
+        "hotsprings": 1,
+        "bamboo": 1,
+        "shrines": 1,
+        "lighthouses": 1,
+        "haiku": 1,
+        "records": 1,
+        "inari": 2,
+        "duels": 1,
+        "artifacts": 1,
+        "sidetales": 3,
+        "territories": 2
+      }
+    },
+    {
+      "id": "ngp-north-sweep-lighthouse-chain",
+      "label": "NG+ North Sweep / Lighthouse Chain",
+      "note": "Cold north sweep for lighthouse pressure, tale pickups, and route-safe camp clear.",
+      "phaseId": "ngp_act3",
+      "isPhaseStart": false,
+      "auto": {
+        "bamboo": 1,
+        "shrines": 1,
+        "lighthouses": 1,
+        "haiku": 1,
+        "records": 1,
+        "inari": 2,
+        "duels": 1,
+        "artifacts": 1,
+        "sidetales": 2,
+        "territories": 3
+      }
+    },
+    {
+      "id": "ngp-frosted-collectibles-and-tales",
+      "label": "NG+ Frosted Collectibles and Tales",
+      "note": "Use the frozen region to finish the clean collectible lines and the next block of tales.",
+      "phaseId": "ngp_act3",
+      "isPhaseStart": false,
+      "auto": {
+        "hotsprings": 1,
+        "shrines": 1,
+        "haiku": 1,
+        "inari": 2,
+        "records": 1,
+        "duels": 1,
+        "artifacts": 2,
+        "sidetales": 3,
+        "territories": 3
+      }
+    },
+    {
+      "id": "ngp-final-mythic-vanity-cooper",
+      "label": "NG+ Final Mythic / Vanity / Cooper",
+      "note": "Cash out the last mythic, sword kit/gift cleanup, and the full Cooper Clan costume set.",
+      "phaseId": "ngp_act3",
+      "isPhaseStart": false,
+      "auto": {
+        "inari": 1,
+        "haiku": 1,
+        "mythictales": 1,
+        "cooper": 3,
+        "artifacts": 1,
+        "duels": 1,
+        "sidetales": 2,
+        "territories": 1
+      }
+    },
+    {
+      "id": "ngp-kamiagata-territory-sweep",
+      "label": "NG+ Kamiagata Territory Sweep",
+      "note": "Heavy liberation block. This is the best late spot to finish any lingering combat-misc practice work.",
+      "phaseId": "ngp_act3",
+      "isPhaseStart": false,
+      "auto": {
+        "bamboo": 1,
+        "haiku": 1,
+        "hotsprings": 1,
+        "inari": 2,
+        "shrines": 1,
+        "lighthouses": 1,
+        "artifacts": 1,
+        "duels": 1,
+        "sidetales": 3,
+        "territories": 8
+      }
+    },
+    {
+      "id": "ngp-khan-route",
+      "label": "NG+ Khan Route",
+      "note": "Push the final story backbone while keeping the north cleanup board honest.",
+      "phaseId": "ngp_act3",
+      "isPhaseStart": false,
+      "auto": {
+        "bamboo": 1,
+        "inari": 2,
+        "records": 1,
+        "artifacts": 1,
+        "duels": 1,
+        "sidetales": 2,
+        "territories": 4
+      }
+    },
+    {
+      "id": "ngp-lord-shimura-platinum-mop-up",
+      "label": "NG+ Lord Shimura / Objective Mop-Up",
+      "note": "The route should only leave small spillover here. If anything survives, it should be end-state cleanup, not a region-sized chore.",
+      "phaseId": "ngp_act3",
+      "isPhaseStart": false,
+      "auto": {
+        "haiku": 1,
+        "inari": 1,
+        "artifacts": 1,
+        "duels": 1,
+        "territories": 3,
+        "sidetales": 3
+      }
+    }
+  ]
+}

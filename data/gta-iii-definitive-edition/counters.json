@@ -1,0 +1,164 @@
+{
+  "trophies": {
+    "label": "Platinum Trophies",
+    "shortLabel": "Trophies",
+    "queueLabel": "Trophies",
+    "overlayLabel": "TROPHY",
+    "icon": "trophy",
+    "accent": "#d6aa55",
+    "description": "All trophies in GTA III Definitive Edition, including the platinum.",
+    "requirement": "Earn all 29 trophies without using cheats.",
+    "max": 29,
+    "paceWeight": 0
+  },
+  "storymissions": {
+    "label": "Story Missions",
+    "shortLabel": "Story",
+    "queueLabel": "Story",
+    "overlayLabel": "STORY",
+    "icon": "route",
+    "accent": "#c4a15a",
+    "description": "Main story mission completions. Mission-start titles do not increment this counter.",
+    "requirement": "Complete all 50 main story missions required by the 100% checklist.",
+    "max": 50
+  },
+  "payphonemissions": {
+    "label": "Payphone Missions",
+    "shortLabel": "Phones",
+    "queueLabel": "Phones",
+    "icon": "phone",
+    "accent": "#60a5fa",
+    "description": "El Burro, Marty Chonks, King Courtney, and D-Ice mission chains.",
+    "requirement": "Complete all 17 payphone missions.",
+    "max": 17
+  },
+  "hiddenpackages": {
+    "label": "Hidden Packages",
+    "shortLabel": "Packages",
+    "queueLabel": "Packages",
+    "overlayLabel": "PKG",
+    "icon": "collectible",
+    "accent": "#6b93b8",
+    "description": "Package popups show an authoritative current count that OCR can use to repair missed pickups.",
+    "requirement": "Collect all 100 hidden packages.",
+    "max": 100
+  },
+  "rampages": {
+    "label": "Rampages",
+    "shortLabel": "Rampages",
+    "queueLabel": "Rampages",
+    "overlayLabel": "RAMP",
+    "icon": "combat",
+    "accent": "#ef4444",
+    "description": "Rampage challenges required for 100%.",
+    "requirement": "Complete all 20 rampages.",
+    "max": 20
+  },
+  "uniquejumps": {
+    "label": "Unique Jumps",
+    "shortLabel": "Jumps",
+    "queueLabel": "Jumps",
+    "overlayLabel": "JUMP",
+    "icon": "vehicle",
+    "accent": "#f59e0b",
+    "description": "Unique stunt bonuses detected from the center-screen completion banner.",
+    "requirement": "Complete all 20 unique jumps.",
+    "max": 20
+  },
+  "offroadmissions": {
+    "label": "Off-road Challenges",
+    "shortLabel": "Off-road",
+    "queueLabel": "Off-road",
+    "icon": "vehicle",
+    "accent": "#84cc16",
+    "description": "Patriot Playground, A Ride in the Park, Gripped!, and Multistorey Mayhem.",
+    "requirement": "Complete all 4 off-road vehicle challenges.",
+    "max": 4
+  },
+  "rcmissions": {
+    "label": "RC Toyz Missions",
+    "shortLabel": "RC Toyz",
+    "queueLabel": "RC Toyz",
+    "icon": "vehicle",
+    "accent": "#a78bfa",
+    "description": "The four RC Toyz destruction missions.",
+    "requirement": "Complete all 4 RC missions.",
+    "max": 4
+  },
+  "importexport": {
+    "label": "Import / Export Lists",
+    "shortLabel": "Exports",
+    "queueLabel": "Exports",
+    "icon": "vehicle",
+    "accent": "#14b8a6",
+    "description": "Portland garage, Shoreside Vale garage, and emergency-vehicle crane lists.",
+    "requirement": "Complete all 3 vehicle lists.",
+    "max": 3
+  },
+  "vehicledeliveries": {
+    "label": "Import / Export Vehicles",
+    "shortLabel": "Vehicles",
+    "queueLabel": "Vehicles",
+    "icon": "vehicle",
+    "accent": "#2dd4bf",
+    "description": "Aggregate vehicle deliveries detected from the generic delivery message. The notification does not identify the vehicle, so exact list membership remains a manual checklist.",
+    "requirement": "Deliver 39 vehicles across the Portland, Shoreside Vale, and emergency-vehicle lists.",
+    "max": 39,
+    "displayMode": "count",
+    "nonProgress": true,
+    "paceWeight": 0
+  },
+  "taxifares": {
+    "label": "Taxi Fares",
+    "shortLabel": "Taxi",
+    "queueLabel": "Taxi",
+    "icon": "vehicle",
+    "accent": "#eab308",
+    "description": "Taxi Driver fares; these do not need to be consecutive.",
+    "requirement": "Complete 100 taxi fares.",
+    "max": 100
+  },
+  "firefighter": {
+    "label": "Firefighter Fires",
+    "shortLabel": "Fire",
+    "queueLabel": "Fire",
+    "icon": "fire",
+    "accent": "#f97316",
+    "description": "Twenty extinguished fires on each island.",
+    "requirement": "Extinguish 60 fires: 20 per island.",
+    "max": 60
+  },
+  "vigilante": {
+    "label": "Vigilante Kills",
+    "shortLabel": "Vigilante",
+    "queueLabel": "Vigilante",
+    "icon": "target",
+    "accent": "#dc2626",
+    "description": "Twenty criminal kills on each island.",
+    "requirement": "Complete 60 Vigilante kills: 20 per island.",
+    "max": 60
+  },
+  "paramedic": {
+    "label": "Paramedic Level",
+    "shortLabel": "Medic",
+    "queueLabel": "Medic",
+    "icon": "medical",
+    "accent": "#22c55e",
+    "description": "Highest Paramedic level completed in one continuous attempt.",
+    "requirement": "Complete Paramedic level 12.",
+    "max": 12
+  },
+  "routesignals": {
+    "label": "OCR Route Signals",
+    "shortLabel": "Signals",
+    "queueLabel": "Signals",
+    "icon": "checkpoint",
+    "accent": "#94a3b8",
+    "description": "Internal mission-title markers used to advance practice splits without claiming a mission is complete.",
+    "requirement": "Internal only.",
+    "max": 999,
+    "displayMode": "count",
+    "nonProgress": true,
+    "paceWeight": 0
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "id": "gta-iii-definitive-edition",
+  "title": "Grand Theft Auto III: Definitive Edition",
+  "overlayTitle": "GTA III Definitive Edition 100%",
+  "subtitle": "Early OCR practice profile for a platinum and 100% route. Package counts self-correct; mission, Rampage, jump, and vehicle-delivery banners are tracked independently.",
+  "defaultDifficulty": "Standard",
+  "supportsDirge": false,
+  "appendDifficultyToTitle": false,
+  "collectibleTotal": 140,
+  "collectibleLabel": "Packages + Rampages + Jumps",
+  "collectibleShortLabel": "World",
+  "collectibleDescription": "The 100 hidden packages, 20 rampages, and 20 unique jumps required for 100% completion.",
+  "collectibleCounterKeys": [
+    "hiddenpackages",
+    "rampages",
+    "uniquejumps"
+  ],
+  "splitAutoCounterKeys": [
+    "storymissions",
+    "routesignals"
+  ],
+  "hiddenCounters": {
+    "overlay": [
+      "routesignals",
+      "vehicledeliveries",
+      "payphonemissions",
+      "offroadmissions",
+      "rcmissions",
+      "importexport",
+      "taxifares",
+      "firefighter",
+      "vigilante",
+      "paramedic"
+    ],
+    "totals": [
+      "routesignals"
+    ],
+    "focus": [
+      "routesignals"
+    ],
+    "quota": [
+      "routesignals"
+    ]
+  },
+  "overallCounterKeys": [
+    "storymissions",
+    "payphonemissions",
+    "hiddenpackages",
+    "rampages",
+    "uniquejumps",
+    "offroadmissions",
+    "rcmissions",
+    "importexport",
+    "taxifares",
+    "firefighter",
+    "vigilante",
+    "paramedic"
+  ],
+  "rules": [
+    "No cheats while trophy tracking is active",
+    "Complete Portland mission chains before their lockout points",
+    "Do not leave Kingdom Come as the final 100% requirement",
+    "Keep a backup save before the final D-Ice missions"
+  ]
+}

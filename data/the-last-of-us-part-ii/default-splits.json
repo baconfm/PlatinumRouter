@@ -1,0 +1,1148 @@
+{
+  "splits": [
+    {
+      "id": "fresh-profile-grounded-setup",
+      "label": "Fresh Profile + Grounded Setup",
+      "phaseId": "setup",
+      "isPhaseStart": true,
+      "note": "Create/confirm clean profile, start Fresh New Game, select Grounded at first possible moment, record the rules proof.",
+      "auto": {}
+    },
+    {
+      "id": "pt1-01-prologue",
+      "label": "PT1 01. Prologue",
+      "phaseId": "pt1_story",
+      "isPhaseStart": true,
+      "note": "Story intro only PT1: full collectible route plus full Grounded loot sweep; grab priority clusters first, then decide if low-value scraps are still worth the risk.",
+      "auto": {}
+    },
+    {
+      "id": "pt1-02-waking-up",
+      "label": "PT1 02. Waking Up",
+      "phaseId": "pt1_jackson",
+      "isPhaseStart": true,
+      "note": "Collect 2 cards + 1 artifact; pick up 3 parts Loot priority: Misc: 3p/0s (free parts box before Tipsy Bison). Fast repeat covers ~3/3; full sweep 3p/0s. PT1: full collectible route plus full Grounded loot sweep; grab priority clusters first, then decide if low-value scraps are still worth the risk.",
+      "auto": {
+        "artifacts": 1,
+        "cards": 2,
+        "routecollectibles": 3,
+        "ellieparts": 3
+      }
+    },
+    {
+      "id": "pt1-03-the-overlook",
+      "label": "PT1 03. The Overlook",
+      "phaseId": "pt1_jackson",
+      "isPhaseStart": false,
+      "note": "Collect 1 artifact PT1: full collectible route plus full Grounded loot sweep; grab priority clusters first, then decide if low-value scraps are still worth the risk.",
+      "auto": {
+        "artifacts": 1,
+        "routecollectibles": 1
+      }
+    },
+    {
+      "id": "pt1-04-patrol",
+      "label": "PT1 04. Patrol",
+      "phaseId": "pt1_jackson",
+      "isPhaseStart": false,
+      "note": "Loot heavily; first safe/workbench; first upgrade/weapon upgrade possible | Trophy timing: Tinkerer/Apprentice possible; first safe/workbench. Loot priority: Inside the Grocery: 15p/8s (in the first room spore room on the left.; safe); Houses: 8p/11s (house across the street from the RV, in the bathroom.; in the RV, 1, 1, 5 in one spot, 1 in the other); Market area: 4p/15s (in the locked bathroom off the first room past the moose. Go out the window to get in.; R2 tutorial room. in two areas in the small market, on the count...); Eugene's Library: 14p/0s (in the copy center; in the desk the polaroid is on.). Fast repeat covers ~75/82; full sweep 44p/38s. PT1: full collectible route plus full Grounded loot sweep; grab priority clusters first, then decide if low-value scraps are still worth the risk.",
+      "auto": {
+        "artifacts": 6,
+        "journals": 2,
+        "cards": 2,
+        "safes": 1,
+        "workbenches": 1,
+        "routecollectibles": 12,
+        "ellieparts": 44,
+        "elliesupps": 38,
+        "trophies": 2
+      }
+    },
+    {
+      "id": "pt1-05-the-horde",
+      "label": "PT1 05. The Horde",
+      "phaseId": "pt1_jackson",
+      "isPhaseStart": false,
+      "note": "Survive; no route loot PT1: full collectible route plus full Grounded loot sweep; grab priority clusters first, then decide if low-value scraps are still worth the risk.",
+      "auto": {}
+    },
+    {
+      "id": "pt1-06-the-chalet",
+      "label": "PT1 06. The Chalet",
+      "phaseId": "pt1_jackson",
+      "isPhaseStart": false,
+      "note": "Story PT1: full collectible route plus full Grounded loot sweep; grab priority clusters first, then decide if low-value scraps are still worth the risk.",
+      "auto": {}
+    },
+    {
+      "id": "pt1-07-packing-up",
+      "label": "PT1 07. Packing Up",
+      "phaseId": "pt1_jackson",
+      "isPhaseStart": false,
+      "note": "Get 2 journal entries + 1 artifact PT1: full collectible route plus full Grounded loot sweep; grab priority clusters first, then decide if low-value scraps are still worth the risk.",
+      "auto": {
+        "artifacts": 1,
+        "journals": 2,
+        "routecollectibles": 3
+      }
+    },
+    {
+      "id": "pt1-08-the-gate",
+      "label": "PT1 08. The Gate",
+      "phaseId": "pt1_ellie_day1",
+      "isPhaseStart": true,
+      "note": "Starter Set should pop on first card here if all previous cards collected | Trophy timing: Starter Set if all previous cards collected. Loot priority: Inside the zone: 21p/30s (before dropping down from the wall, go up the ladder at the end.; use the yellow cable to get on top of the trailer the yellow cable is next to.); Misc: 10p/0s (in the back of the military vehicle backed in next to the gate in the far corner.; in the guard house in the \"line forms here\" Main gate area.). Fast repeat covers ~61/61; full sweep 31p/30s. PT1: full collectible route plus full Grounded loot sweep; grab priority clusters first, then decide if low-value scraps are still worth the risk.",
+      "auto": {
+        "artifacts": 6,
+        "journals": 1,
+        "cards": 4,
+        "routecollectibles": 11,
+        "ellieparts": 31,
+        "elliesupps": 30,
+        "trophies": 1
+      }
+    },
+    {
+      "id": "pt1-09-downtown",
+      "label": "PT1 09. Downtown",
+      "phaseId": "pt1_ellie_day1",
+      "isPhaseStart": false,
+      "note": "Full clear all 10 locations; bank ring; shotgun; training manual; 3 safes | Trophy timing: Sightseer, So Great and Small, Mechanist possible, Crafting manual, shotgun. Loot priority: Courthouse: 10p/31s (in the judge's office; safe); Ruston Coffee: 19p/12s (on shelves in back room.; outside and around the corner in the little gate house.); Firetruck rappel stash: 16p/10s; Smashed-window stair route: 7p/18s. Fast repeat covers ~123/192; full sweep 115p/77s. PT1: full collectible route plus full Grounded loot sweep; grab priority clusters first, then decide if low-value scraps are still worth the risk.",
+      "auto": {
+        "artifacts": 18,
+        "journals": 2,
+        "cards": 5,
+        "safes": 3,
+        "manuals": 1,
+        "workbenches": 1,
+        "gear": 3,
+        "routecollectibles": 33,
+        "ellieparts": 115,
+        "elliesupps": 77,
+        "trophies": 3
+      }
+    },
+    {
+      "id": "pt1-10-eastbrook-elementary",
+      "label": "PT1 10. Eastbrook Elementary",
+      "phaseId": "pt1_ellie_day1",
+      "isPhaseStart": false,
+      "note": "Small collectible chapter after school escape Loot priority: Next apartment: 16p/6s (left bedroom closet; in the bathroom.); Misc: 8p/8s (in the cafeteria by the cots.; roof table); Apartment balcony: 11p/3s (in the apartment bathroom.; apartment closet). Fast repeat covers ~52/55; full sweep 38p/17s. PT1: full collectible route plus full Grounded loot sweep; grab priority clusters first, then decide if low-value scraps are still worth the risk.",
+      "auto": {
+        "artifacts": 3,
+        "cards": 1,
+        "routecollectibles": 4,
+        "ellieparts": 38,
+        "elliesupps": 11
+      }
+    },
+    {
+      "id": "pt1-11-capitol-hill",
+      "label": "PT1 11. Capitol Hill",
+      "phaseId": "pt1_ellie_day1",
+      "isPhaseStart": false,
+      "note": "Trap mine, stealth manual, 2 workbenches, 1 safe Loot priority: Gas Station - Workbench: 14p/8s (in the garage on a counter.; in the garage, by the tool benches.); Olive Street Market: 8p/9s (back storage shelves by the lockers.; on register near front.); High Up Gate House Before Mudslide: 13p/0s (go through the two openings towards the new area, but don't drop down to the freeway. Go up a ladder i...); Misc: 4p/8s (kitchen drawer of house #3.; downstairs bathroom of house #6.). Fast repeat covers ~64/114; full sweep 45p/69s. PT1: full collectible route plus full Grounded loot sweep; grab priority clusters first, then decide if low-value scraps are still worth the risk.",
+      "auto": {
+        "artifacts": 7,
+        "cards": 6,
+        "safes": 1,
+        "manuals": 1,
+        "workbenches": 2,
+        "gear": 1,
+        "routecollectibles": 18,
+        "ellieparts": 45,
+        "elliesupps": 69
+      }
+    },
+    {
+      "id": "pt1-12-channel-13",
+      "label": "PT1 12. Channel 13",
+      "phaseId": "pt1_ellie_day1",
+      "isPhaseStart": false,
+      "note": "Tiny collectible chapter Loot priority: Misc: 9p/22s (in the back a news van in front of the building.; in a closet down the hall, to the right of the duct you jump through.). Fast repeat covers ~31/31; full sweep 9p/22s. PT1: full collectible route plus full Grounded loot sweep; grab priority clusters first, then decide if low-value scraps are still worth the risk.",
+      "auto": {
+        "artifacts": 1,
+        "cards": 1,
+        "routecollectibles": 2,
+        "ellieparts": 9,
+        "elliesupps": 12
+      }
+    },
+    {
+      "id": "pt1-13-the-tunnels",
+      "label": "PT1 13. The Tunnels",
+      "phaseId": "pt1_ellie_day1",
+      "isPhaseStart": false,
+      "note": "Workbench + journal + 5 artifacts + 3 cards PT1: full collectible route plus full Grounded loot sweep; grab priority clusters first, then decide if low-value scraps are still worth the risk.",
+      "auto": {
+        "artifacts": 5,
+        "journals": 1,
+        "cards": 3,
+        "workbenches": 1,
+        "routecollectibles": 10
+      }
+    },
+    {
+      "id": "pt1-14-the-theater",
+      "label": "PT1 14. The Theater",
+      "phaseId": "pt1_ellie_day1",
+      "isPhaseStart": false,
+      "note": "Safe hub collectibles PT1: full collectible route plus full Grounded loot sweep; grab priority clusters first, then decide if low-value scraps are still worth the risk.",
+      "auto": {
+        "artifacts": 4,
+        "cards": 2,
+        "routecollectibles": 6
+      }
+    },
+    {
+      "id": "pt1-15-the-birthday-gift",
+      "label": "PT1 15. The Birthday Gift",
+      "phaseId": "pt1_story",
+      "isPhaseStart": false,
+      "note": "Do Looks Good On You; 2 cards, 2 journals, 1 artifact | Trophy timing: Looks Good On You. PT1: full collectible route plus full Grounded loot sweep; grab priority clusters first, then decide if low-value scraps are still worth the risk.",
+      "auto": {
+        "artifacts": 1,
+        "journals": 2,
+        "cards": 2,
+        "routecollectibles": 5,
+        "trophies": 1
+      }
+    },
+    {
+      "id": "pt1-16-hillcrest",
+      "label": "PT1 16. Hillcrest",
+      "phaseId": "pt1_ellie_day2",
+      "isPhaseStart": true,
+      "note": "Bow, precision manual, safe/holster, 2 workbenches; high-risk loot | Trophy timing: Bow + Precision manual; Specialist possible depending supplement spend. Loot priority: Auto Repair Shop: 14p/7s (safe; in back office.); Cedar Shake House: 11p/8s (upstairs bathroom.; in the garage.); Pet Boutique and Grooming: 0p/16s (in the back room. Break the glass to get in.); Goldstar Liquor: 4p/10s (in the basement right room.; in the basement left room, shelves on the left.). Fast repeat covers ~70/136; full sweep 59p/77s. PT1: full collectible route plus full Grounded loot sweep; grab priority clusters first, then decide if low-value scraps are still worth the risk.",
+      "auto": {
+        "artifacts": 10,
+        "journals": 1,
+        "cards": 5,
+        "safes": 1,
+        "manuals": 1,
+        "workbenches": 2,
+        "gear": 2,
+        "routecollectibles": 22,
+        "ellieparts": 59,
+        "elliesupps": 75,
+        "trophies": 1
+      }
+    },
+    {
+      "id": "pt1-17-finding-strings",
+      "label": "PT1 17. Finding Strings",
+      "phaseId": "pt1_story",
+      "isPhaseStart": false,
+      "note": "Short flashback collectibles PT1: full collectible route plus full Grounded loot sweep; grab priority clusters first, then decide if low-value scraps are still worth the risk.",
+      "auto": {
+        "artifacts": 1,
+        "journals": 1,
+        "cards": 1,
+        "routecollectibles": 3
+      }
+    },
+    {
+      "id": "pt1-18-the-seraphites",
+      "label": "PT1 18. The Seraphites",
+      "phaseId": "pt1_ellie_day2",
+      "isPhaseStart": false,
+      "note": "Explosives manual, 2 safes, 2 workbenches; huge loot chapter Loot priority: Garden Suites: 0p/35s (Apartment 302 on the computer desk.); Lakehill Seattle Hospital: 0p/21s (ground floor back left, Medical Research Laboratory.; second floor, in the first room on the right.); Kingsgate Brewing: 4p/15s (on an end booth table.; in the kitchen); Conference Center: 18p/0s (in the locked room upstairs.). Fast repeat covers ~93/166; full sweep 67p/99s. PT1: full collectible route plus full Grounded loot sweep; grab priority clusters first, then decide if low-value scraps are still worth the risk.",
+      "auto": {
+        "artifacts": 7,
+        "journals": 3,
+        "cards": 6,
+        "safes": 2,
+        "manuals": 1,
+        "workbenches": 2,
+        "routecollectibles": 21,
+        "ellieparts": 67,
+        "elliesupps": 88
+      }
+    },
+    {
+      "id": "pt1-19-st-mary-s-hospital",
+      "label": "PT1 19. St. Mary's Hospital",
+      "phaseId": "pt1_story",
+      "isPhaseStart": false,
+      "note": "No counted collectibles PT1: full collectible route plus full Grounded loot sweep; grab priority clusters first, then decide if low-value scraps are still worth the risk.",
+      "auto": {}
+    },
+    {
+      "id": "pt1-20-road-to-the-aquarium",
+      "label": "PT1 20. Road to the Aquarium",
+      "phaseId": "pt1_ellie_day3",
+      "isPhaseStart": true,
+      "note": "2 workbenches; cards/artifacts/journal Loot priority: In the water in front of the parking structure:: 12p/0s (underwater. Jump into the water and swim down on the left to the low ledge you can pull yourself up on...; in the parking garage, on a shelf in the room...); Travel Agency: 0p/10s (on a back desk in the small room on the left.). Fast repeat covers ~22/37; full sweep 21p/16s. PT1: full collectible route plus full Grounded loot sweep; grab priority clusters first, then decide if low-value scraps are still worth the risk.",
+      "auto": {
+        "artifacts": 3,
+        "journals": 1,
+        "cards": 4,
+        "workbenches": 2,
+        "routecollectibles": 10,
+        "ellieparts": 21,
+        "elliesupps": 16
+      }
+    },
+    {
+      "id": "pt1-21-the-flooded-city",
+      "label": "PT1 21. The Flooded City",
+      "phaseId": "pt1_ellie_day3",
+      "isPhaseStart": false,
+      "note": "12th workbench/In the Field likely here; safe; 2 workbenches | Trophy timing: In the Field likely at first workbench (12th workbench). Loot priority: W&B Arcade: 29p/0s (in the machine at the top of the stairs.; under the basketball machine upstairs.); Garrett's Furniture: 9p/17s (use the cart at the far right end and drag it back towards the dead body to get into the duct work above.; safe); Subway Car: 0p/17s (in the locked car at the end.); After the bloater, go through to the back rooms and upstairs.: 1p/12s (upstairs, go left into the little bar area. These are by the sink.; in the far back room with the computer stations and bloater growth on the walls.). Fast repeat covers ~85/110; full sweep 53p/57s. PT1: full collectible route plus full Grounded loot sweep; grab priority clusters first, then decide if low-value scraps are still worth the risk.",
+      "auto": {
+        "artifacts": 6,
+        "journals": 1,
+        "cards": 2,
+        "safes": 1,
+        "workbenches": 2,
+        "routecollectibles": 12,
+        "ellieparts": 53,
+        "elliesupps": 49,
+        "trophies": 1
+      }
+    },
+    {
+      "id": "pt1-22-infiltration",
+      "label": "PT1 22. Infiltration",
+      "phaseId": "pt1_ellie_day3",
+      "isPhaseStart": false,
+      "note": "One journal entry Loot priority: Misc: 20p/6s (walk through the drained fish area, climb the ladder and drop down on the other side. They're at the b...; in the locker at the end of the same room.). Fast repeat covers ~26/26; full sweep 20p/6s. PT1: full collectible route plus full Grounded loot sweep; grab priority clusters first, then decide if low-value scraps are still worth the risk.",
+      "auto": {
+        "journals": 1,
+        "routecollectibles": 1,
+        "ellieparts": 20,
+        "elliesupps": 6
+      }
+    },
+    {
+      "id": "pt1-23-tracking-lesson",
+      "label": "PT1 23. Tracking Lesson",
+      "phaseId": "pt1_abby",
+      "isPhaseStart": true,
+      "note": "Abby collectible intro; first coin PT1: full collectible route plus full Grounded loot sweep; grab priority clusters first, then decide if low-value scraps are still worth the risk.",
+      "auto": {
+        "artifacts": 3,
+        "coins": 1,
+        "routecollectibles": 4
+      }
+    },
+    {
+      "id": "pt1-24-the-stadium",
+      "label": "PT1 24. The Stadium",
+      "phaseId": "pt1_abby",
+      "isPhaseStart": false,
+      "note": "Coins + Sharpshooter trophy | Trophy timing: Sharpshooter. PT1: full collectible route plus full Grounded loot sweep; grab priority clusters first, then decide if low-value scraps are still worth the risk.",
+      "auto": {
+        "coins": 4,
+        "routecollectibles": 4,
+        "trophies": 2
+      }
+    },
+    {
+      "id": "pt1-25-on-foot",
+      "label": "PT1 25. On Foot",
+      "phaseId": "pt1_abby",
+      "isPhaseStart": false,
+      "note": "Covert Ops manual, hunting pistol, safe, workbench Loot priority: PNW Boat Repair: 18p/44s (behind the check out desk.; on the empty shelves in the middle.); Outside: 44p/0s (Part (1, 1) - in the first checkout counter; Part (1) - in the third checkout down the line.); Bay Hardware: 21p/0s (in the Halloween cubbies in the next room.; on the second shelf climbing up to get to the lit area.); Second section: 10p/0s (on the shelf with the handheld toolboxes? Stand in the center area facing the faucets on the wall and...; turn 180 and look at the screw drawers and go...). Fast repeat covers ~137/145; full sweep 93p/52s. PT1: full collectible route plus full Grounded loot sweep; grab priority clusters first, then decide if low-value scraps are still worth the risk.",
+      "auto": {
+        "artifacts": 1,
+        "coins": 4,
+        "safes": 1,
+        "manuals": 1,
+        "workbenches": 1,
+        "gear": 1,
+        "routecollectibles": 9,
+        "abbyparts": 93,
+        "abbysupps": 52
+      }
+    },
+    {
+      "id": "pt1-26-the-forward-base",
+      "label": "PT1 26. The Forward Base",
+      "phaseId": "pt1_abby",
+      "isPhaseStart": false,
+      "note": "Coins/artifact/workbench Loot priority: Misc: 27p/0s (in the same tent as the workbench on a green box.; in the same tent as the workbench on a brown box.). Fast repeat covers ~27/27; full sweep 27p/0s. PT1: full collectible route plus full Grounded loot sweep; grab priority clusters first, then decide if low-value scraps are still worth the risk.",
+      "auto": {
+        "artifacts": 1,
+        "coins": 3,
+        "workbenches": 1,
+        "routecollectibles": 5,
+        "abbyparts": 27
+      }
+    },
+    {
+      "id": "pt1-27-the-aquarium",
+      "label": "PT1 27. The Aquarium",
+      "phaseId": "pt1_abby",
+      "isPhaseStart": false,
+      "note": "Documents do not count PT1: full collectible route plus full Grounded loot sweep; grab priority clusters first, then decide if low-value scraps are still worth the risk.",
+      "auto": {}
+    },
+    {
+      "id": "pt1-28-hostile-territory",
+      "label": "PT1 28. Hostile Territory",
+      "phaseId": "pt1_abby",
+      "isPhaseStart": false,
+      "note": "Close Quarters manual, Relic of the Sages, double-barrel shotgun, safe | Trophy timing: Relic of the Sages; Close Quarters manual; double-barrel shotgun. Loot priority: Apartment: 3p/20s (in living room.; in the guard house.); Green Planet Herbs: 0p/20s (on table on the right.; on shelves in the back right.); Hotel: 7p/12s (on washer.; on the bar.); Jasmine Bakery: 0p/19s (safe.). Fast repeat covers ~81/127; full sweep 56p/71s. PT1: full collectible route plus full Grounded loot sweep; grab priority clusters first, then decide if low-value scraps are still worth the risk.",
+      "auto": {
+        "artifacts": 12,
+        "coins": 1,
+        "safes": 1,
+        "manuals": 1,
+        "workbenches": 1,
+        "gear": 2,
+        "routecollectibles": 18,
+        "abbyparts": 49,
+        "abbysupps": 71,
+        "trophies": 2
+      }
+    },
+    {
+      "id": "pt1-29-winter-visit",
+      "label": "PT1 29. Winter Visit",
+      "phaseId": "pt1_abby",
+      "isPhaseStart": false,
+      "note": "Do Put My Name Up bow minigame | Trophy timing: Put My Name Up. PT1: full collectible route plus full Grounded loot sweep; grab priority clusters first, then decide if low-value scraps are still worth the risk.",
+      "auto": {
+        "trophies": 1
+      }
+    },
+    {
+      "id": "pt1-30-the-forest",
+      "label": "PT1 30. The Forest",
+      "phaseId": "pt1_abby",
+      "isPhaseStart": false,
+      "note": "Firearms manual; workbench; artifact Loot priority: La Rosa's Auto shop: 29p/7s (all near the workbench.; filing cabinet the training manual is on.); Infected Building: 15p/8s (enter the building and go into the room on the left. Do not drop down.; same room as the parts.). Fast repeat covers ~59/59; full sweep 44p/15s. PT1: full collectible route plus full Grounded loot sweep; grab priority clusters first, then decide if low-value scraps are still worth the risk.",
+      "auto": {
+        "artifacts": 1,
+        "manuals": 1,
+        "workbenches": 1,
+        "routecollectibles": 3,
+        "abbyparts": 44,
+        "abbysupps": 15
+      }
+    },
+    {
+      "id": "pt1-31-the-coast",
+      "label": "PT1 31. The Coast",
+      "phaseId": "pt1_abby",
+      "isPhaseStart": false,
+      "note": "Crossbow, Ordnance manual, safe; Journeyman pops | Trophy timing: Journeyman after Ordnance manual. Loot priority: WTA Ship: 33p/46s (second floor, on the ground by the dead body by the white vending machine.; storage room on the right on the 3rd floor.); MPL: 11p/0s (on shelves behind the workbench.; outside, on a crate in the grass against the right fence.); Misc: 0p/10s (in the back of the red cargo container straight ahead before going left into MPL.). Fast repeat covers ~100/100; full sweep 44p/56s. PT1: full collectible route plus full Grounded loot sweep; grab priority clusters first, then decide if low-value scraps are still worth the risk.",
+      "auto": {
+        "artifacts": 3,
+        "coins": 4,
+        "safes": 1,
+        "manuals": 1,
+        "workbenches": 1,
+        "gear": 2,
+        "routecollectibles": 12,
+        "abbyparts": 44,
+        "abbysupps": 56,
+        "trophies": 1
+      }
+    },
+    {
+      "id": "pt1-32-return-to-the-coast",
+      "label": "PT1 32. Return to the Coast",
+      "phaseId": "pt1_abby",
+      "isPhaseStart": false,
+      "note": "No route loot PT1: full collectible route plus full Grounded loot sweep; grab priority clusters first, then decide if low-value scraps are still worth the risk.",
+      "auto": {}
+    },
+    {
+      "id": "pt1-33-the-shortcut",
+      "label": "PT1 33. The Shortcut",
+      "phaseId": "pt1_abby",
+      "isPhaseStart": false,
+      "note": "2 workbenches; safe; coins/artifacts Loot priority: Area Past Seraphite Overlook: 24p/0s (on shelves going towards the elevator.; after the first bridge, before ducking under the large red broken crane piece, turn right and go out o...); Sam's Apartment: 17p/7s (in the bathroom; safe.); Fireside Studios: 21p/0s (on shelves in the same room as the workbench.); Westport Optix & upper floors: 0p/19s (in a drawer in the back room.). Fast repeat covers ~88/116; full sweep 82p/34s. PT1: full collectible route plus full Grounded loot sweep; grab priority clusters first, then decide if low-value scraps are still worth the risk.",
+      "auto": {
+        "artifacts": 6,
+        "coins": 2,
+        "safes": 1,
+        "workbenches": 2,
+        "routecollectibles": 11,
+        "abbyparts": 82,
+        "abbysupps": 34
+      }
+    },
+    {
+      "id": "pt1-34-the-descent",
+      "label": "PT1 34. The Descent",
+      "phaseId": "pt1_abby",
+      "isPhaseStart": false,
+      "note": "Last safe/Safecracker; flamethrower; 5 coins | Trophy timing: Safecracker after last safe. Loot priority: Hotel Blacray: 0p/24s (behind the cash register counter at Orchard's Juice Bar.; safe); Floor 14: 12p/10s (just on the other side of the gap on the coffee table.; on the sink counter near the flamethrower); Floor 19 (stalker floor): 5p/17s (in the bedroom (1901) past the elevators in the end table (not in the stalker area).; tv cabinet in room 1904); Floor 13: 14p/7s (bathroom on the left.; go out the other bathroom door and they're on the ground by the drop off.). Fast repeat covers ~89/125; full sweep 57p/68s. PT1: full collectible route plus full Grounded loot sweep; grab priority clusters first, then decide if low-value scraps are still worth the risk.",
+      "auto": {
+        "artifacts": 3,
+        "coins": 5,
+        "safes": 1,
+        "gear": 1,
+        "routecollectibles": 10,
+        "abbyparts": 57,
+        "abbysupps": 58,
+        "trophies": 1
+      }
+    },
+    {
+      "id": "pt1-35-ground-zero",
+      "label": "PT1 35. Ground Zero",
+      "phaseId": "pt1_abby",
+      "isPhaseStart": false,
+      "note": "Workbench after Rat King; coins/artifacts Loot priority: Exiting: 14p/20s (by the glass enclosed parking office? Right on the left when you come in.; go around to the left and these are in the back of a military vehicle.); After the power is on.: 0p/32s (first recovery room on the left (stalker in the wall halfway down between the beds).; supply room middle shelf.); First Floor: 14p/12s (behind you when you land, on a shelf.; in the room on the left, table by third cot in the back left.); Surgery: 18p/6s (one room down from the stalker in the wall.; across from the hole you jump through.). Fast repeat covers ~116/128; full sweep 46p/82s. PT1: full collectible route plus full Grounded loot sweep; grab priority clusters first, then decide if low-value scraps are still worth the risk.",
+      "auto": {
+        "artifacts": 5,
+        "coins": 2,
+        "workbenches": 1,
+        "routecollectibles": 8,
+        "abbyparts": 46,
+        "abbysupps": 82
+      }
+    },
+    {
+      "id": "pt1-36-return-to-the-aquarium",
+      "label": "PT1 36. Return to the Aquarium",
+      "phaseId": "pt1_abby",
+      "isPhaseStart": false,
+      "note": "No counted collectibles PT1: full collectible route plus full Grounded loot sweep; grab priority clusters first, then decide if low-value scraps are still worth the risk.",
+      "auto": {}
+    },
+    {
+      "id": "pt1-37-the-marina",
+      "label": "PT1 37. The Marina",
+      "phaseId": "pt1_abby",
+      "isPhaseStart": false,
+      "note": "2 coins + artifact Loot priority: Misc: 33p/17s (left side of the train car.; right side of the train car.). Fast repeat covers ~50/50; full sweep 33p/17s. PT1: full collectible route plus full Grounded loot sweep; grab priority clusters first, then decide if low-value scraps are still worth the risk.",
+      "auto": {
+        "artifacts": 1,
+        "coins": 2,
+        "routecollectibles": 3,
+        "abbyparts": 33,
+        "abbysupps": 17
+      }
+    },
+    {
+      "id": "pt1-38-the-island",
+      "label": "PT1 38. The Island",
+      "phaseId": "pt1_abby",
+      "isPhaseStart": false,
+      "note": "3 coins, 4 artifacts, workbench; big loot chapter Loot priority: Logging Huts: 26p/18s (inside the building to the right from start.; in the larger building on the left.); Farmlands: 0p/30s (in the far hut, near where you want to go to exit.; just past the farmlands, these are in the hut Yara leads you through to get to her house.); Misc: 14p/0s (trunk of the car by the bodies after climbing the ladder.). Fast repeat covers ~88/88; full sweep 40p/48s. PT1: full collectible route plus full Grounded loot sweep; grab priority clusters first, then decide if low-value scraps are still worth the risk.",
+      "auto": {
+        "artifacts": 4,
+        "coins": 3,
+        "workbenches": 1,
+        "routecollectibles": 8,
+        "abbyparts": 78,
+        "abbysupps": 90
+      }
+    },
+    {
+      "id": "pt1-39-the-escape",
+      "label": "PT1 39. The Escape",
+      "phaseId": "pt1_abby",
+      "isPhaseStart": false,
+      "note": "Final coin/Numismatist; workbench | Trophy timing: Numismatist after final coin. Loot priority: Old Town: 14p/8s (on the desk in the basement room.; to the right of the supplements, two locations.); After Isaac Cutscene, in the warehouse: 5p/17s (When you gain control of Abby, they're over on the left on a lower pallet.; in the locker on the right.); Misc: 0p/17s (same hut, same shelves.); Harstine Brewery: 10p/0s (left from start, through the crack in the wall, on a counter near the bags of malt.; on the bar in the far left room.). Fast repeat covers ~71/80; full sweep 38p/42s. PT1: full collectible route plus full Grounded loot sweep; grab priority clusters first, then decide if low-value scraps are still worth the risk.",
+      "auto": {
+        "coins": 1,
+        "workbenches": 1,
+        "routecollectibles": 2,
+        "abbyparts": 38,
+        "abbysupps": 25,
+        "trophies": 1
+      }
+    },
+    {
+      "id": "pt1-40-the-confrontation",
+      "label": "PT1 40. The Confrontation",
+      "phaseId": "pt1_abby",
+      "isPhaseStart": false,
+      "note": "Boss route only PT1: full collectible route plus full Grounded loot sweep; grab priority clusters first, then decide if low-value scraps are still worth the risk.",
+      "auto": {}
+    },
+    {
+      "id": "pt1-41-the-farm",
+      "label": "PT1 41. The Farm",
+      "phaseId": "pt1_story",
+      "isPhaseStart": false,
+      "note": "Story PT1: full collectible route plus full Grounded loot sweep; grab priority clusters first, then decide if low-value scraps are still worth the risk.",
+      "auto": {}
+    },
+    {
+      "id": "pt1-42-2425-constance",
+      "label": "PT1 42. 2425 Constance",
+      "phaseId": "pt1_abby",
+      "isPhaseStart": false,
+      "note": "One artifact PT1: full collectible route plus full Grounded loot sweep; grab priority clusters first, then decide if low-value scraps are still worth the risk.",
+      "auto": {
+        "artifacts": 1,
+        "routecollectibles": 1
+      }
+    },
+    {
+      "id": "pt1-43-pushing-inland",
+      "label": "PT1 43. Pushing Inland",
+      "phaseId": "pt1_santa_barbara",
+      "isPhaseStart": true,
+      "note": "Artifacts, card, journal, workbench Loot priority: Misc: 31p/6s (in the garage of the first house on the back table.; back of the military vehicle on the street.). Fast repeat covers ~37/37; full sweep 31p/6s. PT1: full collectible route plus full Grounded loot sweep; grab priority clusters first, then decide if low-value scraps are still worth the risk.",
+      "auto": {
+        "artifacts": 3,
+        "journals": 1,
+        "cards": 1,
+        "workbenches": 1,
+        "routecollectibles": 6,
+        "ellieparts": 31,
+        "elliesupps": 6
+      }
+    },
+    {
+      "id": "pt1-44-the-resort",
+      "label": "PT1 44. The Resort",
+      "phaseId": "pt1_santa_barbara",
+      "isPhaseStart": false,
+      "note": "SMG/High Caliber; final workbench/Prepared; final card/Master Set; final artifact/journal/Archivist | Trophy timing: High Caliber, Prepared for the Worst, Master Set, Archivist likely finish here. Loot priority: Follow the Tracks: 22p/0s (on a middle table in the workbench area.; on the shipping container). Fast repeat covers ~22/22; full sweep 22p/0s. PT1: full collectible route plus full Grounded loot sweep; grab priority clusters first, then decide if low-value scraps are still worth the risk.",
+      "auto": {
+        "artifacts": 2,
+        "journals": 1,
+        "cards": 1,
+        "workbenches": 1,
+        "gear": 1,
+        "routecollectibles": 6,
+        "ellieparts": 22,
+        "trophies": 5
+      }
+    },
+    {
+      "id": "pt1-45-the-beach",
+      "label": "PT1 45. The Beach",
+      "phaseId": "pt1_santa_barbara",
+      "isPhaseStart": false,
+      "note": "Story ending; Grounded trophy if applicable | Trophy timing: What I Had To Do + Dig Two Graves if route is Grounded. PT1: full collectible route plus full Grounded loot sweep; grab priority clusters first, then decide if low-value scraps are still worth the risk.",
+      "auto": {
+        "trophies": 1
+      }
+    },
+    {
+      "id": "pt1-46-epilogue",
+      "label": "PT1 46. Epilogue",
+      "phaseId": "pt1_story",
+      "isPhaseStart": false,
+      "note": "Story wrap PT1: full collectible route plus full Grounded loot sweep; grab priority clusters first, then decide if low-value scraps are still worth the risk.",
+      "auto": {}
+    },
+    {
+      "id": "pt2-01-prologue",
+      "label": "PT2 01. Prologue",
+      "phaseId": "pt2_story",
+      "isPhaseStart": true,
+      "note": "PT2: rush unless a missed collectible or route-proof check needs this chapter.",
+      "auto": {
+        "ngplusverify": 1
+      }
+    },
+    {
+      "id": "pt2-02-waking-up",
+      "label": "PT2 02. Waking Up",
+      "phaseId": "pt2_ellie",
+      "isPhaseStart": true,
+      "note": "Loot priority: Misc: 3p/0s (free parts box before Tipsy Bison). Fast repeat covers ~3/3; full sweep 3p/0s. PT2: repeat priority clusters first; keep sweeping only until character upgrades are funded or NG+ loot variance needs proof.",
+      "auto": {
+        "ngplusverify": 1,
+        "ellieparts": 3
+      }
+    },
+    {
+      "id": "pt2-03-the-overlook",
+      "label": "PT2 03. The Overlook",
+      "phaseId": "pt2_abby",
+      "isPhaseStart": true,
+      "note": "PT2: rush unless a missed collectible or route-proof check needs this chapter.",
+      "auto": {
+        "ngplusverify": 1
+      }
+    },
+    {
+      "id": "pt2-04-patrol",
+      "label": "PT2 04. Patrol",
+      "phaseId": "pt2_ellie",
+      "isPhaseStart": false,
+      "note": "Loot priority: Inside the Grocery: 15p/8s (in the first room spore room on the left.; safe); Houses: 8p/11s (house across the street from the RV, in the bathroom.; in the RV, 1, 1, 5 in one spot, 1 in the other); Market area: 4p/15s (in the locked bathroom off the first room past the moose. Go out the window to get in.; R2 tutorial room. in two areas in the small market, on the count...); Eugene's Library: 14p/0s (in the copy center; in the desk the polaroid is on.). Fast repeat covers ~75/82; full sweep 44p/38s. PT2: repeat priority clusters first; keep sweeping only until character upgrades are funded or NG+ loot variance needs proof.",
+      "auto": {
+        "ngplusverify": 1,
+        "ellieparts": 44,
+        "elliesupps": 38
+      }
+    },
+    {
+      "id": "pt2-05-the-horde",
+      "label": "PT2 05. The Horde",
+      "phaseId": "pt2_abby",
+      "isPhaseStart": false,
+      "note": "PT2: rush unless a missed collectible or route-proof check needs this chapter.",
+      "auto": {
+        "ngplusverify": 1
+      }
+    },
+    {
+      "id": "pt2-06-the-chalet",
+      "label": "PT2 06. The Chalet",
+      "phaseId": "pt2_ellie",
+      "isPhaseStart": false,
+      "note": "PT2: rush unless a missed collectible or route-proof check needs this chapter.",
+      "auto": {
+        "ngplusverify": 1
+      }
+    },
+    {
+      "id": "pt2-07-packing-up",
+      "label": "PT2 07. Packing Up",
+      "phaseId": "pt2_ellie",
+      "isPhaseStart": false,
+      "note": "PT2: rush unless a missed collectible or route-proof check needs this chapter.",
+      "auto": {
+        "ngplusverify": 1
+      }
+    },
+    {
+      "id": "pt2-08-the-gate",
+      "label": "PT2 08. The Gate",
+      "phaseId": "pt2_ellie",
+      "isPhaseStart": false,
+      "note": "Loot priority: Inside the zone: 21p/30s (before dropping down from the wall, go up the ladder at the end.; use the yellow cable to get on top of the trailer the yellow cable is next to.); Misc: 10p/0s (in the back of the military vehicle backed in next to the gate in the far corner.; in the guard house in the \"line forms here\" Main gate area.). Fast repeat covers ~61/61; full sweep 31p/30s. PT2: repeat priority clusters first; keep sweeping only until character upgrades are funded or NG+ loot variance needs proof.",
+      "auto": {
+        "ngplusverify": 1,
+        "ellieparts": 31,
+        "elliesupps": 30
+      }
+    },
+    {
+      "id": "pt2-09-downtown",
+      "label": "PT2 09. Downtown",
+      "phaseId": "pt2_ellie",
+      "isPhaseStart": false,
+      "note": "Loot priority: Courthouse: 10p/31s (in the judge's office; safe); Ruston Coffee: 19p/12s (on shelves in back room.; outside and around the corner in the little gate house.); Firetruck rappel stash: 16p/10s; Smashed-window stair route: 7p/18s. Fast repeat covers ~123/192; full sweep 115p/77s. PT2: repeat priority clusters first; keep sweeping only until character upgrades are funded or NG+ loot variance needs proof.",
+      "auto": {
+        "ngplusverify": 1,
+        "ellieparts": 115,
+        "elliesupps": 77
+      }
+    },
+    {
+      "id": "pt2-10-eastbrook-elementary",
+      "label": "PT2 10. Eastbrook Elementary",
+      "phaseId": "pt2_ellie",
+      "isPhaseStart": false,
+      "note": "Loot priority: Next apartment: 16p/6s (left bedroom closet; in the bathroom.); Misc: 8p/8s (in the cafeteria by the cots.; roof table); Apartment balcony: 11p/3s (in the apartment bathroom.; apartment closet). Fast repeat covers ~52/55; full sweep 38p/17s. PT2: repeat priority clusters first; keep sweeping only until character upgrades are funded or NG+ loot variance needs proof.",
+      "auto": {
+        "ngplusverify": 1,
+        "ellieparts": 38,
+        "elliesupps": 11
+      }
+    },
+    {
+      "id": "pt2-11-capitol-hill",
+      "label": "PT2 11. Capitol Hill",
+      "phaseId": "pt2_ellie",
+      "isPhaseStart": false,
+      "note": "Loot priority: Gas Station - Workbench: 14p/8s (in the garage on a counter.; in the garage, by the tool benches.); Olive Street Market: 8p/9s (back storage shelves by the lockers.; on register near front.); High Up Gate House Before Mudslide: 13p/0s (go through the two openings towards the new area, but don't drop down to the freeway. Go up a ladder i...); Misc: 4p/8s (kitchen drawer of house #3.; downstairs bathroom of house #6.). Fast repeat covers ~64/114; full sweep 45p/69s. PT2: repeat priority clusters first; keep sweeping only until character upgrades are funded or NG+ loot variance needs proof.",
+      "auto": {
+        "ngplusverify": 1,
+        "ellieparts": 45,
+        "elliesupps": 69
+      }
+    },
+    {
+      "id": "pt2-12-channel-13",
+      "label": "PT2 12. Channel 13",
+      "phaseId": "pt2_ellie",
+      "isPhaseStart": false,
+      "note": "Loot priority: Misc: 9p/22s (in the back a news van in front of the building.; in a closet down the hall, to the right of the duct you jump through.). Fast repeat covers ~31/31; full sweep 9p/22s. PT2: repeat priority clusters first; keep sweeping only until character upgrades are funded or NG+ loot variance needs proof.",
+      "auto": {
+        "ngplusverify": 1,
+        "ellieparts": 9,
+        "elliesupps": 12
+      }
+    },
+    {
+      "id": "pt2-13-the-tunnels",
+      "label": "PT2 13. The Tunnels",
+      "phaseId": "pt2_ellie",
+      "isPhaseStart": false,
+      "note": "PT2: rush unless a missed collectible or route-proof check needs this chapter.",
+      "auto": {
+        "ngplusverify": 1
+      }
+    },
+    {
+      "id": "pt2-14-the-theater",
+      "label": "PT2 14. The Theater",
+      "phaseId": "pt2_ellie",
+      "isPhaseStart": false,
+      "note": "PT2: rush unless a missed collectible or route-proof check needs this chapter.",
+      "auto": {
+        "ngplusverify": 1
+      }
+    },
+    {
+      "id": "pt2-15-the-birthday-gift",
+      "label": "PT2 15. The Birthday Gift",
+      "phaseId": "pt2_ellie",
+      "isPhaseStart": false,
+      "note": "PT2: rush unless a missed collectible or route-proof check needs this chapter.",
+      "auto": {
+        "ngplusverify": 1
+      }
+    },
+    {
+      "id": "pt2-16-hillcrest",
+      "label": "PT2 16. Hillcrest",
+      "phaseId": "pt2_ellie",
+      "isPhaseStart": false,
+      "note": "Loot priority: Auto Repair Shop: 14p/7s (safe; in back office.); Cedar Shake House: 11p/8s (upstairs bathroom.; in the garage.); Pet Boutique and Grooming: 0p/16s (in the back room. Break the glass to get in.); Goldstar Liquor: 4p/10s (in the basement right room.; in the basement left room, shelves on the left.). Fast repeat covers ~70/136; full sweep 59p/77s. PT2: repeat priority clusters first; keep sweeping only until character upgrades are funded or NG+ loot variance needs proof.",
+      "auto": {
+        "ngplusverify": 1,
+        "ellieparts": 59,
+        "elliesupps": 75
+      }
+    },
+    {
+      "id": "pt2-17-finding-strings",
+      "label": "PT2 17. Finding Strings",
+      "phaseId": "pt2_ellie",
+      "isPhaseStart": false,
+      "note": "PT2: rush unless a missed collectible or route-proof check needs this chapter.",
+      "auto": {
+        "ngplusverify": 1
+      }
+    },
+    {
+      "id": "pt2-18-the-seraphites",
+      "label": "PT2 18. The Seraphites",
+      "phaseId": "pt2_ellie",
+      "isPhaseStart": false,
+      "note": "Loot priority: Garden Suites: 0p/35s (Apartment 302 on the computer desk.); Lakehill Seattle Hospital: 0p/21s (ground floor back left, Medical Research Laboratory.; second floor, in the first room on the right.); Kingsgate Brewing: 4p/15s (on an end booth table.; in the kitchen); Conference Center: 18p/0s (in the locked room upstairs.). Fast repeat covers ~93/166; full sweep 67p/99s. PT2: repeat priority clusters first; keep sweeping only until character upgrades are funded or NG+ loot variance needs proof.",
+      "auto": {
+        "ngplusverify": 1,
+        "ellieparts": 67,
+        "elliesupps": 88
+      }
+    },
+    {
+      "id": "pt2-19-st-mary-s-hospital",
+      "label": "PT2 19. St. Mary's Hospital",
+      "phaseId": "pt2_ellie",
+      "isPhaseStart": false,
+      "note": "PT2: rush unless a missed collectible or route-proof check needs this chapter.",
+      "auto": {
+        "ngplusverify": 1
+      }
+    },
+    {
+      "id": "pt2-20-road-to-the-aquarium",
+      "label": "PT2 20. Road to the Aquarium",
+      "phaseId": "pt2_ellie",
+      "isPhaseStart": false,
+      "note": "Loot priority: In the water in front of the parking structure:: 12p/0s (underwater. Jump into the water and swim down on the left to the low ledge you can pull yourself up on...; in the parking garage, on a shelf in the room...); Travel Agency: 0p/10s (on a back desk in the small room on the left.). Fast repeat covers ~22/37; full sweep 21p/16s. PT2: repeat priority clusters first; keep sweeping only until character upgrades are funded or NG+ loot variance needs proof.",
+      "auto": {
+        "ngplusverify": 1,
+        "ellieparts": 21,
+        "elliesupps": 16
+      }
+    },
+    {
+      "id": "pt2-21-the-flooded-city",
+      "label": "PT2 21. The Flooded City",
+      "phaseId": "pt2_ellie",
+      "isPhaseStart": false,
+      "note": "Loot priority: W&B Arcade: 29p/0s (in the machine at the top of the stairs.; under the basketball machine upstairs.); Garrett's Furniture: 9p/17s (use the cart at the far right end and drag it back towards the dead body to get into the duct work above.; safe); Subway Car: 0p/17s (in the locked car at the end.); After the bloater, go through to the back rooms and upstairs.: 1p/12s (upstairs, go left into the little bar area. These are by the sink.; in the far back room with the computer stations and bloater growth on the walls.). Fast repeat covers ~85/110; full sweep 53p/57s. PT2: repeat priority clusters first; keep sweeping only until character upgrades are funded or NG+ loot variance needs proof.",
+      "auto": {
+        "ngplusverify": 1,
+        "ellieparts": 53,
+        "elliesupps": 49
+      }
+    },
+    {
+      "id": "pt2-22-infiltration",
+      "label": "PT2 22. Infiltration",
+      "phaseId": "pt2_ellie",
+      "isPhaseStart": false,
+      "note": "Loot priority: Misc: 20p/6s (walk through the drained fish area, climb the ladder and drop down on the other side. They're at the b...; in the locker at the end of the same room.). Fast repeat covers ~26/26; full sweep 20p/6s. PT2: repeat priority clusters first; keep sweeping only until character upgrades are funded or NG+ loot variance needs proof.",
+      "auto": {
+        "ngplusverify": 1,
+        "ellieparts": 20,
+        "elliesupps": 6
+      }
+    },
+    {
+      "id": "pt2-23-tracking-lesson",
+      "label": "PT2 23. Tracking Lesson",
+      "phaseId": "pt2_abby",
+      "isPhaseStart": false,
+      "note": "PT2: rush unless a missed collectible or route-proof check needs this chapter.",
+      "auto": {
+        "ngplusverify": 1
+      }
+    },
+    {
+      "id": "pt2-24-the-stadium",
+      "label": "PT2 24. The Stadium",
+      "phaseId": "pt2_abby",
+      "isPhaseStart": false,
+      "note": "PT2: rush unless a missed collectible or route-proof check needs this chapter.",
+      "auto": {
+        "ngplusverify": 1
+      }
+    },
+    {
+      "id": "pt2-25-on-foot",
+      "label": "PT2 25. On Foot",
+      "phaseId": "pt2_abby",
+      "isPhaseStart": false,
+      "note": "Loot priority: PNW Boat Repair: 18p/44s (behind the check out desk.; on the empty shelves in the middle.); Outside: 44p/0s (Part (1, 1) - in the first checkout counter; Part (1) - in the third checkout down the line.); Bay Hardware: 21p/0s (in the Halloween cubbies in the next room.; on the second shelf climbing up to get to the lit area.); Second section: 10p/0s (on the shelf with the handheld toolboxes? Stand in the center area facing the faucets on the wall and...; turn 180 and look at the screw drawers and go...). Fast repeat covers ~137/145; full sweep 93p/52s. PT2: repeat priority clusters first; keep sweeping only until character upgrades are funded or NG+ loot variance needs proof.",
+      "auto": {
+        "ngplusverify": 1,
+        "abbyparts": 93,
+        "abbysupps": 52
+      }
+    },
+    {
+      "id": "pt2-26-the-forward-base",
+      "label": "PT2 26. The Forward Base",
+      "phaseId": "pt2_abby",
+      "isPhaseStart": false,
+      "note": "Loot priority: Misc: 27p/0s (in the same tent as the workbench on a green box.; in the same tent as the workbench on a brown box.). Fast repeat covers ~27/27; full sweep 27p/0s. PT2: repeat priority clusters first; keep sweeping only until character upgrades are funded or NG+ loot variance needs proof.",
+      "auto": {
+        "ngplusverify": 1,
+        "abbyparts": 27
+      }
+    },
+    {
+      "id": "pt2-27-the-aquarium",
+      "label": "PT2 27. The Aquarium",
+      "phaseId": "pt2_abby",
+      "isPhaseStart": false,
+      "note": "PT2: rush unless a missed collectible or route-proof check needs this chapter.",
+      "auto": {
+        "ngplusverify": 1
+      }
+    },
+    {
+      "id": "pt2-28-hostile-territory",
+      "label": "PT2 28. Hostile Territory",
+      "phaseId": "pt2_abby",
+      "isPhaseStart": false,
+      "note": "Loot priority: Apartment: 3p/20s (in living room.; in the guard house.); Green Planet Herbs: 0p/20s (on table on the right.; on shelves in the back right.); Hotel: 7p/12s (on washer.; on the bar.); Jasmine Bakery: 0p/19s (safe.). Fast repeat covers ~81/127; full sweep 56p/71s. PT2: repeat priority clusters first; keep sweeping only until character upgrades are funded or NG+ loot variance needs proof.",
+      "auto": {
+        "ngplusverify": 1,
+        "abbyparts": 49,
+        "abbysupps": 71
+      }
+    },
+    {
+      "id": "pt2-29-winter-visit",
+      "label": "PT2 29. Winter Visit",
+      "phaseId": "pt2_abby",
+      "isPhaseStart": false,
+      "note": "PT2: rush unless a missed collectible or route-proof check needs this chapter.",
+      "auto": {
+        "ngplusverify": 1
+      }
+    },
+    {
+      "id": "pt2-30-the-forest",
+      "label": "PT2 30. The Forest",
+      "phaseId": "pt2_abby",
+      "isPhaseStart": false,
+      "note": "Loot priority: La Rosa's Auto shop: 29p/7s (all near the workbench.; filing cabinet the training manual is on.); Infected Building: 15p/8s (enter the building and go into the room on the left. Do not drop down.; same room as the parts.). Fast repeat covers ~59/59; full sweep 44p/15s. PT2: repeat priority clusters first; keep sweeping only until character upgrades are funded or NG+ loot variance needs proof.",
+      "auto": {
+        "ngplusverify": 1,
+        "abbyparts": 44,
+        "abbysupps": 15
+      }
+    },
+    {
+      "id": "pt2-31-the-coast",
+      "label": "PT2 31. The Coast",
+      "phaseId": "pt2_abby",
+      "isPhaseStart": false,
+      "note": "Loot priority: WTA Ship: 33p/46s (second floor, on the ground by the dead body by the white vending machine.; storage room on the right on the 3rd floor.); MPL: 11p/0s (on shelves behind the workbench.; outside, on a crate in the grass against the right fence.); Misc: 0p/10s (in the back of the red cargo container straight ahead before going left into MPL.). Fast repeat covers ~100/100; full sweep 44p/56s. PT2: repeat priority clusters first; keep sweeping only until character upgrades are funded or NG+ loot variance needs proof.",
+      "auto": {
+        "ngplusverify": 1,
+        "abbyparts": 44,
+        "abbysupps": 56
+      }
+    },
+    {
+      "id": "pt2-32-return-to-the-coast",
+      "label": "PT2 32. Return to the Coast",
+      "phaseId": "pt2_abby",
+      "isPhaseStart": false,
+      "note": "PT2: rush unless a missed collectible or route-proof check needs this chapter.",
+      "auto": {
+        "ngplusverify": 1
+      }
+    },
+    {
+      "id": "pt2-33-the-shortcut",
+      "label": "PT2 33. The Shortcut",
+      "phaseId": "pt2_abby",
+      "isPhaseStart": false,
+      "note": "Loot priority: Area Past Seraphite Overlook: 24p/0s (on shelves going towards the elevator.; after the first bridge, before ducking under the large red broken crane piece, turn right and go out o...); Sam's Apartment: 17p/7s (in the bathroom; safe.); Fireside Studios: 21p/0s (on shelves in the same room as the workbench.); Westport Optix & upper floors: 0p/19s (in a drawer in the back room.). Fast repeat covers ~88/116; full sweep 82p/34s. PT2: repeat priority clusters first; keep sweeping only until character upgrades are funded or NG+ loot variance needs proof.",
+      "auto": {
+        "ngplusverify": 1,
+        "abbyparts": 82,
+        "abbysupps": 34
+      }
+    },
+    {
+      "id": "pt2-34-the-descent",
+      "label": "PT2 34. The Descent",
+      "phaseId": "pt2_abby",
+      "isPhaseStart": false,
+      "note": "Loot priority: Hotel Blacray: 0p/24s (behind the cash register counter at Orchard's Juice Bar.; safe); Floor 14: 12p/10s (just on the other side of the gap on the coffee table.; on the sink counter near the flamethrower); Floor 19 (stalker floor): 5p/17s (in the bedroom (1901) past the elevators in the end table (not in the stalker area).; tv cabinet in room 1904); Floor 13: 14p/7s (bathroom on the left.; go out the other bathroom door and they're on the ground by the drop off.). Fast repeat covers ~89/125; full sweep 57p/68s. PT2: repeat priority clusters first; keep sweeping only until character upgrades are funded or NG+ loot variance needs proof.",
+      "auto": {
+        "ngplusverify": 1,
+        "abbyparts": 57,
+        "abbysupps": 58
+      }
+    },
+    {
+      "id": "pt2-35-ground-zero",
+      "label": "PT2 35. Ground Zero",
+      "phaseId": "pt2_abby",
+      "isPhaseStart": false,
+      "note": "Loot priority: Exiting: 14p/20s (by the glass enclosed parking office? Right on the left when you come in.; go around to the left and these are in the back of a military vehicle.); After the power is on.: 0p/32s (first recovery room on the left (stalker in the wall halfway down between the beds).; supply room middle shelf.); First Floor: 14p/12s (behind you when you land, on a shelf.; in the room on the left, table by third cot in the back left.); Surgery: 18p/6s (one room down from the stalker in the wall.; across from the hole you jump through.). Fast repeat covers ~116/128; full sweep 46p/82s. PT2: repeat priority clusters first; keep sweeping only until character upgrades are funded or NG+ loot variance needs proof.",
+      "auto": {
+        "ngplusverify": 1,
+        "abbyparts": 46,
+        "abbysupps": 82
+      }
+    },
+    {
+      "id": "pt2-36-return-to-the-aquarium",
+      "label": "PT2 36. Return to the Aquarium",
+      "phaseId": "pt2_abby",
+      "isPhaseStart": false,
+      "note": "PT2: rush unless a missed collectible or route-proof check needs this chapter.",
+      "auto": {
+        "ngplusverify": 1
+      }
+    },
+    {
+      "id": "pt2-37-the-marina",
+      "label": "PT2 37. The Marina",
+      "phaseId": "pt2_abby",
+      "isPhaseStart": false,
+      "note": "Loot priority: Misc: 33p/17s (left side of the train car.; right side of the train car.). Fast repeat covers ~50/50; full sweep 33p/17s. PT2: repeat priority clusters first; keep sweeping only until character upgrades are funded or NG+ loot variance needs proof.",
+      "auto": {
+        "ngplusverify": 1,
+        "abbyparts": 33,
+        "abbysupps": 17
+      }
+    },
+    {
+      "id": "pt2-38-the-island",
+      "label": "PT2 38. The Island",
+      "phaseId": "pt2_abby",
+      "isPhaseStart": false,
+      "note": "Loot priority: Logging Huts: 26p/18s (inside the building to the right from start.; in the larger building on the left.); Farmlands: 0p/30s (in the far hut, near where you want to go to exit.; just past the farmlands, these are in the hut Yara leads you through to get to her house.); Misc: 14p/0s (trunk of the car by the bodies after climbing the ladder.). Fast repeat covers ~88/88; full sweep 40p/48s. PT2: repeat priority clusters first; keep sweeping only until character upgrades are funded or NG+ loot variance needs proof.",
+      "auto": {
+        "ngplusverify": 1,
+        "abbyparts": 78,
+        "abbysupps": 90
+      }
+    },
+    {
+      "id": "pt2-39-the-escape",
+      "label": "PT2 39. The Escape",
+      "phaseId": "pt2_abby",
+      "isPhaseStart": false,
+      "note": "Loot priority: Old Town: 14p/8s (on the desk in the basement room.; to the right of the supplements, two locations.); After Isaac Cutscene, in the warehouse: 5p/17s (When you gain control of Abby, they're over on the left on a lower pallet.; in the locker on the right.); Misc: 0p/17s (same hut, same shelves.); Harstine Brewery: 10p/0s (left from start, through the crack in the wall, on a counter near the bags of malt.; on the bar in the far left room.). Fast repeat covers ~71/80; full sweep 38p/42s. PT2: repeat priority clusters first; keep sweeping only until character upgrades are funded or NG+ loot variance needs proof.",
+      "auto": {
+        "ngplusverify": 1,
+        "abbyparts": 38,
+        "abbysupps": 25
+      }
+    },
+    {
+      "id": "pt2-40-the-confrontation",
+      "label": "PT2 40. The Confrontation",
+      "phaseId": "pt2_abby",
+      "isPhaseStart": false,
+      "note": "PT2: rush unless a missed collectible or route-proof check needs this chapter.",
+      "auto": {
+        "ngplusverify": 1
+      }
+    },
+    {
+      "id": "pt2-41-the-farm",
+      "label": "PT2 41. The Farm",
+      "phaseId": "pt2_ellie",
+      "isPhaseStart": false,
+      "note": "PT2: rush unless a missed collectible or route-proof check needs this chapter.",
+      "auto": {
+        "ngplusverify": 1
+      }
+    },
+    {
+      "id": "pt2-42-2425-constance",
+      "label": "PT2 42. 2425 Constance",
+      "phaseId": "pt2_abby",
+      "isPhaseStart": false,
+      "note": "PT2: rush unless a missed collectible or route-proof check needs this chapter.",
+      "auto": {
+        "ngplusverify": 1
+      }
+    },
+    {
+      "id": "pt2-43-pushing-inland",
+      "label": "PT2 43. Pushing Inland",
+      "phaseId": "pt2_ellie",
+      "isPhaseStart": false,
+      "note": "Loot priority: Misc: 31p/6s (in the garage of the first house on the back table.; back of the military vehicle on the street.). Fast repeat covers ~37/37; full sweep 31p/6s. PT2: repeat priority clusters first; keep sweeping only until character upgrades are funded or NG+ loot variance needs proof.",
+      "auto": {
+        "ngplusverify": 1,
+        "ellieparts": 31,
+        "elliesupps": 6
+      }
+    },
+    {
+      "id": "pt2-44-the-resort",
+      "label": "PT2 44. The Resort",
+      "phaseId": "pt2_ellie",
+      "isPhaseStart": false,
+      "note": "Loot priority: Follow the Tracks: 22p/0s (on a middle table in the workbench area.; on the shipping container). Fast repeat covers ~22/22; full sweep 22p/0s. PT2: repeat priority clusters first; keep sweeping only until character upgrades are funded or NG+ loot variance needs proof.",
+      "auto": {
+        "ngplusverify": 1,
+        "ellieparts": 22
+      }
+    },
+    {
+      "id": "pt2-45-the-beach",
+      "label": "PT2 45. The Beach",
+      "phaseId": "pt2_ellie",
+      "isPhaseStart": false,
+      "note": "PT2: rush unless a missed collectible or route-proof check needs this chapter.",
+      "auto": {
+        "ngplusverify": 1
+      }
+    },
+    {
+      "id": "pt2-46-epilogue",
+      "label": "PT2 46. Epilogue",
+      "phaseId": "pt2_ellie",
+      "isPhaseStart": false,
+      "note": "PT2: rush unless a missed collectible or route-proof check needs this chapter.",
+      "auto": {
+        "ngplusverify": 1
+      }
+    },
+    {
+      "id": "final-upgrade-platinum-pop",
+      "label": "Final Upgrade + Platinum Pop",
+      "phaseId": "final_platinum",
+      "isPhaseStart": true,
+      "note": "Stay on Grounded. Buy Arms Master and Survival Expert final upgrades as needed, confirm Every Last One of Them pops, stop timer.",
+      "auto": {
+        "trophies": 3
+      }
+    }
+  ]
+}

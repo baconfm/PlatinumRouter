@@ -1,0 +1,68 @@
+{
+  "quotas": {
+    "legacy_all": {
+      "label": "Legacy All",
+      "targets": {}
+    },
+    "cascades": {
+      "label": "Cascades",
+      "targets": {
+        "encampmentjobs": 6,
+        "infestations": 2,
+        "ambushcamps": 3,
+        "hordes": 8,
+        "nerosites": 7
+      }
+    },
+    "belknap": {
+      "label": "Belknap",
+      "targets": {
+        "encampmentjobs": 14,
+        "infestations": 5,
+        "ambushcamps": 6,
+        "hordes": 15,
+        "nerosites": 11
+      }
+    },
+    "lost_lake": {
+      "label": "Lost Lake",
+      "targets": {
+        "encampmentjobs": 21,
+        "infestations": 8,
+        "ambushcamps": 8,
+        "hordes": 21,
+        "nerosites": 15
+      }
+    },
+    "iron_butte": {
+      "label": "Iron Butte",
+      "targets": {
+        "encampmentjobs": 21,
+        "infestations": 8,
+        "ambushcamps": 10,
+        "hordes": 21,
+        "nerosites": 17
+      }
+    },
+    "crater_lake": {
+      "label": "Crater Lake",
+      "targets": {
+        "encampmentjobs": 34,
+        "infestations": 10,
+        "ambushcamps": 13,
+        "hordes": 24,
+        "nerosites": 24
+      }
+    },
+    "highway_97": {
+      "label": "Highway 97",
+      "targets": {
+        "encampmentjobs": 34,
+        "infestations": 12,
+        "ambushcamps": 15,
+        "hordes": 37,
+        "nerosites": 30
+      }
+    }
+  }
+}

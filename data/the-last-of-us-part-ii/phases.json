@@ -1,0 +1,188 @@
+{
+  "setup": {
+    "label": "Setup / Rules Proof",
+    "note": "Fresh profile, fresh New Game, Grounded selected at the first possible moment. No modifiers, no difficulty drops.",
+    "visibleCounters": [
+      "trophies"
+    ]
+  },
+  "pt1_jackson": {
+    "label": "PT1 Grounded NG: Jackson",
+    "note": "Chapter-level split group for the strict Grounded-locked route.",
+    "visibleCounters": [
+      "trophies",
+      "routecollectibles",
+      "artifacts",
+      "journals",
+      "cards",
+      "coins",
+      "safes",
+      "manuals",
+      "workbenches",
+      "gear",
+      "ellieparts",
+      "elliesupps",
+      "abbyparts",
+      "abbysupps"
+    ]
+  },
+  "pt1_ellie_day1": {
+    "label": "PT1 Grounded NG: Ellie Seattle Day 1",
+    "note": "Chapter-level split group for the strict Grounded-locked route.",
+    "visibleCounters": [
+      "trophies",
+      "routecollectibles",
+      "artifacts",
+      "journals",
+      "cards",
+      "coins",
+      "safes",
+      "manuals",
+      "workbenches",
+      "gear",
+      "ellieparts",
+      "elliesupps",
+      "abbyparts",
+      "abbysupps"
+    ]
+  },
+  "pt1_ellie_day2": {
+    "label": "PT1 Grounded NG: Ellie Seattle Day 2",
+    "note": "Chapter-level split group for the strict Grounded-locked route.",
+    "visibleCounters": [
+      "trophies",
+      "routecollectibles",
+      "artifacts",
+      "journals",
+      "cards",
+      "coins",
+      "safes",
+      "manuals",
+      "workbenches",
+      "gear",
+      "ellieparts",
+      "elliesupps",
+      "abbyparts",
+      "abbysupps"
+    ]
+  },
+  "pt1_ellie_day3": {
+    "label": "PT1 Grounded NG: Ellie Seattle Day 3",
+    "note": "Chapter-level split group for the strict Grounded-locked route.",
+    "visibleCounters": [
+      "trophies",
+      "routecollectibles",
+      "artifacts",
+      "journals",
+      "cards",
+      "coins",
+      "safes",
+      "manuals",
+      "workbenches",
+      "gear",
+      "ellieparts",
+      "elliesupps",
+      "abbyparts",
+      "abbysupps"
+    ]
+  },
+  "pt1_abby": {
+    "label": "PT1 Grounded NG: Abby Route",
+    "note": "Chapter-level split group for the strict Grounded-locked route.",
+    "visibleCounters": [
+      "trophies",
+      "routecollectibles",
+      "artifacts",
+      "journals",
+      "cards",
+      "coins",
+      "safes",
+      "manuals",
+      "workbenches",
+      "gear",
+      "ellieparts",
+      "elliesupps",
+      "abbyparts",
+      "abbysupps"
+    ]
+  },
+  "pt1_santa_barbara": {
+    "label": "PT1 Grounded NG: Santa Barbara",
+    "note": "Chapter-level split group for the strict Grounded-locked route.",
+    "visibleCounters": [
+      "trophies",
+      "routecollectibles",
+      "artifacts",
+      "journals",
+      "cards",
+      "coins",
+      "safes",
+      "manuals",
+      "workbenches",
+      "gear",
+      "ellieparts",
+      "elliesupps",
+      "abbyparts",
+      "abbysupps"
+    ]
+  },
+  "pt1_story": {
+    "label": "PT1 Grounded NG: Story / Interludes",
+    "note": "Story-only or flashback splits that still need to stay inside the Grounded-locked proof.",
+    "visibleCounters": [
+      "trophies",
+      "routecollectibles",
+      "artifacts",
+      "journals",
+      "cards",
+      "coins",
+      "safes",
+      "manuals",
+      "workbenches",
+      "gear",
+      "ellieparts",
+      "elliesupps",
+      "abbyparts",
+      "abbysupps"
+    ]
+  },
+  "pt2_story": {
+    "label": "PT2 Grounded NG+: Story Gates",
+    "note": "Chapter-level split group for the strict Grounded-locked route.",
+    "visibleCounters": [
+      "trophies",
+      "ngplusverify"
+    ]
+  },
+  "pt2_ellie": {
+    "label": "PT2 Grounded NG+: Ellie Upgrade Cleanup",
+    "note": "Repeat Grounded loot until Ellie has enough parts and supplements. If NG+ loot differs, mark the split and retest.",
+    "visibleCounters": [
+      "trophies",
+      "ellieparts",
+      "elliesupps",
+      "ngplusverify"
+    ]
+  },
+  "pt2_abby": {
+    "label": "PT2 Grounded NG+: Abby Upgrade Cleanup",
+    "note": "Repeat Abby Grounded loot until Arms Master and Survival Expert can finish. Abby resources are not shared with Ellie.",
+    "visibleCounters": [
+      "trophies",
+      "abbyparts",
+      "abbysupps",
+      "ngplusverify"
+    ]
+  },
+  "final_platinum": {
+    "label": "Final Platinum Lock",
+    "note": "Buy the final remaining upgrade while still on Grounded. Timer ends on Every Last One of Them.",
+    "visibleCounters": [
+      "trophies",
+      "ellieparts",
+      "elliesupps",
+      "abbyparts",
+      "abbysupps"
+    ]
+  }
+}

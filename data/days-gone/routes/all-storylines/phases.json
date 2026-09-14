@@ -1,0 +1,107 @@
+{
+  "cascade": {
+    "label": "Cascade",
+    "description": "Cascade mission and activity completions only.",
+    "note": "Collectibles, trophies, cairns, injectors, IPCA tech, and pickup counters are intentionally excluded.",
+    "objectiveNote": "Advance by mission and world-activity completion popups.",
+    "targetMinutes": 180,
+    "visible": [
+      "storymissions",
+      "encampmentjobs",
+      "nerosites",
+      "ambushcamps",
+      "infestations",
+      "hordes"
+    ]
+  },
+  "belknap": {
+    "label": "Belknap",
+    "description": "Belknap mission and activity completions only.",
+    "note": "Collectibles, trophies, cairns, injectors, IPCA tech, and pickup counters are intentionally excluded.",
+    "objectiveNote": "Advance by mission and world-activity completion popups.",
+    "targetMinutes": 360,
+    "visible": [
+      "storymissions",
+      "encampmentjobs",
+      "nerosites",
+      "ambushcamps",
+      "infestations",
+      "hordes"
+    ]
+  },
+  "lost-lake": {
+    "label": "Lost Lake",
+    "description": "Lost Lake mission and activity completions only.",
+    "note": "Collectibles, trophies, cairns, injectors, IPCA tech, and pickup counters are intentionally excluded.",
+    "objectiveNote": "Advance by mission and world-activity completion popups.",
+    "targetMinutes": 780,
+    "visible": [
+      "storymissions",
+      "encampmentjobs",
+      "nerosites",
+      "ambushcamps",
+      "infestations",
+      "hordes"
+    ]
+  },
+  "iron-butte": {
+    "label": "Iron Butte",
+    "description": "Iron Butte mission and activity completions only.",
+    "note": "Collectibles, trophies, cairns, injectors, IPCA tech, and pickup counters are intentionally excluded.",
+    "objectiveNote": "Advance by mission and world-activity completion popups.",
+    "targetMinutes": 900,
+    "visible": [
+      "storymissions",
+      "encampmentjobs",
+      "nerosites",
+      "ambushcamps",
+      "infestations",
+      "hordes"
+    ]
+  },
+  "crater-lake": {
+    "label": "Crater Lake",
+    "description": "Crater Lake mission and activity completions only.",
+    "note": "Collectibles, trophies, cairns, injectors, IPCA tech, and pickup counters are intentionally excluded.",
+    "objectiveNote": "Advance by mission and world-activity completion popups.",
+    "targetMinutes": 1200,
+    "visible": [
+      "storymissions",
+      "encampmentjobs",
+      "nerosites",
+      "ambushcamps",
+      "infestations",
+      "hordes"
+    ]
+  },
+  "highway-97": {
+    "label": "Highway 97",
+    "description": "Highway 97 mission and activity completions only.",
+    "note": "Collectibles, trophies, cairns, injectors, IPCA tech, and pickup counters are intentionally excluded.",
+    "objectiveNote": "Advance by mission and world-activity completion popups.",
+    "targetMinutes": 1320,
+    "visible": [
+      "storymissions",
+      "encampmentjobs",
+      "nerosites",
+      "ambushcamps",
+      "infestations",
+      "hordes"
+    ]
+  },
+  "endgame": {
+    "label": "Endgame",
+    "description": "Endgame mission and activity completions only.",
+    "note": "Collectibles, trophies, cairns, injectors, IPCA tech, and pickup counters are intentionally excluded.",
+    "objectiveNote": "Advance by mission and world-activity completion popups.",
+    "targetMinutes": 960,
+    "visible": [
+      "storymissions",
+      "encampmentjobs",
+      "nerosites",
+      "ambushcamps",
+      "infestations",
+      "hordes"
+    ]
+  }
+}

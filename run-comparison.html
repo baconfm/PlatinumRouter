@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Days Gone Run Comparison</title>
+  <script>
+    (() => {
+      try {
+        const valid = new Set(["classic", "earth"]);
+        const query = new URLSearchParams(window.location.search).get("theme");
+        const stored = localStorage.getItem("platinum-router-theme");
+        document.documentElement.dataset.theme = valid.has(query) ? query : (valid.has(stored) ? stored : "classic");
+      } catch {
+        document.documentElement.dataset.theme = "classic";
+      }
+    })();
+  </script>
+  <link rel="stylesheet" href="./styles/base.css?v=20260511a" />
+  <link rel="stylesheet" href="./styles/layout.css?v=20260511a" />
+  <link rel="stylesheet" href="./styles/components.css?v=20260511a" />
+  <link rel="stylesheet" href="./styles/run-comparison.css?v=20260808a" />
+</head>
+<body class="comparisonPage">
+  <div class="app comparisonApp">
+    <header class="top comparisonTop">
+      <div>
+        <div class="eyebrow">Days Gone route analysis</div>
+        <h1 class="title">Run Comparison</h1>
+        <p class="subtitle">Compare the new July 25 run directly against JamCar's full world-record rescan.</p>
+      </div>
+      <div class="topMeta">
+        <a href="./index.html" class="btn">Controller</a>
+        <a href="./splits.html" class="btn">Split Editor</a>
+        <a href="./phases.html" class="btn">Phase Editor</a>
+        <div class="badge">Comparison Lab</div>
+      </div>
+    </header>
+
+    <section class="panel comparisonControls" aria-labelledby="comparisonControlsTitle">
+      <div class="comparisonControlsCopy">
+        <div id="comparisonControlsTitle" class="eyebrow">Compare recordings</div>
+        <div id="dataStatus" class="subtitle" role="status">Loading run data…</div>
+      </div>
+      <div class="comparisonFields">
+        <label class="field">
+          <span class="eyebrow">Baseline</span>
+          <select id="baselineRun"></select>
+        </label>
+        <label class="field">
+          <span class="eyebrow">Compare with</span>
+          <select id="comparisonRun"></select>
+        </label>
+        <label class="field">
+          <span class="eyebrow">Completion type</span>
+          <select id="categoryFilter"></select>
+        </label>
+        <label class="field">
+          <span class="eyebrow">Align both runs from</span>
+          <select id="anchorSelect"></select>
+        </label>
+      </div>
+    </section>
+
+    <main id="dashboard" hidden>
+      <section id="summaryMetrics" class="metricStrip" aria-label="Summary metrics"></section>
+
+      <section class="panel scanHealthPanel" aria-labelledby="scanHealthTitle">
+        <div class="sectionHeading">
+          <div>
+            <div class="eyebrow">Latest full rescans</div>
+            <h2 id="scanHealthTitle" class="mid">What the scanner actually recovered</h2>
+          </div>
+        </div>
+        <div id="scanHealth" class="scanHealthGrid"></div>
+        <p class="chartNote">Only catalog-resolved center titles enter route comparisons. Unresolved center frames stay in the review queue and cannot inflate completion totals.</p>
+      </section>
+
+      <section class="dashboardGrid dashboardGridPrimary allRunOverview">
+        <article class="panel chartPanel">
+          <div class="sectionHeading">
+            <div>
+              <div class="eyebrow">Both full recordings</div>
+              <h2 class="mid">Scaled completion progression</h2>
+            </div>
+            <div id="allRunLegend" class="legend" aria-label="All-run chart legend"></div>
+          </div>
+          <div id="allRunChart" class="paceChart" aria-live="polite"></div>
+          <p class="chartNote">Each line starts at Leon / Finders Keepers and is scaled to the remaining recording length. This makes route density comparable even when the recordings have different runtimes.</p>
+        </article>
+
+        <article class="panel categoryPanel">
+          <div class="sectionHeading">
+            <div>
+              <div class="eyebrow">Available completion models</div>
+              <h2 class="mid">Activity coverage across all runs</h2>
+            </div>
+          </div>
+          <div id="allRunCategoryBars" class="categoryBars allRunCategoryBars"></div>
+        </article>
+      </section>
+
+      <section class="dashboardGrid dashboardGridPrimary">
+        <article class="panel chartPanel">
+          <div class="sectionHeading">
+            <div>
+              <div class="eyebrow">Completion pace</div>
+              <h2 class="mid">Detected completions over time</h2>
+            </div>
+            <div id="paceLegend" class="legend" aria-label="Chart legend"></div>
+          </div>
+          <div id="paceChart" class="paceChart" aria-live="polite"></div>
+          <p class="chartNote">Times are aligned to the selected shared completion. Lines show detected title popups, not every activity performed.</p>
+        </article>
+
+        <article class="panel categoryPanel">
+          <div class="sectionHeading">
+            <div>
+              <div class="eyebrow">Coverage by type</div>
+              <h2 class="mid">What each recording detected</h2>
+            </div>
+          </div>
+          <div id="categoryBars" class="categoryBars"></div>
+        </article>
+      </section>
+
+      <section class="panel collectibleProgressPanel">
+        <div class="sectionHeading">
+          <div>
+            <div class="eyebrow">Scaled collectible progression</div>
+            <h2 class="mid">Collectibles found across each run</h2>
+          </div>
+          <div id="collectibleLegend" class="legend" aria-label="Collectible chart legend"></div>
+        </div>
+        <div id="collectibleChart" class="paceChart collectibleChart" aria-live="polite"></div>
+        <p class="chartNote">The horizontal scale is each recording’s route progress after Leon / Finders Keepers. The vertical scale is unique collectible pickups detected from top-right game popups.</p>
+      </section>
+
+      <section class="panel collectibleTablePanel">
+        <div class="sectionHeading tableHeading">
+          <div>
+            <div class="eyebrow">Shared across both runs</div>
+            <h2 class="mid">Collectible timing comparison</h2>
+          </div>
+          <label class="compactField">
+            <span class="eyebrow">Order</span>
+            <select id="collectibleTableSort">
+              <option value="route">Route order</option>
+              <option value="earliest">Earliest possible pickup</option>
+              <option value="difference">Largest difference</option>
+            </select>
+          </label>
+        </div>
+        <div class="comparisonTableWrap">
+          <table class="comparisonTable">
+            <thead>
+              <tr>
+                <th scope="col">Collectible</th>
+                <th id="collectibleRunOneColumn" scope="col">WR</th>
+                <th id="collectibleRunTwoColumn" scope="col">PB</th>
+                <th id="collectibleRunThreeColumn" scope="col">Jul 18</th>
+                <th id="collectibleRunTwoDeltaColumn" scope="col">PB difference</th>
+                <th id="collectibleRunThreeDeltaColumn" scope="col">Jul 18 difference</th>
+                <th scope="col">Order shifts</th>
+              </tr>
+            </thead>
+            <tbody id="collectibleComparisonRows"></tbody>
+          </table>
+        </div>
+        <p id="collectibleSharedStatus" class="chartNote">Only collectibles detected in both recordings are compared. Times are aligned from Leon / Finders Keepers; one-run-only detections remain OCR review candidates.</p>
+      </section>
+
+      <section class="panel earliestCollectiblePanel">
+        <div class="sectionHeading tableHeading">
+          <div>
+            <div class="eyebrow">Best observed collectible points</div>
+            <h2 class="mid">Earliest timestamp for the full catalog</h2>
+          </div>
+          <label class="compactField">
+            <span class="eyebrow">Order</span>
+            <select id="earliestCollectibleSort">
+              <option value="earliest">Earliest observed</option>
+              <option value="spread">Largest route spread</option>
+              <option value="name">Collectible name</option>
+            </select>
+          </label>
+        </div>
+        <div id="earliestCollectibleSummary" class="earliestCollectibleSummary"></div>
+        <div class="earliestCollectibleGrid">
+          <div class="comparisonTableWrap">
+            <table class="comparisonTable">
+              <thead>
+                <tr>
+                  <th scope="col">Collectible</th>
+                  <th scope="col">Earliest</th>
+                  <th scope="col">Run</th>
+                  <th scope="col">Detected</th>
+                  <th scope="col">Route spread</th>
+                </tr>
+              </thead>
+              <tbody id="earliestCollectibleRows"></tbody>
+            </table>
+          </div>
+          <aside class="earliestPatternPanel">
+            <div class="eyebrow">Repeated advantage clusters</div>
+            <h3 class="mid">Possible route-bundling patterns</h3>
+            <div id="collectiblePatternList" class="collectiblePatternList"></div>
+            <p class="chartNote">Clusters show consecutive earliest observations in WR route order. Large spreads usually indicate different route order, not free-standing execution savings.</p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="dashboardGrid dashboardGridSecondary">
+        <article class="panel tablePanel">
+          <div class="sectionHeading tableHeading">
+            <div>
+              <div class="eyebrow">Shared completions</div>
+              <h2 class="mid">Where time moves between routes</h2>
+            </div>
+            <label class="compactField">
+              <span class="eyebrow">Order</span>
+              <select id="tableSort">
+                <option value="route">Route order</option>
+                <option value="difference">Largest difference</option>
+              </select>
+            </label>
+          </div>
+          <div class="comparisonTableWrap">
+            <table class="comparisonTable">
+              <thead>
+                <tr>
+                  <th scope="col">Completion</th>
+                  <th id="baselineColumn" scope="col">Baseline</th>
+                  <th id="comparisonColumn" scope="col">Comparison</th>
+                  <th scope="col">Difference</th>
+                  <th scope="col">Order shift</th>
+                </tr>
+              </thead>
+              <tbody id="comparisonRows"></tbody>
+            </table>
+          </div>
+        </article>
+
+        <aside class="analysisStack">
+          <article class="panel insightPanel">
+            <div class="eyebrow">Fastest dense section</div>
+            <h2 class="mid">Best 30-minute cluster</h2>
+            <div id="clusterComparison" class="clusterComparison"></div>
+          </article>
+          <article class="panel insightPanel">
+            <div class="eyebrow">Detected only</div>
+            <h2 class="mid">Possible route or OCR differences</h2>
+            <div id="uniqueEvents" class="uniqueEvents"></div>
+          </article>
+          <article class="panel insightPanel">
+            <div class="eyebrow">Reading the data</div>
+            <p class="subtitle dashboardCaveat">A missing title can mean a route difference, a skipped popup, or an OCR miss. Treat “detected only” as a review queue, not proof that an item was skipped.</p>
+          </article>
+        </aside>
+      </section>
+    </main>
+
+    <section id="loadError" class="panel loadError" hidden>
+      <div class="mid">The comparison data could not be loaded.</div>
+      <p class="subtitle">Open this page through Platinum Router’s local server so the browser can read the training results.</p>
+    </section>
+  </div>
+  <script type="module" src="./js/theme-init.js?v=20260511a"></script>
+  <script type="module" src="./js/run-comparison.js?v=20260808a"></script>
+</body>
+</html>

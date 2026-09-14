@@ -1,0 +1,281 @@
+.nogunsPage {
+  min-height: 100vh;
+  padding: 24px;
+  background:
+    radial-gradient(circle at 20% 0%, rgba(96, 226, 154, 0.13) 0%, rgba(96, 226, 154, 0) 32%),
+    linear-gradient(180deg, #07110a 0%, #030704 100%);
+}
+
+.nogunsShell {
+  width: min(840px, 100%);
+  margin: 0 auto;
+  display: grid;
+  gap: 16px;
+}
+
+.nogunsPanel {
+  padding: 20px;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background:
+    linear-gradient(180deg, rgba(15, 31, 18, 0.96) 0%, rgba(7, 15, 9, 0.98) 100%);
+  box-shadow: var(--shadow-2);
+}
+
+.nogunsHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.nogunsTitle {
+  margin: 0;
+  color: var(--text);
+  font-size: 28px;
+  line-height: 1.08;
+  font-weight: 900;
+}
+
+.nogunsSubtitle {
+  margin-top: 6px;
+  color: var(--green);
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.nogunsBadge {
+  flex: 0 0 auto;
+  padding: 8px 10px;
+  border: 1px solid rgba(159, 196, 111, 0.28);
+  border-radius: 999px;
+  background: rgba(159, 196, 111, 0.11);
+  color: var(--text-soft);
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.nogunsTimer {
+  margin-top: 18px;
+  font-family: var(--font-mono);
+  color: var(--green-strong);
+  font-size: clamp(48px, 9vw, 86px);
+  line-height: 0.95;
+  font-weight: 900;
+  letter-spacing: 0;
+  text-shadow: 0 0 18px rgba(96, 226, 154, 0.16);
+}
+
+.nogunsDeathReadout {
+  margin-top: 14px;
+  color: var(--text);
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.nogunsDeathReadout span {
+  color: #ff879d;
+}
+
+.nogunsControls {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.nogunsControls.secondaryControls {
+  margin-top: 10px;
+}
+
+.nogunsControlButton {
+  min-height: 44px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface-button);
+  color: var(--text);
+  cursor: pointer;
+  font-weight: 900;
+}
+
+.nogunsControlButton:hover {
+  border-color: var(--border-strong);
+  background: #244c31;
+}
+
+.nogunsControlButton.danger {
+  border-color: rgba(255, 95, 125, 0.35);
+  background: rgba(255, 95, 125, 0.16);
+  color: #ffd9df;
+}
+
+.nogunsLinks {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+
+.nogunsHelp {
+  display: grid;
+  gap: 8px;
+  margin-top: 16px;
+  color: var(--text-muted);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.nogunsShortcutRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 9px 11px;
+  border: 1px solid var(--border-soft);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.035);
+}
+
+.nogunsShortcutRow kbd {
+  min-width: 92px;
+  text-align: center;
+  color: var(--text);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.nogunsObsRoot {
+  min-height: 0;
+  background: transparent;
+}
+
+.nogunsObsBody {
+  width: max-content;
+  min-width: 0;
+  min-height: 0;
+  padding: 28px;
+  background: transparent;
+  overflow: hidden;
+}
+
+.nogunsObsCard {
+  width: 540px;
+  max-width: calc(100vw - 56px);
+  padding: 20px 22px;
+  border: 1px solid rgba(173, 207, 145, 0.22);
+  border-radius: 18px;
+  background:
+    radial-gradient(circle at 18% 0%, rgba(96, 226, 154, 0.16) 0%, rgba(96, 226, 154, 0) 42%),
+    linear-gradient(180deg, rgba(9, 20, 12, 0.9) 0%, rgba(4, 9, 6, 0.93) 100%);
+  box-shadow:
+    0 14px 34px rgba(0, 0, 0, 0.34),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px) saturate(0.95);
+}
+
+.nogunsObsBody[data-bg="flat"] .nogunsObsCard {
+  background: rgba(4, 9, 6, 0.96);
+}
+
+.nogunsObsBody[data-bg="clear"] .nogunsObsCard {
+  border-color: rgba(173, 207, 145, 0.16);
+  background: rgba(4, 9, 6, 0.58);
+}
+
+.nogunsObsTitle {
+  color: #f3f8ed;
+  font-size: 23px;
+  line-height: 1.08;
+  font-weight: 950;
+  text-wrap: balance;
+}
+
+.nogunsObsSubtitle {
+  margin-top: 5px;
+  color: #92f1bd;
+  font-size: 12px;
+  font-weight: 950;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.nogunsObsTimer {
+  margin-top: 14px;
+  font-family: var(--font-mono);
+  color: #9cf5c2;
+  font-size: 64px;
+  line-height: 0.94;
+  font-weight: 950;
+  letter-spacing: 0;
+  text-shadow: 0 0 22px rgba(96, 226, 154, 0.22);
+}
+
+.nogunsObsMeta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.nogunsObsDeaths {
+  color: #ffe6eb;
+  font-size: 23px;
+  font-weight: 950;
+}
+
+.nogunsObsStatus {
+  min-width: 76px;
+  padding: 6px 9px;
+  border: 1px solid rgba(146, 241, 189, 0.2);
+  border-radius: 999px;
+  color: rgba(243, 248, 237, 0.78);
+  background: rgba(146, 241, 189, 0.08);
+  font-size: 11px;
+  font-weight: 950;
+  letter-spacing: 0.1em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.nogunsObsStatus.running {
+  color: #9cf5c2;
+  border-color: rgba(146, 241, 189, 0.36);
+  background: rgba(96, 226, 154, 0.14);
+}
+
+@media (max-width: 620px) {
+  .nogunsPage {
+    padding: 12px;
+  }
+
+  .nogunsPanel {
+    padding: 16px;
+  }
+
+  .nogunsHeader,
+  .nogunsObsMeta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nogunsControls {
+    grid-template-columns: 1fr;
+  }
+
+  .nogunsObsBody {
+    padding: 14px;
+  }
+
+  .nogunsObsCard {
+    width: calc(100vw - 28px);
+  }
+
+  .nogunsObsTimer {
+    font-size: 48px;
+  }
+}

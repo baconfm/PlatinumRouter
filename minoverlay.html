@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mini Overlay</title>
+  <script>
+    (() => {
+      try {
+        const valid = new Set(["classic", "earth"]);
+        const query = new URLSearchParams(window.location.search).get("theme");
+        const stored = localStorage.getItem("platinum-router-theme");
+        const theme = valid.has(query) ? query : (valid.has(stored) ? stored : "classic");
+        document.documentElement.dataset.theme = theme;
+        document.documentElement.dataset.overlayMode = "mini";
+      } catch {
+        document.documentElement.dataset.theme = "classic";
+        document.documentElement.dataset.overlayMode = "mini";
+      }
+    })();
+  </script>
+  <link rel="stylesheet" href="./overlay.css?v=20260712e" />
+</head>
+<body class="miniOverlayPage">
+  <div class="miniOverlayShell" aria-label="Mini stream overlay">
+    <div class="timerChip miniTimer" id="timer">00:00:00</div>
+    <div class="miniChip miniTrophyChip" id="trophyChip" hidden></div>
+    <div class="miniChip miniDeathChip" id="deathChip" hidden></div>
+    <div class="miniChip miniCompleteChip" id="completeChip" title="Route completion">0%</div>
+    <div class="miniObjectiveChips" id="objectiveChips" hidden></div>
+  </div>
+
+  <script type="module" src="./js/theme-init.js?v=20260511a"></script>
+  <script type="module">
+    import { loadGameData } from "./js/data-loader.js?v=20260712f";
+    import { buildInitialState, formatMs } from "./js/controller-core.js?v=20260712h";
+    import { resolvePageContext } from "./js/game-context.js?v=20260527a";
+    import { getObjectiveIconMarkup } from "./js/objective-icons.js?v=20260712c";
+    import {
+      FALLBACK_GAME_ID,
+      readStoredGameId,
+      readStoredRouteId
+    } from "./js/game-session.js";
+    import { readStoredState } from "./js/storage.js";
+
+    let currentGameId = FALLBACK_GAME_ID;
+    let currentRouteId = "";
+    let explicitGameId = "";
+    let explicitRouteId = "";
+    let cache = {
+      key: null,
+      gameData: null
+    };
+
+    function escapeHtml(value) {
+      return String(value ?? "")
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll("\"", "&quot;")
+        .replaceAll("'", "&#039;");
+    }
+
+    async function getGameData(gameId, routeId = "") {
+      const cacheKey = `${gameId}:${routeId || "default"}`;
+
+      if (cache.key === cacheKey && cache.gameData) {
+        return cache.gameData;
+      }
+
+      const gameData = await loadGameData(gameId, routeId);
+      cache = { key: cacheKey, gameData };
+      return gameData;
+    }
+
+    function hexToRgb(hex) {
+      const raw = String(hex || "").trim().replace("#", "");
+      const normalized =
+        raw.length === 3
+          ? raw.split("").map((char) => char + char).join("")
+          : raw;
+
+      if (!/^[0-9a-fA-F]{6}$/.test(normalized)) {
+        return null;
+      }
+
+      const value = Number.parseInt(normalized, 16);
+      return {
+        r: (value >> 16) & 255,
+        g: (value >> 8) & 255,
+        b: value & 255
+      };
+    }
+
+    function withAlpha(hex, alpha, fallback = `rgba(119, 168, 255, ${alpha})`) {
+      const rgb = hexToRgb(hex);
+      if (!rgb) return fallback;
+      return `rgba(${rgb.r}, ${rgb.g}, ${rgb.b}, ${alpha})`;
+    }
+
+    function getToneStyles(def = {}) {
+      const accent = def?.accent || "#77a8ff";
+      return [
+        `--accent:${accent}`,
+        `--accent-soft:${withAlpha(accent, 0.14)}`,
+        `--accent-mid:${withAlpha(accent, 0.24)}`,
+        `--accent-strong:${withAlpha(accent, 0.42)}`
+      ].join(";");
+    }
+
+    function getOverlayChipLabel(def, fallback) {
+      return def?.overlayLabel || def?.shortLabel || def?.queueLabel || fallback;
+    }
+
+    function getCounterTitle(def, fallback) {
+      return def?.requirement || def?.description || fallback;
+    }
+
+    function clampNumber(value, min, max) {
+      const n = Number(value);
+      if (!Number.isFinite(n)) return min;
+      return Math.max(min, Math.min(max, n));
+    }
+
+    function readExplicitContextFromUrl() {
+      try {
+        const params = new URLSearchParams(window.location.search);
+        return {
+          gameId: params.get("gameId") || "",
+          routeId: params.get("routeId") || ""
+        };
+      } catch {
+        return { gameId: "", routeId: "" };
+      }
+    }
+
+    function buildMiniChip(def, label, valueText, { active = false, className = "", title = "" } = {}) {
+      const chipTitle = title || getCounterTitle(def, label);
+
+      return `
+        <div class="miniChip ${active ? "activePhaseChip" : ""} ${className}" style="${getToneStyles(def)}" title="${escapeHtml(chipTitle)}">
+          <span class="chipIconBadge">${getObjectiveIconMarkup(def?.icon, label, "chipIconSvg")}</span>
+          <span class="chipValue">${escapeHtml(valueText)}</span>
+        </div>
+      `;
+    }
+
+    function renderTrophyChip(defs, counters, hiddenOverlayKeys) {
+      const trophyChip = document.getElementById("trophyChip");
+      const trophyDef = defs?.trophies;
+
+      if (!trophyChip) return;
+
+      if (!trophyDef || Number(trophyDef?.max || 0) <= 0 || hiddenOverlayKeys.has("trophies")) {
+        trophyChip.hidden = true;
+        trophyChip.innerHTML = "";
+        trophyChip.removeAttribute("style");
+        return;
+      }
+
+      const label = getOverlayChipLabel(trophyDef, trophyDef.label || "Trophies");
+      const value = Number(counters?.trophies?.value || 0);
+      const max = Number(trophyDef?.max || 0);
+
+      trophyChip.hidden = false;
+      trophyChip.setAttribute("style", getToneStyles(trophyDef));
+      trophyChip.title = getCounterTitle(trophyDef, label);
+      trophyChip.innerHTML = `
+        <span class="chipIconBadge">${getObjectiveIconMarkup(trophyDef?.icon, label, "chipIconSvg")}</span>
+        <span class="chipValue">${escapeHtml(`${Math.min(value, max)}/${max}`)}</span>
+      `;
+    }
+
+    function isDeathCounterEnabled(state, defs) {
+      return !!defs?.deaths && !!state?.settings?.showDeathCounter;
+    }
+
+    function renderDeathChip(defs, counters, enabled) {
+      const deathChip = document.getElementById("deathChip");
+      const deathDef = defs?.deaths;
+
+      if (!deathChip) return;
+
+      if (!enabled || !deathDef) {
+        deathChip.hidden = true;
+        deathChip.innerHTML = "";
+        deathChip.removeAttribute("style");
+        return;
+      }
+
+      const label = getOverlayChipLabel(deathDef, deathDef.label || "Deaths");
+      const value = Number(counters?.deaths?.value || 0);
+
+      deathChip.hidden = false;
+      deathChip.setAttribute("style", getToneStyles(deathDef));
+      deathChip.title = getCounterTitle(deathDef, label);
+      deathChip.innerHTML = `
+        <span class="chipIconBadge">${getObjectiveIconMarkup(deathDef?.icon, label, "chipIconSvg")}</span>
+        <span class="chipValue">${escapeHtml(String(value))}</span>
+      `;
+    }
+
+    function getCompletionPercent(defs, counters, hiddenOverlayKeys) {
+      let valueTotal = 0;
+      let maxTotal = 0;
+
+      Object.entries(defs || {}).forEach(([key, def]) => {
+        const max = Number(def?.max || 0);
+        if (max <= 0 || hiddenOverlayKeys.has(key) || key === "deaths" || def?.nonProgress) return;
+
+        valueTotal += Math.min(Number(counters?.[key]?.value || 0), max);
+        maxTotal += max;
+      });
+
+      if (maxTotal <= 0) return 0;
+      return Math.round((valueTotal / maxTotal) * 100);
+    }
+
+    function renderCompleteChip(defs, counters, hiddenOverlayKeys) {
+      const completeChip = document.getElementById("completeChip");
+      if (!completeChip) return;
+
+      const percent = getCompletionPercent(defs, counters, hiddenOverlayKeys);
+      completeChip.textContent = `${percent}%`;
+      completeChip.title = "Route completion";
+    }
+
+    function setErrorState(message) {
+      const objectiveChips = document.getElementById("objectiveChips");
+      if (objectiveChips) {
+        objectiveChips.hidden = false;
+        objectiveChips.innerHTML = `<div class="empty">${escapeHtml(message)}</div>`;
+      }
+    }
+
+    async function render() {
+      try {
+        const selectedGameId = explicitGameId || readStoredGameId() || currentGameId;
+        const selectedRouteId = explicitRouteId || readStoredRouteId(selectedGameId) || currentRouteId || "";
+        const rawState = readStoredState(selectedGameId, selectedRouteId);
+        const gameId = rawState?.gameId || selectedGameId;
+        const routeId = rawState?.routeId || selectedRouteId || "";
+        const gameData = await getGameData(gameId, routeId);
+        const state = buildInitialState(rawState, gameData, gameId, routeId);
+
+        currentGameId = gameId;
+        currentRouteId = routeId;
+
+        const defs = gameData?.counters || {};
+        const counters = state?.counters || {};
+        const hiddenOverlayKeys = new Set(
+          Array.isArray(gameData?.meta?.hiddenCounters?.overlay)
+            ? gameData.meta.hiddenCounters.overlay
+            : []
+        );
+        const deathCounterEnabled = isDeathCounterEnabled(state, defs);
+        if (!deathCounterEnabled) {
+          hiddenOverlayKeys.add("deaths");
+        }
+
+        const timerEl = document.getElementById("timer");
+        if (timerEl) {
+          timerEl.textContent = formatMs(Number(state?.timer?.elapsed || 0));
+          timerEl.classList.toggle("running", !!state?.timer?.running);
+        }
+
+        renderTrophyChip(defs, counters, hiddenOverlayKeys);
+        renderDeathChip(defs, counters, deathCounterEnabled);
+        renderCompleteChip(defs, counters, hiddenOverlayKeys);
+
+        const splitIndex = Number(state?.splits?.currentIndex || 0);
+        const currentSplit = Array.isArray(state?.splits?.items)
+          ? state.splits.items[splitIndex]
+          : null;
+        const currentAuto = currentSplit?.auto || {};
+
+        const chips = Object.entries(currentAuto)
+          .map(([key, rawAmount]) => {
+            const amount = Number(rawAmount || 0);
+            const def = defs?.[key];
+            if (key === "trophies" || !def || !amount || hiddenOverlayKeys.has(key)) return "";
+
+            const value = Number(counters?.[key]?.value || 0);
+            const max = Number(def?.max || 0);
+            if (max > 0 && value >= max && amount > 0) return "";
+
+            const label = getOverlayChipLabel(def, def.label || key);
+            const nextValue = max > 0
+              ? clampNumber(value + amount, 0, max)
+              : Math.max(0, value + amount);
+            const valueText = max > 0 ? `${nextValue}/${max}` : String(nextValue);
+            const title = `${currentSplit?.label || "Current split"}: ${label} after split`;
+            return buildMiniChip(def, label, valueText, { active: true, title });
+          })
+          .filter(Boolean);
+
+        const objectiveChips = document.getElementById("objectiveChips");
+        if (objectiveChips) {
+          objectiveChips.hidden = !chips.length;
+          objectiveChips.innerHTML = chips.join("");
+        }
+      } catch (error) {
+        setErrorState("Mini overlay failed to load data.");
+        console.error(error);
+      }
+    }
+
+    window.addEventListener("storage", render);
+    setInterval(render, 500);
+
+    const explicitContext = readExplicitContextFromUrl();
+    explicitGameId = explicitContext.gameId;
+    explicitRouteId = explicitContext.routeId;
+
+    const pageContext = await resolvePageContext({
+      preferredGameId: explicitGameId,
+      preferredRouteId: explicitRouteId
+    });
+    currentGameId = pageContext.gameId;
+    currentRouteId = pageContext.routeId;
+    explicitGameId = explicitGameId ? pageContext.gameId : "";
+    explicitRouteId = explicitRouteId ? pageContext.routeId : "";
+    render();
+  </script>
+</body>
+</html>
